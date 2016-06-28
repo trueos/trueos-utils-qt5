@@ -3,8 +3,8 @@
 # from a checked out git repo
 
 # Set the port
-port="sysutils/pc-updatemanager"
-dfile="pc-updatemanager"
+port="sysutils/trueos-utils-qt5"
+dfile="trueos-utils-qt5"
 
 massage_subdir() {
   cd "$1"
