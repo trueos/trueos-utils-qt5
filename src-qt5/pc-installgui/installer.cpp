@@ -9,9 +9,12 @@
 #include <QScreen>
 
 #include "backend.h"
-#include "../config.h"
+
 #include "installer.h"
 #include "helpText.h"
+
+#define PREFIX QString("/usr/local")
+#define PCBSDVERSION QString("1.0")
 
 Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnBottomHint)
 {

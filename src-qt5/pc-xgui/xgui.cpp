@@ -15,7 +15,8 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
-#include "../config.h"
+
+#define PREFIX QString("/usr/local")
 
 const QString PROGDIR( PREFIX + "/share/trueos/xorg-gui" );
 const QString XDRIVERDIR( PREFIX + "/lib/xorg/modules/drivers" );

@@ -6,7 +6,8 @@
 #include "welcomeWizard.h"
 #include <QDebug>
 #include <QFile>
-#include "../config.h"
+
+#define PREFIX QString("/usr/local")
 
 int main( int argc, char ** argv )
 {

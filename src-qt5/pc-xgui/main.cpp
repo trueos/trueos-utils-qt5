@@ -7,7 +7,8 @@
 #include <QObject>
 #include "xgui.h"
 #include "dialogconfirm.h"
-#include "../config.h"
+
+#define PREFIX QString("/usr/local")
 
 int main( int argc, char ** argv )
 {
