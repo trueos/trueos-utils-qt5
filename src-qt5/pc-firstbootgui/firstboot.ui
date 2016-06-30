@@ -144,7 +144,7 @@ background: transparent;</string>
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="pc-firstboot.qrc">:/PCBSD/images/trueos-banner.png</pixmap>
+             <pixmap resource="pc-firstboot.qrc">:/modules/images/trueosheader.svg</pixmap>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1640,7 +1640,7 @@ background: transparent;</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="pc-firstboot.qrc">:/PCBSD/images/trueos-banner.png</pixmap>
+           <pixmap resource="pc-firstboot.qrc">:/modules/images/trueosheader.svg</pixmap>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>

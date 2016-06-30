@@ -53,7 +53,7 @@ QWidget#installStackWidget{
 background: transparent;
 }
 
-QWidget#page, QWidget#page_2, QWidget#page_3, QWidget#page_4, QWidget#pgae_5{
+QWidget#page, QWidget#page_2, QWidget#page_3, QWidget#page_4, QWidget#page_5{
 background-color: transparent;
 }</string>
   </property>
@@ -83,7 +83,7 @@ background-color: transparent;
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -137,7 +137,7 @@ background: transparent;</string>
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="sysinstaller.qrc">:/PCBSD/images/trueos-banner.png</pixmap>
+             <pixmap resource="sysinstaller.qrc">:/PCBSD/images/trueosheader.svg</pixmap>
             </property>
             <property name="scaledContents">
              <bool>false</bool>

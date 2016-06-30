@@ -23,6 +23,7 @@
     <file>images/timezone.png</file>
     <file>images/add_user.png</file>
     <file>images/systemsettings.png</file>
+    <file>images/trueosheader.svg</file>
   </qresource>
   <qresource prefix="/PCBSD">
     <file>images/xfce.png</file>

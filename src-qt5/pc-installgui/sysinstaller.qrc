@@ -47,8 +47,6 @@
     <file>images/previous.png</file>
     <file>images/next.png</file>
     <file>images/info.png</file>
-    <file>images/trueos-banner.png</file>
-    <file>images/pbidiricon.png</file>
-    <file>images/trueosheader.png</file>
+    <file>images/trueosheader.svg</file>
   </qresource>
 </RCC>
