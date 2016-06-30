@@ -1895,5 +1895,5 @@ double Installer::displayToDoubleK(QString displayNumber){
 
 
 void Installer::slotEmergencyShell() {
-  system("xterm -e /root/PCBSDUtil.sh &");
+  system("xterm -e /root/TrueOSUtil.sh &");
 }

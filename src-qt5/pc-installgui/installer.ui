@@ -644,12 +644,12 @@ selection-background-color: rgb(160, 160, 160);</string>
            <widget class="QComboBox" name="comboBootLoader">
             <item>
              <property name="text">
-              <string extracomment="Best for Dual-Boot and compatability">GRUB</string>
+              <string extracomment="FreeBSD's native boot-loader. Used for XEN Dom0 support">BSD</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string extracomment="FreeBSD's native boot-loader. Used for XEN Dom0 support">BSD</string>
+              <string extracomment="Best for Dual-Boot and compatability">GRUB</string>
              </property>
             </item>
            </widget>
