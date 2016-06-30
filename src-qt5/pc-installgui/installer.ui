@@ -32,6 +32,7 @@
    <string notr="true">QWidget{
   font-family: &quot;Noto Sans&quot;;
   font-size: 12pt;
+  color: black;
 }
 /* Note: The status bar and footer are on top of the Installer */
 QWidget#Installer{
@@ -55,7 +56,22 @@ background: transparent;
 
 QWidget#page, QWidget#page_2, QWidget#page_3, QWidget#page_4, QWidget#page_5{
 background-color: transparent;
-}</string>
+}
+
+QProgressBar{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+QProgressBar::chunk{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.494, x2:1, y2:0.511, stop:0  rgba(195,35, 5, 190), stop:0.95   rgba(195,35, 5, 140), stop:1 rgba(255, 255, 255, 0));
+    width: 400px;
+    margin: 0px;
+    border-radius: 5px;
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -83,7 +99,7 @@ background-color: transparent;
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -885,7 +901,7 @@ selection-background-color: rgb(160, 160, 160);</string>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background: transparent;</string>
+           <string notr="true">QGroupBox#groupInstall{ background: transparent; }</string>
           </property>
           <property name="title">
            <string>Installation</string>
@@ -932,8 +948,11 @@ selection-background-color: rgb(160, 160, 160);</string>
            </item>
            <item row="3" column="0">
             <widget class="QProgressBar" name="progressBarInstall">
+             <property name="maximum">
+              <number>0</number>
+             </property>
              <property name="value">
-              <number>24</number>
+              <number>-1</number>
              </property>
             </widget>
            </item>
