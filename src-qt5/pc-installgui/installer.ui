@@ -66,10 +66,9 @@ QProgressBar{
 }
 
 QProgressBar::chunk{
-    background-color: qlineargradient(spread:pad, x1:0, y1:0.494, x2:1, y2:0.511, stop:0  rgba(195,35, 5, 190), stop:0.95   rgba(195,35, 5, 140), stop:1 rgba(255, 255, 255, 0));
-    width: 400px;
+    background-color: qlineargradient(spread:pad, x1:0.150495, y1:1, x2:1, y2:0.789, stop:0.209677 rgba(196, 0, 0, 200), stop:0.5 rgba(192, 0, 0, 180), stop:0.833333 rgba(192, 0, 0, 200));
+    width: 50px;
     margin: 0px;
-    border-radius: 5px;
 }
 </string>
   </property>

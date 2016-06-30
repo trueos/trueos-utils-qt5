@@ -14,7 +14,7 @@
 #include "helpText.h"
 
 #define PREFIX QString("/usr/local")
-#define PCBSDVERSION QString("1.0")
+//#define PCBSDVERSION QString("11.0")
 
 Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnBottomHint)
 {
@@ -24,7 +24,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     this->setGeometry( scrn->geometry() );
 	
     //Now start loading the rest of the interface
-    labelVersion->setText(tr("Version:") + " " + PCBSDVERSION);
+    setVersion();
     //translator = new QTranslator();
     haveWarnedSpace=false;
     force4K = false;
@@ -98,6 +98,18 @@ void Installer::setArch()
    // Get output
    Arch = m.readLine().simplified();
    qDebug() << Arch;
+}
+
+void Installer::setVersion(){
+     QProcess m;
+   m.start(QString("uname"), QStringList() << "-r");
+   while(m.state() == QProcess::Starting || m.state() == QProcess::Running) {
+      m.waitForFinished(200);
+      QCoreApplication::processEvents();
+   }
+
+   // Get output
+    labelVersion->setText( tr("Version:") + " " +m.readLine().simplified() );
 }
 
 void Installer::slotCheckHardware()

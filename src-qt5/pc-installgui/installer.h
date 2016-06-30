@@ -84,6 +84,7 @@ private slots:
 private:
 
     void setArch();
+    void setVersion();
     void startInstall(); // Function which begins the install process
     void installFailed(); // Function which does post-install failure stuff
 
