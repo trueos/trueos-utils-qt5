@@ -1502,10 +1502,16 @@ QStringList Installer::getDeskPkgCfg()
    QStringList cfgList, pkgList;
    QString line;
 
+   // Server packages
+   if ( radioServer->isChecked() ) {
+     pkgList << "misc/trueos-server";
+   }
+
+   // Desktop packages
    if ( radioDesktop->isChecked() ) {
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
-     pkgList << "misc/trueos-base" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
