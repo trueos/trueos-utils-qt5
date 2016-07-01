@@ -14,7 +14,6 @@
 #include "helpText.h"
 
 #define PREFIX QString("/usr/local")
-//#define PCBSDVERSION QString("11.0")
 
 Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnBottomHint)
 {
@@ -109,7 +108,7 @@ void Installer::setVersion(){
    }
 
    // Get output
-    labelVersion->setText( tr("Version:") + " " +m.readLine().simplified() );
+   labelVersion->setText( tr("Version:") + " " +m.readLine().simplified() );
 }
 
 void Installer::slotCheckHardware()
@@ -723,8 +722,6 @@ void Installer::slotChangeLanguage()
        Scripts::Backend::changeKbMap("pc105", langCode, "" );
     }
     
-    // Reset the version label
-    labelVersion->setText(tr("Version:") + " " + PCBSDVERSION);
 }
 
 QStringList Installer::getGlobalCfgSettings()
