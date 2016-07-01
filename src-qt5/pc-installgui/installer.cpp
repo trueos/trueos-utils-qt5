@@ -1559,6 +1559,8 @@ QStringList Installer::getDeskPkgCfg()
           QString line = in.readLine();
           if ( line.indexOf("NVIDIA Unified Driver") != -1 ) {
             pkgList << "x11/nvidia-driver";
+            pkgList << "x11/nvidia-settings";
+            pkgList << "x11/nvidia-xconfig";
             break;
           }
        }     
