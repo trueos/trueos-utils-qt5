@@ -1558,7 +1558,7 @@ QStringList Installer::getDeskPkgCfg()
        while (!in.atEnd()) {
           QString line = in.readLine();
           if ( line.indexOf("NVIDIA Unified Driver") != -1 ) {
-            pkgList << "misc/trueos-meta-nvidia";
+            pkgList << "x11/nvidia-driver";
             break;
           }
        }     
