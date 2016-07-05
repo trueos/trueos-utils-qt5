@@ -1354,6 +1354,7 @@ void Installer::slotReadInstallerOutput()
        if( line.contains("TIME ") )
          continue;
 
+       if(tmp.endsWith("\n")){ tmp.chop(1); }
        labelInstallStatus->setText(tmp);
 
        if ( ! inZFSSend )
@@ -1435,7 +1436,7 @@ void Installer::slotReadInstallerOutput()
           }
 
         } 
-
+	if(tmp.endsWith("\n")){ tmp.chop(1); }
         labelInstallStatus->setText(tmp);
         continue; 
      } 
@@ -1493,6 +1494,7 @@ void Installer::slotReadInstallerOutput()
 	   tmp = tmp.remove(0, tmp.indexOf("-- ") + 3);
 
 	// Show other pkgng output text now
+        if(tmp.endsWith("\n")){ tmp.chop(1); }
         labelInstallStatus2->setText(tmp);
      }
 
@@ -1884,6 +1886,8 @@ void Installer::parseStatusMessage(QString stat){
   QString status = cSize+"/"+dispTotal;
 
   QString txt = QString(tr("Restoring system: %1")).arg(status);
+  txt = txt.simplified();
+  while(txt.endsWith("\n" || txt.endsWith(" ")){ txt.chop(1); }
   labelInstallStatus->setText(txt);
 
 }
