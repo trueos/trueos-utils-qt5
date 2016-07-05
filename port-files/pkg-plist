@@ -1,8 +1,6 @@
 bin/pc-firstboot
 bin/pc-sysinstaller
-bin/pc-welcome
 bin/pc-xgui
-share/applications/pc-welcome.desktop
 share/trueos/pc-installgui/get-zfs-restore-list.sh
 share/trueos/pc-installgui/load-usb-key.sh
 share/trueos/pc-installgui/setup-ssh-keys.sh
