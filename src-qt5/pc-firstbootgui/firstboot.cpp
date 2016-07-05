@@ -765,6 +765,8 @@ void Installer::saveSettings()
       }
     }
   }
+  //Now do any special patches/fixes for particular releases/versions
+  system("sed -ie \'s/desktop_visiblepanels=2/desktop_visiblepanels=1/g\' /usr/local/etc/luminaDesktop.conf.dist"); //Error in Lumina 1.0.0-Beta1 TRUEOS defaults
 }
 
 void Installer::slotKeyLayoutUpdated(QString mod, QString lay, QString var)
