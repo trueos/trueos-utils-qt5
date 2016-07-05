@@ -1887,7 +1887,7 @@ void Installer::parseStatusMessage(QString stat){
 
   QString txt = QString(tr("Restoring system: %1")).arg(status);
   txt = txt.simplified();
-  while(txt.endsWith("\n" || txt.endsWith(" ")){ txt.chop(1); }
+  while(txt.endsWith("\n" || txt.endsWith(" "))){ txt.chop(1); }
   labelInstallStatus->setText(txt);
 
 }
