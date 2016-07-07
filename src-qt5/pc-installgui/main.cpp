@@ -15,7 +15,7 @@ QSplashScreen *splash;
 int main(int argc, char *argv[])
 {
     QString changeLang;
-
+    
     QApplication a(argc, argv);
 
     // Check what directory our app is in
@@ -60,6 +60,10 @@ int main(int argc, char *argv[])
       }
     }
 
+    QProcess compositor;
+    if(QFile::exists("/usr/local/bin/compton")){
+      compositor.startDetached("compton",QStringList() << "-b");
+    }
 
     // Show our splash screen, so the user doesn't freak that that it takes a few seconds to show up
     QPixmap pixmap(":/PCBSD/images/trueosheader.png");
@@ -85,5 +89,7 @@ int main(int argc, char *argv[])
     w.show();
     splash->finish(&w);
     
-    return a.exec();
+    int ret = a.exec();
+    if(compositor.state()==QProcess::Running){ compositor.terminate(); }
+    return ret;
 }
