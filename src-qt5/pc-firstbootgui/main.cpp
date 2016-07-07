@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 {
     QString changeLang;
 
+    QProcess compositor;
+    if(QFile::exists("/usr/local/bin/compton")){ compositor.start("compton -b"); }
     QApplication a(argc, argv);
 
     // Check what directory our app is in
@@ -66,6 +68,7 @@ int main(int argc, char *argv[])
 
     w.show();
     splash.finish(&w);
-    
-    return a.exec();
+    int ret = a.exec();
+    if(compositor.state()==QProcess::Running){ compositor.terminate(); }
+    return ret;
 }
