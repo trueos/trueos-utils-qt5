@@ -1516,6 +1516,10 @@ QStringList Installer::getDeskPkgCfg()
    // Server packages
    if ( radioServer->isChecked() ) {
      pkgList << "misc/trueos-server";
+
+     // If using GRUB, make sure the pkgs get loaded
+     if ( comboBootLoader->currentText() == "GRUB" )
+       pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
    }
 
    // Desktop packages
@@ -1526,7 +1530,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
-       pkgList << "sysutils/grub2-trueos" << "sysutils/grub2-efi";
+       pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
 
      // The default web-browser and plugins
      pkgList <<  "www/qupzilla-qt5";
@@ -1588,12 +1592,7 @@ QStringList Installer::getDeskPkgCfg()
      } // End of VM checks
 
      // End of desktop packages
-   } else {
-     pkgList << "misc/trueos-base";
-     // If the user enabled AppCafe remote, install it now
-     //if ( ! appCafeSettings.isEmpty() && appCafeSettings.at(0) == "TRUE" )
-       //pkgList << "sysutils/trueos-appweb";
-   }
+   } 
 
    cfgList << "installPackages=" + pkgList.join(" ");
    return cfgList;
