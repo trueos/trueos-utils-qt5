@@ -216,7 +216,7 @@ bool wizardRestore::getUSBAuth()
 
 bool wizardRestore::startPWAuth()
 {
-  QString cmd = "xterm -e \""+SCRIPTDIR+"/setup-ssh-keys.sh " + \
+  QString cmd = "qterminal -e \""+SCRIPTDIR+"/setup-ssh-keys.sh " + \
                 lineUserName->text() + \
                 " " + lineHostName->text() + \
                 " " +QString::number(spinPort->value()) + "\"";

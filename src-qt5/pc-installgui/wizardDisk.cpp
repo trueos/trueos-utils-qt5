@@ -1333,7 +1333,7 @@ void wizardDisk::generateConfirmationText()
 
 void wizardDisk::slotTerminal()
 {
-  system("xterm &");
+  system("qterminal &");
 }
 
 void wizardDisk::setRestoreMode()

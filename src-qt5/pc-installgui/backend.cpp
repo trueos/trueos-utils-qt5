@@ -10,7 +10,7 @@ void Backend::createErrorReport()
   QString line;
 
   QProcess p;
-  QString prog = "xterm";
+  QString prog = "qterminal";
   QStringList args;
   args << "-e" << "/root/save-logs.sh";
   p.start(prog, args);
@@ -28,7 +28,7 @@ void Backend::setupSSHKeys(QString Host, QString User, QString Port)
      PCSYSINSTALL = "/usr/local/sbin/pc-sysinstall";
 
   QProcess p;
-  QString prog = "xterm";
+  QString prog = "qterminal";
   QStringList args;
   args << "-e" << PCSYSINSTALL << "setup-ssh-keys" << User << Host << Port;
   p.start(prog, args);
