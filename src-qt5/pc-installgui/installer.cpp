@@ -1910,5 +1910,5 @@ double Installer::displayToDoubleK(QString displayNumber){
 
 
 void Installer::slotEmergencyShell() {
-  system("xterm -e /root/TrueOSUtil.sh &");
+  system("qterminal -e /root/TrueOSUtil.sh &");
 }
