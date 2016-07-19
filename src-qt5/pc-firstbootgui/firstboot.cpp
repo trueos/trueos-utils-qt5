@@ -5,6 +5,7 @@
 #include <QCloseEvent>
 #include <QInputDialog>
 #include <QScreen>
+#include <QMediaPlayer>
 
 #include <trueos-netif.h>
 #include <trueos-utils.h>
@@ -121,9 +122,10 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     
     //Load the audio settings values
     combo_audiodevice->clear();
-    QStringList devs = trueos::Utils::runShellCommand("pc-sysconfig list-audiodev").join("").split(", ");
+    QStringList devs = trueos::Utils::runShellCommand("cat /dev/sndstat");
     int def = -1; bool found = false;
     for(int i=0; i<devs.length(); i++){
+      if(!devs[i].startsWith("pcm")){ continue; }
       combo_audiodevice->addItem(devs[i], devs[i].section(":",0,0)); //<full text>, <pcmID>
       if(devs[i].contains(" default")){ found = true; def = i; }
     }
@@ -586,10 +588,11 @@ void Installer::slotGetPCDevice(){
 // Set the current audio device
 void Installer::slotSetAudioDev(){
    //Get the currently selected device
-  QString dev = combo_audiodevice->currentData().toString();
+  QString dev = combo_audiodevice->currentData().toString().section("pcm",1,-1);
   if(dev.isEmpty()){ return; }
   //Now set the device
-  QProcess::execute("pc-sysconfig \"setdefaultaudiodevice "+dev+"\"");
+  //QProcess::execute("pc-sysconfig \"setdefaultaudiodevice "+dev+"\""); //set it for usage on reboot
+  QProcess::execute("sysctl hw.snd.default_unit="+dev); //turn it on right now
 }
    
 //Update the audio volume percentage
@@ -602,7 +605,18 @@ void Installer::slotPlayAudioTest(){
   //Ensure the volume is set to te specified value
   QProcess::execute("mixer vol "+QString::number(slider_volume->value()));
   //Now play the audio clip
-  QProcess::startDetached("mplayer /usr/local/share/sounds/testsound.ogg");
+  static QMediaPlayer *mediaobj = 0;
+  if(mediaobj==0){ 
+    mediaobj = new QMediaPlayer();
+    
+  }else{
+    mediaobj->stop();
+    QApplication::processEvents();
+  }
+  mediaobj->setMedia( QUrl("qrc:/testsound.ogg"));
+  mediaobj->setVolume(100);
+  QApplication::processEvents();
+  mediaobj->play();
 }
 
 void Installer::LoadServices(){

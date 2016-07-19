@@ -3,7 +3,7 @@
 # -------------------------------------------------
 TARGET = pc-firstboot
 target.path = /usr/local/bin/
-QT += core gui widgets
+QT += core gui widgetsmultimedia
 LIBS    += -L../libtrueos -L/usr/local/lib -ltrueos-utils
 INCLUDEPATH+= ../libtrueos/utils
 TEMPLATE = app

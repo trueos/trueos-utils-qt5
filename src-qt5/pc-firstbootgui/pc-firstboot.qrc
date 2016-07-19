@@ -41,4 +41,7 @@
     <file>images/pbidiricon.png</file>
     <file>images/trueosheader.png</file>
   </qresource>
+  <qresource prefix="/">
+    <file>testsound.ogg</file>
+  </qresource>
 </RCC>
