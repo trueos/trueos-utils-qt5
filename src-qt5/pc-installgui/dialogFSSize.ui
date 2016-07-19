@@ -11,10 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string notr="true">PC-BSD</string>
+   <string notr="true">TrueOS</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="sysinstaller.qrc">
+   <iconset>
     <normaloff>:/PCBSD/images/pbidiricon.png</normaloff>:/PCBSD/images/pbidiricon.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout">

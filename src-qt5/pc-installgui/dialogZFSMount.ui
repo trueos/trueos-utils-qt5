@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>389</width>
-    <height>95</height>
+    <height>102</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string notr="true">PC-BSD</string>
+   <string notr="true">TrueOS</string>
   </property>
   <property name="modal">
    <bool>true</bool>
