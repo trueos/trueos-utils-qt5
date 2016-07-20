@@ -591,7 +591,7 @@ void Installer::slotSetAudioDev(){
   QString dev = combo_audiodevice->currentData().toString().section("pcm",1,-1);
   if(dev.isEmpty()){ return; }
   //Now set the device
-  //QProcess::execute("pc-sysconfig \"setdefaultaudiodevice "+dev+"\""); //set it for usage on reboot
+  Utils::setConfFileValue("/etc/sysctl.conf", "hw.snd.default_unit=", "hw.snd.default_unit=" + dev, -1); //set it for usage on reboot
   QProcess::execute("sysctl hw.snd.default_unit="+dev); //turn it on right now
 }
    
