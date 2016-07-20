@@ -7,8 +7,8 @@
 #include <QScreen>
 #include <QMediaPlayer>
 
-#include <trueos-netif.h>
-#include <trueos-utils.h>
+#include <../netif.h>
+#include <../utils.h>
 
 #include <sys/types.h>
 #include <pwd.h>
@@ -103,10 +103,10 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     }
 
     // Load the hostname
-     lineHostname->setText(trueos::Utils::getConfFileValue("/etc/rc.conf", "hostname=", 1).section(".",0,0));
+     lineHostname->setText(Utils::getConfFileValue("/etc/rc.conf", "hostname=", 1).section(".",0,0));
 
     // Load the domain name
-    lineDomainName->setText(trueos::Utils::getConfFileValue("/etc/rc.conf", "hostname=",1).section(".",1,100));
+    lineDomainName->setText(Utils::getConfFileValue("/etc/rc.conf", "hostname=",1).section(".",1,100));
 
     //Load the available Services into the UI
     LoadServices();
@@ -122,7 +122,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     
     //Load the audio settings values
     combo_audiodevice->clear();
-    QStringList devs = trueos::Utils::runShellCommand("cat /dev/sndstat");
+    QStringList devs = Utils::runShellCommand("cat /dev/sndstat");
     int def = -1; bool found = false;
     for(int i=0; i<devs.length(); i++){
       if(!devs[i].startsWith("pcm")){ continue; }
@@ -478,8 +478,8 @@ void Installer::slotScanNetwork()
   listWidgetWifi->clear();
 
   // Start the scan and get the output
-  //ifconfout = trueos::Utils::runShellCommand("ifconfig -v wlan0 up list scan");
-  ifconfout = trueos::Utils::runShellCommand("ifconfig -v wlan0 list scan");
+  //ifconfout = Utils::runShellCommand("ifconfig -v wlan0 up list scan");
+  ifconfout = Utils::runShellCommand("ifconfig -v wlan0 list scan");
   
   qDebug() << ifconfout;
 
@@ -531,7 +531,7 @@ void Installer::slotAddNewWifi()
 void Installer::addNetworkProfile(QString ssid)
 {
   //get the full SSID string
-  QString dat = trueos::Utils::runShellCommandSearch("ifconfig -v wlan0 list scan",ssid);
+  QString dat = Utils::runShellCommandSearch("ifconfig -v wlan0 list scan",ssid);
   QStringList wdat = NetworkInterface::parseWifiScanLine(dat,true);
   QString SSID = wdat[0];
  
@@ -572,7 +572,7 @@ void Installer::slotQuickConnect(QString key,QString SSID){
 
 void Installer::slotGetPCDevice(){
   //This will find any personacrypt capable devices
-  QStringList devs = trueos::Utils::runShellCommand("personacrypt list -r");
+  QStringList devs = Utils::runShellCommand("personacrypt list -r");
   if(devs.isEmpty()){
     QMessageBox::warning(this, tr("No Devices Found"), tr("Please connect a removable device and try again") );
      return;
@@ -705,11 +705,11 @@ void Installer::saveSettings()
   QProcess::execute("su", QStringList() << lineUsername->text() << "-c" << "/usr/local/bin/flashpluginctl on" );
   
   // Do we need to change the system hostname, and set a domain name?
-  if ( lineDomainName->text() != trueos::Utils::getConfFileValue("/etc/rc.conf", "hostname=lineHostname.lineDomainName", 1) )
+  if ( lineDomainName->text() != Utils::getConfFileValue("/etc/rc.conf", "hostname=lineHostname.lineDomainName", 1) )
   {
-           trueos::Utils::setConfFileValue("/etc/rc.conf", "hostname=", "hostname=\"" + lineHostname->text() + "." + lineDomainName->text() + "\"", -1);
-           trueos::Utils::setConfFileValue("/etc/hosts", "::1", "::1\t\t\tlocalhost " + lineHostname->text() + "." + lineDomainName->text() + " " + lineHostname->text(), -1);
-           trueos::Utils::setConfFileValue("/etc/hosts", "127.0.0.1", "127.0.0.1\t\tlocalhost " + lineHostname->text() + "." + lineDomainName->text() + " " + lineHostname->text(), -1);
+           Utils::setConfFileValue("/etc/rc.conf", "hostname=", "hostname=\"" + lineHostname->text() + "." + lineDomainName->text() + "\"", -1);
+           Utils::setConfFileValue("/etc/hosts", "::1", "::1\t\t\tlocalhost " + lineHostname->text() + "." + lineDomainName->text() + " " + lineHostname->text(), -1);
+           Utils::setConfFileValue("/etc/hosts", "127.0.0.1", "127.0.0.1\t\tlocalhost " + lineHostname->text() + "." + lineDomainName->text() + " " + lineHostname->text(), -1);
 
       // Now set the hostname on the system
       sethostname(lineHostname->text().toLatin1(), lineHostname->text().length());
@@ -718,11 +718,11 @@ void Installer::saveSettings()
       QProcess::execute(QString("hostname ") + lineHostname->text() + "." + lineDomainName->text());
   }
   // Do we need to change the system hostname?
-  else if ( lineHostname->text() != trueos::Utils::getConfFileValue("/etc/rc.conf", "hostname=", 1) )
+  else if ( lineHostname->text() != Utils::getConfFileValue("/etc/rc.conf", "hostname=", 1) )
   {
-      trueos::Utils::setConfFileValue("/etc/rc.conf", "hostname=", "hostname=\"" + lineHostname->text() + "\"", -1);
-      trueos::Utils::setConfFileValue("/etc/hosts", "::1", "::1\t\t\tlocalhost " + lineHostname->text(), -1);
-      trueos::Utils::setConfFileValue("/etc/hosts", "127.0.0.1", "127.0.0.1\t\tlocalhost " + lineHostname->text(), -1);
+      Utils::setConfFileValue("/etc/rc.conf", "hostname=", "hostname=\"" + lineHostname->text() + "\"", -1);
+      Utils::setConfFileValue("/etc/hosts", "::1", "::1\t\t\tlocalhost " + lineHostname->text(), -1);
+      Utils::setConfFileValue("/etc/hosts", "127.0.0.1", "127.0.0.1\t\tlocalhost " + lineHostname->text(), -1);
 
       // Now set the hostname on the system
       sethostname(lineHostname->text().toLatin1(), lineHostname->text().length());

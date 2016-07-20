@@ -3,9 +3,8 @@
 # -------------------------------------------------
 TARGET = pc-firstboot
 target.path = /usr/local/bin/
-QT += core gui widgetsmultimedia
-LIBS    += -L../libtrueos -L/usr/local/lib -ltrueos-utils
-INCLUDEPATH+= ../libtrueos/utils
+QT += core gui widgets multimedia
+LIBS    += -L/usr/local/lib
 TEMPLATE = app
 SOURCES += main.cpp \
     dialogInfoBox.cpp \
@@ -14,7 +13,9 @@ SOURCES += main.cpp \
     firstboot.cpp \
     netKey.cpp \
     backend.cpp \
-    services.cpp
+    services.cpp \
+    $${PWD}/../utils.cpp \
+    $${PWD}/../netif.cpp
     
 HEADERS += firstboot.h \
     dialogInfoBox.h \
@@ -23,7 +24,9 @@ HEADERS += firstboot.h \
     helpText.h \
     netKey.h \
     backend.h \
-    services.h
+    services.h \
+    $${PWD}/../utils.h \
+    $${PWD}/../netif.h
     
 TRANSLATIONS =  i18n/FirstBoot_af.ts \
 		i18n/FirstBoot_ar.ts \
