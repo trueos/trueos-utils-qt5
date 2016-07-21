@@ -1547,11 +1547,17 @@ QStringList Installer::getDeskPkgCfg()
      // Office Suite
      //pkgList << "editors/libreoffice";
 
+     // Fonts
+     pkgList << "x11-fonts/noto-lite" << "x11-fonts/droid-fonts-ttf";
+
+     //Mouse Cursors
+     pkgList << "x11-themes/cursor-jimmac-theme";
+
      // Utilities
-     pkgList << "archivers/unrar" << "archivers/unzip" << "misc/trueos-meta-hunspell";
+     pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
 
      // Printer packages
-     pkgList << "print/cups-pdf";
+     pkgList << "print/cups-pdf" << "print/cups-gutenprint";
 
      // Include i18n stuff?
      //if ( comboLanguage->currentIndex() != 0 )
