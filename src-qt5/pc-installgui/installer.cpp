@@ -1557,7 +1557,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
 
      // Printer packages
-     pkgList << "print/cups-pdf" << "print/cups-gutenprint";
+     pkgList << "print/cups-pdf" << "print/gutenprint-cups";
 
      // Include i18n stuff?
      //if ( comboLanguage->currentIndex() != 0 )
