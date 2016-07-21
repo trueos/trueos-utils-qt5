@@ -21,7 +21,7 @@ MAKE_JOBS_UNSAFE=yes
 ONLY_FOR_ARCHS= amd64
 USE_LDCONFIG=   yes
 USE_QT5=        core gui network svg linguist \
-		buildtools x11extras widgets
+		buildtools x11extras widgets multimedia
 USES=           qmake shebangfix tar:xz
 USE_GL+=	gl
 
