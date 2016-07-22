@@ -10,13 +10,14 @@ COMMENT=	TrueOS QT5 Utilities
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	 setxkbmap:x11/setxkbmap
+RUN_DEPENDS=	setxkbmap:x11/setxkbmap \
+		xdpyinfo:x11/xdpyinfo
 LIB_DEPENDS=	libtrueos-ui.so:sysutils/trueos-libqt5
 
 WRKSRC_SUBDIR=  src-qt5
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
 
-CONFLICTS=      pcbsd-utils*
+CONFLICTS=      pcbsd-utils-[0-9]*
 
 MAKE_JOBS_UNSAFE=yes
 ONLY_FOR_ARCHS= amd64
