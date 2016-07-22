@@ -12,6 +12,7 @@ LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	setxkbmap:x11/setxkbmap \
 		xdpyinfo:x11/xdpyinfo \
+		xwd:x11/xwd \
 		xcursor-themes>=0:x11-themes/xcursor-themes
 LIB_DEPENDS=	libtrueos-ui.so:sysutils/trueos-libqt5
 
