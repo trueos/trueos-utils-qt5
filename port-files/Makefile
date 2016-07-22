@@ -11,7 +11,8 @@ COMMENT=	TrueOS QT5 Utilities
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	setxkbmap:x11/setxkbmap \
-		xdpyinfo:x11/xdpyinfo
+		xdpyinfo:x11/xdpyinfo \
+		xcursor-themes:x11-themes/xcursor-themes
 LIB_DEPENDS=	libtrueos-ui.so:sysutils/trueos-libqt5
 
 WRKSRC_SUBDIR=  src-qt5
