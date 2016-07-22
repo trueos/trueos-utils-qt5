@@ -780,7 +780,9 @@ void Installer::saveSettings()
     }
   }
   //Now do any special patches/fixes for particular releases/versions
+  //Lumina 1.0.0-Beta2 (July/August 2016)
   system("sed -ie \'s/desktop_visiblepanels=2/desktop_visiblepanels=1/g\' /usr/local/etc/luminaDesktop.conf.dist"); //Error in Lumina 1.0.0-Beta1 TRUEOS defaults
+  system("sed -ie \'s/_ifexists=lumina-terminal.desktop/_ifexists=qterminal.desktop/g\' /usr/local/etc/luminaDesktop.conf.dist"); //Error in Lumina 1.0.0-Beta2 TRUEOS defaults
 }
 
 void Installer::slotKeyLayoutUpdated(QString mod, QString lay, QString var)
