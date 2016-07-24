@@ -48,6 +48,7 @@ public:
     static void createErrorReport();
     static void setupSSHKeys(QString Host, QString User, QString Port);
     static QStringList languages();
+    static QStringList listAllZpools();
     static QStringList keyLayouts();
     static QStringList keyModels();
     static QStringList keyVariants(const QString &, QStringList &savedKeyVariants);

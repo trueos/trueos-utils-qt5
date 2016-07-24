@@ -88,6 +88,9 @@ private:
     void startInstall(); // Function which begins the install process
     void installFailed(); // Function which does post-install failure stuff
 
+    QString zpoolTarget;
+    bool promptInstallToZpool(); // Ask if user wants to install into BE
+
     // Functions to parse ZFS send/recv messages
     bool inZFSSend;
     double displayToDoubleK(QString);
@@ -102,6 +105,9 @@ private:
     // Functions which return parts of the config file
     QStringList getGlobalCfgSettings();
     QStringList getDiskCfgSettings();
+
+    // Any zpools waiting for import?
+    QStringList existingZpools;
 
     void startConfigGen(); // Function which takes pieces of cfg, and assembles
     void checkSpaceWarning(); // Function to check space of disk drive

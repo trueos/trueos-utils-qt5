@@ -219,6 +219,20 @@ QString Backend::detectCountryCode()
     return code;
 }
 
+QStringList Backend::listAllZpools()
+{
+    QStringList pools;
+
+    Process p(QStringList() << "list-zpools");
+
+    if (p.waitForFinished()) {
+        while (p.canReadLine()) {
+            pools.append(p.readLine().simplified());
+        }
+    }
+    qDebug() << "Found zpools:" << pools;
+    return pools;
+}
 
 QStringList Backend::networkDevices()
 {

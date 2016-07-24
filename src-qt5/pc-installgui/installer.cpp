@@ -65,7 +65,8 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     installStackWidget->setCurrentIndex(0);
     backButton->setVisible(false);
 
-    // Update the status bar
+    // Get a list of existing zpools
+    existingZpools = Scripts::Backend::listAllZpools();
 
     // Check if we are running in EFI mode
     if ( system("sysctl -n machdep.bootmethod | grep -q 'UEFI'") == 0 )
@@ -336,6 +337,14 @@ QStringList Installer::getDiskSummary()
   QString tmp, workingDisk, workingSlice, tmpSlice, XtraTmp, startPart, sliceSize;
   int disk = 0;
 
+  // Doing upgrade
+  if ( ! zpoolTarget.isEmpty() )
+  {
+    summaryList << "";
+    summaryList << tr("Installing to new dataset in existing zpool: %s", zpoolTarget.toLatin1());
+    return summaryList;
+  }
+
   // Copy over the list to a new variable we can mangle without modifying the original
   copyList = sysFinalDiskLayout;
 
@@ -579,6 +588,21 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
   startConfigGen();
 }
 
+bool Installer::promptInstallToZpool()
+{
+  bool ok;
+  QString ans = QInputDialog::getItem(this, tr("Install to existing zpool?"), tr("The following existing zpool(s) have been found. Do you wish to install fresh into a new BootEnvironment? (This will preserve your $HOME data and other datasets)"), existingZpools, 0, false, &ok);
+  if ( ok && !ans.isEmpty())
+  {
+    zpoolTarget=ans;
+    return true;
+  }
+
+  zpoolTarget="";
+  return false;
+}
+
+
 void Installer::slotNext()
 {
    QString tmp;
@@ -615,8 +639,22 @@ void Installer::slotNext()
    }
 
    // Create the pc-sysinstall config
-   if ( installStackWidget->currentIndex() == 1 )
+   if ( installStackWidget->currentIndex() == 1 ) {
      startConfigGen();
+
+     // We have existing zpool, see if we want to upgrade within
+     if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
+	if ( promptInstallToZpool() )
+        {
+	  // Disable the customize options
+	  pushDiskCustomize->setEnabled(false);
+	  comboBootLoader->setEnabled(false);
+        } else {
+	  pushDiskCustomize->setEnabled(true);
+	  comboBootLoader->setEnabled(true);
+	}
+     }
+   }
 
    // If the chosen disk is too small or partition is invalid, don't continue
    if ( installStackWidget->currentIndex() == 2 && ! checkDiskRequirements())
@@ -780,6 +818,11 @@ QStringList Installer::getGlobalCfgSettings()
   {
     tmpList << "installMode=extract";
     tmpList << "installLocation=/mnt";
+  } else if ( ! zpoolTarget.isEmpty() ) {
+    // Doing an upgrade
+    tmpList << "installMode=upgrade";
+    tmpList << "zpoolName=" + zpoolTarget;
+    zpoolName="";
   } else {
     // Doing a fresh install
     tmpList << "installMode=fresh";
@@ -913,7 +956,10 @@ void Installer::startConfigGen()
   // Generate the config file now
   cfgList+=getGlobalCfgSettings();
 
-  cfgList+=getDiskCfgSettings();
+  // No disk config if doing an upgrade to existing zpool
+  if ( zpoolTarget.isEmpty() ) {
+    cfgList+=getDiskCfgSettings();
+  }
  
   // We can skip these options if doing a restore
   if ( ! radioRestore->isChecked() ) {
