@@ -179,7 +179,7 @@ background: transparent;</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</string>
+             <string>Welcome to your new system! You may change your language above, and click next to begin the setup process.</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1215,7 +1215,7 @@ background: transparent;</string>
           <item row="0" column="0">
            <widget class="QLabel" name="label_29">
             <property name="text">
-             <string>Output Device:</string>
+             <string>Default Output:</string>
             </property>
            </widget>
           </item>
@@ -1309,7 +1309,7 @@ background: transparent;</string>
         <item row="4" column="1">
          <widget class="QLabel" name="label_28">
           <property name="text">
-           <string>Note: Audio settings can also be adjusted later through the PC-BSD audio mixer.</string>
+           <string>Note: Audio settings can also be adjusted later through the audio mixer.</string>
           </property>
           <property name="wordWrap">
            <bool>true</bool>
@@ -1669,7 +1669,7 @@ background: transparent;</string>
            <string notr="true">background: transparent;</string>
           </property>
           <property name="text">
-           <string>Setup is now complete! Press Finish to login to your new desktop.</string>
+           <string>Setup is now complete! Press Finish to login to your new system.</string>
           </property>
           <property name="wordWrap">
            <bool>true</bool>

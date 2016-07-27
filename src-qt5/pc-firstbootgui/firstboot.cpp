@@ -123,11 +123,12 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     //Load the audio settings values
     combo_audiodevice->clear();
     QStringList devs = Utils::runShellCommand("cat /dev/sndstat");
-    int def = -1; bool found = false;
+    //qDebug() << "Sound Devices:" <<devs;
+    int def = -1; 
     for(int i=0; i<devs.length(); i++){
-      if(!devs[i].startsWith("pcm")){ continue; }
+      if(!devs[i].startsWith("pcm")){ devs.removeAt(i); i--; continue; }
       combo_audiodevice->addItem(devs[i], devs[i].section(":",0,0)); //<full text>, <pcmID>
-      if(devs[i].contains(" default")){ found = true; def = i; }
+      if(devs[i].contains(" default")){ def = i; }
     }
     if(def<0 && !devs.isEmpty()){ def=0; }
     if(def<0){
@@ -135,7 +136,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
       Page_Audio->setEnabled(false); //just do the whole page - nothing will work
     }else{
       combo_audiodevice->setCurrentIndex(def); //make sure this item is initially selected
-      if(!found){ slotSetAudioDev(); } //make sure to run the setup command initially
+      slotSetAudioDev(); //make sure to run the setup command initially
     }
     slider_volume->setValue(100);
     slotAudioVolumeChanged(); //update the volume % label
