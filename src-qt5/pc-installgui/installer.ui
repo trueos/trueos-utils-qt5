@@ -59,7 +59,7 @@ background-color: transparent;
 }
 
 QProgressBar{
-  background-color: transparent;
+  background-color: rgba(255,255,255,100);
   border: 1px solid black;
   border-radius: 5px;
   text-align: center;
@@ -98,7 +98,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -434,7 +434,8 @@ selection-background-color: rgb(160, 160, 160);</string>
               <bool>false</bool>
              </property>
              <property name="text">
-              <string>TrueOS (Graphical desktop)</string>
+              <string>TrueOS Desktop 
+ (graphical interface)</string>
              </property>
              <property name="icon">
               <iconset resource="sysinstaller.qrc">
@@ -457,7 +458,8 @@ selection-background-color: rgb(160, 160, 160);</string>
               <string>Best for servers and headless systems</string>
              </property>
              <property name="text">
-              <string>TrueOS Core (Console based server)</string>
+              <string>TrueOS Server 
+ (console interface only)</string>
              </property>
              <property name="icon">
               <iconset resource="sysinstaller.qrc">
