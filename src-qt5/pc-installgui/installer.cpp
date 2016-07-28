@@ -839,7 +839,7 @@ QStringList Installer::getGlobalCfgSettings()
 
   // System type we are installing
   if ( radioDesktop->isChecked() )
-    tmpList << "installType=PCBSD";
+    tmpList << "installType=TrueOS";
   else
     tmpList << "installType=FreeBSD";
 
