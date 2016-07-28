@@ -67,6 +67,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
 
     // Get a list of existing zpools
     existingZpools = Scripts::Backend::listAllZpools();
+    qDebug() << "Existing Zpools:" << existingZpools;
 
     // Check if we are running in EFI mode
     if ( system("sysctl -n machdep.bootmethod | grep -q 'UEFI'") == 0 )
