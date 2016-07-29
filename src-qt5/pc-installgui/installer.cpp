@@ -102,14 +102,16 @@ void Installer::setArch()
 
 void Installer::setVersion(){
      QProcess m;
-   m.start(QString("uname"), QStringList() << "-r");
+   m.start(QString("uname"), QStringList() << "-pv");
    while(m.state() == QProcess::Starting || m.state() == QProcess::Running) {
       m.waitForFinished(200);
       QCoreApplication::processEvents();
    }
-
+   QString info = m.readLine().simplified();
+   QString datetime = info.section(": ",1,1).section(" ",0,5);
+   QString arch = info.section(" ",-1);
    // Get output
-   labelVersion->setText( tr("Version:") + " " +m.readLine().simplified() );
+   labelVersion->setText( QString( "%1 (%2)").arg(datetime, arch) );
 }
 
 void Installer::slotCheckHardware()
