@@ -598,6 +598,13 @@ bool Installer::promptInstallToZpool()
   if ( ok && !ans.isEmpty())
   {
     zpoolTarget=ans;
+
+    textEditDiskSummary->clear();
+    QStringList summary = getDiskSummary();
+    for ( int i=0; i < summary.count(); ++i)
+      textEditDiskSummary->append(summary.at(i));
+    textEditDiskSummary->moveCursor(QTextCursor::Start);
+
     return true;
   }
 
@@ -643,7 +650,6 @@ void Installer::slotNext()
 
    // Create the pc-sysinstall config
    if ( installStackWidget->currentIndex() == 1 ) {
-     startConfigGen();
 
      // We have existing zpool, see if we want to upgrade within
      if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
@@ -657,6 +663,7 @@ void Installer::slotNext()
 	  comboBootLoader->setEnabled(true);
 	}
      }
+     startConfigGen();
    }
 
    // If the chosen disk is too small or partition is invalid, don't continue
