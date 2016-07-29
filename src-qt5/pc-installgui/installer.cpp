@@ -968,12 +968,6 @@ void Installer::startConfigGen()
     // Save the install config script to disk
     cfgList << "runExtCommand=/root/save-config.sh";
 
-    // Now add the freebsd dist files so warden can create a template on first boot
-    cfgList+= "";
-    cfgList << "runCommand=mkdir -p /usr/local/tmp/iocage-dist/";
-    cfgList << "runExtCommand=cp /dist/*.txz ${FSMNT}/usr/local/tmp/iocage-dist/";
-    cfgList+= "";
-
     // If doing install from package disk
     if ( hasPkgsOnMedia )
       cfgList+=getDeskPkgCfg();
@@ -994,9 +988,14 @@ void Installer::startConfigGen()
 
       // Setup for a fresh system first boot
       cfgList << "# Touch flags to enable PC-BSD setup at first boot";
-      cfgList << "runCommand=touch /var/.runxsetup";
       cfgList << "runCommand=touch /var/.trueos-firstboot";
       cfgList << "runCommand=touch /var/.trueos-firstgui";
+
+      // If we had to use a custom xorg.conf to run installer, use it again
+      // on live system
+      if ( QFile::exists("/etc/X11/xorg.conf") ) {
+        cfgList << "runExtCommand=cp /etc/X11/xorg.conf ${FSMNT}/etc/X11/xorg.conf";
+      }
 
       if ( comboLanguage->currentIndex() != 0 ) {
         QString lang = languages.at(comboLanguage->currentIndex());
