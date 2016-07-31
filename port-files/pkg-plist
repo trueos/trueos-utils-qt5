@@ -1,5 +1,6 @@
 bin/pc-firstboot
 bin/pc-sysinstaller
+bin/pc-webkitviewer
 bin/pc-xgui
 share/trueos/pc-installgui/get-zfs-restore-list.sh
 share/trueos/pc-installgui/load-usb-key.sh
