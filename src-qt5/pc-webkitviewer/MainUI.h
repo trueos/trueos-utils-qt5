@@ -22,7 +22,7 @@
 #include <QToolButton>
 #include <QShortcut>
 
-#include <TRUEOS-utils.h>
+#include <utils.h>
 
 class MainUI : public QMainWindow{
 	Q_OBJECT
