@@ -36,8 +36,8 @@
 #include <QWidget>
 
  
-#ifndef _PCBSD_UTILS_H_
-#define _PCBSD_UTILS_H_
+#ifndef _TRUEOS_UTILS_H_
+#define _TRUEOS_UTILS_H_
 
 typedef struct _DesktopEnvironmentInfo
 {
@@ -94,13 +94,13 @@ public:
     */
    static QString getValFromPBIConf(QString key);
 
-   /**  Function to get a value from a specific key in the pcbsd.conf file
+   /**  Function to get a value from a specific key in the trueos.conf file
     *
-    *\param key- key name from pcbsd.conf
+    *\param key- key name from trueos.conf
     *
     *\return Value of parameter
     */
-   static QString getValFromPCBSDConf(QString key);
+   static QString getValFromTRUEOSConf(QString key);
 
    /** Get value for from a specific key in the system config "ini style" file
     *
@@ -130,7 +130,7 @@ public:
    static bool setValSHFile(QString, QString, QString);
    static bool setValSHFile(QString, QString, QString, QString);
    static bool setValCSHFile(QString, QString, QString);
-   static bool setValPCBSDConf(QString key, QString val);
+   static bool setValTRUEOSConf(QString key, QString val);
    static bool setValPCConf(QString conf, QString key, QString val);
    static bool setProxyAddress(QString val);
    static bool setProxyAuth(QString val);
