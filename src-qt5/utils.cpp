@@ -46,7 +46,7 @@
 
 // The default pbi.conf file
 QString PBI_ETCCONF(PREFIX + "/etc/pbi.conf");
-QString PCBSD_ETCCONF(PREFIX + "/etc/pcbsd.conf");
+QString TRUEOS_ETCCONF(PREFIX + "/etc/trueos.conf");
 
 QString Utils::getLineFromCommandOutput( QString cmd )
 {
@@ -105,9 +105,9 @@ QString Utils::getValFromPBIConf(QString key) {
 	return getValFromPCConf(PBI_ETCCONF, key);
 }
 
-// Function to get a value from a specific key in the pcbsd.conf file
-QString Utils::getValFromPCBSDConf(QString key) {
-	return getValFromPCConf(PCBSD_ETCCONF, key);
+// Function to get a value from a specific key in the trueos.conf file
+QString Utils::getValFromTRUEOSConf(QString key) {
+	return getValFromPCConf(TRUEOS_ETCCONF, key);
 }
 
 QString Utils::getValFromPCConf(QString conf, QString key) {
@@ -313,7 +313,7 @@ QString Utils::getProxyPort() {
 }
 
 QString Utils::getMasterMirror() {
-	return getValFromPCBSDConf("PCBSD_MIRROR");
+	return getValFromTRUEOSConf("TRUEOS_MIRROR");
 }
 
 
@@ -322,9 +322,9 @@ bool Utils::setValPBIConf(QString key, QString val)
 	return setValPCConf(PBI_ETCCONF, key, val);
 }
 
-bool Utils::setValPCBSDConf(QString key, QString val)
+bool Utils::setValTRUEOSConf(QString key, QString val)
 {
-	return setValPCConf(PCBSD_ETCCONF, key, val);
+	return setValPCConf(TRUEOS_ETCCONF, key, val);
 }
 
 bool Utils::setValPCConf(QString conf, QString key, QString val)
@@ -394,7 +394,7 @@ bool Utils::setProxyAuth(QString val) {
 }
 
 bool Utils::setMasterMirror(QString val) {
-   return setValPCBSDConf("PCBSD_MIRROR", val);
+   return setValTRUEOSConf("TRUEOS_MIRROR", val);
 }
 
 QString Utils::getConfFileValue( QString oFile, QString Key )
