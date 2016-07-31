@@ -4,9 +4,9 @@ LANGUAGE	= C++
 
 CONFIG	+= qt warn_on release
 
-LIBS    += -L../libpcbsd -L/usr/local/lib -lpcbsd-utils -lpcbsd-ui
+LIBS    += -L../libtrueos -L/usr/local/lib -ltrueos-utils -ltrueos-ui
 
-INCLUDEPATH+= ../libpcbsd/utils ../libpcbsd/ui /usr/local/include
+INCLUDEPATH+= ../libtrueos/utils ../libtrueos/ui /usr/local/include
 
 HEADERS	+= mainUI.h
 
