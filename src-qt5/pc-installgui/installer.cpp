@@ -1626,8 +1626,8 @@ QStringList Installer::getDeskPkgCfg()
           QString line = in.readLine();
           if ( line.indexOf("NVIDIA Unified Driver") != -1 ) {
             pkgList << "x11/nvidia-driver";
-            pkgList << "x11/nvidia-settings";
-            pkgList << "x11/nvidia-xconfig";
+            //pkgList << "x11/nvidia-settings";
+            //pkgList << "x11/nvidia-xconfig";
             break;
           }
        }     
@@ -1635,7 +1635,7 @@ QStringList Installer::getDeskPkgCfg()
      } // Done with NVIDIA check
 
      // Are we on VirtualBox or VMware?
-     QFile filev("/var/log/Xorg.0.log");
+     /*QFile filev("/var/log/Xorg.0.log");
      if (filev.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream inv(&filev);
        while (!inv.atEnd()) {
@@ -1650,7 +1650,7 @@ QStringList Installer::getDeskPkgCfg()
           }
        }     
        filev.close();
-     } // End of VM checks
+     }*/ // End of VM checks
 
      // End of desktop packages
    } 
