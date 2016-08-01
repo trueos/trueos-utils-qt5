@@ -227,7 +227,7 @@ void Installer::loadDiskInfo()
 {
    sysDisks = Scripts::Backend::hardDrives();
    if ( sysDisks.empty() ) {
-      QMessageBox::critical(this, tr("PC-BSD Installer"),
+      QMessageBox::critical(this, tr("TrueOS Installer"),
                                 tr("Unable to detect any disk drives! The install will now exit."),
                                 QMessageBox::Ok,
                                 QMessageBox::Ok);
@@ -237,7 +237,7 @@ void Installer::loadDiskInfo()
    // For now use the first disk we find
    if ( ! autoGenPartitionLayout(sysDisks.at(0).at(1), true) )
    {
-      QMessageBox::critical(this, tr("PC-BSD Installer"),
+      QMessageBox::critical(this, tr("TrueOS Installer"),
         tr("Unable to suggest a partition for the detected disk."),
         QMessageBox::Ok,
         QMessageBox::Ok);
@@ -687,7 +687,7 @@ void Installer::slotNext()
         else
 	  msg=tr("Start the Customized-Disk installation now?");
 
-      int ret = QMessageBox::question(this, tr("PC-BSD Installer"),
+      int ret = QMessageBox::question(this, tr("TrueOS Installer"),
                                 msg,
                                 QMessageBox::No | QMessageBox::Yes,
                                 QMessageBox::No);
@@ -873,7 +873,7 @@ QStringList Installer::getGlobalCfgSettings()
   
   // Networking setup
   if ( radioDesktop->isChecked() ) {
-    // PC-BSD network setup
+    // TrueOS network setup
     tmpList << "netSaveDev=AUTO-DHCP-SLAAC";
   } else {
     // FreeBSD network setup
@@ -984,7 +984,7 @@ void Installer::startConfigGen()
     cfgList+= "";
 
     if ( radioDesktop->isChecked() ) {
-      // Doing PC-BSD Install
+      // Doing TrueOS Install
 
       QString lang;
       if ( comboLanguage->currentIndex() != 0 )
@@ -996,7 +996,7 @@ void Installer::startConfigGen()
       cfgList << "runCommand=sh /usr/local/share/trueos/scripts/sys-init.sh desktop " + lang;
 
       // Setup for a fresh system first boot
-      cfgList << "# Touch flags to enable PC-BSD setup at first boot";
+      cfgList << "# Touch flags to enable TrueOS setup at first boot";
       cfgList << "runCommand=touch /var/.trueos-firstboot";
       cfgList << "runCommand=touch /var/.trueos-firstgui";
 
@@ -1309,7 +1309,7 @@ void Installer::installFailed()
    labelInstallStatus->setText(tr("Failed!"));
 
    QMessageBox msgBox;
-   msgBox.setWindowTitle(tr("PC-BSD Installer"));
+   msgBox.setWindowTitle(tr("TrueOS Installer"));
    msgBox.setIcon(QMessageBox::Critical);
    msgBox.setText(tr("The installer has encountered an error and has been halted."));
    msgBox.setInformativeText(tr("Do you want to generate an error report?"));
@@ -1337,7 +1337,7 @@ void Installer::installFailed()
    }
 
    QMessageBox msgBox2;
-   msgBox2.setWindowTitle(tr("PC-BSD Installer"));
+   msgBox2.setWindowTitle(tr("TrueOS Installer"));
    msgBox2.setIcon(QMessageBox::Critical);
    msgBox2.setText(tr("Restart the system now?") );
    msgBox2.setStandardButtons(QMessageBox::No | QMessageBox::Yes);
@@ -1684,7 +1684,7 @@ QStringList Installer::getUsersCfgSettings()
 
 void Installer::closeEvent(QCloseEvent *event)
 {
-    int ret = QMessageBox::question(this, tr("PC-BSD Installer"),
+    int ret = QMessageBox::question(this, tr("TrueOS Installer"),
                                 tr("Are you sure you want to abort this installation?"),
                                 QMessageBox::No | QMessageBox::Yes,
                                 QMessageBox::No);
@@ -1739,7 +1739,7 @@ void Installer::checkSpaceWarning()
   // Lets print a nice handy warning for users with possible
   // low disk space issues
   if ( totalSize < targetSize ) {
-  QMessageBox::warning(this, tr("PC-BSD Installer"),
+  QMessageBox::warning(this, tr("TrueOS Installer"),
       QString(tr("Warning: The selected disk / partition is less than recommended %1GB.")).arg(tGB),
       QMessageBox::Ok,
       QMessageBox::Ok);
@@ -1751,7 +1751,7 @@ void Installer::checkSpaceWarning()
 
 void Installer::slotSaveConfigUSB()
 {
-  int ret = QMessageBox::question(this, tr("PC-BSD Installer"),
+  int ret = QMessageBox::question(this, tr("TrueOS Installer"),
            tr("This will save your installation configuration to a MSDOSFS/FAT32 formatted USB stick. Continue?"),
            QMessageBox::No | QMessageBox::Yes,
            QMessageBox::No);
@@ -1764,14 +1764,14 @@ void Installer::slotSaveConfigUSB()
   }
 
   // Prompt to insert USB stick
-  QMessageBox::information(this, tr("PC-BSD Installer"),
+  QMessageBox::information(this, tr("TrueOS Installer"),
           tr("Please insert a USB stick now, and click OK to continue."),
           QMessageBox::Ok,
           QMessageBox::Ok);
 
   // While USB is settling, this is a good time to ask for the config nickname
   bool ok;
-  QString cfgName = QInputDialog::getText(this, tr("PC-BSD Installer"),
+  QString cfgName = QInputDialog::getText(this, tr("TrueOS Installer"),
                  tr("Please enter the nickname you want to save this configuration as."), 
                  QLineEdit::Normal,
                  QString("default"), &ok);
@@ -1788,13 +1788,13 @@ void Installer::slotSaveConfigUSB()
   }
 
   if ( m.exitCode() != 0 ) {
-     QMessageBox::critical(this, tr("PC-BSD Installer"),
+     QMessageBox::critical(this, tr("TrueOS Installer"),
           tr("Failed saving config to USB media. Is the device working and formatted MSDOSFS/FAT32?"),
           QMessageBox::Ok,
           QMessageBox::Ok);
 
   } else {
-     QMessageBox::information(this, tr("PC-BSD Installer"),
+     QMessageBox::information(this, tr("TrueOS Installer"),
           tr("Configuration saved! You may now safely remove the USB media."),
           QMessageBox::Ok,
           QMessageBox::Ok);
@@ -1804,7 +1804,7 @@ void Installer::slotSaveConfigUSB()
 
 void Installer::slotLoadConfigUSB()
 {
-  int ret = QMessageBox::question(this, tr("PC-BSD Installer"),
+  int ret = QMessageBox::question(this, tr("TrueOS Installer"),
            tr("This will load a installation configuration file your MSDOSFS/FAT32 formatted USB stick. Continue?"),
            QMessageBox::No | QMessageBox::Yes,
            QMessageBox::No);
@@ -1817,7 +1817,7 @@ void Installer::slotLoadConfigUSB()
   }
 
   // Prompt to insert USB stick
-  QMessageBox::information(this, tr("PC-BSD Installer"),
+  QMessageBox::information(this, tr("TrueOS Installer"),
           tr("Please insert the USB stick now, and click OK to continue."),
           QMessageBox::Ok,
           QMessageBox::Ok);
@@ -1832,14 +1832,14 @@ void Installer::slotLoadConfigUSB()
   }
 
   if ( m.exitCode() != 0 ) {
-     QMessageBox::critical(this, tr("PC-BSD Installer"),
+     QMessageBox::critical(this, tr("TrueOS Installer"),
           tr("Failed loading saved config file from the USB media. Is the device working and formatted MSDOSFS/FAT32?"),
           QMessageBox::Ok,
           QMessageBox::Ok);
      return;
 
   } else {
-     QMessageBox::information(this, tr("PC-BSD Installer"),
+     QMessageBox::information(this, tr("TrueOS Installer"),
           tr("Configuration loaded! You may now safely remove the USB media."),
           QMessageBox::Ok,
           QMessageBox::Ok);
@@ -1852,10 +1852,10 @@ void Installer::slotLoadConfigUSB()
   QStringList cfgs = cDir.entryList(QDir::Files);
 
   bool ok;
-  QString cfgFile = QInputDialog::getItem(this, tr("PC-BSD Installer"),
+  QString cfgFile = QInputDialog::getItem(this, tr("TrueOS Installer"),
                                        tr("Config File:"), cfgs, 0, false, &ok);
   if (!ok || cfgFile.isEmpty()) {
-    QMessageBox::critical(this, tr("PC-BSD Installer"),
+    QMessageBox::critical(this, tr("TrueOS Installer"),
           tr("Canceled config script install"),
           QMessageBox::Ok,
           QMessageBox::Ok);
@@ -1866,7 +1866,7 @@ void Installer::slotLoadConfigUSB()
   QStringList fileContents;
   QFile file("/tmp/pc-sys/" + cfgFile);
   if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-    QMessageBox::critical(this, tr("PC-BSD Installer"),
+    QMessageBox::critical(this, tr("TrueOS Installer"),
           tr("Failed reading /tmp/pc-sys/") + " " + cfgFile,
           QMessageBox::Ok,
           QMessageBox::Ok);
@@ -1878,9 +1878,9 @@ void Installer::slotLoadConfigUSB()
   file.close();
 
   // Display the file in an OK information box so the user can inspect it
-  QMessageBox::information(this, tr("PC-BSD Installer Config Script"), fileContents.join("\n"), QMessageBox::Ok, QMessageBox::Ok);
+  QMessageBox::information(this, tr("TrueOS Installer Config Script"), fileContents.join("\n"), QMessageBox::Ok, QMessageBox::Ok);
   
-  ret = QMessageBox::question(this, tr("PC-BSD Installer"),
+  ret = QMessageBox::question(this, tr("TrueOS Installer"),
            tr("Start the install using this config file?") + "\n" + cfgFile,
            QMessageBox::No | QMessageBox::Yes,
            QMessageBox::No);
