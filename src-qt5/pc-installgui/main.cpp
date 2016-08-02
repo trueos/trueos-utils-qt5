@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
     }
 
     // Show our splash screen, so the user doesn't freak that that it takes a few seconds to show up
-    QPixmap pixmap(":/PCBSD/images/trueosheader.png");
+    QPixmap pixmap(":/PCBSD/images/trueosheader.svg");
     QLabel splash(0,Qt::SplashScreen | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
     QRect desk = QApplication::desktop()->screenGeometry();
     if(pixmap.width() > desk.width()/2){ pixmap = pixmap.scaledToWidth( desk.width()/2, Qt::SmoothTransformation); }
