@@ -599,12 +599,6 @@ bool Installer::promptInstallToZpool()
   {
     zpoolTarget=ans;
 
-    textEditDiskSummary->clear();
-    QStringList summary = getDiskSummary();
-    for ( int i=0; i < summary.count(); ++i)
-      textEditDiskSummary->append(summary.at(i));
-    textEditDiskSummary->moveCursor(QTextCursor::Start);
-
     return true;
   }
 
@@ -663,7 +657,13 @@ void Installer::slotNext()
 	  comboBootLoader->setEnabled(true);
 	}
      }
+     // Re-gen the config / summary
      startConfigGen();
+     textEditDiskSummary->clear();
+     QStringList summary = getDiskSummary();
+     for ( int i=0; i < summary.count(); ++i)
+       textEditDiskSummary->append(summary.at(i));
+     textEditDiskSummary->moveCursor(QTextCursor::Start);
    }
 
    // If the chosen disk is too small or partition is invalid, don't continue
