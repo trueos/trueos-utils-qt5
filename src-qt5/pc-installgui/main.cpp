@@ -67,9 +67,15 @@ int main(int argc, char *argv[])
 
     // Show our splash screen, so the user doesn't freak that that it takes a few seconds to show up
     QPixmap pixmap(":/PCBSD/images/trueosheader.png");
-    QSplashScreen *splash = new QSplashScreen(pixmap);
-    splash->show();
-
+    QLabel splash(0,Qt::SplashScreen | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
+    QRect desk = QApplication::desktop()->screenGeometry();
+    if(pixmap.width() > desk.width()/2){ pixmap = pixmap.scaledToWidth( desk.width()/2, Qt::SmoothTransformation); }
+    splash.setPixmap(pixmap);
+    splash.setGeometry(desk.x()+(desk.width()-pixmap.width())/2, desk.y()+(desk.height()-pixmap.height())/2, pixmap.width(), pixmap.height());
+    splash.show();
+    //Process events a couple time to ensure the splashscreen is visible *right now*
+    QApplication::processEvents();
+    QApplication::processEvents();
     Installer w;
 
     // Center the installer
@@ -84,10 +90,10 @@ int main(int argc, char *argv[])
     w.setGeometry((wid/2) - (wizWid/2), (hig/2) - (wizHig/2), wizWid, wizHig);
 
     // Start the init
-    w.initInstall(splash);
+    w.initInstall(); //splash);
 
     w.show();
-    splash->finish(&w);
+    splash.close();
     
     int ret = a.exec();
     if(compositor.state()==QProcess::Running){ compositor.terminate(); }

@@ -34,7 +34,7 @@ class Installer : public QMainWindow, private Ui::Installer
 public:
     Installer(QWidget *parent = 0);
     ~Installer();
-    void initInstall(QSplashScreen *);
+    void initInstall(); //QSplashScreen *);
 
 private slots:
     void slotAbort();

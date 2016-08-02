@@ -142,16 +142,16 @@ void Installer::slotSaveKeyLayout(QString model, QString layout, QString variant
   qDebug() << "Changed keyboard layout:" << curKeyModel << curKeyLayout << curKeyVariant;
 }
 
-void Installer::initInstall(QSplashScreen *splash)
+void Installer::initInstall() //QSplashScreen *splash)
 {
-    splash->showMessage("Loading translations", Qt::AlignHCenter | Qt::AlignBottom);
+    //splash->showMessage("Loading translations", Qt::AlignHCenter | Qt::AlignBottom);
     // load languages
     QString langCode;
     bool foundLang = false;
     comboLanguage->clear();
     languages = Scripts::Backend::languages();
 
-    splash->showMessage("Loading localizations", Qt::AlignHCenter | Qt::AlignBottom);
+    //splash->showMessage("Loading localizations", Qt::AlignHCenter | Qt::AlignBottom);
     QString curLang = Scripts::Backend::detectCountryCode(); 
     for (int i=0; i < languages.count(); ++i) {
         QString languageStr = languages.at(i);
@@ -174,7 +174,7 @@ void Installer::initInstall(QSplashScreen *splash)
     
 
     // Load any package scheme data
-    splash->showMessage("Loading packages", Qt::AlignHCenter | Qt::AlignBottom);
+    //splash->showMessage("Loading packages", Qt::AlignHCenter | Qt::AlignBottom);
 
     // Do check for available meta-pkgs on boot media
     if ( QFile::exists("/tmp/no-meta-pkgs") )
@@ -208,7 +208,7 @@ void Installer::initInstall(QSplashScreen *splash)
     	isLiveMode = false;
 
     // Get available memory
-    splash->showMessage("Loading system information", Qt::AlignHCenter | Qt::AlignBottom);
+    //splash->showMessage("Loading system information", Qt::AlignHCenter | Qt::AlignBottom);
     systemMemory = Scripts::Backend::systemMemory();
 
     // Load up the keyboard information
@@ -218,7 +218,7 @@ void Installer::initInstall(QSplashScreen *splash)
     connect(pushDiskCustomize,SIGNAL(clicked()), this, SLOT(slotDiskCustomizeClicked()));
 
     // Load the disks
-    splash->showMessage("Loading disk information", Qt::AlignHCenter | Qt::AlignBottom);
+    //splash->showMessage("Loading disk information", Qt::AlignHCenter | Qt::AlignBottom);
     loadDiskInfo();
     
 }
