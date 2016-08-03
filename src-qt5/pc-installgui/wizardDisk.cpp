@@ -35,7 +35,7 @@ void wizardDisk::programInit()
   connect(treeMounts,SIGNAL(currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *)),this,SLOT(slotTreeDiskChanged()));
   treeMounts->setContextMenuPolicy(Qt::CustomContextMenu);
   connect(treeMounts,SIGNAL(customContextMenuRequested(const QPoint &)),this,SLOT(slotTreeMountsRightClick()));
-  connect(pushTerminal, SIGNAL(clicked()), this, SLOT(slotTerminal()));
+  //connect(pushTerminal, SIGNAL(clicked()), this, SLOT(slotTerminal()));
 
   // ZFS Mode Page
   connect(comboZFSMode,SIGNAL(currentIndexChanged(int)),this,SLOT(slotCheckComplete()));
@@ -155,9 +155,9 @@ void wizardDisk::accept()
   if ( radioAdvanced->isChecked() && groupZFSPool->isChecked() )
      zpoolName = lineZpoolName->text();
 
-  if ( radioExpert->isChecked() )
+  /*if ( radioExpert->isChecked() )
     emit saved(sysFinalDiskLayout, partType, zpoolName, force4K);
-  else
+  else*/
     emit saved(sysFinalDiskLayout, partType, zpoolName, force4K);
   close();
 }
@@ -166,8 +166,8 @@ int wizardDisk::nextId() const
 {
   switch (currentId()) {
      case Page_Intro:
-       if (radioExpert->isChecked())
-         return Page_Expert;
+       //if (radioExpert->isChecked())
+         //return Page_Expert;
        if (radioBasic->isChecked()) {
          radioGPT->setChecked(true);
          groupScheme->setVisible(false);
@@ -1162,13 +1162,13 @@ void wizardDisk::generateCustomDiskLayout()
 void wizardDisk::generateConfirmationText()
 {
   // If running in expert mode, we just create a simple config / confirmation
-  if ( radioExpert->isChecked() ) {
+  /*if ( radioExpert->isChecked() ) {
     QStringList filesystem;
     filesystem << "MANUAL" << "/mnt" ;
     sysFinalDiskLayout << filesystem;
     textConfirmation->setText(tr("Installing to file-system mounted at /mnt"));
     return;
-  }
+  }*/
 
   QList<QStringList> copyList;
   QStringList summaryList;
@@ -1331,10 +1331,10 @@ void wizardDisk::generateConfirmationText()
   textConfirmation->setText(summaryList.join("<br>"));
 }
 
-void wizardDisk::slotTerminal()
+/*void wizardDisk::slotTerminal()
 {
   system("qterminal &");
-}
+}*/
 
 void wizardDisk::setRestoreMode()
 {

@@ -37,7 +37,7 @@ private slots:
     void slotAddFS();
     void slotSaveFSResize(int);
     void slotTreeMountsRightClick();
-    void slotTerminal();
+    //void slotTerminal();
     void slotSwapSize();
  
     // QMenu slots

@@ -155,17 +155,6 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QRadioButton" name="radioExpert">
-         <property name="text">
-          <string>FreeBSD Experts (CLI manual mode)</string>
-         </property>
-         <property name="icon">
-          <iconset resource="sysinstaller.qrc">
-           <normaloff>:/modules/images/expert.png</normaloff>:/modules/images/expert.png</iconset>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
