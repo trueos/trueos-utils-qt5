@@ -462,8 +462,14 @@ void Installer::slotHelp()
 	case 5:
 		pcHelp->dialogInit(HELPTEXT5);
 		break;
+	case 6:
+		pcHelp->dialogInit(HELPTEXT6);
+		break;
+	case 7:
+		pcHelp->dialogInit(HELPTEXT7);
+		break;
 	default:
-		pcHelp->dialogInit("Missing help file...");
+		pcHelp->dialogInit("No additional information for this page.");
 		break;
 	}
 	pcHelp->show();
