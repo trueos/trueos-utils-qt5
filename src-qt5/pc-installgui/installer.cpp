@@ -349,7 +349,7 @@ QStringList Installer::getDiskSummary()
   if ( ! zpoolTarget.isEmpty() )
   {
     summaryList << "";
-    summaryList << tr("Installing to new dataset in existing zpool: %s", zpoolTarget.toLatin1());
+    summaryList << tr("Installing to new dataset in existing zpool: %1", zpoolTarget.toLatin1());
     return summaryList;
   }
 
