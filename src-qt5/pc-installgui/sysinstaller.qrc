@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/modules">
+    <file>images/sysadm_circle.svg</file>
     <file>images/trueos.png</file>
-    <file>images/appcafe.png</file>
     <file>images/lifepreserver.png</file>
     <file>images/configure.png</file>
     <file>images/usb.png</file>

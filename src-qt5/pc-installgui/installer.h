@@ -211,8 +211,8 @@ private:
     // Restore Options
     QStringList restOpts;
 
-    // Settings for AppCafe remote
-    QStringList appCafeSettings;
+    // Settings for remote access
+    QStringList appCafeSettings; //Disused for now
 
 protected:
     void closeEvent(QCloseEvent *event);

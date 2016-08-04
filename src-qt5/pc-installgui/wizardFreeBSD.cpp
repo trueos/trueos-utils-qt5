@@ -114,12 +114,12 @@ void wizardFreeBSD::accept()
     << lineIPv6DNS->text();
 
   QStringList appCafeSettings;
-  if ( checkAppCafe->isChecked() )
+  /*if ( checkAppCafe->isChecked() )
   {
     appCafeSettings << "TRUE";
   } else {
     appCafeSettings << "FALSE";
-  }
+  }*/
 
   emit saved(lineRootPW->text(), lineName->text(), lineUsername->text(), linePW->text(), comboShell->currentText(), lineHostname->text(), checkSSH->isChecked(), checkPorts->isChecked(), netSettings, appCafeSettings);
   close();
@@ -211,4 +211,3 @@ void wizardFreeBSD::slotCheckComplete()
    // Validate this page
    validatePage();
 }
-

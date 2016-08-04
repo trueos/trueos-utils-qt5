@@ -589,7 +589,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
   fSSH = ssh;
   fPORTS = ports;
   fNetSettings = netSettings;
-  appCafeSettings = appcafe;
+  appCafeSettings = appcafe; //Disused for now
   installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 1);
 
   // Generate the pc-sysinstall config
