@@ -1775,7 +1775,7 @@ background: transparent;</string>
          </property>
          <property name="icon">
           <iconset resource="pc-firstboot.qrc">
-           <normaloff>:/PCBSD/images/input-keyboard.png</normaloff>:/PCBSD/images/input-keyboard.png</iconset>
+           <normaloff>:/TRUEOS/images/input-keyboard.png</normaloff>:/TRUEOS/images/input-keyboard.png</iconset>
          </property>
          <property name="iconSize">
           <size>
