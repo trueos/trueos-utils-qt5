@@ -20,11 +20,11 @@
 #define FBSD_MINVAR 500
 #define FBSD_MINUSR 1000
 
-// Set the minimum sizes for PCBSD
-#define PCBSD_MINSIZE 3000
-#define PCBSD_MINROOT 1000
-#define PCBSD_MINVAR 500
-#define PCBSD_MINUSR 1500
+// Set the minimum sizes for TRUEOS
+#define TRUEOS_MINSIZE 3000
+#define TRUEOS_MINROOT 1000
+#define TRUEOS_MINVAR 500
+#define TRUEOS_MINUSR 1500
 
 namespace Scripts {
 

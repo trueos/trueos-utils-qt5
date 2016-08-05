@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="sysinstaller.qrc">
-    <normaloff>:/PCBSD/images/input-keyboard.png</normaloff>:/PCBSD/images/input-keyboard.png</iconset>
+    <normaloff>:/TRUEOS/images/input-keyboard.png</normaloff>:/TRUEOS/images/input-keyboard.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
