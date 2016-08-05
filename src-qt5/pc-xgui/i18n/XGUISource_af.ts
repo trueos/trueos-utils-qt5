@@ -9,8 +9,7 @@
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>The attempt failed, check settings please.</translation>
     </message>
     <message>
         <source>Your display has been configured.
