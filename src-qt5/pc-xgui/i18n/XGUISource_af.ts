@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="XGUISource_af">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Yo, keep these settings?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
@@ -39,7 +38,7 @@ Keep these settings?</source>
     </message>
     <message>
         <source>General</source>
-        <translation>Algemeen </translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <source>Screen Resolution:</source>
@@ -131,7 +130,7 @@ If your screen does not appear, please wait and you will be returned to this scr
             </translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
         <translation type="unfinished">
             </translation>
     </message>
