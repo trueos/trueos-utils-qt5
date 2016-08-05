@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="XGUISource_tg">
 <context>
     <name>QObject</name>
     <message>
@@ -14,8 +14,8 @@
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Sample Config
+Changeme?</translation>
     </message>
 </context>
 <context>
@@ -111,8 +111,8 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>Огоҳӣ!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD монитори шуморо ба худкор муайян карда натавонист. Шумо бояд андозаҳои бозсозии амудӣ ва уфуқии мониторро дар варақаи &apos;Иловагӣ&apos; муайян кунед.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD монитори шуморо ба худкор муайян карда натавонист. Шумо бояд андозаҳои бозсозии амудӣ ва уфуқии мониторро дар варақаи 'Иловагӣ' муайян кунед.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
