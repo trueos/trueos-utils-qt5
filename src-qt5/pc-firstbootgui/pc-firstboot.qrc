@@ -25,7 +25,7 @@
     <file>images/systemsettings.png</file>
     <file>images/trueosheader.svg</file>
   </qresource>
-  <qresource prefix="/PCBSD">
+  <qresource prefix="/TRUEOS">
     <file>images/xfce.png</file>
     <file>images/lxde.png</file>
     <file>images/kde.png</file>

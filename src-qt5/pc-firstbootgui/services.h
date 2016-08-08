@@ -1,5 +1,5 @@
-#ifndef _PCBSD_FIRSTBOOT_SERVICES_H
-#define _PCBSD_FIRSTBOOT_SERVICES_H
+#ifndef _TRUEOS_FIRSTBOOT_SERVICES_H
+#define _TRUEOS_FIRSTBOOT_SERVICES_H
 
 #include <QString>
 #include <QStringList>

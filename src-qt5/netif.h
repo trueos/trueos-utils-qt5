@@ -22,8 +22,8 @@
  *   OTHER DEALINGS IN THE SOFTWARE.                                       *
  ***************************************************************************/
  
-#ifndef _PCBSD_NETIF_H_
-#define _PCBSD_NETIF_H_
+#ifndef _TRUEOS_NETIF_H_
+#define _TRUEOS_NETIF_H_
 
 #include <qstringlist.h>
 #include <qstring.h>

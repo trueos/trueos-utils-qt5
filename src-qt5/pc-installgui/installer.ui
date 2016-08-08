@@ -152,7 +152,7 @@ background: transparent;</string>
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="sysinstaller.qrc">:/PCBSD/images/trueosheader.svg</pixmap>
+             <pixmap resource="sysinstaller.qrc">:/TRUEOS/images/trueosheader.svg</pixmap>
             </property>
             <property name="scaledContents">
              <bool>false</bool>
@@ -1280,7 +1280,7 @@ selection-background-color: rgb(160, 160, 160);</string>
          </property>
          <property name="icon">
           <iconset resource="sysinstaller.qrc">
-           <normaloff>:/PCBSD/images/input-keyboard.png</normaloff>:/PCBSD/images/input-keyboard.png</iconset>
+           <normaloff>:/TRUEOS/images/input-keyboard.png</normaloff>:/TRUEOS/images/input-keyboard.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -1338,7 +1338,7 @@ selection-background-color: rgb(160, 160, 160);</string>
          </property>
          <property name="icon">
           <iconset resource="sysinstaller.qrc">
-           <normaloff>:/PCBSD/images/terminal.png</normaloff>:/PCBSD/images/terminal.png</iconset>
+           <normaloff>:/TRUEOS/images/terminal.png</normaloff>:/TRUEOS/images/terminal.png</iconset>
          </property>
          <property name="iconSize">
           <size>

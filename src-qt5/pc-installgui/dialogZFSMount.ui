@@ -52,7 +52,7 @@
        </property>
        <property name="icon">
         <iconset resource="sysinstaller.qrc">
-         <normaloff>:/PCBSD/images/edit_add.png</normaloff>:/PCBSD/images/edit_add.png</iconset>
+         <normaloff>:/TRUEOS/images/edit_add.png</normaloff>:/TRUEOS/images/edit_add.png</iconset>
        </property>
       </widget>
      </item>

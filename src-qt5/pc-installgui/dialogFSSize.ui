@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>:/PCBSD/images/pbidiricon.png</normaloff>:/PCBSD/images/pbidiricon.png</iconset>
+    <normaloff>:/TRUEOS/images/pbidiricon.png</normaloff>:/TRUEOS/images/pbidiricon.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">

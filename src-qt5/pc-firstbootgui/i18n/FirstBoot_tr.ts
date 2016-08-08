@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
-        <translation>Yeni PCBSD sisteminize hoşgeldiniz! Yukarıdan dil ayarını değiştirip sonraki tuşuna tıklayarak kuruluma başlayabilirsiniz.</translation>
+        <translation>Yeni TRUEOS sisteminize hoşgeldiniz! Yukarıdan dil ayarını değiştirip sonraki tuşuna tıklayarak kuruluma başlayabilirsiniz.</translation>
     </message>
     <message>
         <source>System Timezone</source>
