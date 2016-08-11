@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="FirstBoot_fa">
 <context>
     <name>Installer</name>
     <message>
@@ -36,7 +36,7 @@
         <translation>رمز عبور (تکرار)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
         <translation>سيستم و رمزعبور كاربر root به شما اجازه تغيير در سيستم عامل را مي دهد، سعي كنيد كه ازدسترس كابران غيرقابل اعتماد دور نگهداري شود.</translation>
     </message>
     <message>
@@ -60,7 +60,7 @@
         <translation>&amp;جستجوي مجدد  </translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
         <translation>شبكه هاي بي سيم زير پيدا شد. برروي شبكه مورد نظر خود كليك كنيد و برروي كليد بعدي كليك كنيد.</translation>
     </message>
     <message>
@@ -89,13 +89,11 @@
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>پوشهٔ خانهٔ کاربر را سربسته خواهد کرد</translation>
     </message>
     <message>
         <source>Encrypt user files</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>پرونده‌های کاربری را سربسته کن</translation>
     </message>
     <message>
         <source>System Hostname</source>
