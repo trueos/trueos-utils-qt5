@@ -655,11 +655,11 @@ void Installer::slotNext()
 	if ( promptInstallToZpool() )
         {
 	  // Disable the customize options
-	  pushDiskCustomize->setEnabled(false);
-	  comboBootLoader->setEnabled(false);
+	  pushDiskCustomize->setHidden(true);
+	  comboBootLoader->setHidden(true);
         } else {
-	  pushDiskCustomize->setEnabled(true);
-	  comboBootLoader->setEnabled(true);
+	  pushDiskCustomize->setHidden(false);
+	  comboBootLoader->setHidden(false);
 	}
      }
      // Re-gen the config / summary
