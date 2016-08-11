@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation>La instalación esta completa! Presiona Finalizar para entrar a tu nuevo escritorio,</translation>
+        <translation>La instalación esta completa! Presione Finalizar para entrar a su nuevo escritorio.</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
@@ -109,7 +109,7 @@
     </message>
     <message>
         <source>Hostname may only contain letters and numbers</source>
-        <translation>El nombre del sistema sólo puede contener letras y números.</translation>
+        <translation>El nombre del sistema sólo puede contener letras y números</translation>
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
@@ -189,11 +189,11 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Cancelar    </translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Network Key Error</source>
-        <translation>Error de clave de red    </translation>
+        <translation>Error de Clave de Red</translation>
     </message>
     <message>
         <source>Error: The entered network keys do not match!
@@ -222,15 +222,15 @@
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation>(usted puede escribir en el espacio a continuación para probar la configuración seleccionada).</translation>
+        <translation>(usted puede escribir en el espacio a continuación para probar la configuración seleccionada.)</translation>
     </message>
     <message>
         <source>&amp;Apply</source>
-        <translation>&amp;Aplicar  </translation>
+        <translation>&amp;Aplicar</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>&amp;Cerrar </translation>
+        <translation>&amp;Cerrar</translation>
     </message>
 </context>
 </TS>
