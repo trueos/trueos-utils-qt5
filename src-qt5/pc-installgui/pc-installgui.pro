@@ -100,7 +100,12 @@ TRANSLATIONS =  i18n/SysInstaller_af.ts \
 scripts.path=/usr/local/share/trueos/pc-installgui
 scripts.extra=cp scripts/* $(INSTALL_ROOT)/usr/local/share/trueos/pc-installgui/ && chmod 755 $(INSTALL_ROOT)/usr/local/share/trueos/pc-installgui/*.sh
 
-INSTALLS += target scripts
+isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
+
+dotrans.path=/usr/local/share/trueos/i18n/
+dotrans.extra=cd i18n && $${LRELEASE} -nounfinished *.ts && cp *.qm $(INSTALL_ROOT)/usr/local/share/trueos/i18n/
+
+INSTALLS += target dotrans scripts
 
 FORMS += installer.ui dialogCheckHardware.ui dialogFSSize.ui dialogHelp.ui wizardFreeBSD.ui dialogKeyboard.ui wizardDisk.ui dialogInfoBox.ui wizardRestore.ui
 
