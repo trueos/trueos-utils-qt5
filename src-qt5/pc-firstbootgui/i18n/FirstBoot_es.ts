@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="FirstBoot_es">
 <context>
     <name>Installer</name>
     <message>
@@ -36,8 +36,8 @@
         <translation>Contraseña (Repetir)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>La contraseña del sistema o &quot;root&quot; permite realizar cambios a tu sistema operativo, y debe ser cuidada de usuarios no confiables. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>La contraseña del sistema o "root" permite realizar cambios a tu sistema operativo, y debe ser cuidada de usuarios no confiables. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Re-escanear</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Se encontraron las siguientes redes inalambricas. Clic en la que deseas conectarte. Si deseas omitir, clic &quot;Siguiente&quot;. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Se encontraron las siguientes redes inalambricas. Clic en la que deseas conectarte. Si deseas omitir, clic "Siguiente". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -113,18 +113,15 @@
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Por favor seleccione la zona horaria de su ubicación.</translation>
     </message>
     <message>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Puede usarse cuando haga arranque dual</translation>
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Establecer BIOS a tiempo UTC</translation>
     </message>
 </context>
 <context>
