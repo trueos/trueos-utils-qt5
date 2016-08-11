@@ -97,7 +97,12 @@ TRANSLATIONS =  i18n/FirstBoot_af.ts \
 		i18n/FirstBoot_zh_TW.ts \
 		i18n/FirstBoot_zu.ts
 
-INSTALLS += target
+isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
+
+dotrans.path=/usr/local/share/trueos/i18n/
+dotrans.extra=cd i18n && $${LRELEASE} -nounfinished *.ts && cp *.qm $(INSTALL_ROOT)/usr/local/share/trueos/i18n/
+
+INSTALLS += target dotrans
 
 FORMS += firstboot.ui dialogHelp.ui dialogKeyboard.ui dialogInfoBox.ui netKey.ui
 RESOURCES += pc-firstboot.qrc
