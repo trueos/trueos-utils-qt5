@@ -86,5 +86,9 @@ TRANSLATIONS =  i18n/webkitviewer_af.ts \
 		i18n/webkitviewer_zh_TW.ts \
 		i18n/webkitviewer_zu.ts
 
+isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
 
-INSTALLS += target
+dotrans.path=/usr/local/share/trueos/i18n/
+dotrans.extra=cd i18n && $${LRELEASE} -nounfinished *.ts && cp *.qm $(INSTALL_ROOT)/usr/local/share/trueos/i18n/
+
+INSTALLS += target dotrans
