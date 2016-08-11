@@ -104,5 +104,9 @@ temdriver.extra = cp resources/templates/driver/* $(INSTALL_ROOT)/usr/local/shar
 nvdetect.path = /usr/local/share/trueos/xorg-gui/nvidia-detect
 nvdetect.extra = cp resources/nvidia-detect/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/nvidia-detect/
 
-INSTALLS += target bin scripts conf fluxbox carddetect settings temscripts temheader temdriver nvdetect
+isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
 
+dotrans.path=/usr/local/share/trueos/i18n/
+dotrans.extra=cd i18n && $${LRELEASE} -nounfinished *.ts && cp *.qm $(INSTALL_ROOT)/usr/local/share/trueos/i18n/
+
+INSTALLS += target bin scripts conf fluxbox carddetect settings temscripts temheader temdriver nvdetect dotrans
