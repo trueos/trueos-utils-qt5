@@ -27,7 +27,7 @@
     <message>
         <location filename="../installer.ui" line="360"></location>
         <source>&lt;Version&gt;</source>
-        <translation type="unfinished">&lt;Version&gt;</translation>
+        <translation>&lt;Version&gt;</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="390"></location>
@@ -607,17 +607,17 @@ Klišķiniet uz Beigt, lai restartētu. Pēc restartēšanas jūs varat atvienot
     <message>
         <location filename="../dialogKeyboard.ui" line="236"></location>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation type="unfinished"></translation>
+        <translation>( zemāk esošajā laukumā jūs varat pārbaudīt izvēlētos iestatījumus. )</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="280"></location>
         <source>&amp;Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Piemērot [&amp;A]</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="287"></location>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizvērt [&amp;C]</translation>
     </message>
 </context>
 <context>
@@ -625,316 +625,316 @@ Klišķiniet uz Beigt, lai restartētu. Pēc restartēšanas jūs varat atvienot
     <message>
         <location filename="../wizardDisk.ui" line="104"></location>
         <source>This wizard will walk you through the disk setup process. Please choose the setup mode you wish to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Šis vednis palīdzēs veikt diska iestatīšanas procesu. Lūdzu, izvēlieties uzstādīšanas veidu, kuru vēlaties izmantot.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="130"></location>
         <source>Setup Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzstādīšanas veids</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="136"></location>
         <source>Basic (New to BSD or disk partitioning)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pamata (BSD vai diska nodalījumu veidošanā nepieredzējušiem)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="150"></location>
         <source>Advanced (Experienced with file-systems)</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzlabots (pieredzējušiem darbā ar failu sistēmām)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="215"></location>
         <source>Selected Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Izvēlētais disks</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="238"></location>
         <source>Selected Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Izvēlētais nodalījums</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="255"></location>
         <source>ZFS pool name</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS pūla nosaukums</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="304"></location>
         <source>Force ZFS 4K block size</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzspiest ZFS 4K bloka izmēru</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="379"></location>
         <source>Please select the disk or partition you wish to install onto. </source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlieties disku vai nodalījumu, kur vēlaties uzstādīt. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="402"></location>
         <source>Partition Scheme</source>
-        <translation type="unfinished"></translation>
+        <translation>Nodalījuma shēma</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="408"></location>
         <source>GPT (Best for new hardware)</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT (ieteicams jaunai aparatūrai)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="418"></location>
         <source>MBR (Legacy)</source>
-        <translation type="unfinished"></translation>
+        <translation>MBR (vecākai aparatūrai)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="499"></location>
         <source>If this is a single disk ZFS install, you can continue, otherwise please select the mirror / raid mode and disks below. </source>
-        <translation type="unfinished"></translation>
+        <translation>Ja šī ir viena diska ZFS uzstādīšana, tad jūs varat turpināt, pretējā gadījumā, lūdzu, zemāk izvēlieties spoguļa / raid veidu un diskus. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="525"></location>
         <source>Add additional disks to zpool</source>
-        <translation type="unfinished"></translation>
+        <translation>Pievienot papildu diskus zpūlam</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="560"></location>
         <source>stripe</source>
-        <translation type="unfinished"></translation>
+        <translation>svītru</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="568"></location>
         <source>ZFS Virtual Device Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS virtuālās ierīces veids</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="577"></location>
         <location filename="../wizardDisk.cpp" line="329"></location>
         <source>Please select at least 1 other drive for mirroring</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlieties vismaz 1 citu diskdzini spoguļošanai</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="596"></location>
         <source>Note: Using ZFS mirror/raidz can only be enabled when doing full-disk installations</source>
-        <translation type="unfinished"></translation>
+        <translation>Piezīme: ZFS spoguli/raidz var iespējot tikai pilna diska uzstādīšanas gadījumos</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="677"></location>
         <source>ZFS allows the use of read-cache (L2Arc) and write log devices (ZIL). If you wish to enable either of these, please select the disks to be used below. </source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS pieļauj izmantot lasīšanas kešatmiņu (L2Arc) un rakstīšanas žurnāla ierīces (ZIL). Ja vēlaties iespējot kādu no tām, lūdzu, zemāk izvēlieties tam piemērotu disku. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="703"></location>
         <source>Enable cache device</source>
-        <translation type="unfinished"></translation>
+        <translation>Iespējot kešatmiņas ierīci</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="721"></location>
         <source>Enable log device</source>
-        <translation type="unfinished"></translation>
+        <translation>Iespējot žurnāla ierīci</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="812"></location>
         <source>TrueOS can encrypt your disks using the GELI framework. This is full-disk encryption and will require a password at startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>TrueOS var šifrēt jūsu diskus izmantojot GELI platformu. Tā ir visa diska šifrēšana un prasīs paroli startēšanas brīdī.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="856"></location>
         <source>Encrypt disk with GELI (Requires GPT disk scheme)</source>
-        <translation type="unfinished"></translation>
+        <translation>Šifrēt disku ar GELI (pieprasa GPT disku shēmu)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="877"></location>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Parole</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="904"></location>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Parole (atkārtoti)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1013"></location>
         <source>Below you may adjust the file-system mount points. For most users the defaults will work best. </source>
-        <translation type="unfinished"></translation>
+        <translation>Zemāk jūs varat pielabot failu sistēmu montēšanas punktus. Vairumam lietotāju noklusējuma iestatījumi darbosies vislabāk. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1060"></location>
         <source>New Partition Size (Total)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaunā nodalījuma izmērs (kopā)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1087"></location>
         <source>(MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>(MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1094"></location>
         <source>Swap Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Swap izmērs</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1118"></location>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Pievienot [&amp;A]</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1129"></location>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Noņemt [&amp;R]</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1235"></location>
         <source>You have chosen Expert mode. In this mode you are able to launch a terminal window and use the command-line to manually partition your disk. When you are finished, make sure to mount your filesystems to /mnt to begin the installation. </source>
-        <translation type="unfinished"></translation>
+        <translation>Jūs izvēlējāties eksperta režīmu. Šajā režīmā jūs varat startēt termināla logu un lietot komandrindu, lai manuāli disku sadalītu nodalījumos. Kad esat pabeiguši, pārliecinieties, ka esat piemontējuši failu sistēmu pie /mnt, lai uzsāktu uzstādīšanu. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1285"></location>
         <source>&amp;Launch terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Startēt termināli [&amp;L]</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1407"></location>
         <source>Please check the disk summary below and click finish to save your settings. </source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, pārbaudiet zemāk redzamo diska kopsavilkumu un noklišķiniet beigt, lai saglabātu jūsu iestatījumus. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="96"></location>
         <source>Use entire disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietot visu disku</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="339"></location>
         <source>Please select 2 or 4 additional drives for raidz1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlietiets 2 vai 4 papildus diskdziņus priekš raidz1</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="350"></location>
         <source>Please select 3, 5, or 9 additional drives for raidz2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlietiets 3, 5 vai 9 papildus diskdziņus priekš raidz2</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="361"></location>
         <source>Please select 4, 6, or 10 additional drives for raidz3</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlietiets 4, 6 vai 10 papildus diskdziņus priekš raidz3</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="372"></location>
         <source>Please select the additional disks to stripe</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, ievēlieties papildus diskdziņus priekš svītrām</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="618"></location>
         <source>ZFS Mounts</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS piemontētais</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="618"></location>
         <source>ZFS Options</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS opcijas</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="645"></location>
         <source>The original system datasets / mount-points will be automatically restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sākotnējās sistēmas datu kopas / montēšanas punkti tiks automātiski atjaunoti.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="733"></location>
         <source>Resizing</source>
-        <translation type="unfinished"></translation>
+        <translation>Izmēru maiņa</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="745"></location>
         <source>Remove mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>Noņemt montēšanas punktu</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="746"></location>
         <source>Are you sure you want to remove this mount point?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vai esat pārliecināti, ka vēlaties noņemt šo montēšanas punktu?</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="763"></location>
         <source>Enter mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>Ievadiet montēšanas punktu</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="764"></location>
         <source>Please enter the new mount-point:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, ievadiet jaunu montēšnas punktu:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="772"></location>
         <source>Invalid Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Nederīgs montējums</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"></location>
         <source>Mount point should start with '/'</source>
-        <translation type="unfinished"></translation>
+        <translation>Montēšanas punktam jāsākas ar '/'</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="841"></location>
         <source>Editing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Labošana:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="984"></location>
         <source>Enter SWAP size</source>
-        <translation type="unfinished"></translation>
+        <translation>Ievadiet SWAP izmēru</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="985"></location>
         <source>Size (MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>Izmērs (MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1183"></location>
         <source>The disk will be setup with the following configuration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Disks tiks uzstādīts, izmantojot sekojošo konfigurāciju:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>Disks:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
         <source>Mirroring:</source>
-        <translation type="unfinished"></translation>
+        <translation>Spoguļošana:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1242"></location>
         <location filename="../wizardDisk.cpp" line="1282"></location>
         <location filename="../wizardDisk.cpp" line="1312"></location>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nodalījums:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1243"></location>
         <location filename="../wizardDisk.cpp" line="1283"></location>
         <location filename="../wizardDisk.cpp" line="1313"></location>
         <source>FileSystem:</source>
-        <translation type="unfinished"></translation>
+        <translation>Failu sistēma:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1244"></location>
         <location filename="../wizardDisk.cpp" line="1284"></location>
         <location filename="../wizardDisk.cpp" line="1314"></location>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Izmērs:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1258"></location>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS datu kopas:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1260"></location>
         <location filename="../wizardDisk.cpp" line="1315"></location>
         <source>Mount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Montējums:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1263"></location>
         <location filename="../wizardDisk.cpp" line="1317"></location>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcijas:</translation>
     </message>
 </context>
 <context>
@@ -942,104 +942,104 @@ Klišķiniet uz Beigt, lai restartētu. Pēc restartēšanas jūs varat atvienot
     <message>
         <location filename="../wizardFreeBSD.ui" line="95"></location>
         <source>This wizard will walk you though the setup of your new server. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>Šis vednis palīdzēs jums jaunā servera uzstādīšanā. Noklikšķiniet uz tālāk, lai sāktu. </translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="215"></location>
         <source>Please enter the root password for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, ievadiet saknes paroli šim serverim</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="247"></location>
         <location filename="../wizardFreeBSD.ui" line="413"></location>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Parole</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="277"></location>
         <location filename="../wizardFreeBSD.ui" line="427"></location>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Parole (atkārtoti)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="377"></location>
         <source>Please create a user for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izveidojiet lietotāju šim serverim</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="389"></location>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Vārds</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="399"></location>
         <source>Username</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietotājvārds</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="453"></location>
         <source>Default shell</source>
-        <translation type="unfinished"></translation>
+        <translation>Noklusējuma čaula</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"></location>
         <source>Please enter a system hostname and remote login preference.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, ievadiet resursdatora nosaukumu un attālinātās piekļuves preferences.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="616"></location>
         <source>Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>Resursdatora nosaukums</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="664"></location>
         <source>Enable remote SSH login</source>
-        <translation type="unfinished"></translation>
+        <translation>Iespejot attālināto SSH piekļuvi</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="733"></location>
         <source>Please select a network device to configure for this system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlieties tīkla ierīci, kuru konfigurēt šai sistēmai.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="765"></location>
         <source>Network Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Tīkla interfeiss</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="775"></location>
         <source>IP Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IP adrese</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="785"></location>
         <source>Netmask</source>
-        <translation type="unfinished"></translation>
+        <translation>Tīkla maska</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="795"></location>
         <source>Nameserver (DNS)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nosaukumu serveris (DNS)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="812"></location>
         <source>Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Vārteja</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="825"></location>
         <source>IPv6 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 adrese</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="835"></location>
         <source>IPv6 Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 vārteja</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="845"></location>
         <source>IPv6 Nameserver</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 nosaukumu serveris</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="879"></location>
@@ -1047,17 +1047,17 @@ Klišķiniet uz Beigt, lai restartētu. Pēc restartēšanas jūs varat atvienot
         <location filename="../wizardFreeBSD.ui" line="911"></location>
         <location filename="../wizardFreeBSD.ui" line="931"></location>
         <source>000.000.000.000</source>
-        <translation type="unfinished"></translation>
+        <translation>000.000.000.000</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1083"></location>
         <source>Please select any optional features to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lūdzu, izvēlieties jebkurus papildus uzstādāmos līdzekļus.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1125"></location>
         <source>Install ports tree (/usr/ports)</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzstādīt portu koku (/usr/ports)</translation>
     </message>
 </context>
 <context>
@@ -1065,121 +1065,124 @@ Klišķiniet uz Beigt, lai restartētu. Pēc restartēšanas jūs varat atvienot
     <message>
         <location filename="../wizardRestore.ui" line="95"></location>
         <source>This wizard will walk you though the process of restoring your system from a Life-Preserver backup. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>Šis vednis palīdzēs jums atjaunot sistēmu no Life-Preserver rezerves kopijas. Klikšķiniet uz tālāk, lai sāktu. </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="199"></location>
         <source>To get started with a system restore, please select the type of backup to restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lai sāktu sistēmas atjaunošanu, lūdzu, izvēlieties rezerves kopijas tipu, no kuras atjaunot:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="229"></location>
         <source>SSH Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH atjaunošana</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="235"></location>
         <source>Backup Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Rezerves kopiju serveris</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="249"></location>
         <source>Host Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Resursdatora nosaukums</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="263"></location>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietotāja vārds</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="283"></location>
         <source>SSH Port</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH ports</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="429"></location>
         <source>If you saved your Life-Preserver key onto a USB drive, insert it now and select USB key, otherwise you may wish to use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja jūs saglabājāt Life-Preserver atslēgu uz USB ierīces, tad pievienojiet to tagad un izvēlieties USB atslēgu, pretējā gadījuma jums var savajadzēties lietot paroles autentificēšanos.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="455"></location>
         <source>Server Authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Servera autentificēšanās</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="461"></location>
         <source>Use USB key</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietot USB atslēgu</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="471"></location>
         <source>Use password authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Lietot paroles autentificēšanos</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="530"></location>
         <source>The following systems are backed up on this server, select the one you wish to restore. </source>
-        <translation type="unfinished"></translation>
+        <translation>Uz šī servera sekojošām sistēmām ir izveidotas rezerves kopijas, izvēlieties vienu, kuru vēlētos atjaunot. </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="572"></location>
         <source>Restore System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Atjaunot izvēlēto sistēmu</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="669"></location>
         <source>Restore Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Atjaunošanas kopsavilkums</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="749"></location>
         <source>The system is ready to be restored, click Finish to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistēma ir gatava atjaunošanai, klikšķiniet uz Beigt, lai turpinātu.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="123"></location>
         <source>No keys found!</source>
-        <translation type="unfinished"></translation>
+        <translation>Atslēgas netika atrastas!</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="124"></location>
         <source>No Auth keys could be found on that memory stick!
 Please try another USB stick or use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atmiņas kartē netika atrastas autentificēšanas atslēgas!
+Lūdzu, mēģiniet citu USB zibatmiņu vai lietojiet paroles autentificēšanos.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="132"></location>
         <location filename="../wizardRestore.cpp" line="143"></location>
         <source>Connection failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Savienojums neizdevās!</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="133"></location>
         <source>Could not connect to the backup server!
 Please check that the server is reachable and verify your user/password.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nevar savienoties ar rezerves kopiju serveri!
+Lūdzu, pārbaudiet vai serveris ir sasniedzams un pārbaudiet jūsu lietotāju/paroli.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="144"></location>
         <source>Could not connect to the backup server!
 Please check your hostname and that the backup server is reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nevar savienoties ar rezerves kopiju serveri!
+Lūdzu, pārbaudiet jūsu resursdatora nosaukumu un to, vai rezerves kopiju serveris ir sasniedzams.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="155"></location>
         <source>Will restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atjaunos no:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Select the SSH key to use</source>
-        <translation type="unfinished"></translation>
+        <translation>Izvēlieties, kuru SSH atslēgu lietot</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Key File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atslēgas fails:</translation>
     </message>
 </context>
 </TS>
