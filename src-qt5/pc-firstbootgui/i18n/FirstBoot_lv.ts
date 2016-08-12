@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="FirstBoot_lv">
 <context>
     <name>Installer</name>
     <message>
@@ -36,8 +36,8 @@
         <translation>Parole (atkārtoti)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Sistēmas jeb &quot;root&quot; parole atļauj Tev veikt izmaiņas operētājsistēmā un tā jātur drošībā, atstatu no neuzticamiem lietotājiem. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>Sistēmas jeb "root" parole atļauj Tev veikt izmaiņas operētājsistēmā un tā jātur drošībā, atstatu no neuzticamiem lietotājiem. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Pārskenēt</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Atrasti šādi bezvadu tīkli. Noklikšķini to kuram vēlies pieslēgties. Ja vēlies šo izlaist - klišķini &quot;Nākošais&quot;. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Atrasti šādi bezvadu tīkli. Noklikšķini to kuram vēlies pieslēgties. Ja vēlies šo izlaist - klišķini "Nākošais". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -113,18 +113,15 @@
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Lūdzu, izvēlieties jūsu atrašanās vietas laika joslu.</translation>
     </message>
     <message>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Var lietot sistēmu duālās palaišanas gadījumā</translation>
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Iestatīt BIOS lietot UTC laiku</translation>
     </message>
 </context>
 <context>
