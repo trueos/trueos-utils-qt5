@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="FirstBoot_de">
 <context>
     <name>Installer</name>
     <message>
@@ -36,8 +36,8 @@
         <translation>Passwort (wiederholen)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Das System- oder &quot;Root&quot;-Passwort erlaubt Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzern ferngehalten werden. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>Das System- oder "Root"-Passwort erlaubt Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzern ferngehalten werden. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;erneut scannen</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie die an, mit der Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unten auf &quot;Weiter&quot;. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie die an, mit der Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unten auf "Weiter". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
-        <translation>Benutzerverzeichnisse werden verschlüsselt.</translation>
+        <translation>Benutzerverzeichnisse werden verschlüsselt</translation>
     </message>
     <message>
         <source>Encrypt user files</source>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation>Bitte wählen Sie die Zeitzone für Ihren Ort</translation>
+        <translation>Bitte wählen Sie die Zeitzone für Ihren Ort.</translation>
     </message>
     <message>
         <source>May be used when dual-booting</source>
