@@ -125,38 +125,39 @@
         <location filename="../installer.ui" line="1064"></location>
         <source>Your system is now installed!
  Click Finish to reboot. After rebooting you may eject the install media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dein System ist nun installiert!
+Klicke Fertig. Nach dem Neustart kann das Installationsmedium entfernt werden.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1227"></location>
         <source>Display hardware compatibility diagnostic</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildschirm-Hardware Kompatibilitätsdiagnose</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1250"></location>
         <source>Display help for the current screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Hilfe für den aktuellen Bildschirm anzeigen</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1276"></location>
         <source>Launch the on-screen keyboard</source>
-        <translation type="unfinished"></translation>
+        <translation>On-Screen Tastatur starten</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1302"></location>
         <source>Switch between US layout and user selected layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Umschalten zwischen US-Tastaturlayout und vorher gewähltem Layout</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1331"></location>
         <location filename="../installer.ui" line="1334"></location>
         <source>Emergency Shell and Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Notfall-Shell und Werkzeuge</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1370"></location>
         <source>Cancel the installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation abbrechen</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1376"></location>
@@ -167,13 +168,13 @@
         <location filename="../installer.ui" line="1395"></location>
         <location filename="../installer.cpp" line="48"></location>
         <source>&amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zurück</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1414"></location>
         <location filename="../installer.cpp" line="49"></location>
         <source>&amp;Next</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nächste</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="235"></location>
@@ -197,7 +198,7 @@
         <location filename="../installer.cpp" line="1874"></location>
         <location filename="../installer.cpp" line="1888"></location>
         <source>TrueOS Installer</source>
-        <translation type="unfinished"></translation>
+        <translation>TrueOS Installationsprogramm</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="236"></location>
