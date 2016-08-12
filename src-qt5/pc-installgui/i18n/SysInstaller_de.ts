@@ -119,7 +119,7 @@
     <message>
         <location filename="../installer.ui" line="920"></location>
         <source>Your system is now being installed! This process may take a while, depending upon the installation options chosen, and system speed. You will be notified when the installation is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Das System wird nun installiert. Je nach gewählten Installationspaketen, kann dies eine Weile dauern. Du wirst benachrichtigt, wenn die Installation beendet ist.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1064"></location>
