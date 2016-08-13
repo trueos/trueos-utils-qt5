@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="XGUISource_de">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation>Diese Anzeigeeinstellungen behalten?</translation>
+        <translation>Beibehalten dieser Anzeigeeinstellungen?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation>Der vorherige Versuch schlug fehl, bitte die Einstellungen überprüfen und erneut versuchen.</translation>
+        <translation>Der vorherige Versuch schlug fehl. Bitte prüfen Sie Ihre Einstellungen versuchen Sie es erneut.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
         <translation>Ihre Anzeige wurde konfiguriert.
-Diese Einstellungen beibehalten?</translation>
+Beibehalten dieser Einstellungen?</translation>
     </message>
 </context>
 <context>
     <name>XGUI</name>
     <message>
         <source>Display Settings</source>
-        <translation>Bildschirm-Einstellungen</translation>
+        <translation>Anzeigeeinstellungen</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation>&amp;Anwenden</translation>
+        <translation>Anwenden</translation>
     </message>
     <message>
         <source>Skip</source>
@@ -50,11 +50,11 @@ Diese Einstellungen beibehalten?</translation>
     </message>
     <message>
         <source>24bits</source>
-        <translation>24bit</translation>
+        <translation>24 Bit</translation>
     </message>
     <message>
         <source>Video Driver</source>
-        <translation>Video-Treiber</translation>
+        <translation>Videotreiber</translation>
     </message>
     <message>
         <source>Advanced</source>
@@ -62,7 +62,7 @@ Diese Einstellungen beibehalten?</translation>
     </message>
     <message>
         <source>Monitor Settings</source>
-        <translation>Bildschirm-Einstellungen</translation>
+        <translation>Monitoreinstellungen</translation>
     </message>
     <message>
         <source>Horizontal Sync:</source>
@@ -83,8 +83,8 @@ Diese Einstellungen beibehalten?</translation>
     <message>
         <source>The settings you have specified will now be tested.
 If your screen does not appear, please wait and you will be returned to this screen.</source>
-        <translation>Ihre neuen Einstellungen werden jetzt getestet.
-Wenn sie nicht funktionieren sollten, warten Sie einfach bis dieser Bildschirm wieder erscheint.</translation>
+        <translation>Die Einstellungen, die Sie angegeben, werden jetzt getestet.
+Wenn Ihr Bildschirm nicht erscheint, warten Sie bitte und Sie werden zu diesem Bildschirm zurückkommen.</translation>
     </message>
     <message>
         <source>Video Card:</source>
@@ -96,11 +96,11 @@ Wenn sie nicht funktionieren sollten, warten Sie einfach bis dieser Bildschirm w
     </message>
     <message>
         <source>Enable Dual-Head support</source>
-        <translation>Dual-Head Unterstützung aktivieren</translation>
+        <translation>Aktiviere Mehrfachmonitorunterstützung</translation>
     </message>
     <message>
         <source>Monitor Resolution:</source>
-        <translation>Bildschirm-Auflösung:</translation>
+        <translation>Monitorauflösung:</translation>
     </message>
     <message>
         <source>Unknown Monitor</source>
@@ -111,19 +111,19 @@ Wenn sie nicht funktionieren sollten, warten Sie einfach bis dieser Bildschirm w
         <translation>Warnung!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD konnte Ihren Monitor nicht automatisch erkennen. Sie müssen die horizontale und vertikale Bildfrequenz Ihres Monitors unter &apos;Erweitert&apos; angeben.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>TrueOS war nicht in der Lage Ihren Monitor automatisch zu erkennen. Sie könnten die horizontale und vertikale Bildfrequenz vom Monitor im Reiter 'Erweitert' angeben müssen.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>Dual-Head-Unterstützung ist für Systeme mit einer Grafikkarte und zwei Monitoren. Andere Setups können durch editieren der /etc/X11/xorg.conf erreicht werden</translation>
+        <translation>Mehrfachmonitorunterstützung ist für Systeme mit einer Grafikkarte und zwei Monitoren gestaltet. Andere Einstellungen können durch bearbeiten von /etc/X11/xorg.conf erreicht werden</translation>
     </message>
 </context>
 <context>
     <name>dialogConfirm</name>
     <message>
         <source>Confirm Resolution</source>
-        <translation>Auflösung bestätigen</translation>
+        <translation>Bestätige Auflösung</translation>
     </message>
     <message>
         <source>Do you wish to use this resolution?</source>
