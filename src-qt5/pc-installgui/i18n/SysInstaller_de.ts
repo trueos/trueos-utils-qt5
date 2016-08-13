@@ -141,7 +141,7 @@
     <message>
         <location filename="../installer.ui" line="1276"></location>
         <source>Launch the on-screen keyboard</source>
-        <translation>Starte die Bildschirmtastatur</translation>
+        <translation>Starten die Bildschirmtastatur</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1302"></location>
@@ -607,7 +607,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../dialogKeyboard.ui" line="236"></location>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation>( Sie könnten in den Raum darunter tippen, um Ihre ausgewählten Einstellungen zu testen. )</translation>
+        <translation>( Sie könnten in den Raum unterhalb tippen, um Ihre ausgewählten Einstellungen zu testen. )</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="280"></location>
@@ -640,7 +640,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.ui" line="150"></location>
         <source>Advanced (Experienced with file-systems)</source>
-        <translation>Fortgeschritten (erfahren mit Dateisystemen)</translation>
+        <translation>Erweitert (erfahren mit Dateisystemen)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="215"></location>
@@ -685,7 +685,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.ui" line="499"></location>
         <source>If this is a single disk ZFS install, you can continue, otherwise please select the mirror / raid mode and disks below. </source>
-        <translation>Wenn das ist ein Einfestplatten-ZFS-Installieren ist, können Sie fortfahren. Andernfalls wählen Sie untenstehend den Spiegel- bzw. RAID-Modus und Festplatten aus. </translation>
+        <translation>Wenn das ist ein Einfestplatten-ZFS-Installieren ist, können Sie fortfahren. Andernfalls wählen Sie unterhalb den Spiegel- bzw. RAID-Modus und Festplatten aus. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="525"></location>
@@ -716,7 +716,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.ui" line="677"></location>
         <source>ZFS allows the use of read-cache (L2Arc) and write log devices (ZIL). If you wish to enable either of these, please select the disks to be used below. </source>
-        <translation>ZFS erlaubt die Benutzung von Lese-Cache-Geräten (L2ARC) und Schreibprotokollgeräten (ZIL). Wenn Sie eines dieser aktivieren möchten, wählen Sie bitte untenstehend die Festplatten aus, die dafür benutzt werden sollen. </translation>
+        <translation>ZFS erlaubt die Benutzung von Lese-Cache-Geräten (L2ARC) und Schreibprotokollgeräten (ZIL). Wenn Sie eines dieser aktivieren möchten, wählen Sie bitte unterhalb die Festplatten aus, die dafür benutzt werden sollen. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="703"></location>
@@ -751,7 +751,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.ui" line="1013"></location>
         <source>Below you may adjust the file-system mount points. For most users the defaults will work best. </source>
-        <translation>Untenstehend könnten Sie die Dateisystemeinhängpunkte verstellen. Für die meisten Benutzerinnen und Benutzer funktionieren die Voreinstellungen am besten. </translation>
+        <translation>Unterhalb könnten Sie die Dateisystemeinhängpunkte verstellen. Für die meisten Benutzerinnen und Benutzer funktionieren die Voreinstellungen am besten. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1060"></location>
@@ -791,7 +791,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.ui" line="1407"></location>
         <source>Please check the disk summary below and click finish to save your settings. </source>
-        <translation>Bitte prüfen Sie die untenstehende Festplattenzusammenfassung und klicken Sie Abschließen, um Ihre Einstellungen zu speichern. </translation>
+        <translation>Bitte prüfen Sie die unterhalb Festplattenzusammenfassung und klicken Sie Abschließen, um Ihre Einstellungen zu speichern. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="96"></location>
@@ -861,7 +861,7 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
     <message>
         <location filename="../wizardDisk.cpp" line="772"></location>
         <source>Invalid Mount</source>
-        <translation>nicht valides Einhängen</translation>
+        <translation>Ungültiges Einhängen</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"></location>
