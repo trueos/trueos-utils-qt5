@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="FirstBoot_ru">
 <context>
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>Переключение между раскладкой US клавиатуры и пользовательской раскладкой.</translation>
+        <translation>Переключение между раскладкой US клавиатуры и пользовательской раскладкой</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -36,8 +36,8 @@
         <translation>Пароль (повторите)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Пароль системного администратора («root»), позволяет вам вносить изменения в систему. Необходимо сохранять пароль в безопасном месте.</translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>Пароль системного администратора («root»), позволяет вам вносить изменения в систему. Необходимо сохранять пароль в безопасном месте. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,7 +60,7 @@
         <translation>Обновить [&amp;R]</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
         <translation>Найдены следующие беспроводные сети. Щелкните по сети, к которой вы хотите подключиться или нажмите «Далее», чтобы пропустить этот шаг. </translation>
     </message>
     <message>
