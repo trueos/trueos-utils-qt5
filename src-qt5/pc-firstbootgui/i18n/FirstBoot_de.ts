@@ -5,7 +5,7 @@
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>Zwischen dem Ausgewähltem und US-Layout wechseln</translation>
+        <translation>Wechsele zwischen US-Belegung und von Ihnen ausgewählter Belegung</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -17,15 +17,15 @@
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
-        <translation>Willkommen bei Ihren neuen Betriebssystem PC-BSD! Oberhalb können Sie Ihre Sprache auswählen, beim klicken auf Weiter startet der Installationsprozess.</translation>
+        <translation>Willkommen bei Ihren neuen TrueOS-System! Sie könnten Ihre Sprache oberhalb ändern. Und klicken Sie Weiter den Einrichtungsprozess zu beginnen.</translation>
     </message>
     <message>
         <source>System Timezone</source>
-        <translation>System-Zeitzone</translation>
+        <translation>Systemzeitzone</translation>
     </message>
     <message>
         <source>Root Password</source>
-        <translation>Root-Passwort</translation>
+        <translation>root-Passwort</translation>
     </message>
     <message>
         <source>Password</source>
@@ -33,15 +33,15 @@
     </message>
     <message>
         <source>Password (Repeat)</source>
-        <translation>Passwort (wiederholen)</translation>
+        <translation>Passwort (Wiederholen)</translation>
     </message>
     <message>
         <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Das System- oder "Root"-Passwort erlaubt Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzern ferngehalten werden. </translation>
+        <translation>Das System- oder "Root"-Passwort erlaubt es Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzerinnen und Benutzern ferngehalten werden. </translation>
     </message>
     <message>
         <source>Create a User</source>
-        <translation>Einen Benutzer erstellen</translation>
+        <translation>Erstelle eine Benutzerin oder einen Benutzer</translation>
     </message>
     <message>
         <source>Name</source>
@@ -49,59 +49,59 @@
     </message>
     <message>
         <source>Username</source>
-        <translation>Benutzername</translation>
+        <translation>Benutzerin- oder Benutzername</translation>
     </message>
     <message>
         <source>Connect to a Wireless Network</source>
-        <translation>Mit einem kabellosen Netzwerk verbinden</translation>
+        <translation>Verbinden zu einem kabellosen Netzwerk</translation>
     </message>
     <message>
         <source>&amp;Rescan</source>
-        <translation>&amp;erneut scannen</translation>
+        <translation>&amp;Wiederscannen</translation>
     </message>
     <message>
         <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
-        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie die an, mit der Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unten auf "Weiter". </translation>
+        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie das eine, mit dem Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unterhalb "Weiter". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation>Installation ist nun fertiggestellt! Drücken Sie Fertig, um sich zum neuen Desktop anzumelden.</translation>
+        <translation>Die Einrichtung ist nun fertiggestellt! Drücken Sie Abschließen, um sich zu Ihrer neuen Arbeitsoberfläche anzumelden.</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
-        <translation>&amp;Fertig</translation>
+        <translation>&amp;Abschließen</translation>
     </message>
     <message>
         <source>Change the installation language</source>
-        <translation>Die Installationssprache wechseln</translation>
+        <translation>Wechseln der Installationssprache</translation>
     </message>
     <message>
         <source>Set the system timezone</source>
-        <translation>Zeitzone des System einstellen</translation>
+        <translation>Einstellen der Systemzeitzone</translation>
     </message>
     <message>
         <source>Display help for the current screen</source>
-        <translation>Hilfe für die aktuelle Ansicht anzeigen</translation>
+        <translation>Anzeigen der Hilfe für den aktuelle Bildschirm</translation>
     </message>
     <message>
         <source>Launch the on-screen keyboard</source>
-        <translation>Bildschirmtastatur starten</translation>
+        <translation>Starten der Bildschirmtastatur</translation>
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
-        <translation>Benutzerverzeichnisse werden verschlüsselt</translation>
+        <translation>Wird das home-Verzeichnis der Benutzerin oder des Benutzers verschlüsselt</translation>
     </message>
     <message>
         <source>Encrypt user files</source>
-        <translation>Benutzerdateien verschlüsseln</translation>
+        <translation>Verschlüsseln der Benutzerin- oder Benutzerdateien</translation>
     </message>
     <message>
         <source>System Hostname</source>
-        <translation>System Hostname</translation>
+        <translation>Systemhostname</translation>
     </message>
     <message>
         <source>Enter a valid hostname, or leave default.</source>
-        <translation>Geben Sie einen einen gültigen Hostnamen ein oder übernehmen Sie die Standardeinstellung.</translation>
+        <translation>Geben Sie einen gültigen Hostnamen ein oder belassen Sie die Voreinstellung.</translation>
     </message>
     <message>
         <source>Please enter a hostname</source>
@@ -109,7 +109,7 @@
     </message>
     <message>
         <source>Hostname may only contain letters and numbers</source>
-        <translation>Der Hostname darf ausschließlich aus Buchstaben und Ziffern bestehen</translation>
+        <translation>Der Hostname kann nur aus Buchstaben und Ziffern bestehen</translation>
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
@@ -121,34 +121,34 @@
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation>Stellt BIOS auf Weltzeit (UTC)</translation>
+        <translation>Setze BIOS auf Weltzeit (UTC)</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>This screen allows you to select the system language you wish to use.</source>
-        <translation>In dieser Ansicht können Sie die Sprache Ihres Systems auswählen.</translation>
+        <translation>Dieser Bildschirm erlaubt es Ihnen die Sprache auszuwählen, die Sie benutzen möchten.</translation>
     </message>
     <message>
         <source>This screen lets you pick the default timezone for your computer.</source>
-        <translation>In dieser Ansicht können Sie die Standard-Zeitzone Ihres Rechners einstellen.</translation>
+        <translation>Dieser Bildschirm lässt Sie die voreingestellte Zeitzone für Ihren Computer nehmen.</translation>
     </message>
     <message>
         <source>On this screen please enter the root password you wish to use. This password is used for full system access, and should be something secure.</source>
-        <translation>In dieser Ansicht geben Sie Ihre root-Passwort ein. Mit diesem Passwort haben Sie vollen Zugang zu Ihrem System und sollte daher ausreichend sicher gewählt werden.</translation>
+        <translation>Auf diesem Bildschirm geben Sie bitte Ihre root-Passwort, das Sie benutzen möchten, ein. Dieses Passwort wird für den vollen Systemzugang benutzt und sollte etwas sicheres sein.</translation>
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
-        <translation>In dieser Ansicht können Sie einen Benutzer zum Einloggen auf Ihrer Arbeitsplatz anlegen. Weitere Benutzer können im Control-Panel angelegt werden.</translation>
+        <translation>Auf diesem Bildschirm werden Sie eine Benutzerin oder einen Benutzer erstellen müssen, um sich bei der Arbeitsoberfläche anzumelden. Zusätzliche Benutzerinnen und Benutzer könnten in der Kontrollzentrale erstellt werden.</translation>
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
-        <translation>In dieser Ansicht können Sie eine Verbindung zum einem verfügbaren WLAN herstellen. Sollte es sich um ein verstecktes Netzwerk handeln, erfolgt die Einstellung später im Netzwerk-Manager.</translation>
+        <translation>Auf diesem Bildschirm könnten Sie sich zu einem verfügbaren WLAN verbinden. Wenn Sie ein verborgenes Netzwerk haben, könnten Sie es später in der Netzwerkverwaltung hinzufügen.</translation>
     </message>
     <message>
         <source>The computer setup is now finished! Click Finish to log into your new Desktop.</source>
-        <translation>Die Rechnereinstellungen sind nun beendet. Bitte auf Beenden klicken, um zum Login zu Ihrem Arbeitsplatz zu gelangen.</translation>
+        <translation>Die Computereinrichtung ist nun abgeschlossen. Klicken Sie Abschließen, um sich zu Ihrer neuen Arbeitsoberfläche anzumelden.</translation>
     </message>
 </context>
 <context>
@@ -177,11 +177,11 @@
     </message>
     <message>
         <source>Network Key (Repeat)</source>
-        <translation>Netzwerkschlüssel (wiederholen)</translation>
+        <translation>Netzwerkschlüssel (Wiederholen)</translation>
     </message>
     <message>
         <source>Show network key as text</source>
-        <translation>Netzwerkschlüssel als Text anzeigen</translation>
+        <translation>Zeige Netzwerkschlüssel als Text</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -193,7 +193,7 @@
     </message>
     <message>
         <source>Network Key Error</source>
-        <translation>Netzwerkschlüssel Fehler</translation>
+        <translation>Netzwerkschlüsselfehler</translation>
     </message>
     <message>
         <source>Error: The entered network keys do not match!
@@ -210,7 +210,7 @@
     </message>
     <message>
         <source>Key Layout</source>
-        <translation>Tastatur-Layout</translation>
+        <translation>Tastenbelegung</translation>
     </message>
     <message>
         <source>Variant</source>
@@ -218,11 +218,11 @@
     </message>
     <message>
         <source>Keyboard Model</source>
-        <translation>Tastatur-Modell</translation>
+        <translation>Tastaturmodell</translation>
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation>( Sie können in den Freiraum schreiben, um Ihre Einstellungen zu testen. )</translation>
+        <translation>( Sie könnten in den Raum unterhalb tippen, um Ihre ausgewählten Einstellungen zu testen. )</translation>
     </message>
     <message>
         <source>&amp;Apply</source>
