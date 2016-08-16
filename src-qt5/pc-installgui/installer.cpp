@@ -1791,7 +1791,7 @@ void Installer::slotSaveConfigUSB()
   // Now lets try to save the media
   qDebug() << "Running: /root/save-to-usb.sh" << cfgName;
   QProcess m;
-  m.start(QString("/root/save-to-usb.sh"), QStringList() << cfgName);
+  m.start(QString("xterm -e /root/save-to-usb.sh"), QStringList() << cfgName);
   while(m.state() == QProcess::Starting || m.state() == QProcess::Running) {
      m.waitForFinished(200);
      QCoreApplication::processEvents();
