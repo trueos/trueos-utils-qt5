@@ -1607,9 +1607,6 @@ QStringList Installer::getDeskPkgCfg()
      // Office Suite
      //pkgList << "editors/libreoffice";
 
-     // Fonts
-     pkgList << "x11-fonts/noto-lite" << "x11-fonts/droid-fonts-ttf";
-
      //Mouse Cursors
      pkgList << "x11-themes/cursor-jimmac-theme";
 
@@ -1620,8 +1617,16 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
 
      // Include i18n stuff?
-     //if ( comboLanguage->currentIndex() != 0 )
-       pkgList << "misc/trueos-i18n" << "misc/trueos-i18n-qt5";
+     if ( comboLanguage->currentIndex() != 0 )
+       pkgList << "x11-fonts/noto";
+     else
+       pkgList << "x11-fonts/noto-lite";
+
+     // Extra fonts
+     pkgList << "x11-fonts/droid-fonts-ttf";
+     
+     // i18n packages, will eventually go away
+     pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
