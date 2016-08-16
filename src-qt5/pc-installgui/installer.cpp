@@ -1258,7 +1258,7 @@ void Installer::startInstall()
   // Update the UI elements if doing a restore
   if ( radioRestore->isChecked() )
   {
-      labelFinished->setText(tr("Your system is now restored!\nClick Finish to reboot. After rebooting you may eject the install media."));
+      labelFinished->setText(tr("Your system is now restored!\nClick Exit to close. After rebooting you may eject the install media."));
       groupInstall->setTitle(tr("System Restore"));
       labelInstallHeader->setText(tr("Your system is now being restored, this may take a while depending upon the size of your backup and network conditions."));
   }
@@ -1344,7 +1344,7 @@ void Installer::installFailed()
    QMessageBox msgBox2;
    msgBox2.setWindowTitle(tr("TrueOS Installer"));
    msgBox2.setIcon(QMessageBox::Critical);
-   msgBox2.setText(tr("Restart the system now?") );
+   msgBox2.setText(tr("Exit the installation now?") );
    msgBox2.setStandardButtons(QMessageBox::No | QMessageBox::Yes);
    msgBox2.setDefaultButton(QMessageBox::Yes);
    msgBox2.setDetailedText(sysLog);
@@ -1369,10 +1369,10 @@ void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus stat
   {
      installFailed();
   } else {
-    // Move to the final page, and show a finish button
+    // Move to the final page, and show a exit button
     proceed(true);
     nextButton->setEnabled(true);
-    nextButton->setText(tr("&Finish"));
+    nextButton->setText(tr("&Exit"));
     nextButton->disconnect();
     connect(nextButton, SIGNAL(clicked()), this, SLOT(slotFinished()));
     backButton->setEnabled(false);
