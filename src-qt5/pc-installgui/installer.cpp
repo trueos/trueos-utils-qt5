@@ -1011,6 +1011,17 @@ void Installer::startConfigGen()
         cfgList << "runExtCommand=cp /etc/X11/xorg.conf ${FSMNT}/etc/X11/xorg.conf";
       }
 
+      // Check if we need to load i915kms
+      QProcess kldproc;
+      kldproc.start(QString("kldstat"), QStringList());
+      while(kldproc.state() == QProcess::Starting || kldproc.state() == QProcess::Running) {
+        kldproc.waitForFinished(200);
+        QCoreApplication::processEvents();
+      }
+      if ( kldproc.readAll().simplified().indexOf("i915kms") != -1 ) {
+        cfgList << "runCommand=echo 'kldload_i915kms=\"i915kms\"' >> /etc/rc.conf";
+      }
+
       if ( comboLanguage->currentIndex() != 0 ) {
         QString lang = languages.at(comboLanguage->currentIndex());
         // Grab the language code
@@ -1258,7 +1269,7 @@ void Installer::startInstall()
   // Update the UI elements if doing a restore
   if ( radioRestore->isChecked() )
   {
-      labelFinished->setText(tr("Your system is now restored!\nClick Finish to reboot. After rebooting you may eject the install media."));
+      labelFinished->setText(tr("Your system is now restored!\nClick Exit to close. After rebooting you may eject the install media."));
       groupInstall->setTitle(tr("System Restore"));
       labelInstallHeader->setText(tr("Your system is now being restored, this may take a while depending upon the size of your backup and network conditions."));
   }
@@ -1344,7 +1355,7 @@ void Installer::installFailed()
    QMessageBox msgBox2;
    msgBox2.setWindowTitle(tr("TrueOS Installer"));
    msgBox2.setIcon(QMessageBox::Critical);
-   msgBox2.setText(tr("Restart the system now?") );
+   msgBox2.setText(tr("Exit the installation now?") );
    msgBox2.setStandardButtons(QMessageBox::No | QMessageBox::Yes);
    msgBox2.setDefaultButton(QMessageBox::Yes);
    msgBox2.setDetailedText(sysLog);
@@ -1369,10 +1380,10 @@ void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus stat
   {
      installFailed();
   } else {
-    // Move to the final page, and show a finish button
+    // Move to the final page, and show a exit button
     proceed(true);
     nextButton->setEnabled(true);
-    nextButton->setText(tr("&Finish"));
+    nextButton->setText(tr("&Exit"));
     nextButton->disconnect();
     connect(nextButton, SIGNAL(clicked()), this, SLOT(slotFinished()));
     backButton->setEnabled(false);
@@ -1607,9 +1618,6 @@ QStringList Installer::getDeskPkgCfg()
      // Office Suite
      //pkgList << "editors/libreoffice";
 
-     // Fonts
-     pkgList << "x11-fonts/noto-lite" << "x11-fonts/droid-fonts-ttf";
-
      //Mouse Cursors
      pkgList << "x11-themes/cursor-jimmac-theme";
 
@@ -1620,8 +1628,16 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
 
      // Include i18n stuff?
-     //if ( comboLanguage->currentIndex() != 0 )
-       pkgList << "misc/trueos-i18n" << "misc/trueos-i18n-qt5";
+     if ( comboLanguage->currentIndex() != 0 )
+       pkgList << "x11-fonts/noto";
+     else
+       pkgList << "x11-fonts/noto-lite";
+
+     // Extra fonts
+     pkgList << "x11-fonts/droid-fonts-ttf";
+     
+     // i18n packages, will eventually go away
+     pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
@@ -1786,7 +1802,7 @@ void Installer::slotSaveConfigUSB()
   // Now lets try to save the media
   qDebug() << "Running: /root/save-to-usb.sh" << cfgName;
   QProcess m;
-  m.start(QString("/root/save-to-usb.sh"), QStringList() << cfgName);
+  m.start(QString("xterm -e /root/save-to-usb.sh"), QStringList() << cfgName);
   while(m.state() == QProcess::Starting || m.state() == QProcess::Running) {
      m.waitForFinished(200);
      QCoreApplication::processEvents();

@@ -23,6 +23,7 @@ void widgetKeyboard::programInit(QStringList kModel, QStringList kLayouts, QStri
   cKeyLayout = cLayout;
   cKeyVarient = cVarient;
   if(cKeyLayout.isEmpty()){ cKeyLayout = "us"; }
+
   connectKeyboardSlots();
 }
 
@@ -49,8 +50,8 @@ void widgetKeyboard::connectKeyboardSlots()
 
   // Set the default keyboard stuff
   setKbDefaults();
-  slotCurrentKbLayoutChanged(0);
   groupKeyboard->setEnabled(true);
+  slotCurrentKbLayoutChanged(0);
 
 
   // Connect all our slots
@@ -59,13 +60,17 @@ void widgetKeyboard::connectKeyboardSlots()
   connect(listKbLayouts, SIGNAL(itemSelectionChanged()), this, SLOT(slotSelectedKbItemChanged()));
   connect(listKbVariants,SIGNAL(itemSelectionChanged()), this, SLOT(slotSelectedKbItemChanged()));
   connect(comboBoxKeyboardModel,SIGNAL(currentIndexChanged(int)), this, SLOT(slotUpdateKbOnSys()));
+
 }
 
 void widgetKeyboard::slotCurrentKbLayoutChanged(int row)
 {
     if (row != -1) {
-        QString kbLayout = listKbLayouts->currentItem()->text();
-        setKbVariants(kbLayout);
+	if ( listKbLayouts->currentItem() ) {
+          QString kbLayout = listKbLayouts->currentItem()->text();
+	  if (! kbLayout.isEmpty() )
+            setKbVariants(kbLayout);
+	}
     }
 
    slotUpdateKbOnSys();
@@ -139,11 +144,16 @@ void widgetKeyboard::slotSelectedKbItemChanged()
 // set the keyboard layout and variant defaults
 void widgetKeyboard::setKbDefaults()
 {
-	// Find the current key layout as the default
-	for ( int i = 0; i < listKbLayouts->count(); i++ )
-		if ( listKbLayouts->item(i)->text().indexOf("("+cKeyLayout+")") != -1 )
-    			listKbLayouts->setCurrentRow(i);
+  if ( cKeyLayout == ("en_GB") )
+    cKeyLayout = "gb";
 
-	int index = comboBoxKeyboardModel->findText(cKeyModel);
-	if(index>=0){ comboBoxKeyboardModel->setCurrentIndex(index); }
+  if ( listKbLayouts->count() > 0 ) {
+    // Find the current key layout as the default
+    for ( int i = 0; i < listKbLayouts->count(); i++ )
+       if ( listKbLayouts->item(i)->text().indexOf("("+cKeyLayout+")") != -1 )
+     	 listKbLayouts->setCurrentRow(i);
+  }
+
+  int index = comboBoxKeyboardModel->findText(cKeyModel);
+  if(index>=0){ comboBoxKeyboardModel->setCurrentIndex(index); }
 }
