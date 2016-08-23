@@ -806,12 +806,12 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardDisk.cpp" line="350"></location>
         <source>Please select 3, 5, or 9 additional drives for raidz2</source>
-        <translation type="unfinished"></translation>
+        <translation>raidz2 には3本、5本または9本の追加ドライブを選択してください</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="361"></location>
         <source>Please select 4, 6, or 10 additional drives for raidz3</source>
-        <translation type="unfinished"></translation>
+        <translation>raidz3 には4本、6本または10本の追加ドライブを選択してください</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="372"></location>
