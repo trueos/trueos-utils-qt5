@@ -816,125 +816,125 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardDisk.cpp" line="372"></location>
         <source>Please select the additional disks to stripe</source>
-        <translation type="unfinished"></translation>
+        <translation>ストライプに追加するディスクを選択してください</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="618"></location>
         <source>ZFS Mounts</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS マウントポイント</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="618"></location>
         <source>ZFS Options</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS のオプション</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="645"></location>
         <source>The original system datasets / mount-points will be automatically restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>オリジナルのシステムデータセット / マウントポイントは自動的にレストアされます。</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="733"></location>
         <source>Resizing</source>
-        <translation type="unfinished"></translation>
+        <translation>リサイズ</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="745"></location>
         <source>Remove mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>マウントポイントを削除</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="746"></location>
         <source>Are you sure you want to remove this mount point?</source>
-        <translation type="unfinished"></translation>
+        <translation>マウントポイントを削除してもよろしいですか?</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="763"></location>
         <source>Enter mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>Enter mount-point</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="764"></location>
         <source>Please enter the new mount-point:</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいマウントポイント名を入力してください:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="772"></location>
         <source>Invalid Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>不正なマウント</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"></location>
         <source>Mount point should start with '/'</source>
-        <translation type="unfinished"></translation>
+        <translation>マウントポイントは '/' で始まる必要があります。</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="841"></location>
         <source>Editing:</source>
-        <translation type="unfinished"></translation>
+        <translation>編集:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="984"></location>
         <source>Enter SWAP size</source>
-        <translation type="unfinished"></translation>
+        <translation>スワップのサイズを入力してください</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="985"></location>
         <source>Size (MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>サイズ(MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1183"></location>
         <source>The disk will be setup with the following configuration:</source>
-        <translation type="unfinished"></translation>
+        <translation>ディスクは下記の内容で設定されます:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>ディスク:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
         <source>Mirroring:</source>
-        <translation type="unfinished"></translation>
+        <translation>ミラー:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1242"></location>
         <location filename="../wizardDisk.cpp" line="1282"></location>
         <location filename="../wizardDisk.cpp" line="1312"></location>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>パーティション:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1243"></location>
         <location filename="../wizardDisk.cpp" line="1283"></location>
         <location filename="../wizardDisk.cpp" line="1313"></location>
         <source>FileSystem:</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルシステム:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1244"></location>
         <location filename="../wizardDisk.cpp" line="1284"></location>
         <location filename="../wizardDisk.cpp" line="1314"></location>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>サイズ:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1258"></location>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS データセット:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1260"></location>
         <location filename="../wizardDisk.cpp" line="1315"></location>
         <source>Mount:</source>
-        <translation type="unfinished"></translation>
+        <translation>マウントポイント:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1263"></location>
         <location filename="../wizardDisk.cpp" line="1317"></location>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>オプション:</translation>
     </message>
 </context>
 <context>
@@ -942,44 +942,44 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardFreeBSD.ui" line="95"></location>
         <source>This wizard will walk you though the setup of your new server. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>このウィザードの指示通りにサーバーの設定を行います。設定を始めるには「次へ」をクリックします。 </translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="215"></location>
         <source>Please enter the root password for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>サーバーの root パスワードを入力してください</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="247"></location>
         <location filename="../wizardFreeBSD.ui" line="413"></location>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワード</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="277"></location>
         <location filename="../wizardFreeBSD.ui" line="427"></location>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワード(再入力)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="377"></location>
         <source>Please create a user for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>サーバー利用するユーザーを作成してください</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="389"></location>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>氏名</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="399"></location>
         <source>Username</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー名</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="453"></location>
         <source>Default shell</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルトシェル</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"></location>
