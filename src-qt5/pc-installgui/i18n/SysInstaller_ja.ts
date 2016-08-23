@@ -786,22 +786,22 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardDisk.ui" line="1285"></location>
         <source>&amp;Launch terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>端末を起動(&amp;L)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1407"></location>
         <source>Please check the disk summary below and click finish to save your settings. </source>
-        <translation type="unfinished"></translation>
+        <translation>ディスクの状況を確認して「完了」をクリックし、設定を保存してください。 </translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="96"></location>
         <source>Use entire disk</source>
-        <translation type="unfinished"></translation>
+        <translation>ディスク全体を使用する</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="339"></location>
         <source>Please select 2 or 4 additional drives for raidz1</source>
-        <translation type="unfinished"></translation>
+        <translation>raidz1 には2本または4本の追加ドライブを選択してください</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="350"></location>
