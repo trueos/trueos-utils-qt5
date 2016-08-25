@@ -984,17 +984,17 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"></location>
         <source>Please enter a system hostname and remote login preference.</source>
-        <translation type="unfinished"></translation>
+        <translation>システムのホスト名と遠隔ログイン設定を入力してください。</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="616"></location>
         <source>Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>ホスト名</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="664"></location>
         <source>Enable remote SSH login</source>
-        <translation type="unfinished"></translation>
+        <translation>外部からの SSH ログインを許可する</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="733"></location>
