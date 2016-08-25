@@ -999,47 +999,47 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardFreeBSD.ui" line="733"></location>
         <source>Please select a network device to configure for this system.</source>
-        <translation type="unfinished"></translation>
+        <translation>システムで使用するネットワークデバイスを設定してください。</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="765"></location>
         <source>Network Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットワーク機器</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="775"></location>
         <source>IP Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IP アドレス</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="785"></location>
         <source>Netmask</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットマスク</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="795"></location>
         <source>Nameserver (DNS)</source>
-        <translation type="unfinished"></translation>
+        <translation>ネームサーバー(DNS)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="812"></location>
         <source>Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲートウェイ</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="825"></location>
         <source>IPv6 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 アドレス</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="835"></location>
         <source>IPv6 Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 ゲートウェイ</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="845"></location>
         <source>IPv6 Nameserver</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 ネームサーバー</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="879"></location>
@@ -1047,17 +1047,17 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
         <location filename="../wizardFreeBSD.ui" line="911"></location>
         <location filename="../wizardFreeBSD.ui" line="931"></location>
         <source>000.000.000.000</source>
-        <translation type="unfinished"></translation>
+        <translation>000.000.000.000</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1083"></location>
         <source>Please select any optional features to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>インストールするオプション機能を選択してください。</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1125"></location>
         <source>Install ports tree (/usr/ports)</source>
-        <translation type="unfinished"></translation>
+        <translation>ports ツリーをインストールする(/usr/ports)</translation>
     </message>
 </context>
 <context>
@@ -1065,121 +1065,124 @@ Click Finish to reboot. After rebooting you may eject the install media.</source
     <message>
         <location filename="../wizardRestore.ui" line="95"></location>
         <source>This wizard will walk you though the process of restoring your system from a Life-Preserver backup. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>このウィザードの指示通りに Life-Preserver バックアップによるシステム復旧設定を行います。設定を始めるには「次へ」をクリックします。 </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="199"></location>
         <source>To get started with a system restore, please select the type of backup to restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>システムの復旧を開始します。バックアップの種類と復旧元を選択してください:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="229"></location>
         <source>SSH Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH から復旧</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="235"></location>
         <source>Backup Server</source>
-        <translation type="unfinished"></translation>
+        <translation>バックアップサーバー</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="249"></location>
         <source>Host Name</source>
-        <translation type="unfinished"></translation>
+        <translation>ホスト名</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="263"></location>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー名</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="283"></location>
         <source>SSH Port</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH ポート番号</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="429"></location>
         <source>If you saved your Life-Preserver key onto a USB drive, insert it now and select USB key, otherwise you may wish to use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>もし、USB メモリーへ Life-Preserver の鍵を保存したのであれば、今すぐ接続して選択してください。もしくはパスワード認証も可能です。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="455"></location>
         <source>Server Authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>サーバーの認証</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="461"></location>
         <source>Use USB key</source>
-        <translation type="unfinished"></translation>
+        <translation>USB メモリーを使用する</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="471"></location>
         <source>Use password authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワード認証を使用する</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="530"></location>
         <source>The following systems are backed up on this server, select the one you wish to restore. </source>
-        <translation type="unfinished"></translation>
+        <translation>このサーバーにバックアップされているシステムから、復旧させるシステムを選択してください。 </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="572"></location>
         <source>Restore System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>復旧させるシステムの選択</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="669"></location>
         <source>Restore Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>復旧処理の概要</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="749"></location>
         <source>The system is ready to be restored, click Finish to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>システム復旧処理が完了しました。「完了」をクリックして作業を続けてください。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="123"></location>
         <source>No keys found!</source>
-        <translation type="unfinished"></translation>
+        <translation>キーが見つかりません。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="124"></location>
         <source>No Auth keys could be found on that memory stick!
 Please try another USB stick or use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>認証キーが USB メモリー内で見つかりません。
+他の USB メモリーを試してみるか、パスワード認証を行ってください。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="132"></location>
         <location filename="../wizardRestore.cpp" line="143"></location>
         <source>Connection failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>接続に失敗しました。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="133"></location>
         <source>Could not connect to the backup server!
 Please check that the server is reachable and verify your user/password.</source>
-        <translation type="unfinished"></translation>
+        <translation>バックアップサーバーに接続できません。
+サーバーに接続できるか、ユーザー名とパスワードは間違いないか確認してください。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="144"></location>
         <source>Could not connect to the backup server!
 Please check your hostname and that the backup server is reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>バックアップサーバーに接続できません。
+このシステムのホスト名が正確であることとバックアップサーバーに接続できるか確認してください。</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="155"></location>
         <source>Will restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>復旧元:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Select the SSH key to use</source>
-        <translation type="unfinished"></translation>
+        <translation>使用する SSH 鍵を選択</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Key File:</source>
-        <translation type="unfinished"></translation>
+        <translation>鍵ファイル:</translation>
     </message>
 </context>
 </TS>
