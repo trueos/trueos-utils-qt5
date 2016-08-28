@@ -599,7 +599,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
 bool Installer::promptInstallToZpool()
 {
   bool ok;
-  QString ans = QInputDialog::getItem(this, tr("Install to existing zpool?"), tr("The following existing zpool(s) have been found.\n Do you wish to install fresh into a new BootEnvironment?\n (This will preserve your $HOME data and other datasets)"), existingZpools, 0, false, &ok);
+  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install, without destroying existing data.)"), existingZpools, 0, false, &ok);
   if ( ok && !ans.isEmpty())
   {
     zpoolTarget=ans;

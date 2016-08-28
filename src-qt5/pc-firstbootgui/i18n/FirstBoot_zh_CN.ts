@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>Installer</name>
     <message>
@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
-        <translation>欢迎来到您崭新的PC-BSD系统！您可以在上面改变您的语言，点击下一步开始安装。</translation>
+        <translation type="vanished">欢迎来到您崭新的PC-BSD系统！您可以在上面改变您的语言，点击下一步开始安装。</translation>
     </message>
     <message>
         <source>System Timezone</source>
@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation>配置完成！点击完成以登录到您的新桌面。</translation>
+        <translation type="vanished">配置完成！点击完成以登录到您的新桌面。</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
@@ -89,11 +89,11 @@
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
-        <translation>将加密用户家目录</translation>
+        <translation type="vanished">将加密用户家目录</translation>
     </message>
     <message>
         <source>Encrypt user files</source>
-        <translation>加密用户文件</translation>
+        <translation type="vanished">加密用户文件</translation>
     </message>
     <message>
         <source>System Hostname</source>
@@ -101,7 +101,7 @@
     </message>
     <message>
         <source>Enter a valid hostname, or leave default.</source>
-        <translation>输入一个有效的用户名，或者使用默认的。</translation>
+        <translation type="vanished">输入一个有效的用户名，或者使用默认的。</translation>
     </message>
     <message>
         <source>Please enter a hostname</source>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation type="unfinished">
+        <translation type="obsolete">
             </translation>
     </message>
     <message>
@@ -125,6 +125,102 @@
         <source>Set BIOS to UTC time</source>
         <translation type="unfinished">
             </translation>
+    </message>
+    <message>
+        <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Domain Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PersonaCrypt users need the same UID for every system on which they are used</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Specify UID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PersonaCrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Initialize PersonaCrypt Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removable Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User-portion of the disk encryption key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Device Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default Output:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Testing Volume:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Configure Audio Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Optional Services</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Setup is now complete! Press Finish to login to your new system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please enter a domain name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Domain name may only contain letters and numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Devices Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please connect a removable device and try again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Removable Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -143,7 +239,7 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
-        <translation>在这里，你可以创建一个普通用户账号。在控制面板里，可以创建更多的用户帐号。</translation>
+        <translation type="vanished">在这里，你可以创建一个普通用户账号。在控制面板里，可以创建更多的用户帐号。</translation>
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
@@ -152,6 +248,50 @@
     <message>
         <source>The computer setup is now finished! Click Finish to log into your new Desktop.</source>
         <translation>计算机安装完成！点击“完成”来登陆到你新的桌面。</translation>
+    </message>
+    <message>
+        <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable SSH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allows SSH access to this system from remote systems</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable IPv6 (Requires Reboot)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable the use of IPv6 connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restarting network...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Network is restarting, please wait...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Setting default route...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Running DHCP...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -203,6 +343,14 @@
 </source>
         <translation>错误：输入的网络密码不符合！
 </translation>
+    </message>
+    <message>
+        <source>Security Type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
