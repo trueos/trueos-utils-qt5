@@ -48,11 +48,6 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     backButton->setText(tr("&Back"));
     nextButton->setText(tr("&Next"));
 
-    //DISABLE RESTORE FROM LIFE PRESERVER TEMPORARILY
-    //  - this needs a new networking setup page first (pc-netmanager no longer available)
-    radioRestore->setChecked(false);
-    radioRestore->setEnabled(false);
-
     // We use GPT by default now
     sysPartType="GPT";
 
