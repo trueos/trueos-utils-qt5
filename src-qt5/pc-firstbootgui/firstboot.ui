@@ -154,7 +154,7 @@ background: transparent;</string>
           <item>
            <widget class="QComboBox" name="comboLanguage">
             <property name="statusTip">
-             <string>Change the installation language</string>
+             <string>Change the language</string>
             </property>
             <property name="autoFillBackground">
              <bool>false</bool>
