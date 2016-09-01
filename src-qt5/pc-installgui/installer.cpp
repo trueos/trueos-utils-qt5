@@ -48,11 +48,6 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     backButton->setText(tr("&Back"));
     nextButton->setText(tr("&Next"));
 
-    //DISABLE RESTORE FROM LIFE PRESERVER TEMPORARILY
-    //  - this needs a new networking setup page first (pc-netmanager no longer available)
-    radioRestore->setChecked(false);
-    radioRestore->setEnabled(false);
-
     // We use GPT by default now
     sysPartType="GPT";
 
@@ -599,7 +594,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
 bool Installer::promptInstallToZpool()
 {
   bool ok;
-  QString ans = QInputDialog::getItem(this, tr("Install to existing zpool?"), tr("The following existing zpool(s) have been found.\n Do you wish to install fresh into a new BootEnvironment?\n (This will preserve your $HOME data and other datasets)"), existingZpools, 0, false, &ok);
+  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install, without destroying existing data.)"), existingZpools, 0, false, &ok);
   if ( ok && !ans.isEmpty())
   {
     zpoolTarget=ans;
@@ -1802,7 +1797,7 @@ void Installer::slotSaveConfigUSB()
   // Now lets try to save the media
   qDebug() << "Running: /root/save-to-usb.sh" << cfgName;
   QProcess m;
-  m.start(QString("xterm -e /root/save-to-usb.sh"), QStringList() << cfgName);
+  m.start(QString("qterminal"), QStringList() << "-e" << "/root/save-to-usb.sh" << cfgName);
   while(m.state() == QProcess::Starting || m.state() == QProcess::Running) {
      m.waitForFinished(200);
      QCoreApplication::processEvents();

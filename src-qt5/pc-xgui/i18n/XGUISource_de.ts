@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="XGUISource_de">
+<TS version="2.1" language="XGUISource_de">
 <context>
     <name>QObject</name>
     <message>
@@ -111,8 +111,8 @@ Wenn Ihr Bildschirm nicht erscheint, warten Sie bitte und Sie werden zu diesem B
         <translation>Warnung!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
-        <translation>TrueOS war nicht in der Lage Ihren Monitor automatisch zu erkennen. Sie könnten die horizontale und vertikale Bildfrequenz vom Monitor im Reiter 'Erweitert' angeben müssen.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <translation>TrueOS war nicht in der Lage Ihren Monitor automatisch zu erkennen. Sie könnten die horizontale und vertikale Bildfrequenz vom Monitor im Reiter &apos;Erweitert&apos; angeben müssen.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
