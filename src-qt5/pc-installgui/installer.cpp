@@ -344,7 +344,7 @@ QStringList Installer::getDiskSummary()
   if ( ! zpoolTarget.isEmpty() )
   {
     summaryList << "";
-    summaryList << tr("Installing to new dataset in existing zpool: %1").arg(zpoolTarget);
+    summaryList << tr("Installing to new boot environment in existing zpool: %1").arg(zpoolTarget);
     return summaryList;
   }
 
@@ -594,7 +594,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
 bool Installer::promptInstallToZpool()
 {
   bool ok;
-  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install, without destroying existing data.)"), existingZpools, 0, false, &ok);
+  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install into a new boot environment without destroying existing data.)"), existingZpools, 0, false, &ok);
   if ( ok && !ans.isEmpty())
   {
     zpoolTarget=ans;
