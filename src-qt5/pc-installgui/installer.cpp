@@ -1375,10 +1375,10 @@ void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus stat
   {
      installFailed();
   } else {
-    // Move to the final page, and show a exit button
+    // Move to the final page, and show a Finish button
     proceed(true);
     nextButton->setEnabled(true);
-    nextButton->setText(tr("&Exit"));
+    nextButton->setText(tr("&Finish"));
     nextButton->disconnect();
     connect(nextButton, SIGNAL(clicked()), this, SLOT(slotFinished()));
     backButton->setEnabled(false);
