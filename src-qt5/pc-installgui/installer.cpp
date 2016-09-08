@@ -1593,6 +1593,7 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
