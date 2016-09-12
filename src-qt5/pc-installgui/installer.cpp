@@ -344,7 +344,7 @@ QStringList Installer::getDiskSummary()
   if ( ! zpoolTarget.isEmpty() )
   {
     summaryList << "";
-    summaryList << tr("Installing to new dataset in existing zpool: %1").arg(zpoolTarget);
+    summaryList << tr("Installing to new boot environment in existing zpool: %1").arg(zpoolTarget);
     return summaryList;
   }
 
@@ -594,7 +594,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
 bool Installer::promptInstallToZpool()
 {
   bool ok;
-  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install, without destroying existing data.)"), existingZpools, 0, false, &ok);
+  QString ans = QInputDialog::getItem(this, tr("Install to existing ZFS pool?"), tr("The following pool(s) have been found.\n Do you wish to install into this pool?\n (This will do a clean install into a new boot environment without destroying existing data.)"), existingZpools, 0, false, &ok);
   if ( ok && !ans.isEmpty())
   {
     zpoolTarget=ans;
@@ -1375,10 +1375,10 @@ void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus stat
   {
      installFailed();
   } else {
-    // Move to the final page, and show a exit button
+    // Move to the final page, and show a Finish button
     proceed(true);
     nextButton->setEnabled(true);
-    nextButton->setText(tr("&Exit"));
+    nextButton->setText(tr("&Finish"));
     nextButton->disconnect();
     connect(nextButton, SIGNAL(clicked()), this, SLOT(slotFinished()));
     backButton->setEnabled(false);
@@ -1593,6 +1593,7 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
