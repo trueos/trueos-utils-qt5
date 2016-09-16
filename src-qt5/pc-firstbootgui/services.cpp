@@ -43,7 +43,7 @@ QList<service> Services::getServiceList(){
     S.description = QObject::tr("Fixes sound for some devices but may drain battery life as a result");
     //S.openPorts
     //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
-    S.rcLines << "dev.hdac.0.polling=1";
+    S.cmds << "echo \"dev.hdac.0.polling=1\" >> /etc/sysctl.conf"; //set sysctl
     S.cmds << "sysctl dev.hdac.0.polling=1"; //enable without requiring reboot
     out << S;
   }
