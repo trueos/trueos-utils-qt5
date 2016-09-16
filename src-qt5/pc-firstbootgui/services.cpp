@@ -56,7 +56,7 @@ QList<service> Services::getServiceList(){
     S.description = QObject::tr("Starts service at boot to load kernel module for realtek wireless cards");
     //S.openPorts
     //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
-    S.rcLines << "if_rtwn_load="YES";
+    S.rcLines << "if_rtwn_load=YES";
     S.cmds << "kldload if_rtwn" << "service netif restart"; //enable without requiring reboot
     out << S;
   }
