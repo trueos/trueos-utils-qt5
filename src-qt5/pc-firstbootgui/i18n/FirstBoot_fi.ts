@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_fi">
 <context>
     <name>Installer</name>
     <message>
@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="vanished">Tervetuloa uuteen PC-BSD järjestelmääsi! Voit vaihtaa kieltä yllä, ja tämän jälkeen aloittaa asennuksen painamalla &apos;Seuraava&apos;.</translation>
+        <translation type="vanished">Tervetuloa uuteen PC-BSD järjestelmääsi! Voit vaihtaa kieltä yllä, ja tämän jälkeen aloittaa asennuksen painamalla 'Seuraava'.</translation>
     </message>
     <message>
         <source>System Timezone</source>
@@ -36,7 +36,7 @@
         <translation>Salasana (uudelleen)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
         <translation>Järjestelmän pääkäyttäjän (root) salasanan avulla voi tehdä muutoksia käyttöjärjestelmään, ja tämä salasana tulisi pitää salassa.</translation>
     </message>
     <message>
@@ -60,12 +60,12 @@
         <translation>Etsi &amp;uudelleen</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Seuraavat langattomat verkot löydettiin. Valitse se johon haluat yhdistää. Jos et halua yhdistää, valitse &apos;Seuraava&apos;.</translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Seuraavat langattomat verkot löydettiin. Valitse se johon haluat yhdistää. Jos et halua yhdistää, valitse 'Seuraava'.</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation type="vanished">Asennus on nyt valmis! Paina &apos;Valmis&apos; kirjautuaksesi työpöydälle.</translation>
+        <translation type="vanished">Asennus on nyt valmis! Paina 'Valmis' kirjautuaksesi työpöydälle.</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
@@ -118,109 +118,107 @@
     </message>
     <message>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Voidaan käyttää useampijärjestelmäisessä ympäristössä</translation>
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Aseta BIOS UTC-aikaan</translation>
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tervetuloa uuteen järjestelmääsi! Voit vaihtaa kielen yltä ja aloittaa asetustoimenpiteet napsauttamalla Seuraava.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Aluenimi</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjätiedot</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt-käyttäjillä on oltava sama UID kussakin käyttämässään järjestelmässä</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>Määritä UID</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Alusta PersonaCrypt-laite</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Irrotettava laite</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Levyn salausavaimen käyttäjän osio</translation>
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Laitesalasana</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Kokeile</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletustuloste:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kokeillaan äänenvoimakkuutta:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Aseta äänen ulostulo</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Huomaa: Ääniasetuksia voi muuttaa myöhemmin äänimikserissä.</translation>
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Valinnaiset palvelut</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetus on nyt valmis! Kirjaudu uuteen järjestelmääsi napsauttamalla Valmis.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Anna aluenimi</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Aluenimessä voi olla vain kirjaimia ja numeroita</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Laitteita ei löytynyt</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Kytke irrotettava laite ja yritä uudelleen</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse irrotettava laite</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varoitus: Valitun laitteen olemassa olevat tiedot poistetaan käyttäjää luotaessa.</translation>
     </message>
 </context>
 <context>
@@ -251,47 +249,47 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tässä näkymässä sinun on luotava käyttäjä työpöydälle kirjautumiseksi. Lisäkäyttäjiä voi luoda SysAdm-työkalulla myöhemmin.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tässä näkymässä voit kokeilla äänilaitettasi ja asettaa sen kaikkien äänten oletukseksi. Asetusta voi muuttaa äänimikserissä tarpeen mukaan myöhemmin.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyt voit ottaa käyttöön valinnaisia asetuksia ja palveluita tarpeen mukaan. Valitse asetus ja jatka napsauttamalla Seuraava.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Ota SSH käyttöön</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Sallii SSH-yhteyden etäjärjestelmistä tähän järjestelmään</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista IPv6 käytöstä (vaatii uudelleenkäynnistyksen)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista IPv6-yhteydet käytöstä</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistetään verkkoa uudelleen…</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkko käynnistyy uudelleen, odota…</translation>
     </message>
     <message>
         <source>Setting default route...</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetetaan oletusreittiä…</translation>
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suoritetaan DHCP:tä…</translation>
     </message>
 </context>
 <context>
@@ -346,11 +344,11 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Turvallisuustyyppi:</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstiselite</translation>
     </message>
 </context>
 <context>
