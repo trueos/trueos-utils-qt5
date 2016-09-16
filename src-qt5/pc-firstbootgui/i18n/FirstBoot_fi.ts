@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Järjestelmän pääkäyttäjän (root) salasanan avulla voi tehdä muutoksia käyttöjärjestelmään, ja tämä salasana tulisi pitää salassa.</translation>
+        <translation>Järjestelmän pääkäyttäjän (root) salasanan avulla voi tehdä muutoksia käyttöjärjestelmään, ja tämä salasana tulisi pitää salassa. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -61,7 +61,7 @@
     </message>
     <message>
         <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
-        <translation>Seuraavat langattomat verkot löydettiin. Valitse se johon haluat yhdistää. Jos et halua yhdistää, valitse 'Seuraava'.</translation>
+        <translation>Seuraavat langattomat verkot löydettiin. Valitse se johon haluat yhdistää. Jos et halua yhdistää, valitse 'Seuraava'. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
