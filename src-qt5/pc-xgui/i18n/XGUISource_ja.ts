@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_ja">
 <context>
     <name>QObject</name>
     <message>
@@ -46,7 +46,7 @@ Keep these settings?</source>
     </message>
     <message>
         <source>24bits</source>
-        <translation>24bits</translation>
+        <translation>24 ビット</translation>
     </message>
     <message>
         <source>Video Driver</source>
@@ -99,7 +99,7 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>警告!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
         <translation>PC-BSD はモニターの自動検出に失敗しました。「詳細設定」タブでモニターの水平同期/垂直リフレッシュレートを設定して下さい。</translation>
     </message>
     <message>
@@ -143,11 +143,11 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Auto-close in </source>
-        <translation>この画面を</translation>
+        <translation>この画面を </translation>
     </message>
     <message>
         <source> seconds...</source>
-        <translation>秒後に閉じます...</translation>
+        <translation> 秒後に閉じます...</translation>
     </message>
     <message>
         <source>&amp;Ok</source>
@@ -155,11 +155,11 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Resolution:</source>
-        <translation>解像度</translation>
+        <translation>解像度:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation>ドライバー</translation>
+        <translation>ドライバー:</translation>
     </message>
 </context>
 </TS>
