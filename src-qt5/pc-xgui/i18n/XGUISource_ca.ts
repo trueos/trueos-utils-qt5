@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_ca">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Voleu mantenir aquests paràmetres de la pantalla?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>L'intent anterior ha fallat. Si us plau, comproveu els paràmetres i torneu-ho a provar.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>S'ha configurat la pantalla.
+Voleu mantenir aquests paràmetres?</translation>
     </message>
 </context>
 <context>
@@ -113,12 +111,12 @@ Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</tra
         <translation>Avís!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD es incapaç de detectar automáticament el vostre monitor. Hauríau d&apos;espicificar les freqüències de refresc Horitzontal i Vertical en la pestanya &apos;Avançat&apos;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD es incapaç de detectar automáticament el vostre monitor. Hauríau d'espicificar les freqüències de refresc Horitzontal i Vertical en la pestanya 'Avançat'.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>El suport Dual-Head està destinat a sistemes amb una targeta gràfica i dos monitors. Altres configuracions poden ser assolides mitjançant l&apos;edició de /etc/X11/xorg.conf</translation>
+        <translation>El suport Dual-Head està destinat a sistemes amb una targeta gràfica i dos monitors. Altres configuracions poden ser assolides mitjançant l'edició de /etc/X11/xorg.conf</translation>
     </message>
 </context>
 <context>
@@ -153,18 +151,15 @@ Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</tra
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>D'ac&amp;ord</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Resolució:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Controlador:</translation>
     </message>
 </context>
 </TS>
