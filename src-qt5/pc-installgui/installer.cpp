@@ -1634,7 +1634,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "x11-fonts/droid-fonts-ttf";
      
      // i18n packages, will eventually go away
-     pkgList << "misc/trueos-i18n";
+     //pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
