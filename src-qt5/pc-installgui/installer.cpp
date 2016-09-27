@@ -1592,7 +1592,7 @@ QStringList Installer::getDeskPkgCfg()
    if ( radioDesktop->isChecked() ) {
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
-     pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "misc/trueos-desktop" << "x11/lumina";
      pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
@@ -1600,10 +1600,10 @@ QStringList Installer::getDeskPkgCfg()
        pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
 
      // The default web-browser and plugins
-     pkgList <<  "www/qupzilla-qt5";
+     pkgList <<  "www/firefox";
 
      // The default mail client
-     pkgList << "mail/trojita";
+     pkgList << "mail/thunderbird";
 
      // Multimedia player
      pkgList << "multimedia/vlc" << "multimedia/openh264";
@@ -1619,6 +1619,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // Utilities
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
+     pkgList << "graphics/xsane" << "x11/xcalc";
 
      // Printer packages
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
@@ -1633,7 +1634,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "x11-fonts/droid-fonts-ttf";
      
      // i18n packages, will eventually go away
-     pkgList << "misc/trueos-i18n";
+     //pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
