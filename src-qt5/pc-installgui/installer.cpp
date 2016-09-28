@@ -1653,22 +1653,22 @@ QStringList Installer::getDeskPkgCfg()
      } // Done with NVIDIA check
 
      // Are we on VirtualBox or VMware?
-     /*QFile filev("/var/log/Xorg.0.log");
+     QFile filev("/var/log/Xorg.0.log");
      if (filev.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream inv(&filev);
        while (!inv.atEnd()) {
           QString line = inv.readLine();
           if ( line.indexOf("VirtualBox") != -1 ) {
-            pkgList << "misc/trueos-meta-virtualboxguest";
+            pkgList << "emulators/virtualbox-ose-additions";
             break;
           }
           if ( line.indexOf("VMware") != -1 ) {
-            pkgList << "misc/trueos-meta-vmwareguest";
+            pkgList << "emulators/open-vm-tools";
             break;
           }
        }     
        filev.close();
-     }*/ // End of VM checks
+     } // End of VM checks
 
      // End of desktop packages
    } 
