@@ -26,11 +26,11 @@ Voleu mantenir aquests paràmetres?</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation>Aplicar</translation>
+        <translation>Aplica</translation>
     </message>
     <message>
         <source>Skip</source>
-        <translation>Ignorar</translation>
+        <translation>Omet</translation>
     </message>
     <message>
         <source>General</source>
@@ -38,7 +38,7 @@ Voleu mantenir aquests paràmetres?</translation>
     </message>
     <message>
         <source>Screen Resolution:</source>
-        <translation>Resolució de pantalla:</translation>
+        <translation>Resolució de la pantalla:</translation>
     </message>
     <message>
         <source>1024x768</source>
@@ -46,11 +46,11 @@ Voleu mantenir aquests paràmetres?</translation>
     </message>
     <message>
         <source>Color Depth:</source>
-        <translation>Profunditat de color:</translation>
+        <translation>Profunditat del color:</translation>
     </message>
     <message>
         <source>24bits</source>
-        <translation>24bits</translation>
+        <translation>24 bits</translation>
     </message>
     <message>
         <source>Video Driver</source>
@@ -83,8 +83,8 @@ Voleu mantenir aquests paràmetres?</translation>
     <message>
         <source>The settings you have specified will now be tested.
 If your screen does not appear, please wait and you will be returned to this screen.</source>
-        <translation>Ara es provarà aquesta configuració.
-Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</translation>
+        <translation>Ara es provaran els paràmetres que heu especificat.
+Si la pantalla no apareix, espereu i es tornarà a aquesta pantalla.</translation>
     </message>
     <message>
         <source>Video Card:</source>
@@ -96,15 +96,15 @@ Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</tra
     </message>
     <message>
         <source>Enable Dual-Head support</source>
-        <translation>Habilita mode de pantalla -dual</translation>
+        <translation>Habilita el suport per a pantalla dual</translation>
     </message>
     <message>
         <source>Monitor Resolution:</source>
-        <translation>Resolució del Monitor:</translation>
+        <translation>Resolució del monitor:</translation>
     </message>
     <message>
         <source>Unknown Monitor</source>
-        <translation>Monitor Desconegut</translation>
+        <translation>Monitor desconegut</translation>
     </message>
     <message>
         <source>Warning!</source>
@@ -112,18 +112,18 @@ Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</tra
     </message>
     <message>
         <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
-        <translation>PC-BSD es incapaç de detectar automáticament el vostre monitor. Hauríau d'espicificar les freqüències de refresc Horitzontal i Vertical en la pestanya 'Avançat'.</translation>
+        <translation>El PC-BSD no pot detectar automáticament el vostre monitor. Hauríeu d'espicificar les freqüències de refresc horitzontal i vertical a la pestanya "Avançat".</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>El suport Dual-Head està destinat a sistemes amb una targeta gràfica i dos monitors. Altres configuracions poden ser assolides mitjançant l'edició de /etc/X11/xorg.conf</translation>
+        <translation>El suport de Dual-Head està destinat a sistemes amb una targeta gràfica i dos monitors. Es poden assolir altres configuracions editant /etc/X11/xorg.conf.</translation>
     </message>
 </context>
 <context>
     <name>dialogConfirm</name>
     <message>
         <source>Confirm Resolution</source>
-        <translation>Confirmar resolució</translation>
+        <translation>Confirmeu la resolució</translation>
     </message>
     <message>
         <source>Do you wish to use this resolution?</source>
@@ -139,11 +139,11 @@ Si la pantalla no apareix, esperi una estona i tornarà a aquesta pantalla.</tra
     </message>
     <message>
         <source>Auto-close in 10 seconds...</source>
-        <translation>Tancar automàticament en 10 segons...</translation>
+        <translation>Tanca d'aquí a 10 segons...</translation>
     </message>
     <message>
         <source>Auto-close in </source>
-        <translation>Tancar automàticament en </translation>
+        <translation>Tanca d'aquí a </translation>
     </message>
     <message>
         <source> seconds...</source>
