@@ -964,82 +964,82 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../wizardFreeBSD.ui" line="377"></location>
         <source>Please create a user for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, creeu un usuari per a aquest servidor.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="389"></location>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="399"></location>
         <source>Username</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d'usuari</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="453"></location>
         <source>Default shell</source>
-        <translation type="unfinished"></translation>
+        <translation>Intèrpret d'ordres per defecte</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"></location>
         <source>Please enter a system hostname and remote login preference.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, introduïu un nom d'amfitrió del sistema i les preferències d'inici de sessió remota.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="616"></location>
         <source>Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d'amfitrió</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="664"></location>
         <source>Enable remote SSH login</source>
-        <translation type="unfinished"></translation>
+        <translation>Habilita l'entrada remota d'SSH</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="733"></location>
         <source>Please select a network device to configure for this system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, seleccioneu un dispositiu de xarxa a configurar per a aquest sistema.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="765"></location>
         <source>Network Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interfície de xarxa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="775"></location>
         <source>IP Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adreça IP</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="785"></location>
         <source>Netmask</source>
-        <translation type="unfinished"></translation>
+        <translation>Màscara de xarxa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="795"></location>
         <source>Nameserver (DNS)</source>
-        <translation type="unfinished"></translation>
+        <translation>Servidor de noms (DNS)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="812"></location>
         <source>Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Passarel·la</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="825"></location>
         <source>IPv6 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adreça IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="835"></location>
         <source>IPv6 Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Passarel·la IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="845"></location>
         <source>IPv6 Nameserver</source>
-        <translation type="unfinished"></translation>
+        <translation>Servidor de noms IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="879"></location>
@@ -1047,17 +1047,17 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
         <location filename="../wizardFreeBSD.ui" line="911"></location>
         <location filename="../wizardFreeBSD.ui" line="931"></location>
         <source>000.000.000.000</source>
-        <translation type="unfinished"></translation>
+        <translation>000.000.000.000</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1083"></location>
         <source>Please select any optional features to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, seleccioneu les funcions opcionals per instal·lar.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1125"></location>
         <source>Install ports tree (/usr/ports)</source>
-        <translation type="unfinished"></translation>
+        <translation>Instal·la l'arbre de ports (/usr/ports)</translation>
     </message>
 </context>
 <context>
@@ -1065,121 +1065,124 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../wizardRestore.ui" line="95"></location>
         <source>This wizard will walk you though the process of restoring your system from a Life-Preserver backup. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>Aquest assistent us guiarà durant el procés de restauració del seu sistema des d'una còpia de seguretat del Life-Preserver. Feu clic a "Següent" per començar. </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="199"></location>
         <source>To get started with a system restore, please select the type of backup to restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Per començar una restauració de sistema; si us plau, seleccioneu el tipus de còpia de seguretat a partir de la qual fer la restauració:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="229"></location>
         <source>SSH Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Restauració SSH</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="235"></location>
         <source>Backup Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Servidor de còpia de seguretat</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="249"></location>
         <source>Host Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d'amfitrió</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="263"></location>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d'usari</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="283"></location>
         <source>SSH Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port SSH</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="429"></location>
         <source>If you saved your Life-Preserver key onto a USB drive, insert it now and select USB key, otherwise you may wish to use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si heu desat la clau del Life-Preserver en un dispositiu USB, connecteu-lo ara i seleccioneu-lo; si no, useu l'autenticació de contrasenya.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="455"></location>
         <source>Server Authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Autenticació de servidor</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="461"></location>
         <source>Use USB key</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa una memòria USB</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="471"></location>
         <source>Use password authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa una autenticació de contrasenya</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="530"></location>
         <source>The following systems are backed up on this server, select the one you wish to restore. </source>
-        <translation type="unfinished"></translation>
+        <translation>Els sistemes següents tenen còpia de seguretat en aquest servidor, seleccioneu el que voleu restaurar: </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="572"></location>
         <source>Restore System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecció de restauració de sistema</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="669"></location>
         <source>Restore Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Resum de la restauració</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="749"></location>
         <source>The system is ready to be restored, click Finish to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>El sistema està a punt per restaurar-se. Cliqueu a "Acaba" per continuar.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="123"></location>
         <source>No keys found!</source>
-        <translation type="unfinished"></translation>
+        <translation>No s'ha trobat!</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="124"></location>
         <source>No Auth keys could be found on that memory stick!
 Please try another USB stick or use password authentication.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s'ha pogut trobar cap clau d'autenticació a la memòria USB!
+Si us plau, proveu-ne una altra o useu l'autenticació de contrasenya.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="132"></location>
         <location filename="../wizardRestore.cpp" line="143"></location>
         <source>Connection failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat la connexió!</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="133"></location>
         <source>Could not connect to the backup server!
 Please check that the server is reachable and verify your user/password.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s'ha pogut connectar amb el servidor de còpia de seguretat!
+Si us plau, comproveu que el servidor sigui abastable i verifiqueu l'usuari i la contrasenya.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="144"></location>
         <source>Could not connect to the backup server!
 Please check your hostname and that the backup server is reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s'ha pogut connectar amb el servidor de còpia de seguretat!
+Si us plau, comproveu el vostre nom d'amfitrió i que el servidor de còpia de seguretat sigui abastable.</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="155"></location>
         <source>Will restore from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Es restaurarà des de:</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Select the SSH key to use</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccioneu la clau SSH per usar</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"></location>
         <source>Key File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxer de clau:</translation>
     </message>
 </context>
 </TS>
