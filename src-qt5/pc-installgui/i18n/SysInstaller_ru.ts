@@ -716,7 +716,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="677"></location>
         <source>ZFS allows the use of read-cache (L2Arc) and write log devices (ZIL). If you wish to enable either of these, please select the disks to be used below. </source>
-        <translation>ZFS позволяет использовать кэш на чтение (L2Arc) и запись лога устройств (ZIL). Если Вы хотите включить что-то из этого, пожалуйста, выберите ниже диски, которые будут использованы для этого.</translation>
+        <translation>ZFS позволяет использовать кэш на чтение (L2Arc) и запись лога устройств (ZIL). Если Вы хотите включить что-то из этого, пожалуйста, выберите ниже диски, которые будут использованы для этого. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="703"></location>
@@ -751,7 +751,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="1013"></location>
         <source>Below you may adjust the file-system mount points. For most users the defaults will work best. </source>
-        <translation>Ниже Вы можете настроить точки монтирования файловой системы. Для большинства пользователей настройки по умолчанию будут работать лучше всего.</translation>
+        <translation>Ниже Вы можете настроить точки монтирования файловой системы. Для большинства пользователей настройки по умолчанию будут работать лучше всего. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1060"></location>
@@ -781,7 +781,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="1235"></location>
         <source>You have chosen Expert mode. In this mode you are able to launch a terminal window and use the command-line to manually partition your disk. When you are finished, make sure to mount your filesystems to /mnt to begin the installation. </source>
-        <translation>Вы выбрали режим Эксперта. В этом режиме Вы можете запустить окно терминала и использовать командную строку, чтобы вручную разделить диск. Когда Вы закончите, убедитесь, что смонтировали файловую систему в /mnt для начала установки.</translation>
+        <translation>Вы выбрали режим Эксперта. В этом режиме Вы можете запустить окно терминала и использовать командную строку, чтобы вручную разделить диск. Когда Вы закончите, убедитесь, что смонтировали файловую систему в /mnt для начала установки. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1285"></location>
@@ -791,7 +791,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="1407"></location>
         <source>Please check the disk summary below and click finish to save your settings. </source>
-        <translation>Пожалуйста, проверьте ниже настройки диска, и нажмите Готово для сохранения.</translation>
+        <translation>Пожалуйста, проверьте ниже настройки диска, и нажмите Готово для сохранения. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="96"></location>
@@ -942,7 +942,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="95"></location>
         <source>This wizard will walk you though the setup of your new server. Click next to begin. </source>
-        <translation>Этот мастер проведет Вас через настройку Вашего нового сервера. Нажмите Далее, чтобы начать.</translation>
+        <translation>Этот мастер проведет Вас через настройку Вашего нового сервера. Нажмите Далее, чтобы начать. </translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="215"></location>
@@ -1065,7 +1065,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="95"></location>
         <source>This wizard will walk you though the process of restoring your system from a Life-Preserver backup. Click next to begin. </source>
-        <translation>Этот мастер проведет Вас через процесс восстановления системы из резервной копии Life-Preserver. Нажмите Далее, чтобы начать.</translation>
+        <translation>Этот мастер проведет Вас через процесс восстановления системы из резервной копии Life-Preserver. Нажмите Далее, чтобы начать. </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="199"></location>
@@ -1105,7 +1105,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="455"></location>
         <source>Server Authentication</source>
-        <translation>Проверка подлинности сервера </translation>
+        <translation>Проверка подлинности сервера</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="461"></location>
@@ -1120,7 +1120,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="530"></location>
         <source>The following systems are backed up on this server, select the one you wish to restore. </source>
-        <translation>Следующие резервные копии системы найдены на этом сервере, выберите ту, с которой Вы хотите восстановиться.</translation>
+        <translation>Следующие резервные копии системы найдены на этом сервере, выберите ту, с которой Вы хотите восстановиться. </translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="572"></location>
