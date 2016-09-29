@@ -7,171 +7,174 @@
         <location filename="../installer.ui" line="258"></location>
         <location filename="../installer.ui" line="261"></location>
         <source>Load installation config file from USB stick</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить конфигурационный файл установки с USB флешки</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="270"></location>
         <source>&amp;Load config from USB</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить конфиг с USB [&amp;L]</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="305"></location>
         <source>Change the installation language</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить язык установки</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="325"></location>
         <source>Welcome to TrueOS! Please select your language and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добро пожаловать в TrueOS! Пожалуйста, выберите язык и нажмите Далее для продолжения.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="360"></location>
         <source>&lt;Version&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Версия&gt;</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="390"></location>
         <source>Please select the type of installation to perform</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, выберите тип установки</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="422"></location>
         <source>System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбор системы</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="431"></location>
         <source>Graphical desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Графический рабочий стол</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="437"></location>
         <source>TrueOS Desktop 
  (graphical interface)</source>
-        <translation type="unfinished"></translation>
+        <translation>Рабочая станция TrueOS
+ (графический интерфейс)</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="458"></location>
         <source>Best for servers and headless systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Лучше всего подходит для серверов и удаленных систем</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="461"></location>
         <source>TrueOS Server 
  (console interface only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервер TrueOS
+ (только консольный интерфейс)</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="479"></location>
         <source>Restore from an existing backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановление из существующей резервной копии</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="482"></location>
         <source>Restore from Life-Preserver backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановление из резервной копии Life-Preserver</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="581"></location>
         <source>Disk Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбор диска</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="648"></location>
         <source>BSD</source>
         <extracomment>FreeBSD's native boot-loader. Used for XEN Dom0 support</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>BSD</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="653"></location>
         <source>GRUB</source>
         <extracomment>Best for Dual-Boot and compatability</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>GRUB</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="661"></location>
         <source>Boot-Loader:</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузчик:</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="677"></location>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Итог</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="717"></location>
         <location filename="../installer.ui" line="1127"></location>
         <source>&amp;Save Config to USB</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить конфиг на USB [&amp;S]</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="806"></location>
         <source>&amp;Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Настроить [&amp;C]</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="908"></location>
         <source>Installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="920"></location>
         <source>Your system is now being installed! This process may take a while, depending upon the installation options chosen, and system speed. You will be notified when the installation is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Система устанавливается! Этот процесс может занять некоторое время, в зависимости от выбранных параметров установки и скорости системы. Вы будете уведомлены, когда установка будет закончена.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1064"></location>
         <source>Your system is now installed!
  Click Finish to reboot. After rebooting you may eject the install media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Система установлена!
+ Нажмите Готово для перезагрузки. После перезагрузки Вы можете извлечь установочный носитель.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1227"></location>
         <source>Display hardware compatibility diagnostic</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображение диагностики совместимости оборудования</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1250"></location>
         <source>Display help for the current screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображение справки для текущего экрана</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1276"></location>
         <source>Launch the on-screen keyboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск экранной клавиатуры</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1302"></location>
         <source>Switch between US layout and user selected layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Переключение между раскладками US и пользовательской</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1331"></location>
         <location filename="../installer.ui" line="1334"></location>
         <source>Emergency Shell and Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Аварийная оболочка и утилиты</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1370"></location>
         <source>Cancel the installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменить установку</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1376"></location>
         <source>Ab&amp;ort</source>
-        <translation type="unfinished"></translation>
+        <translation>Прервать [&amp;o]</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1395"></location>
         <location filename="../installer.cpp" line="48"></location>
         <source>&amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Назад [&amp;B]</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1414"></location>
         <location filename="../installer.cpp" line="49"></location>
         <source>&amp;Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Далее [&amp;N]</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="235"></location>
@@ -195,265 +198,268 @@
         <location filename="../installer.cpp" line="1890"></location>
         <location filename="../installer.cpp" line="1904"></location>
         <source>TrueOS Installer</source>
-        <translation type="unfinished"></translation>
+        <translation>Установщик TrueOS</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="236"></location>
         <source>Unable to detect any disk drives! The install will now exit.</source>
-        <translation type="unfinished"></translation>
+        <translation>Невозможно обнаружить диски! Программа установки будет завершена.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="246"></location>
         <source>Unable to suggest a partition for the detected disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Невозможно предложить раздел на диске.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="352"></location>
         <source>Installing to new dataset in existing zpool: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка нового набора данных в существующий zpool: %1</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="362"></location>
         <source>Installing to file-system mounted at /mnt</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка на файловую систему, смонтированную в /mnt</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="368"></location>
         <source>The disk will be setup with the following configuration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Диск будет настроен со следующей конфигурацией:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="387"></location>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>Диск:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="387"></location>
         <source>Mirroring:</source>
-        <translation type="unfinished"></translation>
+        <translation>Отражение:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="428"></location>
         <location filename="../installer.cpp" line="470"></location>
         <location filename="../installer.cpp" line="500"></location>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>Раздел:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="429"></location>
         <location filename="../installer.cpp" line="471"></location>
         <location filename="../installer.cpp" line="502"></location>
         <source>FileSystem:</source>
-        <translation type="unfinished"></translation>
+        <translation>Файловая система:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="430"></location>
         <location filename="../installer.cpp" line="472"></location>
         <location filename="../installer.cpp" line="504"></location>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Размер:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="444"></location>
         <source>ZFS Datasets:</source>
-        <translation type="unfinished"></translation>
+        <translation>Наборы данных ZFS:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="444"></location>
         <source>The original ZFS layout will be restored</source>
-        <translation type="unfinished"></translation>
+        <translation>Оригинальный слой ZFS будет восстановлен</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="446"></location>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Наборы данных ZFS:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="448"></location>
         <location filename="../installer.cpp" line="506"></location>
         <source>Mount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Примонтировано:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="451"></location>
         <location filename="../installer.cpp" line="508"></location>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="688"></location>
         <source>Start the restore now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать восстановление?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="691"></location>
         <source>Start the default Full-Disk installation now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать установку по умолчанию на полный диск?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="693"></location>
         <source>Start the Customized-Disk installation now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать установку на часть диска?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1273"></location>
         <source>System Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановление системы</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1274"></location>
         <source>Your system is now being restored, this may take a while depending upon the size of your backup and network conditions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Система в настоящее время восстанавливается, это может занять некоторое время в зависимости от размера резервных копий и сетевых условий.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1325"></location>
         <source>Failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Неудачно!</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1330"></location>
         <source>The installer has encountered an error and has been halted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Программа установки обнаружила ошибку и была остановлена.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1331"></location>
         <source>Do you want to generate an error report?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы хотите сгенерировать отчет об ошибке?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="602"></location>
         <source>Install to existing ZFS pool?</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить в существующий пул ZFS?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="602"></location>
         <source>The following pool(s) have been found.
  Do you wish to install into this pool?
  (This will do a clean install, without destroying existing data.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Следующие пул(ы) были найдены.
+ Вы хотите установить в этот пул?
+ (Будет сделана чистая установка, не разрушая существующие данные.)</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1272"></location>
         <source>Your system is now restored!
 Click Exit to close. After rebooting you may eject the install media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Система восстановлена!
+Нажмите Выход для закрытия. После перезагрузки Вы можете извлечь установочный носитель.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1358"></location>
         <source>Exit the installation now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Выйдите из установки сейчас?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1386"></location>
         <source>&amp;Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход [&amp;E]</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1484"></location>
         <location filename="../installer.cpp" line="1526"></location>
         <source>Extracting system...</source>
-        <translation type="unfinished"></translation>
+        <translation>Распаковка системы...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1486"></location>
         <location filename="../installer.cpp" line="1528"></location>
         <source>Installing system... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка системы... Это может занять некоторое время...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1505"></location>
         <source>Installing packages... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка пакетов... Это может занять некоторое время...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1551"></location>
         <source>Installing meta-package: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка метапакета: %1</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1709"></location>
         <source>Are you sure you want to abort this installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите прервать установку?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1764"></location>
         <source>Warning: The selected disk / partition is less than recommended %1GB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Выбранный диск / раздел меньше рекомендуемых %1Гб.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1776"></location>
         <source>This will save your installation configuration to a MSDOSFS/FAT32 formatted USB stick. Continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Это позволит сохранить конфигурацию установки на USB флешку формата MSDOSFS/FAT32. Продолжить?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1789"></location>
         <source>Please insert a USB stick now, and click OK to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, вставьте USB флешку и нажмите ОК для продолжения.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1796"></location>
         <source>Please enter the nickname you want to save this configuration as.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, введите имя с которым Вы хотите сохранить эту конфигурацию.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1813"></location>
         <source>Failed saving config to USB media. Is the device working and formatted MSDOSFS/FAT32?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка сохранения конфигурации на USB носитель. Вы уверены, что устройство рабочее и отформатировано MSDOSFS/FAT32?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1819"></location>
         <source>Configuration saved! You may now safely remove the USB media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Конфигурация сохранена! Вы можете безопасно извлечь USB носитель.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1829"></location>
         <source>This will load a installation configuration file your MSDOSFS/FAT32 formatted USB stick. Continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Это позволит загрузить конфигурационный файл установки с USB флешки формата MSDOSFS/FAT32. Продолжить?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1842"></location>
         <source>Please insert the USB stick now, and click OK to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, вставьте USB флешку и нажмите ОК для продолжения.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1857"></location>
         <source>Failed loading saved config file from the USB media. Is the device working and formatted MSDOSFS/FAT32?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки сохраненного файла конфигурации с USB носителя. Вы уверены, что устройство рабочее и отформатировано MSDOSFS/FAT32?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1864"></location>
         <source>Configuration loaded! You may now safely remove the USB media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Конфигурация загружена! Вы можете безопасно извлечь USB носитель.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1877"></location>
         <source>Config File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл конфигурации:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1880"></location>
         <source>Canceled config script install</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмененный конфигурационный скрипт установки</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1891"></location>
         <source>Failed reading /tmp/pc-sys/</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка чтения /tmp/pc-sys/</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1902"></location>
         <source>TrueOS Installer Config Script</source>
-        <translation type="unfinished"></translation>
+        <translation>Конфигурационный скрипт установки TrueOS</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1905"></location>
         <source>Start the install using this config file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать установку с помощью этого конфигурационного файла?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1967"></location>
         <source>Restoring system: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановление системы: %1</translation>
     </message>
 </context>
 <context>
