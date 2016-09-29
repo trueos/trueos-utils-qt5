@@ -625,93 +625,93 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="104"></location>
         <source>This wizard will walk you through the disk setup process. Please choose the setup mode you wish to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот мастер проведет Вас через процесс настройки диска. Пожалуйста, выберите режим установки, который Вы хотите использовать.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="130"></location>
         <source>Setup Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим настройки</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="136"></location>
         <source>Basic (New to BSD or disk partitioning)</source>
-        <translation type="unfinished"></translation>
+        <translation>Основной (Новичок в системах BSD или разбиении диска)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="150"></location>
         <source>Advanced (Experienced with file-systems)</source>
-        <translation type="unfinished"></translation>
+        <translation>Расширенный (Опытный пользователь при работе с файловой системой)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="215"></location>
         <source>Selected Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбранный диск</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="238"></location>
         <source>Selected Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбранный раздел</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="255"></location>
         <source>ZFS pool name</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя пула ZFS</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="304"></location>
         <source>Force ZFS 4K block size</source>
-        <translation type="unfinished"></translation>
+        <translation>Принудительный размер блока ZFS 4К</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="379"></location>
         <source>Please select the disk or partition you wish to install onto. </source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, выберите диск или раздел, на который Вы хотите установливать систему.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="402"></location>
         <source>Partition Scheme</source>
-        <translation type="unfinished"></translation>
+        <translation>Схема разделов</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="408"></location>
         <source>GPT (Best for new hardware)</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT (Лучшая для новых устройств)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="418"></location>
         <source>MBR (Legacy)</source>
-        <translation type="unfinished"></translation>
+        <translation>MBR (Более старый вариант)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="499"></location>
         <source>If this is a single disk ZFS install, you can continue, otherwise please select the mirror / raid mode and disks below. </source>
-        <translation type="unfinished"></translation>
+        <translation>Если это единственный диск ZFS для установки, Вы можете продолжить, в противном случае выберите режим mirror / raid и диски ниже.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="525"></location>
         <source>Add additional disks to zpool</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте дополнительные диски в zpool</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="560"></location>
         <source>stripe</source>
-        <translation type="unfinished"></translation>
+        <translation>stripe</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="568"></location>
         <source>ZFS Virtual Device Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим виртуального устройства ZFS </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="577"></location>
         <location filename="../wizardDisk.cpp" line="329"></location>
         <source>Please select at least 1 other drive for mirroring</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, выберите по крайней мере 1 другой диск для зеркального отображения</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="596"></location>
         <source>Note: Using ZFS mirror/raidz can only be enabled when doing full-disk installations</source>
-        <translation type="unfinished"></translation>
+        <translation>Примечание: ZFS mirror/raidz может быть включена только при выполнении установки на полный диск</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="677"></location>
