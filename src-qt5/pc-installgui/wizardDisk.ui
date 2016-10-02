@@ -522,7 +522,7 @@
     <item row="5" column="1">
      <widget class="QGroupBox" name="groupZFSOpts">
       <property name="title">
-       <string>Add additional disks to zpool</string>
+       <string>Add additional disks to storage pool</string>
       </property>
       <property name="checkable">
        <bool>true</bool>
