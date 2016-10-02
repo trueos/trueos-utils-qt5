@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_ru">
 <context>
@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="vanished">Вас приветствует операционная система PC-BSD! Вы можете изменить язык интерфейса выше и нажать «Далее», чтобы начать процесс установки.</translation>
+        <translation>Вас приветствует операционная система PC-BSD! Вы можете изменить язык интерфейса выше и нажать «Далее», чтобы начать процесс установки.</translation>
     </message>
     <message>
         <source>System Timezone</source>
@@ -36,7 +36,7 @@
         <translation>Пароль (повторите)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
         <translation>Пароль системного администратора («root»), позволяет вам вносить изменения в систему. Необходимо сохранять пароль в безопасном месте. </translation>
     </message>
     <message>
@@ -60,12 +60,12 @@
         <translation>Обновить [&amp;R]</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
         <translation>Найдены следующие беспроводные сети. Щелкните по сети, к которой вы хотите подключиться или нажмите «Далее», чтобы пропустить этот шаг. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation type="vanished">Установка завершена! Нажмите «Завершить», чтобы выполнить вход в систему.</translation>
+        <translation>Установка завершена! Нажмите «Завершить», чтобы выполнить вход в систему.</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
@@ -89,11 +89,11 @@
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
-        <translation type="vanished">Выполнить шифрование домашних папок пользователей</translation>
+        <translation>Выполнить шифрование домашних папок пользователей</translation>
     </message>
     <message>
         <source>Encrypt user files</source>
-        <translation type="vanished">Шифрование файлов пользователя</translation>
+        <translation>Шифрование файлов пользователя</translation>
     </message>
     <message>
         <source>System Hostname</source>
@@ -101,7 +101,7 @@
     </message>
     <message>
         <source>Enter a valid hostname, or leave default.</source>
-        <translation type="vanished">Введите имя компьютера или оставьте по умолчанию.</translation>
+        <translation>Введите имя компьютера или оставьте по умолчанию.</translation>
     </message>
     <message>
         <source>Please enter a hostname</source>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation type="vanished">Пожалуйста, выберите часовую зону вашего местоположения.</translation>
+        <translation>Пожалуйста, выберите часовую зону вашего местоположения.</translation>
     </message>
     <message>
         <source>May be used when dual-booting</source>
@@ -125,99 +125,99 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вас приветствует операционная система PC-BSD! Вы можете изменить язык интерфейса выше и нажать «Далее», чтобы начать процесс установки.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Доменное имя</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Сведения о пользователе</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользователям PersonaCrypt нужен один и тот же идентификатор пользователя для каждой системы, которой они пользуются</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>Указать UID</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Инициализировать устройство PersonaCrypt</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключаемое устройство</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользовательская часть ключа шифирования диска</translation>
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль устройства</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Тест</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход по умолчанию:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Объем тестирования:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройка аудиовыхода</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Примечание: Настройки звука могут быть скорректированы позднее через звуковой микшер.</translation>
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Дополнительные услуги</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка завершена! Нажмите «Завершить», чтобы выполнить вход в систему.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, введите доменное имя</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя домена может содержать только буквы и цифры</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Устройства не найдены</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, подключитесь к съемному устройству и повторите попытку</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать съемное устройство</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Существующие данные о выбранном устройстве будут удалены в процессе создания нового пользователя.</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
-        <translation type="vanished">Создайте пользователя, чтобы производить вход в систему. Дополнительные пользователи могут быть созданы в «Панели управления».</translation>
+        <translation>Создайте пользователя, чтобы производить вход в систему. Дополнительные пользователи могут быть созданы в «Панели управления».</translation>
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
@@ -248,47 +248,47 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>На этом экране Вам нужно создать пользователя для входа на свой рабочий стол. Дополнительные пользователи могут быть созданы в утилите SysAdm позже.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот экран позволяет проверить устройство воспроизведения звука, а также установить устройство по умолчанию. Оно может быть изменено в дальнейшем через аудио микшер.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Дополнительные настройки или сервисы могут быть включены по мере необходимости. Просто установите, или снимите любые параметры и нажмите Далее для продолжения.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить SSH</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Позволяет получить доступ SSH к этой системе с удаленных систем</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключить IPv6 (Требуется перезагрузка)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Запретить использование соединений IPv6</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Перезагрузка сетевого подключения...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Сеть перезагружается, пожалуйста, подождите...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка маршрута по умолчанию...</translation>
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск DHCP...</translation>
     </message>
 </context>
 <context>
@@ -343,11 +343,11 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип безопасности:</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовое поле</translation>
     </message>
 </context>
 <context>

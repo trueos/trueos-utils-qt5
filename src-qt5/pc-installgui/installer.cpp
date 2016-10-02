@@ -1592,17 +1592,18 @@ QStringList Installer::getDeskPkgCfg()
    if ( radioDesktop->isChecked() ) {
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
-     pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "misc/trueos-desktop" << "x11/lumina";
+     pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
        pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
 
      // The default web-browser and plugins
-     pkgList <<  "www/qupzilla-qt5";
+     pkgList <<  "www/firefox";
 
      // The default mail client
-     pkgList << "mail/trojita";
+     pkgList << "mail/thunderbird";
 
      // Multimedia player
      pkgList << "multimedia/vlc" << "multimedia/openh264";
@@ -1618,6 +1619,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // Utilities
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
+     pkgList << "graphics/xsane" << "x11/xcalc";
 
      // Printer packages
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
@@ -1632,7 +1634,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "x11-fonts/droid-fonts-ttf";
      
      // i18n packages, will eventually go away
-     pkgList << "misc/trueos-i18n";
+     //pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
@@ -1651,22 +1653,22 @@ QStringList Installer::getDeskPkgCfg()
      } // Done with NVIDIA check
 
      // Are we on VirtualBox or VMware?
-     /*QFile filev("/var/log/Xorg.0.log");
+     QFile filev("/var/log/Xorg.0.log");
      if (filev.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream inv(&filev);
        while (!inv.atEnd()) {
           QString line = inv.readLine();
           if ( line.indexOf("VirtualBox") != -1 ) {
-            pkgList << "misc/trueos-meta-virtualboxguest";
+            pkgList << "emulators/virtualbox-ose-additions";
             break;
           }
           if ( line.indexOf("VMware") != -1 ) {
-            pkgList << "misc/trueos-meta-vmwareguest";
+            pkgList << "emulators/open-vm-tools";
             break;
           }
        }     
        filev.close();
-     }*/ // End of VM checks
+     } // End of VM checks
 
      // End of desktop packages
    } 

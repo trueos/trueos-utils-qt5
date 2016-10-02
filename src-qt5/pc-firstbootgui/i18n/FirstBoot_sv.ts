@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_sv">
 <context>
@@ -36,8 +36,8 @@
         <translation>Lösenord (Upprepa)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>System eller &quot;root&quot; lösenordet tillåter dig att göra ändringar till ditt operativsystem, det bör hållas ifrån obehöriga användare. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>System eller "root" lösenordet tillåter dig att göra ändringar till ditt operativsystem, det bör hållas ifrån obehöriga användare. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Scanna igen</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Följande trådlösa nätverk hittades. Klicka på det du vill ansluta till. Om du vill hoppa över detta, klicka på &quot;Nästa&quot; nedan. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Följande trådlösa nätverk hittades. Klicka på det du vill ansluta till. Om du vill hoppa över detta, klicka på "Nästa" nedan. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -131,11 +131,11 @@
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Domännamn</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Användar detaljer</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
@@ -155,7 +155,7 @@
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj</translation>
     </message>
     <message>
         <source>Removable Device</source>
@@ -171,15 +171,15 @@
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Testa</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard Output:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Testa Volym:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Valfria tjänster</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
@@ -203,7 +203,7 @@
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Domännamn kan endast innehålla bokstäver och nummer</translation>
     </message>
     <message>
         <source>No Devices Found</source>
@@ -262,7 +262,7 @@
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera SSH</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
@@ -270,7 +270,7 @@
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaktivera IPv6 (Kräver Omstart)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
@@ -278,11 +278,11 @@
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Startar om nätverk...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nätverket startas om, snälla vänta...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
@@ -290,7 +290,7 @@
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör DHCP...</translation>
     </message>
 </context>
 <context>
@@ -345,7 +345,7 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Säkerhetstyp:</translation>
     </message>
     <message>
         <source>TextLabel</source>

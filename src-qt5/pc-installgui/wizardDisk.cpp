@@ -374,7 +374,7 @@ bool wizardDisk::validatePage()
             for ( int i = 0; i < listZFSDisks->count(); ++i )
                 if ( listZFSDisks->item(i)->checkState() == Qt::Checked )
                    numChecked++;
-            if ( numChecked > 1 ) {
+            if ( numChecked >= 1 ) {
               button(QWizard::NextButton)->setEnabled(true);
               return true;
             }
