@@ -230,7 +230,7 @@ QStringList Backend::listAllZpools()
             pools.append(p.readLine().simplified());
         }
     }
-    qDebug() << "Found zpools:" << pools;
+    qDebug() << "Found storage pools:" << pools;
     return pools;
 }
 
