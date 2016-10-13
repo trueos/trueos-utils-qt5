@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_es">
 <context>
@@ -36,8 +36,8 @@
         <translation>Contraseña (Repetir)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>La contraseña del sistema o &quot;root&quot; permite realizar cambios a tu sistema operativo, y debe ser cuidada de usuarios no confiables. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>La contraseña del sistema o "root" permite realizar cambios a tu sistema operativo, y debe ser cuidada de usuarios no confiables. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Re-escanear</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Se encontraron las siguientes redes inalambricas. Clic en la que deseas conectarte. Si deseas omitir, clic &quot;Siguiente&quot;. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Se encontraron las siguientes redes inalambricas. Clic en la que deseas conectarte. Si deseas omitir, clic "Siguiente". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -125,15 +125,15 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">¡Bienvenido a tu nuevo sistema! Puedes cambiar el idioma acontinuacion, clic en siguiente para comenzar la instalacion.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre de Dominio</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detalles de Usuario</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
@@ -141,7 +141,7 @@
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>Especificar UID</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
@@ -153,11 +153,11 @@
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivo Removible</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
@@ -165,11 +165,11 @@
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Contraseña del Dispositivo</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Prueba</translation>
     </message>
     <message>
         <source>Default Output:</source>
@@ -197,7 +197,7 @@
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor introduce un dombre de dominio</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
