@@ -14,7 +14,9 @@
 
 class service{
 public:
-  service(){}
+  bool checkByDefault;
+
+  service(){checkByDefault = false;}
   ~service(){}
 	  
   QString ID; //Unique ID/Name for this service (for finding in the lists)

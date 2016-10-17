@@ -633,7 +633,8 @@ void Installer::LoadServices(){
       QListWidgetItem *it = new QListWidgetItem(SERVICELIST[i].name);
 	it->setToolTip(SERVICELIST[i].description);
 	it->setWhatsThis(SERVICELIST[i].ID);
-	it->setCheckState(Qt::Unchecked);
+	if(SERVICELIST[i].checkByDefault){ it->setCheckState(Qt::Checked); }
+	else{ it->setCheckState(Qt::Unchecked); }
       list_services->addItem(it);
     }
     list_services->sortItems(); //arrange alphabetically (by translated name)

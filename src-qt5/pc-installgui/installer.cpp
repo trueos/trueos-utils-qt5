@@ -344,7 +344,7 @@ QStringList Installer::getDiskSummary()
   if ( ! zpoolTarget.isEmpty() )
   {
     summaryList << "";
-    summaryList << tr("Installing to new boot environment in existing zpool: %1").arg(zpoolTarget);
+    summaryList << tr("Installing to new boot environment in existing storage pool: %1").arg(zpoolTarget);
     return summaryList;
   }
 
@@ -1619,7 +1619,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // Utilities
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
-     pkgList << "graphics/xsane" << "x11/xcalc";
+     pkgList << "graphics/xsane" << "sysutils/bsdstats";
 
      // Printer packages
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
