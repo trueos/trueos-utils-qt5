@@ -44,6 +44,9 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     connect(pushSaveConfig, SIGNAL(clicked()), this, SLOT(slotSaveConfigUSB()));
     connect(pushSaveConfig2, SIGNAL(clicked()), this, SLOT(slotSaveConfigUSB()));
 
+    connect(radio_install_be, SIGNAL(toggled(bool)), this, SLOT(slotBEInstallToggled(bool)) );
+    connect(combo_install_pools, SIGNAL(currentIndexChanged(int)), this, SLOT(slotBEInstallToggled()) );
+
     //abortButton->setText(tr("&Cancel"));
     backButton->setText(tr("&Back"));
     nextButton->setText(tr("&Next"));
@@ -644,10 +647,16 @@ void Installer::slotNext()
 
    // Create the pc-sysinstall config
    if ( installStackWidget->currentIndex() == 1 ) {
-
+    combo_install_pools->clear();
      // We have existing zpool, see if we want to upgrade within
      if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
-	if ( promptInstallToZpool() )
+      qDebug() << "BE install option available:" << existingZpools;
+      combo_install_pools->addItems(existingZpools);
+      radio_install_be->setChecked(true);
+       radio_install_full->setVisible(true);
+       radio_install_be->setVisible(true);
+       slotBEInstallToggled(true);
+	/*if ( promptInstallToZpool() )
         {
 	  // Disable the customize options
 	  pushDiskCustomize->setHidden(true);
@@ -655,15 +664,23 @@ void Installer::slotNext()
         } else {
 	  pushDiskCustomize->setHidden(false);
 	  comboBootLoader->setHidden(false);
-	}
+	}*/
+     }else{
+       //No pools found, or restore selected
+       qDebug() << "No BE install option available:" << existingZpools;
+       radio_install_full->setChecked(true);
+       radio_install_full->setVisible(false);
+       radio_install_be->setVisible(false);
+       slotBEInstallToggled(false); //update display
      }
+     
      // Re-gen the config / summary
-     startConfigGen();
+     /*startConfigGen();
      textEditDiskSummary->clear();
      QStringList summary = getDiskSummary();
      for ( int i=0; i < summary.count(); ++i)
        textEditDiskSummary->append(summary.at(i));
-     textEditDiskSummary->moveCursor(QTextCursor::Start);
+     textEditDiskSummary->moveCursor(QTextCursor::Start);*/
    }
 
    // If the chosen disk is too small or partition is invalid, don't continue
@@ -1987,4 +2004,24 @@ double Installer::displayToDoubleK(QString displayNumber){
 
 void Installer::slotEmergencyShell() {
   system("qterminal -e /root/TrueOSUtil.sh &");
+}
+
+void Installer::slotBEInstallToggled(bool inBE){
+  group_install_full->setEnabled(!inBE);
+  group_install_full->setVisible(!inBE);
+  group_install_be->setEnabled(inBE);
+  group_install_be->setVisible(inBE);
+  if(inBE){
+    zpoolTarget = combo_install_pools->currentText();
+  }else{
+    zpoolTarget.clear();
+   }
+  //Now re-load the summary
+  startConfigGen();
+  textEditDiskSummary->clear();
+  QStringList summary = getDiskSummary();
+  for ( int i=0; i < summary.count(); ++i){
+    textEditDiskSummary->append(summary.at(i)); 
+  }
+  textEditDiskSummary->moveCursor(QTextCursor::Start);
 }

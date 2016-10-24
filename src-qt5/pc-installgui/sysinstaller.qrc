@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/modules">
+    <file>images/bootenvironment.png</file>
     <file>images/sysadm_circle.svg</file>
     <file>images/trueos.png</file>
     <file>images/lifepreserver.png</file>
