@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_de">
 <context>
@@ -36,8 +36,8 @@
         <translation>Passwort (Wiederholen)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Das System- oder &quot;Root&quot;-Passwort erlaubt es Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzerinnen und Benutzern ferngehalten werden. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>Das System- oder "Root"-Passwort erlaubt es Ihnen, Änderungen am Betriebssystem vorzunehmen, und sollte von nicht vertrauenswürdigen Benutzerinnen und Benutzern ferngehalten werden. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Wiederscannen</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie das eine, mit dem Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unterhalb &quot;Weiter&quot;. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Die folgenden kabellosen Netzwerke wurden gefunden. Klicken Sie das eine, mit dem Sie sich verbinden wollen. Wenn Sie das überspringen wollen, klicken Sie unterhalb "Weiter". </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -121,7 +121,7 @@
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation>Setze BIOS auf Weltzeit (UTC)</translation>
+        <translation>BIOS auf Weltzeit (UTC) festlegen</translation>
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
@@ -133,7 +133,7 @@
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdetails</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
@@ -141,23 +141,23 @@
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID angeben</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt-Gerät initialisieren</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Auswahl</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernbares Gerät</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
@@ -165,15 +165,15 @@
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Gerätepasswort</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Test</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardausgabe:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Optionale Dienste</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
@@ -205,7 +205,7 @@
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Geräte gefunden</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
@@ -213,7 +213,7 @@
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernbares Gerät auswählen</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
