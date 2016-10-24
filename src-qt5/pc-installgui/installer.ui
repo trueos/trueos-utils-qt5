@@ -1326,6 +1326,52 @@ selection-background-color: rgb(160, 160, 160);</string>
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="pushNetwork">
+         <property name="statusTip">
+          <string>Setup networking within the installer environment</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="sysinstaller.qrc">
+           <normaloff>:/modules/images/network.png</normaloff>:/modules/images/network.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushDiskManager">
+         <property name="statusTip">
+          <string>Launch the disk manager</string>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+         <property name="icon">
+          <iconset resource="sysinstaller.qrc">
+           <normaloff>:/modules/images/slices.png</normaloff>:/modules/images/slices.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="pushShell">
          <property name="toolTip">
           <string>Emergency Shell and Utilities</string>

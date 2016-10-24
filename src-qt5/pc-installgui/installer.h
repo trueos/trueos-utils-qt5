@@ -64,10 +64,10 @@ private slots:
     void slotLoadConfigUSB();
 
     // Slot to start the network manager
-    //void slotStartNetworkManager();
+    void slotStartNetworkManager();
 
     // Slot to start the disk manager
-    //void slotStartDiskManager();
+    void slotStartDiskManager();
 
     // Desktop selector slots
     void slotSaveFBSDSettings(QString, QString, QString, QString, QString, QString, bool, bool, QStringList, QStringList);
