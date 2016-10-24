@@ -22,12 +22,12 @@
     <message>
         <location filename="../installer.ui" line="325"></location>
         <source>Welcome to TrueOS! Please select your language and click next to continue.</source>
-        <translation>Benvenuto su TrueOS! Per favore selezione la tua lingua e clicca avanti per continuare.</translation>
+        <translation>Benvenuto su TrueOS! Per favore seleziona la tua lingua e clicca avanti per continuare.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="360"></location>
         <source>&lt;Version&gt;</source>
-        <translation>&lt;Versione&gt;</translation>
+        <translation>&lt;Version&gt;</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="390"></location>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../installer.ui" line="581"></location>
         <source>Disk Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezione disco</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="648"></location>
@@ -112,12 +112,12 @@
     <message>
         <location filename="../installer.ui" line="908"></location>
         <source>Installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Installazione</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="920"></location>
         <source>Your system is now being installed! This process may take a while, depending upon the installation options chosen, and system speed. You will be notified when the installation is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il tuo sistema è in fase di installazione! Questa operazione può richiedere del tempo, dipende delle opzioni di installazione selezionate e dalla velocità del tuo pc. Sarai avvertito quando l'installazione sarà terminata.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1064"></location>
