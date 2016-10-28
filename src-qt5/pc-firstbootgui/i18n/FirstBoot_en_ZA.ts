@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_en_ZA">
 <context>
     <name>Installer</name>
     <message>
@@ -36,8 +36,8 @@
         <translation>Password (Repeat)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>&amp;Rescan</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -105,15 +105,15 @@
     </message>
     <message>
         <source>Please enter a hostname</source>
-        <translation>Please enter a hostname</translation>
+        <translation>Podaj nazwę hosta</translation>
     </message>
     <message>
         <source>Hostname may only contain letters and numbers</source>
-        <translation>Hostname may only contain letters and numbers</translation>
+        <translation>Nazwa hosta może składać się tylko z liter i cyfr</translation>
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
-        <translation type="vanished">Please select the timezone for your location.</translation>
+        <translation>Proszę wybrać strefę czasową dla danej lokalizacji.</translation>
     </message>
     <message>
         <source>May be used when dual-booting</source>
