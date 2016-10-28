@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_pl">
 <context>
     <name>Installer</name>
     <message>
@@ -32,8 +32,8 @@
         <translation>Hasło (ponownie)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Hasło systemowe lub administracyjne pozwala na dokonywanie zmian w systemie operacyjnym i powinno być znane wyłącznie zaufanym użytkownikom.</translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>Hasło systemowe lub administracyjne pozwala na dokonywanie zmian w systemie operacyjnym i powinno być znane wyłącznie zaufanym użytkownikom. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -56,8 +56,8 @@
         <translation>&amp;Powtórz skanowanie</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Znaleziono następujące sieci przezprzewodowe. Kliknij na tę do której chcesz się połączyć. Jeśli chcesz pominąć ten krok, kliknij Dalej.</translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Znaleziono następujące sieci przezprzewodowe. Kliknij na tę do której chcesz się połączyć. Jeśli chcesz pominąć ten krok, kliknij Dalej. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -125,39 +125,39 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Witamy w twoim nowym systemie! Można zmienić język powyżej, a następnie kliknij Dalej, aby rozpocząć proces konfiguracji.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa Domeny</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Dane Użytkownika</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>Użytkownicy PersonaCrypt potrzebują to samo UID dla każdego systemu, w którym są one wykorzystywane</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>Określ UID</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicjalizacja urządzenia PersonaCrypt</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenie przenośne</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło urządzenia</translation>
     </message>
     <message>
         <source>Test</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Domyślne Wyjście:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
@@ -181,11 +181,11 @@
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Skonfiguruj Wyjście Audio</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uwaga: Ustawienia audio można również regulować później, za pomocą miksera audio.</translation>
     </message>
     <message>
         <source>Optional Services</source>
@@ -193,31 +193,31 @@
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja została zakończona! Naciśnij przycisk Zakończ, aby zalogować się do nowego systemu.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj nazwę domeny</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa domeny może zawierać tylko litery i cyfry</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie znaleziono żadnych urządzeń</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę podłączyć przenośne urządzenie i spróbować ponownie</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz przenośne urządzenie</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ostrzeżenie: Istniejące dane dotyczące wybranego urządzenia zostaną usunięte podczas procesu tworzenia użytkownika.</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
-        <translation type="vanished">Na tym ekranie należy stworzyć użytkownika do logowania się do pulpitu. Dodatkowi użytkownicy mogą zostać stworzeni w Panelu Sterowania</translation>
+        <translation>Na tym ekranie należy stworzyć użytkownika do logowania się do pulpitu. Dodatkowi użytkownicy mogą zostać stworzeni w Panelu Sterowania.</translation>
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
@@ -248,39 +248,39 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na tym ekranie należy utworzyć użytkownika, aby zalogować się do pulpitu. Dodatkowi użytkownicy mogą zostać utworzeni później narzędziem SysAdm.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran ten pozwala przetestować urządzenie do odtwarzania dźwięku i ustawienie tego urządzenia jako domyślne dla wszystkich dźwięków. Może ono być zmienione później poprzez mikser audio.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcjonalne zmiany konfiguracji lub serwisy mogą teraz zostać włączone, jeśli są potrzebne. Wystarczy zaznaczyć lub odznaczyć odpowiednie opcje i kliknąć przycisk Dalej, aby kontynuować.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Włącz SSH</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozwala na dostęp SSH do tego systemu ze zdalnych systemów</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz IPv6 (Wymaga Restartu)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Uniemożliwia korzystanie z połączeń IPv6</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponowne uruchomienie sieci ...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sieć jest ponowne uruchamiana, proszę czekać ...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
@@ -343,7 +343,7 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodzaj Zabezpieczenia:</translation>
     </message>
     <message>
         <source>TextLabel</source>
