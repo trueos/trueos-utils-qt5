@@ -631,7 +631,7 @@ void Installer::LoadServices(){
     list_services->clear();
     for(int i=0; i<SERVICELIST.length(); i++){
       QListWidgetItem *it = new QListWidgetItem(SERVICELIST[i].name);
-	it->setToolTip(SERVICELIST[i].description);
+	it->setStatusTip(SERVICELIST[i].description);
 	it->setWhatsThis(SERVICELIST[i].ID);
 	if(SERVICELIST[i].checkByDefault){ it->setCheckState(Qt::Checked); }
 	else{ it->setCheckState(Qt::Unchecked); }
