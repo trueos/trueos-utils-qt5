@@ -116,7 +116,7 @@ Jeśli nie pojawi się Twój ekran, proszę poczekać, po chwili nastąpi powró
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>Wsparcie dla Dual-Head jest stworzone dla systemów z jedną kartą graficzną i dwoma monitorami. Inne konfiguracje mogą zostać osiągnięte przez edycję pliku '/etc/X11/xorg.conf'.</translation>
+        <translation>Wsparcie dla Dual-Head jest stworzone dla systemów z jedną kartą graficzną i dwoma monitorami. Inne konfiguracje mogą zostać osiągnięte przez edycję pliku '/etc/X11/xorg.conf'</translation>
     </message>
 </context>
 <context>
