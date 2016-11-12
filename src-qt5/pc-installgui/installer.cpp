@@ -1023,16 +1023,21 @@ void Installer::startConfigGen()
         cfgList << "runExtCommand=cp /etc/X11/xorg.conf ${FSMNT}/etc/X11/xorg.conf";
       }
 
-      // Check if we need to load i915kms
+      // Check if we need to load other Kernel Modules on startup
       QProcess kldproc;
       kldproc.start(QString("kldstat"), QStringList());
       while(kldproc.state() == QProcess::Starting || kldproc.state() == QProcess::Running) {
         kldproc.waitForFinished(200);
         QCoreApplication::processEvents();
       }
-      if ( kldproc.readAll().simplified().indexOf("i915kms") != -1 ) {
+      QStringList kldlist = kldproc.readAll().simplified().split("\n");
+      if( kldlist.contains("i915kms") ) {
         cfgList << "runCommand=echo 'kldload_i915kms=\"i915kms\"' >> /etc/rc.conf";
       }
+      if( kldlist.contains("vboxguest") ){
+        cfgList << "runCommand=echo 'kldload_vboxguest=\"vboxguest\"' >> /etc/rc.conf";
+      }
+
 
       if ( comboLanguage->currentIndex() != 0 ) {
         QString lang = languages.at(comboLanguage->currentIndex());
