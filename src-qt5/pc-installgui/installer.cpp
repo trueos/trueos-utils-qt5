@@ -1030,7 +1030,7 @@ void Installer::startConfigGen()
         kldproc.waitForFinished(200);
         QCoreApplication::processEvents();
       }
-      QStringList kldlist = QString(kldproc.readAll()).simplified().split("\n");
+      QStringList kldlist = kldproc.readAll().simplified().split("\n");
       if( kldlist.contains("i915kms") ) {
         cfgList << "runCommand=echo 'kldload_i915kms=\"i915kms\"' >> /etc/rc.conf";
       }
