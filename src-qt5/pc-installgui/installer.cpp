@@ -38,11 +38,14 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     connect(pushTouchKeyboard, SIGNAL(clicked()), this, SLOT(slotPushVirtKeyboard()));
     connect(pushChangeKeyLayout, SIGNAL(clicked()), this, SLOT(slotPushKeyLayout()));
     connect(pushHardware, SIGNAL(clicked()), this, SLOT(slotCheckHardware()));
-    //connect(pushNetwork, SIGNAL(clicked()), this, SLOT(slotStartNetworkManager()));
-    // connect(pushDiskManager, SIGNAL(clicked()), this, SLOT(slotStartDiskManager()));
+    connect(pushNetwork, SIGNAL(clicked()), this, SLOT(slotStartNetworkManager()));
+    connect(pushDiskManager, SIGNAL(clicked()), this, SLOT(slotStartDiskManager()));
     connect(pushLoadConfig, SIGNAL(clicked()), this, SLOT(slotLoadConfigUSB()));
     connect(pushSaveConfig, SIGNAL(clicked()), this, SLOT(slotSaveConfigUSB()));
     connect(pushSaveConfig2, SIGNAL(clicked()), this, SLOT(slotSaveConfigUSB()));
+
+    connect(radio_install_be, SIGNAL(toggled(bool)), this, SLOT(slotBEInstallToggled(bool)) );
+    connect(combo_install_pools, SIGNAL(currentIndexChanged(int)), this, SLOT(slotBEInstallToggled()) );
 
     //abortButton->setText(tr("&Cancel"));
     backButton->setText(tr("&Back"));
@@ -344,7 +347,7 @@ QStringList Installer::getDiskSummary()
   if ( ! zpoolTarget.isEmpty() )
   {
     summaryList << "";
-    summaryList << tr("Installing to new boot environment in existing zpool: %1").arg(zpoolTarget);
+    summaryList << tr("Installing to new boot environment in existing storage pool: %1").arg(zpoolTarget);
     return summaryList;
   }
 
@@ -644,10 +647,16 @@ void Installer::slotNext()
 
    // Create the pc-sysinstall config
    if ( installStackWidget->currentIndex() == 1 ) {
-
+    combo_install_pools->clear();
      // We have existing zpool, see if we want to upgrade within
      if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
-	if ( promptInstallToZpool() )
+      qDebug() << "BE install option available:" << existingZpools;
+      combo_install_pools->addItems(existingZpools);
+      radio_install_be->setChecked(true);
+       radio_install_full->setVisible(true);
+       radio_install_be->setVisible(true);
+       slotBEInstallToggled(true);
+	/*if ( promptInstallToZpool() )
         {
 	  // Disable the customize options
 	  pushDiskCustomize->setHidden(true);
@@ -655,15 +664,23 @@ void Installer::slotNext()
         } else {
 	  pushDiskCustomize->setHidden(false);
 	  comboBootLoader->setHidden(false);
-	}
+	}*/
+     }else{
+       //No pools found, or restore selected
+       qDebug() << "No BE install option available:" << existingZpools;
+       radio_install_full->setChecked(true);
+       radio_install_full->setVisible(false);
+       radio_install_be->setVisible(false);
+       slotBEInstallToggled(false); //update display
      }
+     
      // Re-gen the config / summary
-     startConfigGen();
+     /*startConfigGen();
      textEditDiskSummary->clear();
      QStringList summary = getDiskSummary();
      for ( int i=0; i < summary.count(); ++i)
        textEditDiskSummary->append(summary.at(i));
-     textEditDiskSummary->moveCursor(QTextCursor::Start);
+     textEditDiskSummary->moveCursor(QTextCursor::Start);*/
    }
 
    // If the chosen disk is too small or partition is invalid, don't continue
@@ -1594,7 +1611,7 @@ QStringList Installer::getDeskPkgCfg()
    if ( radioDesktop->isChecked() ) {
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
-     pkgList << "misc/trueos-desktop" << "x11/lumina" << "x11/lumina-i18n";
+     pkgList << "misc/trueos-desktop" << "x11/lumina";
      pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
@@ -1602,10 +1619,10 @@ QStringList Installer::getDeskPkgCfg()
        pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
 
      // The default web-browser and plugins
-     pkgList <<  "www/qupzilla-qt5";
+     pkgList <<  "www/firefox";
 
      // The default mail client
-     pkgList << "mail/trojita";
+     pkgList << "mail/thunderbird";
 
      // Multimedia player
      pkgList << "multimedia/vlc" << "multimedia/openh264";
@@ -1621,6 +1638,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // Utilities
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
+     pkgList << "graphics/xsane" << "sysutils/bsdstats";
 
      // Printer packages
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
@@ -1635,7 +1653,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "x11-fonts/droid-fonts-ttf";
      
      // i18n packages, will eventually go away
-     pkgList << "misc/trueos-i18n";
+     //pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
      QFile file("/var/log/Xorg.0.log");
@@ -1654,22 +1672,22 @@ QStringList Installer::getDeskPkgCfg()
      } // Done with NVIDIA check
 
      // Are we on VirtualBox or VMware?
-     /*QFile filev("/var/log/Xorg.0.log");
+     QFile filev("/var/log/Xorg.0.log");
      if (filev.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream inv(&filev);
        while (!inv.atEnd()) {
           QString line = inv.readLine();
           if ( line.indexOf("VirtualBox") != -1 ) {
-            pkgList << "misc/trueos-meta-virtualboxguest";
+            pkgList << "emulators/virtualbox-ose-additions";
             break;
           }
           if ( line.indexOf("VMware") != -1 ) {
-            pkgList << "misc/trueos-meta-vmwareguest";
+            pkgList << "emulators/open-vm-tools";
             break;
           }
        }     
        filev.close();
-     }*/ // End of VM checks
+     } // End of VM checks
 
      // End of desktop packages
    } 
@@ -1918,13 +1936,13 @@ void Installer::slotLoadConfigUSB()
   startInstall();
 }
 
-/*void Installer::slotStartNetworkManager() {
+void Installer::slotStartNetworkManager() {
   system("/usr/local/bin/pc-netmanager -installer &");
-}*/
+}
 
-/*void Installer::slotStartDiskManager() {
+void Installer::slotStartDiskManager() {
   system("/usr/local/bin/pc-zmanager &");
-}*/
+}
 
 void Installer::slotSaveRestoreSettings(QStringList Opts)
 {
@@ -1988,4 +2006,24 @@ double Installer::displayToDoubleK(QString displayNumber){
 
 void Installer::slotEmergencyShell() {
   system("qterminal -e /root/TrueOSUtil.sh &");
+}
+
+void Installer::slotBEInstallToggled(bool inBE){
+  group_install_full->setEnabled(!inBE);
+  group_install_full->setVisible(!inBE);
+  group_install_be->setEnabled(inBE);
+  group_install_be->setVisible(inBE);
+  if(inBE){
+    zpoolTarget = combo_install_pools->currentText();
+  }else{
+    zpoolTarget.clear();
+   }
+  //Now re-load the summary
+  startConfigGen();
+  textEditDiskSummary->clear();
+  QStringList summary = getDiskSummary();
+  for ( int i=0; i < summary.count(); ++i){
+    textEditDiskSummary->append(summary.at(i)); 
+  }
+  textEditDiskSummary->moveCursor(QTextCursor::Start);
 }

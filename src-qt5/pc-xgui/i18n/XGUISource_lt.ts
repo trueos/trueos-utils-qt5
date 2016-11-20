@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_lt">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Palikti šiuos ekrano nustatymus?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Ankstesnis bandymas nepavyko, prašome patikrinti savo nustatymus ir bandyti dar kartą.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Jūsų ekranas buvo konfigūruotas.
+Palikti šiuos nustatymus?</translation>
     </message>
 </context>
 <context>
@@ -113,13 +111,12 @@ Jei nematysite ekrane vaizdo, prašome palaukti, nes bus atstatyti seni nustatym
         <translation>Įspėjimas!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD nepavyko automatiškai atpažinti jūsų vaizduoklio. Rekomenduojama nurodyti horizontalų ir vertikalų atnaujinimo dažnius &quot;Sudėtingesnių&quot; nustatymų kortelėje.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD nepavyko automatiškai atpažinti jūsų vaizduoklio. Rekomenduojama nurodyti horizontalų ir vertikalų atnaujinimo dažnius "Sudėtingesnių" nustatymų kortelėje.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Dviejų monitorių palaikymas yra sukurtas sistemoms su viena vaizdo plokšte ir dvejais monitoriais. Kitos sąrankos gali būti nustatytos, redaguojant /etc/X11/xorg.conf</translation>
     </message>
 </context>
 <context>
@@ -154,18 +151,15 @@ Jei nematysite ekrane vaizdo, prašome palaukti, nes bus atstatyti seni nustatym
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Gerai</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Raiška:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Tvarkyklė:</translation>
     </message>
 </context>
 </TS>

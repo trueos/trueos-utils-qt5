@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_it">
 <context>
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>Scambiare la tastiera statunitense con quella voluta dall&apos;utente</translation>
+        <translation>Scambiare la tastiera statunitense con quella voluta dall'utente</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -36,8 +36,8 @@
         <translation>Password (Ripeti)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>La password di sistema o &quot;root&quot; permette di effettuare cambiamenti al tuo sistema operativo, e dovrebbe essere conosciuta solo da utenti fidati. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>La password di sistema o "root" permette di effettuare cambiamenti al tuo sistema operativo, e dovrebbe essere conosciuta solo da utenti fidati. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,12 +60,12 @@
         <translation>&amp;Rescan</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>Le seguenti reti wireless sono state rilevate. Seleziona quella a cui vuoi connetterti. Se vuoi tralasciare, clicca &quot;Avanti&quot; qui sotto. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>Le seguenti reti wireless sono state rilevate. Seleziona quella a cui vuoi connetterti. Se vuoi tralasciare, clicca "Avanti" qui sotto. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
-        <translation type="vanished">L&apos;installazione é completata! Premi Fine per autenticarti sul tuo nuovo desktop.</translation>
+        <translation type="vanished">L'installazione é completata! Premi Fine per autenticarti sul tuo nuovo desktop.</translation>
     </message>
     <message>
         <source>&amp;Finish</source>
@@ -134,7 +134,7 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Benvenuto sul tuo nuovo sistema! Puoi modificare la lingua sopra, e clicca su avanti per iniziare il processo di configurazione.</translation>
     </message>
     <message>
         <source>Domain Name</source>
@@ -142,7 +142,7 @@
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Dettagli utente</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>

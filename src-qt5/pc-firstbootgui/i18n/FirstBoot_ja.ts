@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_ja">
 <context>
     <name>Installer</name>
     <message>
@@ -36,8 +36,8 @@
         <translation>パスワード(再入力)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>システムまたは&quot;root&quot;パスワードはシステムの設定を変更する時に使用しますので信用できないユーザーには教えないようにしましょう。</translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>システムまたは "root" パスワードはシステムの設定を変更する時に使用しますので信用できないユーザーには教えないようにしましょう。 </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -60,8 +60,8 @@
         <translation>再スキャン(&amp;R)</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>以下の無線ネットワークが見つかりました。接続先を一つ選ぶか、&quot;次へ&quot;をクリックして設定をスキップしてください。</translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>以下の無線ネットワークが見つかりました。接続先を一つ選ぶか、「次へ」をクリックして設定をスキップしてください。 </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -105,11 +105,11 @@
     </message>
     <message>
         <source>Please enter a hostname</source>
-        <translation>ホスト名を入力してください。</translation>
+        <translation>ホスト名を入力してください</translation>
     </message>
     <message>
         <source>Hostname may only contain letters and numbers</source>
-        <translation>ホスト名は英数字のみ入力してください。</translation>
+        <translation>ホスト名は英数字のみ入力してください</translation>
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
@@ -125,99 +125,99 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>ようこそ! 言語を選択してから「次へ」をクリックして設定を進めてください。</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>ドメイン名</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー登録</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt ユーザーはどのシステムでも同じ UID 番号を使う必要があります</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID 番号の指定</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt デバイスの初期化</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>選択</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルデバイス</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーが携帯するディスク暗号化キー</translation>
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>デバイスのパスワード</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>テスト</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルト出力:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>ボリュームのテスト:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>オーディオ出力の設定</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>注意: オーディオ設定はオーディオミキサーで後から変更できます。</translation>
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>オプション設定</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>設定を完了しました。「完了」をクリックしてシステムにログインしてください。</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>ドメイン名を入力してください</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>ドメイン名は英数字を入力してください</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>デバイスが見つかりません</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルデバイスを接続してやり直してください</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルデバイスの選択</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>警告: 選択されたデバイスに存在する全てのデータはユーザー作成処理実行時に削除されます。</translation>
     </message>
 </context>
 <context>
@@ -248,47 +248,47 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>この画面ではデスクトップにログインする時に使用するユーザーを作成します。 SysAdm ユーティリティーでユーザーを後から追加することもできます。</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>この画面ではオーディオ機器の再生テストとデフォルト設定を行います。設定はオーディオミキサーで後から変更できます。</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>オプションのサービスを必要に応じて有効にします。起動したいサービスにチェックしたら「次へ」をクリックして設定を継続します。</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH を有功にする</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>リモートシステムからの SSH アクセスを許可します</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 の無効化(再起動が必要です)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 接続を無効にします</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットワークを再起動しています...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットワークを再起動しています。お待ちください...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルトルートを設定しています...</translation>
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>DHCP を実行しています...</translation>
     </message>
 </context>
 <context>
@@ -343,11 +343,11 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>セキュリティの種類:</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
 </context>
 <context>

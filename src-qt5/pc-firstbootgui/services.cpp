@@ -34,7 +34,46 @@ QList<service> Services::getServiceList(){
     //S.cmds << "service netif restart"; //optional extra commands
     out << S;
   }
-	
+  //Enable polling for Intel HDA
+  if(QFile::exists("/etc/rc.conf")){
+    service S;
+    S.ID = "ENABLE-HDA-POLLING";
+    S.file = "/etc/sysctl.conf"; //This file needs to exist to show/start this service
+    S.name = QObject::tr("Enable Intel HDA polling");
+    S.description = QObject::tr("Fixes sound for some devices but may drain battery life as a result");
+    //S.openPorts
+    //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
+    S.cmds << "echo \"dev.hdac.0.polling=1\" >> /etc/sysctl.conf"; //set sysctl
+    S.cmds << "sysctl dev.hdac.0.polling=1"; //enable without requiring reboot
+    out << S;
+  }
+  //Enable support for Realtek Wireless cards
+  if(QFile::exists("/etc/rc.conf")){
+    service S;
+    S.ID = "ENABLE-RTWN";
+    S.file = "/etc/rc.conf"; //This file needs to exist to show/start this service
+    S.name = QObject::tr("Enable Realtek Wireless");
+    S.description = QObject::tr("Starts service at boot to load kernel module for realtek wireless cards");
+    //S.openPorts
+    //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
+    S.rcLines << "if_rtwn_load=YES";
+    S.cmds << "kldload if_rtwn" << "service netif restart"; //enable without requiring reboot
+    out << S;
+  }
+  //Enable BSDStats
+  if(QFile::exists("/usr/local/bin/bsdstats-send")){
+    service S;
+    S.ID = "BSDSTATS";
+    S.file = "/etc/rc.conf"; //This file needs to exist to show/start this service
+    S.name = QObject::tr("Submit Anonymous System  Statistics");
+    S.description = QObject::tr("Support the project by starting the 'bsdstats' service to anonymously submit system statistics such as hardware devices and installed packages.");
+    //S.openPorts
+    //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
+    S.rcLines << "bsdstats_enable=YES";
+    S.cmds << "bsdstats-send"; //send right now without requiring reboot
+    S.checkByDefault = true;
+    out << S;
+  }
   return out;
 }
 
