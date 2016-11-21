@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Test</translation>
     </message>
     <message>
         <source>Default Output:</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Serwisy opcjonalne</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
@@ -347,7 +347,7 @@
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>EtykietaTekstowa</translation>
     </message>
 </context>
 <context>
