@@ -787,6 +787,8 @@ void Installer::slotChangeLanguage()
        Scripts::Backend::changeKbMap("pc105", langCode, "" );
     }
     
+    // Need to re-set the version string
+    setVersion();
 }
 
 QStringList Installer::getGlobalCfgSettings()
