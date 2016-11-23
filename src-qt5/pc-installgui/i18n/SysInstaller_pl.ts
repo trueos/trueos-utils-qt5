@@ -162,7 +162,7 @@
     <message>
         <location filename="../installer.ui" line="1376"></location>
         <source>Ab&amp;ort</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Przerwij</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1395"></location>
@@ -259,23 +259,23 @@
     <message>
         <location filename="../installer.cpp" line="444"></location>
         <source>ZFS Datasets:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zestaw danych ZFS:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="444"></location>
         <source>The original ZFS layout will be restored</source>
-        <translation type="unfinished"></translation>
+        <translation>Oryginalny układ ZFS zostanie przywrócony</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="446"></location>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Zestaw danych ZFS:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="448"></location>
         <location filename="../installer.cpp" line="506"></location>
         <source>Mount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Montuj:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="451"></location>
@@ -286,7 +286,7 @@
     <message>
         <location filename="../installer.cpp" line="688"></location>
         <source>Start the restore now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozpocząć przywracanie teraz?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="691"></location>
@@ -301,7 +301,7 @@
     <message>
         <location filename="../installer.cpp" line="1273"></location>
         <source>System Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Przywracanie Systemu</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1274"></location>
@@ -326,137 +326,140 @@
     <message>
         <location filename="../installer.cpp" line="602"></location>
         <source>Install to existing ZFS pool?</source>
-        <translation type="unfinished"></translation>
+        <translation>Zainstaluj w istniejącej puli ZFS?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="602"></location>
         <source>The following pool(s) have been found.
  Do you wish to install into this pool?
  (This will do a clean install, without destroying existing data.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Poniższa pula(e) zostały znalezione.
+ Czy chcesz zainstalować w tej puli?
+ (Zostanie przeprowadzona czysta instalacja, nie niszcząca istniejących danych.)</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1272"></location>
         <source>Your system is now restored!
 Click Exit to close. After rebooting you may eject the install media.</source>
-        <translation type="unfinished"></translation>
+        <translation>System został przywrócony!
+Kliknij przycisk Zakończ, aby zamknąć. Po ponownym uruchomieniu komputera można wysunąć nośnik instalacyjny.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1358"></location>
         <source>Exit the installation now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Opuścić instalację teraz?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1386"></location>
         <source>&amp;Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Wyjdź</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1484"></location>
         <location filename="../installer.cpp" line="1526"></location>
         <source>Extracting system...</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyodrębnianie systemu...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1486"></location>
         <location filename="../installer.cpp" line="1528"></location>
         <source>Installing system... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalacja systemu... To może chwilę potrwać ...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1505"></location>
         <source>Installing packages... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalacja pakietów... To może chwilę potrwać...</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1551"></location>
         <source>Installing meta-package: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalacja meta-pakietu: %1</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1709"></location>
         <source>Are you sure you want to abort this installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Czy na pewno chcesz przerwać instalację?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1764"></location>
         <source>Warning: The selected disk / partition is less than recommended %1GB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uwaga: Wybrany dysk / partycja jest mniejsza niż zalecane %1GB.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1776"></location>
         <source>This will save your installation configuration to a MSDOSFS/FAT32 formatted USB stick. Continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Spowoduje to zapisanie konfiguracji instalacji na nośniku USB sformatowanym na MSDOSFS/FAT32. Kontynuować?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1789"></location>
         <source>Please insert a USB stick now, and click OK to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę włożyć urządzenie przenośne USB, a następnie kliknąć przycisk OK, aby kontynuować.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1796"></location>
         <source>Please enter the nickname you want to save this configuration as.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę podać skróconą nazwę pod jaką chcesz zapisać tę konfigurację.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1813"></location>
         <source>Failed saving config to USB media. Is the device working and formatted MSDOSFS/FAT32?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieudane zapisywanie konfiguracji na nośniku USB. Czy urządzenie jest podłączone i sformatowane jako MSDOSFS/FAT32?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1819"></location>
         <source>Configuration saved! You may now safely remove the USB media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja zapisana! Można bezpiecznie wyjąć nośnik USB.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1829"></location>
         <source>This will load a installation configuration file your MSDOSFS/FAT32 formatted USB stick. Continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Zostanie załadowany plik konfiguracyjny instalacji z nośnika wymiennego USB sformatowanego na MSDOSFS/FAT32. Kontynuować?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1842"></location>
         <source>Please insert the USB stick now, and click OK to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę włóż nośnik wymienny USB, a następnie kliknij przycisk OK, aby kontynuować.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1857"></location>
         <source>Failed loading saved config file from the USB media. Is the device working and formatted MSDOSFS/FAT32?</source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd odczytu zapisanego pliku konfiguracyjnego z nośnika USB. Czy urządzenie pracuje i sformatowany jest na MSDOSFS/FAT32?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1864"></location>
         <source>Configuration loaded! You may now safely remove the USB media.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja załadowana! Można bezpiecznie wyjąć nośnik USB.</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1877"></location>
         <source>Config File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Plik konfiguracyjny:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1880"></location>
         <source>Canceled config script install</source>
-        <translation type="unfinished"></translation>
+        <translation>Anulowany skrypt konfiguracyjny instalacji</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1891"></location>
         <source>Failed reading /tmp/pc-sys/</source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd odczytu /tmp/pc-sys/</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1902"></location>
         <source>TrueOS Installer Config Script</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrypt konfiguracyjny instalatora TrueOS</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1905"></location>
         <source>Start the install using this config file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchom instalację przy użyciu tego pliku konfiguracyjnego?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1967"></location>
         <source>Restoring system: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Przywracanie systemu: %1</translation>
     </message>
 </context>
 <context>
@@ -464,27 +467,27 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../helpText.h" line="6"></location>
         <source>This screen allows you to select the language you wish to perform the install with.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran ten pozwala wybrać język, w którym chcesz przeprowadzić instalację.</translation>
     </message>
     <message>
         <location filename="../helpText.h" line="7"></location>
         <source>This screen allows you to select the type of system you wish to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran ten pozwala wybrać rodzaj systemu, który chcesz zainstalować.</translation>
     </message>
     <message>
         <location filename="../helpText.h" line="8"></location>
         <source>This screen will display the currently selected disk options. Clicking customize will allow you to change the target disk, set encryption options, and more.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ten ekran wyświetla aktualnie wybrane opcje dysków. Kliknięcie na Dostosuj pozwoli Ci zmienić dysk docelowy, ustawić opcje szyfrowania i wiele innych.</translation>
     </message>
     <message>
         <location filename="../helpText.h" line="9"></location>
         <source>Your system is now installing! Go grab a cup of coffee and relax, the installer will notify you when it is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>System jest teraz instalowany! Wypij filiżankę kawy i odpocznij, instalator poinformuje Cię, gdy zakończy.</translation>
     </message>
     <message>
         <location filename="../helpText.h" line="10"></location>
         <source>The system is now finished installing! Click Finish to return to the text menu where you can reboot the system, and be sure to eject any install media before booting into your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalacja systemu została zakończona! Kliknij przycisk Zakończ, aby powrócić do menu tekstowego, gdzie można ponownie uruchomić system. Upewnij się, że nośnik instalacyjny został usunięty przed uruchomieniem nowego systemu.</translation>
     </message>
 </context>
 <context>
@@ -492,52 +495,52 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogCheckHardware.ui" line="20"></location>
         <source>Detected hardware devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Wykryte urządzenia sprzętowe</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.ui" line="407"></location>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zamknij</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="87"></location>
         <source>Video driver:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sterownik wideo:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="88"></location>
         <source>Video resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdzielczość wideo:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="150"></location>
         <source>No ethernet detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie wykryto eternet'u</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="154"></location>
         <source>Ethernet device:</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenie ethernet:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="160"></location>
         <source>No wifi detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie wyryto wifi</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="164"></location>
         <source>Wifi device:</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenie WiFi:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="191"></location>
         <source>No sound detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie wykryto dźwięku</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="195"></location>
         <source>Sound device:</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenie dźwiękowe:</translation>
     </message>
 </context>
 <context>
@@ -545,22 +548,22 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogFSSize.ui" line="42"></location>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar:</translation>
     </message>
     <message>
         <location filename="../dialogFSSize.ui" line="75"></location>
         <source>MB</source>
-        <translation type="unfinished"></translation>
+        <translation>MB</translation>
     </message>
     <message>
         <location filename="../dialogFSSize.ui" line="99"></location>
         <source>&amp;Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ok</translation>
     </message>
     <message>
         <location filename="../dialogFSSize.ui" line="106"></location>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Anuluj</translation>
     </message>
 </context>
 <context>
@@ -568,7 +571,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogHelp.ui" line="55"></location>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zamknij</translation>
     </message>
 </context>
 <context>
@@ -576,7 +579,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogInfoBox.ui" line="48"></location>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zamknij</translation>
     </message>
 </context>
 <context>
@@ -584,37 +587,37 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogKeyboard.ui" line="30"></location>
         <source>Keyboard Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia klawiatury</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="55"></location>
         <source>Key Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Układ klawiatury</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="97"></location>
         <source>Variant</source>
-        <translation type="unfinished"></translation>
+        <translation>Wariant</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="177"></location>
         <source>Keyboard Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Model klawiatury</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="236"></location>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation type="unfinished"></translation>
+        <translation>( można pisać w polu poniżej, aby przetestować wybrane ustawienia. )</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="280"></location>
         <source>&amp;Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zastosuj</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="287"></location>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zamknij</translation>
     </message>
 </context>
 <context>
@@ -622,57 +625,57 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="104"></location>
         <source>This wizard will walk you through the disk setup process. Please choose the setup mode you wish to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ten kreator przeprowadzi Cię przez proces instalacji na dysku. Proszę wybrać tryb ustawień, którego chcesz użyć.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="130"></location>
         <source>Setup Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb konfiguracji</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="136"></location>
         <source>Basic (New to BSD or disk partitioning)</source>
-        <translation type="unfinished"></translation>
+        <translation>Podstawowy (nowicjusz w BSD lub partycjonowaniu dysku)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="150"></location>
         <source>Advanced (Experienced with file-systems)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaawansowany (Doświadczony w systemach plików)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="215"></location>
         <source>Selected Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybrany Dysk</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="238"></location>
         <source>Selected Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybrana Partycja</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="255"></location>
         <source>ZFS pool name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa puli ZFS</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="304"></location>
         <source>Force ZFS 4K block size</source>
-        <translation type="unfinished"></translation>
+        <translation>Wymuś 4K rozmiar bloku ZFS</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="379"></location>
         <source>Please select the disk or partition you wish to install onto. </source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz dysk lub partycję, na której chcesz przeprowadzić instalację. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="402"></location>
         <source>Partition Scheme</source>
-        <translation type="unfinished"></translation>
+        <translation>Schemat podziału partycji</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="408"></location>
         <source>GPT (Best for new hardware)</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT (Najlepszy dla nowego sprzętu)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="418"></location>
@@ -682,12 +685,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="499"></location>
         <source>If this is a single disk ZFS install, you can continue, otherwise please select the mirror / raid mode and disks below. </source>
-        <translation type="unfinished"></translation>
+        <translation>Jeśli jest to instalacja na pojedynczym dysku ZFS, można kontynuować, w przeciwnym razie należy wybrać tryb macierz/lustrzana i dyski poniżej. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="525"></location>
         <source>Add additional disks to zpool</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj dodatkowe dyski do zpool</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="560"></location>
@@ -728,7 +731,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="812"></location>
         <source>TrueOS can encrypt your disks using the GELI framework. This is full-disk encryption and will require a password at startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>TrueOS może zaszyfrować dyski przy użyciu GELI. Jest to pełne szyfrowanie dysku i będzie wymagało podania hasła przy starcie.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="856"></location>
@@ -738,62 +741,62 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="877"></location>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="904"></location>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło (powtórz)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1013"></location>
         <source>Below you may adjust the file-system mount points. For most users the defaults will work best. </source>
-        <translation type="unfinished"></translation>
+        <translation>Poniżej można dostosować punkty montowania plików systemowych. Dla większości użytkowników najlepsze będą ustawienia domyślnie. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1060"></location>
         <source>New Partition Size (Total)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar nowej partycji (całkowity)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1087"></location>
         <source>(MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>(MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1094"></location>
         <source>Swap Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar Swap</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1118"></location>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dodaj</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1129"></location>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Usuń</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1235"></location>
         <source>You have chosen Expert mode. In this mode you are able to launch a terminal window and use the command-line to manually partition your disk. When you are finished, make sure to mount your filesystems to /mnt to begin the installation. </source>
-        <translation type="unfinished"></translation>
+        <translation>Wybrano tryb Eksperta. W tym trybie możesz uruchomić okno terminala i korzystać z wiersza polecenia aby ręcznie partycjonować dysk. Po zakończeniu, należy zamontować system plików w /mnt, aby rozpocząć instalację. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1285"></location>
         <source>&amp;Launch terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Uruchom terminal</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1407"></location>
         <source>Please check the disk summary below and click finish to save your settings. </source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę sprawdzić podsumowanie dysku poniżej i kliknąć Zakończ, aby zapisać ustawienia. </translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="96"></location>
         <source>Use entire disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj całego dysku</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="339"></location>
@@ -828,67 +831,67 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="645"></location>
         <source>The original system datasets / mount-points will be automatically restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Oryginalne zestawy danych systemowych/punkty montowania zostaną automatycznie przywrócone.</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="733"></location>
         <source>Resizing</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmiana rozmiaru</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="745"></location>
         <source>Remove mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń punkty montowania</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="746"></location>
         <source>Are you sure you want to remove this mount point?</source>
-        <translation type="unfinished"></translation>
+        <translation>Czy jesteś pewien, że chcesz usunąć ten punkt montowania?</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="763"></location>
         <source>Enter mount-point</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj punkt montowania</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="764"></location>
         <source>Please enter the new mount-point:</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj nowy punt montowania:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="772"></location>
         <source>Invalid Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Niepoprawnie montowanie</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"></location>
         <source>Mount point should start with '/'</source>
-        <translation type="unfinished"></translation>
+        <translation>Punkt montowania powinien zaczynać się od '/'</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="841"></location>
         <source>Editing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Edycja:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="984"></location>
         <source>Enter SWAP size</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj rozmiar SWAP</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="985"></location>
         <source>Size (MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar (MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1183"></location>
         <source>The disk will be setup with the following configuration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dysk będzie posiadał o następującą konfigurację:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dysk:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"></location>
@@ -900,38 +903,38 @@ Click Exit to close. After rebooting you may eject the install media.</source>
         <location filename="../wizardDisk.cpp" line="1282"></location>
         <location filename="../wizardDisk.cpp" line="1312"></location>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>Partycja:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1243"></location>
         <location filename="../wizardDisk.cpp" line="1283"></location>
         <location filename="../wizardDisk.cpp" line="1313"></location>
         <source>FileSystem:</source>
-        <translation type="unfinished"></translation>
+        <translation>System plików:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1244"></location>
         <location filename="../wizardDisk.cpp" line="1284"></location>
         <location filename="../wizardDisk.cpp" line="1314"></location>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1258"></location>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Zestaw danych ZFS:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1260"></location>
         <location filename="../wizardDisk.cpp" line="1315"></location>
         <source>Mount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Montowanie:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1263"></location>
         <location filename="../wizardDisk.cpp" line="1317"></location>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcje:</translation>
     </message>
 </context>
 <context>
@@ -939,104 +942,104 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="95"></location>
         <source>This wizard will walk you though the setup of your new server. Click next to begin. </source>
-        <translation type="unfinished"></translation>
+        <translation>Ten kreator przeprowadzi Cię przez konfigurację nowego serwera. Kliknij Dalej, aby rozpocząć. </translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="215"></location>
         <source>Please enter the root password for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj hasło root'a dla tego serwera</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="247"></location>
         <location filename="../wizardFreeBSD.ui" line="413"></location>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="277"></location>
         <location filename="../wizardFreeBSD.ui" line="427"></location>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło (powtórz)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="377"></location>
         <source>Please create a user for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Utwórz użytkownika dla tego serwera</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="389"></location>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="399"></location>
         <source>Username</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa użytkownika</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="453"></location>
         <source>Default shell</source>
-        <translation type="unfinished"></translation>
+        <translation>Domyślna powłoka</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"></location>
         <source>Please enter a system hostname and remote login preference.</source>
-        <translation type="unfinished"></translation>
+        <translation>Podaj systemową nazwę hosta oraz preferencje zdalnego logowania.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="616"></location>
         <source>Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa hosta</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="664"></location>
         <source>Enable remote SSH login</source>
-        <translation type="unfinished"></translation>
+        <translation>Włącz zdalne logowanie SSH</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="733"></location>
         <source>Please select a network device to configure for this system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę wybrać urządzenie sieciowe, aby skonfigurować dla tego systemu.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="765"></location>
         <source>Network Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interfejs sieciowy</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="775"></location>
         <source>IP Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adres IP</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="785"></location>
         <source>Netmask</source>
-        <translation type="unfinished"></translation>
+        <translation>Maska sieciowa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="795"></location>
         <source>Nameserver (DNS)</source>
-        <translation type="unfinished"></translation>
+        <translation>Serwer nazw (DNS)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="812"></location>
         <source>Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Brama</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="825"></location>
         <source>IPv6 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adres IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="835"></location>
         <source>IPv6 Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Brama IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="845"></location>
         <source>IPv6 Nameserver</source>
-        <translation type="unfinished"></translation>
+        <translation>Serwer nazw IPv6</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="879"></location>
@@ -1044,17 +1047,17 @@ Click Exit to close. After rebooting you may eject the install media.</source>
         <location filename="../wizardFreeBSD.ui" line="911"></location>
         <location filename="../wizardFreeBSD.ui" line="931"></location>
         <source>000.000.000.000</source>
-        <translation type="unfinished"></translation>
+        <translation>000.000.000.000</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1083"></location>
         <source>Please select any optional features to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę wybrać opcjonalne funkcje do zainstalowania.</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="1125"></location>
         <source>Install ports tree (/usr/ports)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zainstaluj drzewo portów (/usr/ports)</translation>
     </message>
 </context>
 <context>
