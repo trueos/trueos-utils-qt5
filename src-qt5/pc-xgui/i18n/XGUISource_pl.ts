@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_pl">
 <context>
     <name>QObject</name>
     <message>
@@ -111,12 +111,12 @@ Jeśli nie pojawi się Twój ekran, proszę poczekać, po chwili nastąpi powró
         <translation>Ostrzeżenie!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD nie był w stanie automatycznie wykryć twojego monitora. Może być konieczne określenie pionowej i poziomej częstotliwości odświeżania monitora w zakładce &quot;Zaawansowane&quot;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD nie był w stanie automatycznie wykryć twojego monitora. Może być konieczne określenie pionowej i poziomej częstotliwości odświeżania monitora w zakładce "Zaawansowane".</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>Wsparcie dla Dual-Head jest stworzone dla systemów z jedną katrą graficzną i dwoma minitorami. Inne konfiguracje mogą zostać osiągnięte przez edycję pliku &apos;/etc/X11/xorg.conf&apos;.</translation>
+        <translation>Wsparcie dla Dual-Head jest stworzone dla systemów z jedną kartą graficzną i dwoma monitorami. Inne konfiguracje mogą zostać osiągnięte przez edycję pliku '/etc/X11/xorg.conf'</translation>
     </message>
 </context>
 <context>

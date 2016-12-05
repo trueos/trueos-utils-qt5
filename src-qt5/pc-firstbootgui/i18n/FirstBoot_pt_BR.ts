@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="FirstBoot_pt_BR">
 <context>
     <name>Installer</name>
     <message>
@@ -32,8 +32,8 @@
         <translation>Senha (Repita)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>A senha do sistema ou senha do &quot;root&quot; permite a você fazer alterações em seu sistema operacional, e dever ser mantida longe de usuários nos quais não se confia. </translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>A senha do sistema ou senha do "root" permite a você fazer alterações em seu sistema operacional, e dever ser mantida longe de usuários nos quais não se confia. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -56,8 +56,8 @@
         <translation>&amp;Refazer varredura</translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
-        <translation>As seguintes redes sem fio foram encontradas. Clique na que você deseja se conectar. Se você deseja pular, clique em &quot;Próximo&quot; abaixo. </translation>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
+        <translation>As seguintes redes sem fio foram encontradas. Clique na que você deseja se conectar. Se você deseja pular, clique em "Próximo" abaixo. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -117,109 +117,107 @@
     </message>
     <message>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Pode ser usado em dual-boot</translation>
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Ajustar BIOS para hora UTC</translation>
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bem-vindo ao seu novo sistema! Você pode alterar seu idioma acima e clicar em "próximo" para iniciar o processo de configuração.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome de Domínio</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Informações do Usuário</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuários do PersonaCrypt precisam do mesmo UID para cada sistema que usar</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID específico</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar Dispositivo PersonaCrypt</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover Dispositivo</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Parte do usuário da chave de criptografia de disco</translation>
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Senha do Dispositivo</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Teste</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Saída Padrão:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Volume de Teste:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurar Saída de Áudio</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: As configurações de áudio também podem ser ajustadas posteriormente através do mixer.</translation>
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Serviços Opcionais</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuração finalizada! Pressione "Finalizar" para logar em seu novo sistema.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor digite um nome de domínio</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nomes de domínio podem conter somente letras e números</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Nenhum Dispositivo Encontrado</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor conecte um dispositivo removível e tente novamente</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar Dispositivo Removível</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviso: Qualquer dado existente no dispositivo será apagado durante o processo de criação do usuário.</translation>
     </message>
 </context>
 <context>
@@ -250,47 +248,47 @@
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nesta tela você precisará criar um usuário para utilizar em seu desktop. Usuários adicionais podem ser criados com o SysAdm posteriormente.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta tela te permite testar seu dispositivo de áudio e definir um dispositivo padrão para reprodução de áudio. Esta configuração pode ser alterada posteriormente através do mixer de áudio.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterações opcionais de configuração ou serviços podem ser habilitados agora, conforme necessário. Simplesmente marque ou desmarque as opções desejadas e clique em "Próximo" para continuar.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Habilitar SSH</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Habilitar acesso SSH a este sistema a partir de computadores remotos</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Desabilitar IPv6 (necessário reiniciar o sistema)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Desabilitar o uso de conexões IPv6</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciando a rede...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>A rede está reiniciando, por favor aguarde...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
-        <translation type="unfinished"></translation>
+        <translation>Definição da rota padrão...</translation>
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>Executando DHCP...</translation>
     </message>
 </context>
 <context>
@@ -345,7 +343,7 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo de Segurança:</translation>
     </message>
     <message>
         <source>TextLabel</source>
