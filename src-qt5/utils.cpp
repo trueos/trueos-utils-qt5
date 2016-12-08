@@ -661,8 +661,8 @@ bool Utils::writeTextFile(QString filepath, QString contents, bool replace){
 // Function which displays a info box and restarts networking
 void Utils::restartNetworking()
 {
-    
-   QMessageBox infoBox;
+   QProcess::startDetached("service network restart");
+   /*QMessageBox infoBox;
    infoBox.setWindowModality(Qt::ApplicationModal);
    infoBox.setWindowTitle(QObject::tr("Restarting network..."));
    infoBox.setInformativeText(QObject::tr("Network is restarting, please wait..."));
@@ -724,7 +724,7 @@ void Utils::restartNetworking()
 	}
    }
 
-   infoBox.close();
+   infoBox.close();*/
 }
 
 void Utils::runInTerminal(QString command, QString windowTitle)
@@ -973,4 +973,3 @@ bool Utils::logout()
 
     return (delogout->exitCode() == 0);
 }
-
