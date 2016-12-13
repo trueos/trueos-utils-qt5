@@ -141,6 +141,10 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     slider_volume->setValue(100);
     slotAudioVolumeChanged(); //update the volume % label
     
+    // If we have wireless, UP it so we can scan
+    if ( system("ifconfig wlan0") == 0 ) {
+       system("ifconfig wlan0 up");
+    }
 }
 
 Installer::~Installer()
