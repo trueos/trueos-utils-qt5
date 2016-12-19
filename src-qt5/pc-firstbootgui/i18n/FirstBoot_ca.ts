@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_ca">
 <context>
@@ -215,7 +215,7 @@
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation>Si us plau, connecteu un dispostiu extraïble i torneu-ho a provar.</translation>
+        <translation>Si us plau, connecteu un dispositiu extraïble i torneu-ho a provar.</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
