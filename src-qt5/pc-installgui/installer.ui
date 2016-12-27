@@ -302,7 +302,7 @@ background: transparent;</string>
            <item row="0" column="0" colspan="2">
             <widget class="QComboBox" name="comboLanguage">
              <property name="statusTip">
-              <string>Change the installation language</string>
+              <string>Change the setup language</string>
              </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgb(238, 238, 238);
