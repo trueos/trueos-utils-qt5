@@ -692,9 +692,9 @@ void Installer::saveSettings()
   QString userCmd;
   if ( QFile::exists("/usr/local/bin/VirtualBox") )
   {
-    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,vboxusers\"";
+    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,vboxusers,video\"";
   } else {
-    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator\"";
+    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,video\"";
   }
   system("cat " + ufile.fileName().toLatin1() + userCmd.toLatin1());
   ufile.remove();
