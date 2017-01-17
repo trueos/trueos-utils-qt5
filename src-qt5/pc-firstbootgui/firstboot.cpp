@@ -141,6 +141,10 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     slider_volume->setValue(100);
     slotAudioVolumeChanged(); //update the volume % label
     
+    // If we have wireless, UP it so we can scan
+    if ( system("ifconfig wlan0") == 0 ) {
+       system("ifconfig wlan0 up");
+    }
 }
 
 Installer::~Installer()
@@ -688,9 +692,9 @@ void Installer::saveSettings()
   QString userCmd;
   if ( QFile::exists("/usr/local/bin/VirtualBox") )
   {
-    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,vboxusers\"";
+    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,vboxusers,video\"";
   } else {
-    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator\"";
+    userCmd = " | pw useradd -n \"" + lineUsername->text() + "\" -u "+spin_UID->cleanText()+" -c \"" + lineName->text().toUtf8() + "\" -h 0 -s \"/bin/csh\" -m -d \"/usr/home/" + lineUsername->text() + "\" -G \"wheel,operator,video\"";
   }
   system("cat " + ufile.fileName().toLatin1() + userCmd.toLatin1());
   ufile.remove();

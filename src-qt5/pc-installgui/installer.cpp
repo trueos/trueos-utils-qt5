@@ -1619,7 +1619,7 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina";
-     pkgList << "x11/xterm" << "x11/xrdb" << "sysutils/fusefs-ntfs";
+     pkgList << "x11/xterm" << "sysutils/fusefs-ntfs";
 
      // If using GRUB, make sure the pkgs get loaded
      if ( comboBootLoader->currentText() == "GRUB" )
@@ -1719,7 +1719,7 @@ QStringList Installer::getUsersCfgSettings()
    userList << "userPass=" + fUserPW;
    userList << "userShell=" + fShell;
    userList << "userHome=/home/" + fUserName;
-   userList << "userGroups=wheel,operator";
+   userList << "userGroups=wheel,operator,video";
    userList << "commitUser";
    userList << "";
  

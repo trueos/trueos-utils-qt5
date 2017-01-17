@@ -9,6 +9,16 @@ QList<service> Services::getServiceList(){
   // NOTE: This assumes that all of these services are disabled by default!!
   QList<service> out;
 
+  //Enable verbose booting by default
+  if(QFile::exists("/boot/loader.conf")){
+    service S;
+    S.ID = "ENABLE-VERBOSE";
+    S.file = "/boot/loader.conf"; //This file needs to exist to show/start this service
+    S.name = QObject::tr("Enable Verbose Boot");
+    S.description = QObject::tr("Enables verbose booting by default and removes splash screen");
+    S.cmds << "echo \"boot_verbose=YES\" >> /boot/loader.conf"; //set verbose
+    out << S;
+  }
   //SSHD
   if(QFile::exists("/etc/rc.d/sshd")){
     service S;
