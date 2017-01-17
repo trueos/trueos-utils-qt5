@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_pt">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Manter estas configurações de exibição?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>A tentativa anterior falhou, verifique as suas definições e tente novamente.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Sua tela foi configurada.
+Manter estas configurações?</translation>
     </message>
 </context>
 <context>
@@ -68,7 +66,7 @@ Keep these settings?</source>
     </message>
     <message>
         <source>Horizontal Sync:</source>
-        <translation>Horizontal Sync:</translation>
+        <translation>Sincronização horizontal:</translation>
     </message>
     <message>
         <source>28.0-78.0</source>
@@ -76,7 +74,7 @@ Keep these settings?</source>
     </message>
     <message>
         <source>Vertical Refresh:</source>
-        <translation>Refrescamento vertical</translation>
+        <translation>Atualização vertical:</translation>
     </message>
     <message>
         <source>50.0-76.0</source>
@@ -113,13 +111,12 @@ Se o seu monitor não responder, por favor aguarde para ser redireccionado novam
         <translation>Atenção!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD foi incapaz de auto-detectar o seu monitor. Pode necessitar de especificar as taxas de refrescamento Horizontal e Vertical deste monitor na aba &quot;Avançado&quot;</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>O PC-BSD não conseguiu autodetectar o monitor. Pode ser necessário especificar as taxas de atualização horizontal e vertical deste monitor na guia "Avançado".</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>O suporte Dual-Head é projetado para sistemas com uma placa de vídeo e dois monitores. Outras configurações podem ser obtidas editando /etc/X11/xorg.conf</translation>
     </message>
 </context>
 <context>
@@ -154,18 +151,15 @@ Se o seu monitor não responder, por favor aguarde para ser redireccionado novam
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Ok</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Resolução:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Driver:</translation>
     </message>
 </context>
 </TS>
