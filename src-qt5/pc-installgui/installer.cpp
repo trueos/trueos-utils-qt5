@@ -21,7 +21,6 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     //Make sure the window is full-screen (in the background, not foreground)
     QScreen *scrn = QApplication::primaryScreen();
     this->setGeometry( scrn->geometry() );
-	
     //Now start loading the rest of the interface
     setVersion();
     //translator = new QTranslator();
@@ -77,6 +76,10 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
       efiMode=true;
     else
       efiMode=false;
+
+   slideTimer = new QTimer(this);
+    slideTimer->setInterval(30000); //30 second slide duration
+    connect(slideTimer, SIGNAL(timeout()), this, SLOT(nextSlide()) );
 
 }
 
@@ -1279,6 +1282,9 @@ bool Installer::checkDiskRequirements()
 // Function which begins the backend install, and connects slots to monitor it
 void Installer::startInstall()
 {
+  cslide = -1;
+  nextSlide();
+  slideTimer->start();
 
   // Update the UI elements if doing a restore
   if ( radioRestore->isChecked() )
@@ -1389,6 +1395,7 @@ void Installer::installFailed()
 // Slot which is called when the installation has finished
 void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus status)
 {
+  slideTimer->stop();
   QString tmp;
   if ( status != QProcess::NormalExit || exitCode != 0 )
   {
@@ -2006,6 +2013,13 @@ double Installer::displayToDoubleK(QString displayNumber){
 
 void Installer::slotEmergencyShell() {
   system("qterminal -e /root/TrueOSUtil.sh &");
+}
+
+// Slot to update the install slideshow
+void Installer::nextSlide(){
+  cslide++; //go to the next slide
+  if(cslide<0 || cslide>=numSlides()){ cslide = 0; } //back to beginning
+  loadSlide(label_slide_text, label_slide_icon, cslide);
 }
 
 void Installer::slotBEInstallToggled(bool inBE){

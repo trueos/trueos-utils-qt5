@@ -16,6 +16,7 @@ SOURCES += main.cpp \
     wizardFreeBSD.cpp \
     wizardRestore.cpp \
     installer.cpp \
+    InstallerSlideshow.cpp \
     backend.cpp
 HEADERS += installer.h \
     dialogCheckHardware.h \

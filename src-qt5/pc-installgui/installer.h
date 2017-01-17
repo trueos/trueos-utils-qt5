@@ -9,6 +9,7 @@
 #include <QGraphicsScene>
 #include <QSplashScreen>
 #include <QTranslator>
+#include <QLabel>
 
 #include "ui_installer.h"
 #include "dialogHelp.h"
@@ -82,6 +83,9 @@ private slots:
     // Slot to launch emergency shell
     void slotEmergencyShell();
     
+    // Slot to update the install slideshow
+    void nextSlide();
+
 private:
 
     void setArch();
@@ -214,6 +218,13 @@ private:
 
     // Settings for remote access
     QStringList appCafeSettings; //Disused for now
+
+    // Variables for the slideshow functionality
+    int cslide; //current slide
+    QTimer *slideTimer;
+    // Functions for loading the slides
+    int numSlides();
+    void loadSlide(QLabel *textlabel, QLabel *iconlabel, int num);
 
 protected:
     void closeEvent(QCloseEvent *event);
