@@ -359,7 +359,9 @@ Klicken Sie Abschließen um neu zu starten. Nach dem Neustarten können Sie das 
         <source>The following pool(s) have been found.
  Do you wish to install into this pool?
  (This will do a clean install, without destroying existing data.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Der/die folgende(n) pool(s) wurde(n) gefunden.
+ Möchten Sie in diesen pool installieren?
+ (Dies wird eine saubere Installation durchführen, ohne die existierenden Daten zu zerstören.)</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1272"/>
