@@ -1,4 +1,5 @@
 bin/pc-firstboot
+bin/pc-sysconfig
 bin/pc-sysinstaller
 bin/pc-xgui
 share/trueos/i18n/FirstBoot_af.qm
