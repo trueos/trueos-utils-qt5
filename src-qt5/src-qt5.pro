@@ -3,4 +3,5 @@ CONFIG += recursive
 
 SUBDIRS+= pc-firstbootgui \
 	 pc-installgui \
-	 pc-xgui
+	 pc-xgui \
+	 pc-sysconfig
