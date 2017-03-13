@@ -20,15 +20,15 @@ QList<service> Services::getServiceList(){
     out << S;
   }
   //SSHD
-  if(QFile::exists("/etc/rc.d/sshd")){
+  if(QFile::exists("/etc/init.d/sshd")){
     service S;
     S.ID = "SSHD";
     S.file = "/etc/rc.d/sshd"; //This file needs to exist to show/start this service
     S.name = QObject::tr("Enable SSH");
     S.description = QObject::tr("Allows SSH access to this system from remote systems");
     S.openPorts << "tcp 22";
-    S.rcLines << "sshd_enable=YES";
-    //S.cmds << ""; //optional extra commands
+    //S.rcLines << "sshd_enable=YES";
+    S.cmds << "rc-update add sshd"; //optional extra commands
     out << S;
   }
   //DISABLE IPV6
