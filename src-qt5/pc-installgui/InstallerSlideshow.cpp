@@ -11,7 +11,7 @@
 // 3) The "image" variable will look like ":/modules/images/<name of file>"
 
 int Installer::numSlides(){
-  return 1; //make sure this returns the total number of items below (1+ largest "num")
+  return 10; //make sure this returns the total number of items below (1+ largest "num")
 }
 
 void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num){
