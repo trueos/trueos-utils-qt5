@@ -1122,7 +1122,7 @@ QFrame{ background: transparent; }
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                   <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
+                  <verstretch>1</verstretch>
                  </sizepolicy>
                 </property>
                 <property name="text">
