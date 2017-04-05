@@ -60,6 +60,11 @@ void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num){
   }
   //Now apply the item to the label
   textlabel->setText(text);
-  if(iconlabel == 0){ textlabel->setStyleSheet("background-image: "+image); }
-  else{ iconlabel->setPixmap( QPixmap(image) ); }
+  if (iconlabel == 0) {
+    textlabel->setStyleSheet("background-image: "+image);
+  } else {
+    Installer wiz;
+    int width = wiz.geometry().width();
+    iconlabel->setPixmap( QPixmap(image).scaledToWidth(width) );
+  }
 }
