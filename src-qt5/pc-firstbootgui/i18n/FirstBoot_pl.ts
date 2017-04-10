@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_pl">
 <context>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Część użytkownika klucza enkrypcji</translation>
     </message>
     <message>
         <source>Device Password</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished">Test</translation>
+        <translation>Test</translation>
     </message>
     <message>
         <source>Default Output:</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Test wolumenu:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>

@@ -98,7 +98,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -939,7 +939,7 @@ QFrame{ background: transparent; }
            <enum>QFrame::StyledPanel</enum>
           </property>
           <layout class="QGridLayout" name="gridLayout_11">
-           <item row="1" column="0" colspan="2">
+           <item row="0" column="0" colspan="2">
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <spacer name="horizontalSpacer_8">
@@ -976,57 +976,6 @@ QFrame{ background: transparent; }
              </item>
              <item>
               <spacer name="horizontalSpacer_9">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item row="0" column="0">
-            <layout class="QHBoxLayout" name="horizontalLayout_10">
-             <item>
-              <spacer name="horizontalSpacer_29">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_4">
-               <property name="text">
-                <string>Boot-Loader:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBootLoader">
-               <item>
-                <property name="text">
-                 <string extracomment="FreeBSD's native boot-loader. Used for XEN Dom0 support">BSD</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string extracomment="Best for Dual-Boot and compatability">GRUB</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_30">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>

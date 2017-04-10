@@ -659,15 +659,6 @@ void Installer::slotNext()
        radio_install_full->setVisible(true);
        radio_install_be->setVisible(true);
        slotBEInstallToggled(true);
-	/*if ( promptInstallToZpool() )
-        {
-	  // Disable the customize options
-	  pushDiskCustomize->setHidden(true);
-	  comboBootLoader->setHidden(true);
-        } else {
-	  pushDiskCustomize->setHidden(false);
-	  comboBootLoader->setHidden(false);
-	}*/
      }else{
        //No pools found, or restore selected
        qDebug() << "No BE install option available:" << existingZpools;
@@ -1144,7 +1135,7 @@ QStringList Installer::getDiskCfgSettings()
     }
 
     // Which boot-loader are we stamping?
-    tmpList << "bootManager=" + comboBootLoader->currentText();
+    tmpList << "bootManager=BSD";
 
     // Set the GPT/MBR options
     if ( sysPartType == "GPT" ) 
@@ -1608,10 +1599,6 @@ QStringList Installer::getDeskPkgCfg()
    // Server packages
    if ( radioServer->isChecked() ) {
      pkgList << "misc/trueos-server";
-
-     // If using GRUB, make sure the pkgs get loaded
-     if ( comboBootLoader->currentText() == "GRUB" )
-       pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
    }
 
    // Desktop packages
@@ -1620,10 +1607,6 @@ QStringList Installer::getDeskPkgCfg()
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina";
      pkgList << "x11/xterm" << "sysutils/fusefs-ntfs";
-
-     // If using GRUB, make sure the pkgs get loaded
-     if ( comboBootLoader->currentText() == "GRUB" )
-       pkgList << "sysutils/grub2-pcbsd" << "sysutils/grub2-efi";
 
      // The default web-browser and plugins
      pkgList <<  "www/firefox";

@@ -20,15 +20,15 @@ QList<service> Services::getServiceList(){
     out << S;
   }
   //SSHD
-  if(QFile::exists("/etc/rc.d/sshd")){
+  if(QFile::exists("/etc/init.d/sshd")){
     service S;
     S.ID = "SSHD";
     S.file = "/etc/rc.d/sshd"; //This file needs to exist to show/start this service
     S.name = QObject::tr("Enable SSH");
     S.description = QObject::tr("Allows SSH access to this system from remote systems");
     S.openPorts << "tcp 22";
-    S.rcLines << "sshd_enable=YES";
-    //S.cmds << ""; //optional extra commands
+    //S.rcLines << "sshd_enable=YES";
+    S.cmds << "rc-update add sshd"; //optional extra commands
     out << S;
   }
   //DISABLE IPV6
@@ -68,20 +68,6 @@ QList<service> Services::getServiceList(){
     //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
     S.rcLines << "if_rtwn_load=YES";
     S.cmds << "kldload if_rtwn" << "service netif restart"; //enable without requiring reboot
-    out << S;
-  }
-  //Enable BSDStats
-  if(QFile::exists("/usr/local/bin/bsdstats-send")){
-    service S;
-    S.ID = "BSDSTATS";
-    S.file = "/etc/rc.conf"; //This file needs to exist to show/start this service
-    S.name = QObject::tr("Submit Anonymous System  Statistics");
-    S.description = QObject::tr("Support the project by starting the 'bsdstats' service to anonymously submit system statistics such as hardware devices and installed packages.");
-    //S.openPorts
-    //S.rcRemove << QRegExp("*ipv6*", Qt::CaseInsensitive,  QRegExp::Wildcard);
-    S.rcLines << "bsdstats_enable=YES";
-    S.cmds << "bsdstats-send"; //send right now without requiring reboot
-    S.checkByDefault = true;
     out << S;
   }
   return out;

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_de">
 <context>
@@ -125,11 +125,11 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Willkommen in ihrem neuen System! Sie können jetzt oben die Sprache ändern und dann 'Weiter' drücken, um mit der Einrichtung zu beginnen.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Domänen-Name</translation>
     </message>
     <message>
         <source>User Details</source>
@@ -137,7 +137,7 @@
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt verwendet auf allen genutzten Systemen die gleiche UID.</translation>
     </message>
     <message>
         <source>Specify UID</source>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzer-spezifischer Anteil des Schlüssels.</translation>
     </message>
     <message>
         <source>Device Password</source>
@@ -177,15 +177,15 @@
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Test-Datenträger:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Audio-Gerät konfigurieren</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinweis: Die Audio-Einstellungen können später auch im Audio-Mixer verändert werden.</translation>
     </message>
     <message>
         <source>Optional Services</source>
@@ -193,15 +193,15 @@
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Installation ist abgeschlossen. Drücken Sie 'Abschließen', um sich in Ihrem neuen System anzumelden.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte geben Sie einen Domänen-Namen ein.</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Domänen-Name darf nur aus Buchstaben und Ziffern bestehen.</translation>
     </message>
     <message>
         <source>No Devices Found</source>
@@ -209,7 +209,7 @@
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Schliessen Sie bitte einen entfernbaren Datenträger an und versuchen es noch einmal</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
@@ -217,7 +217,7 @@
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: Alle Daten auf dem ausgewählten Laufwerk werden gelöscht während des Erstellungs-Prozesses.</translation>
     </message>
 </context>
 <context>
