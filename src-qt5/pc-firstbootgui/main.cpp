@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     }
     QTextCodec::setCodecForLocale( QTextCodec::codecForName("UTF-8") ); //Force Utf-8 compliance
     // Show our splash screen, so the user doesn't freak that that it takes a few seconds to show up
-    QPixmap pixmap(":/TRUEOS/images/trueosheader.png");
+    QPixmap pixmap(":/TRUEOS/images/trueosheader.svg");
     QSplashScreen splash(pixmap);
     splash.show();
 
