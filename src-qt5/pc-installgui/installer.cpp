@@ -2001,8 +2001,12 @@ void Installer::slotEmergencyShell() {
 // Slot to update the install slideshow
 void Installer::nextSlide(){
   cslide++; //go to the next slide
+  qDebug() << "Installer slide:" << cslide;
   if(cslide<0 || cslide>=numSlides()){ cslide = 0; } //back to beginning
-  loadSlide(label_slide_text, label_slide_icon, cslide);
+  QSize sz = label_slide_icon->size();
+    qDebug() << " - Size:" << sz << label_slide_icon->sizeHint() << installStackWidget->size();
+  if(sz.width() << label_slide_icon->sizeHint().width() ){  sz = installStackWidget->size(); } //for the first slide - use the window size
+  loadSlide(label_slide_text, label_slide_icon, cslide, sz);
 }
 
 void Installer::slotBEInstallToggled(bool inBE){

@@ -224,7 +224,7 @@ private:
     QTimer *slideTimer;
     // Functions for loading the slides
     int numSlides();
-    void loadSlide(QLabel *textlabel, QLabel *iconlabel, int num);
+    void loadSlide(QLabel *textlabel, QLabel *iconlabel, int num, QSize sz);
 
 protected:
     void closeEvent(QCloseEvent *event);

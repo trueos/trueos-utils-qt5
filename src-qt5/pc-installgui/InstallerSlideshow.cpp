@@ -14,7 +14,7 @@ int Installer::numSlides(){
   return 10; //make sure this returns the total number of items below (1+ largest "num")
 }
 
-void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num){
+void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num, QSize sz){
   QString text, image;
   switch(num){
     case 0:
@@ -63,8 +63,6 @@ void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num){
   if (iconlabel == 0) {
     textlabel->setStyleSheet("background-image: "+image);
   } else {
-    Installer wiz;
-    int width = wiz.geometry().width();
-    iconlabel->setPixmap( QPixmap(image).scaledToWidth(width) );
+    iconlabel->setPixmap( QPixmap(image).scaled(sz, Qt::KeepAspectRatio, Qt::SmoothTransformation) );
   }
 }
