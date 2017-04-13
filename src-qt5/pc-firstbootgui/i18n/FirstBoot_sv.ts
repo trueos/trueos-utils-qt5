@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_sv">
 <context>
@@ -167,7 +167,7 @@
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Enhets lösenord</translation>
     </message>
     <message>
         <source>Test</source>
@@ -207,7 +207,7 @@
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga enheter funna</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
