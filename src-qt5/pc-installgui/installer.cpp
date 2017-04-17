@@ -1310,6 +1310,10 @@ void Installer::startInstall()
   // tries to mount our new partitions
   QProcess::execute("killall", QStringList() << "hald");
 
+  // Hacky kludge, looks like Qt isn't writing file fully before starting installation
+  system("sync");
+  system("sleep 2");
+
   // Start our process to begin the install
   QString PCSYSINSTALL;
   if ( QFile::exists("/root/pc-sysinstall/pc-sysinstall") )  
