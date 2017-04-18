@@ -1611,13 +1611,13 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina";
-     pkgList << "x11/xterm" << "sysutils/fusefs-ntfs";
+     pkgList << "sysutils/fusefs-ntfs";
 
      // The default web-browser and plugins
-     pkgList <<  "www/firefox";
+     pkgList <<  "www/firefox" << "www/qupzilla-qt5";
 
      // The default mail client
-     pkgList << "mail/thunderbird";
+     pkgList << "mail/thunderbird" << "mail/trojita";
 
      // Multimedia player
      pkgList << "multimedia/vlc" << "multimedia/openh264";
@@ -1633,7 +1633,7 @@ QStringList Installer::getDeskPkgCfg()
 
      // Utilities
      pkgList << "graphics/phototonic" << "misc/trueos-meta-hunspell" << "x11/qterminal";
-     pkgList << "graphics/xsane";
+     pkgList << "graphics/xsane" << "print/qpdfview";
 
      // Printer packages
      pkgList << "print/cups-pdf" << "print/gutenprint-cups";
