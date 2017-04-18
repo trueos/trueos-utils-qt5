@@ -576,7 +576,8 @@ void Installer::proceed(bool forward)
 // Slot which is called when the Finish button is clicked
 void Installer::slotFinished()
 {
-  qApp->quit();
+  QProcess::startDetached("shutdown -r now");
+  QApplications::close(0);
 }
 
 void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userName, QString userPW, QString shell, QString hostname, bool ssh, bool ports, QStringList netSettings, QStringList appcafe)

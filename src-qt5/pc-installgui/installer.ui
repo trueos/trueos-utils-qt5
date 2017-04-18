@@ -98,7 +98,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -1223,7 +1223,7 @@ QFrame{ background: transparent; }
            <string notr="true">background: transparent;</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your system is now installed!&lt;/p&gt;&lt;p&gt;Click Finish to return to the boot menu and reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting you may eject the install media.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your system is now installed!&lt;/p&gt;&lt;p&gt;Click Finish to reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting you may need to eject the install media to boot up from the local disk rather than the install media again.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
