@@ -60,10 +60,13 @@ void wizardDisk::programInit()
     efiMode=true;
     radioMBR->setEnabled(false);
     radioGPT->setChecked(true);
+    checkRefind->setChecked(true);
+    checkRefind->setHidden(false);
   } else {
     efiMode=false;
     radioMBR->setEnabled(true);
     radioGPT->setChecked(true);
+    checkRefind->setHidden(true);
   }
 }
 
@@ -158,7 +161,7 @@ void wizardDisk::accept()
   /*if ( radioExpert->isChecked() )
     emit saved(sysFinalDiskLayout, partType, zpoolName, force4K);
   else*/
-    emit saved(sysFinalDiskLayout, partType, zpoolName, force4K);
+    emit saved(sysFinalDiskLayout, partType, zpoolName, force4K, checkRefind->isChecked());
   close();
 }
 

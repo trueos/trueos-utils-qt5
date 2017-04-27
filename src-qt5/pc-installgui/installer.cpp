@@ -26,6 +26,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     //translator = new QTranslator();
     haveWarnedSpace=false;
     force4K = false;
+    useRefind = false;
     defaultInstall = true;
 
     connect(abortButton, SIGNAL(clicked()), this, SLOT(slotAbort()));
@@ -530,17 +531,18 @@ void Installer::slotDiskCustomizeClicked()
   wDisk->setWindowModality(Qt::ApplicationModal);
   if ( radioRestore->isChecked() )
     wDisk->setRestoreMode();
-  connect(wDisk, SIGNAL(saved(QList<QStringList>, QString, QString, bool)), this, SLOT(slotSaveDiskChanges(QList<QStringList>, QString, QString, bool)));
+  connect(wDisk, SIGNAL(saved(QList<QStringList>, QString, QString, bool, bool)), this, SLOT(slotSaveDiskChanges(QList<QStringList>, QString, QString, bool, bool)));
   wDisk->show();
   wDisk->raise();
 }
 
-void Installer::slotSaveDiskChanges(QList<QStringList> newSysDisks, QString partType, QString zName, bool zForce)
+void Installer::slotSaveDiskChanges(QList<QStringList> newSysDisks, QString partType, QString zName, bool zForce, bool refind)
 {
 
   zpoolName = zName; 
   force4K = zForce;
   defaultInstall = false;
+  useRefind=refind;
 
   // Save the new disk layout
   sysPartType=partType;
@@ -832,6 +834,12 @@ QStringList Installer::getGlobalCfgSettings()
     // Are we force enabling ZFS 4K block sizes?
     if ( force4K )
       tmpList << "zfsForce4k=YES";
+
+    // Did user chose to not use refind?
+    if ( useRefind )
+      tmpList << "efiLoader=refind";
+    else
+      tmpList << "efiLoader=bsd";
 
     tmpList << "";
     return tmpList;

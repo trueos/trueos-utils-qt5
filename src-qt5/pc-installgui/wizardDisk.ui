@@ -306,6 +306,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QCheckBox" name="checkRefind">
+          <property name="text">
+           <string>Install rEFInd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer_4">
           <property name="orientation">
            <enum>Qt::Vertical</enum>

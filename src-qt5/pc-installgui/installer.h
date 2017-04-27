@@ -48,7 +48,7 @@ private slots:
 
     // Disk slots
     void slotDiskCustomizeClicked();
-    void slotSaveDiskChanges(QList<QStringList>, QString, QString, bool);
+    void slotSaveDiskChanges(QList<QStringList>, QString, QString, bool, bool);
     void slotBEInstallToggled(bool inBE = true);
 
     // Slots for the installation
@@ -203,6 +203,9 @@ private:
 
     // Force 4K mode?
     bool force4K;
+
+    // Option to enable / disable refind
+    bool useRefind;
 
     // String to override install mode efi/pc
     QString forceBIOS;
