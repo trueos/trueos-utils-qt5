@@ -131,7 +131,7 @@ Cliqueu a "Acaba" per reiniciar el sistema. Després de reiniciar podreu extreur
     <message>
         <location filename="../installer.ui" line="1227"/>
         <source>Display hardware compatibility diagnostic</source>
-        <translation>Diagnòstic de compatibilitat de maquinari de la pantalla</translation>
+        <translation>Mostra el diagnòstic de compatibilitat amb el maquinari</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1250"/>
@@ -374,7 +374,7 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../installer.cpp" line="1551"/>
         <source>Installing meta-package: %1</source>
-        <translation>S'instal·la el metapaquet: %1</translation>
+        <translation>S'instal·la el metapaquet %1</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1709"/>
