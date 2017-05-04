@@ -18,7 +18,7 @@ void Installer::loadSlide(QLabel *textlabel, QLabel *iconlabel, int num, QSize s
   QString text, image;
   switch(num){
     case 0:
-      text = tr("Join the discussion on the TrueOS discourse channel!(discourse.trueos.org)");
+      text = tr("Join the discussion on the TrueOS discourse channel! (discourse.trueos.org)");
       image = ":/modules/images/discourse.png";
       break;
     case 1:
