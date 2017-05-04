@@ -1853,6 +1853,9 @@ background: transparent;</string>
            <height>20</height>
           </size>
          </property>
+         <property name="shortcut">
+          <string>Alt+B</string>
+         </property>
         </widget>
        </item>
        <item>
@@ -1868,6 +1871,9 @@ background: transparent;</string>
            <width>20</width>
            <height>20</height>
           </size>
+         </property>
+         <property name="shortcut">
+          <string>Alt+N</string>
          </property>
         </widget>
        </item>
