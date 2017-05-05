@@ -53,8 +53,28 @@ background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgb
 QWidget#installStackWidget{
 background: transparent;
 }
-
-QWidget#page, QWidget#page_2, QWidget#page_3, QWidget#page_4, QWidget#page_5{
+QTabWidget, QTabBar{
+background-color: rgb(200,200,200);
+}
+QWidget#tab{
+background-color: transparent;
+}
+QTreeWidget{
+background-color: rgba(255,255,255,100);
+}
+QTreeWidget::indicator:checked{
+background-color: rgba(20,20,20,200);
+border: 2px solid black;
+}
+QTreeWidget::indicator:unchecked{
+background-color: transparent;
+border: 2px solid black;
+}
+QTreeWidget::item:disabled{
+color: darkgrey;
+font-style: italic;
+}
+QWidget#page_welcome, QWidget#page_installtype, QWidget#page_pkgs, QWidget#page_disks, QWidget#page_install, QWidget#page_finished{
 background-color: transparent;
 }
 
@@ -98,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -524,6 +544,295 @@ selection-background-color: rgb(160, 160, 160);</string>
            <size>
             <width>248</width>
             <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_pkgs">
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="1" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Noto Sans</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Optional Packages To Install</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="tabBarAutoHide">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="icon">
+              <iconset resource="sysinstaller.qrc">
+               <normaloff>:/modules/images/display.png</normaloff>:/modules/images/display.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Graphics Drivers</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_graphics_device">
+                <property name="text">
+                 <string>Card(s) Detected: %1</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="tree_graphics_drivers">
+                <property name="rootIsDecorated">
+                 <bool>true</bool>
+                </property>
+                <property name="uniformRowHeights">
+                 <bool>true</bool>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>false</bool>
+                </property>
+                <property name="animated">
+                 <bool>true</bool>
+                </property>
+                <property name="headerHidden">
+                 <bool>true</bool>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </column>
+                <item>
+                 <property name="text">
+                  <string>Intel Drivers</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Modesetting (built-in to Xorg)</string>
+                  </property>
+                  <property name="checkState">
+                   <enum>Checked</enum>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Legacy Intel</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-intel</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>NVIDIA Drivers</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Latest (%1)</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>nvidia-driver</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Legacy 340.x (%1)</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>nvidia-driver-340</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Legacy 304.x (%1)</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>nvidia-driver-304</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Opensource (nv - 2D only)</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-nv</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>AMD Drivers</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>ati</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-ati</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>amdgpu</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-amdgpu</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Virtual Environment Drivers</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>VMWare Guest</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-vmware</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>VirtualBox Guest Additions</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>virtualbox-ose-additions</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Universal Drivers</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>scfb</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>xf86-video-scfb</string>
+                  </property>
+                  <property name="flags">
+                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+                  </property>
+                 </item>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>100</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="1">
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>100</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_30">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>300</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_29">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>300</width>
+            <height>20</height>
            </size>
           </property>
          </spacer>

@@ -10,6 +10,7 @@
 #include <QSplashScreen>
 #include <QTranslator>
 #include <QLabel>
+#include <QJsonObject>
 
 #include "ui_installer.h"
 #include "dialogHelp.h"
@@ -86,6 +87,11 @@ private slots:
     // Slot to update the install slideshow
     void nextSlide();
 
+	//Slots related to the optional packages
+	void updatePkgLists();
+	void pkgChanged(QTreeWidgetItem *it);
+	QStringList optionalPackages(); //return the list of all packages the user wants to install
+
 private:
 
     void setArch();
@@ -120,6 +126,9 @@ private:
     void proceed(bool);
     bool isInstalled();
     bool checkDiskRequirements();
+
+    QJsonObject pciconf_info;
+    void loadPciConfInfo();
 
     // Desktop packages
     void initDesktopSelector();

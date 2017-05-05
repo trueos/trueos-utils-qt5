@@ -23,6 +23,8 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     this->setGeometry( scrn->geometry() );
     //Now start loading the rest of the interface
     setVersion();
+    loadPciConfInfo();
+
     //translator = new QTranslator();
     haveWarnedSpace=false;
     force4K = false;
@@ -47,6 +49,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     connect(radio_install_be, SIGNAL(toggled(bool)), this, SLOT(slotBEInstallToggled(bool)) );
     connect(combo_install_pools, SIGNAL(currentIndexChanged(int)), this, SLOT(slotBEInstallToggled()) );
 
+    connect(tree_graphics_drivers, SIGNAL(itemChanged(QTreeWidgetItem*, int)), this, SLOT(pkgChanged(QTreeWidgetItem *)) );
     //abortButton->setText(tr("&Cancel"));
     backButton->setText(tr("&Back"));
     nextButton->setText(tr("&Next"));
@@ -567,7 +570,7 @@ void Installer::proceed(bool forward)
             (index == count ? count : index + 1) :
             (index == 0 ? 0 : index - 1);
 
-    if ( index > 0 && index != 4)
+    if ( index > 0 && index != 5)
       backButton->setVisible(true);
     else
       backButton->setVisible(false);
@@ -594,7 +597,7 @@ void Installer::slotSaveFBSDSettings(QString rootPW, QString name, QString userN
   fPORTS = ports;
   fNetSettings = netSettings;
   appCafeSettings = appcafe; //Disused for now
-  installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 1);
+  installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 2);
 
   // Generate the pc-sysinstall config
   startConfigGen();
@@ -651,8 +654,12 @@ void Installer::slotNext()
      return ;
    }
 
+   if( installStackWidget->currentIndex() == 1){
+       updatePkgLists();
+       
+   }
    // Create the pc-sysinstall config
-   if ( installStackWidget->currentIndex() == 1 ) {
+   if ( installStackWidget->currentIndex() == 2 ) {
     combo_install_pools->clear();
      // We have existing zpool, see if we want to upgrade within
      if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
@@ -681,10 +688,10 @@ void Installer::slotNext()
    }
 
    // If the chosen disk is too small or partition is invalid, don't continue
-   if ( installStackWidget->currentIndex() == 2 && ! checkDiskRequirements())
+   if ( installStackWidget->currentIndex() == 3 && ! checkDiskRequirements())
       return;
 
-   if ( installStackWidget->currentIndex() == 2 )
+   if ( installStackWidget->currentIndex() == 3 )
    {
       startConfigGen();
       QString msg;
@@ -1279,6 +1286,32 @@ bool Installer::checkDiskRequirements()
   return true;
 }
 
+void Installer::loadPciConfInfo(){
+  pciconf_info = QJsonObject(); //clear it
+  QProcess proc;
+  proc.start("pciconf -lv");
+  proc.waitForFinished();
+  QStringList lines = QString(proc.readAllStandardOutput()).split("\n");
+  //qDebug() << "Raw pciconf:" << lines;
+  QJsonObject cobj; QString cid;
+  for(int i=0; i<lines.length(); i++){
+    if(!lines[i].contains(" = ") && !cid.isEmpty()){ pciconf_info.insert(cid,cobj); cid.clear(); cobj = QJsonObject(); }
+    if(lines[i].contains(" = ")){
+      QString var = lines[i].section("=",0,0).simplified();
+      QString val = lines[i].section("=",1,-1).simplified();
+      if(val.startsWith("\'") && val.endsWith("\'")){ val.chop(1); val = val.remove(0,1); }
+      qDebug() << "PCICONF LINE:" << lines[i];
+	qDebug() << "\t\t" << var << val;
+      cobj.insert(var,val);
+    }else{
+      //New device section
+      cid = lines[i].section("@",0,0);
+    }
+  }
+  if(!cid.isEmpty() && cobj.keys().isEmpty()){ pciconf_info.insert(cid,cobj); }
+  qDebug() << "Found pciconf_info:" << pciconf_info;
+}
+
 // Function which begins the backend install, and connects slots to monitor it
 void Installer::startInstall()
 {
@@ -1654,12 +1687,13 @@ QStringList Installer::getDeskPkgCfg()
 
      // Extra fonts
      pkgList << "x11-fonts/droid-fonts-ttf";
-     
+     //Add in all the user-selected packages
+     pkgList << optionalPackages();
      // i18n packages, will eventually go away
      //pkgList << "misc/trueos-i18n";
 
      // Check if we are using NVIDIA driver and include it automatically
-     QFile file("/var/log/Xorg.0.log");
+     /*QFile file("/var/log/Xorg.0.log");
      if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream in(&file);
        while (!in.atEnd()) {
@@ -1672,10 +1706,10 @@ QStringList Installer::getDeskPkgCfg()
           }
        }     
        file.close();
-     } // Done with NVIDIA check
+     }*/ // Done with NVIDIA check
 
      // Are we on VirtualBox or VMware?
-     QFile filev("/var/log/Xorg.0.log");
+     /*QFile filev("/var/log/Xorg.0.log");
      if (filev.open(QIODevice::ReadOnly | QIODevice::Text)) {
        QTextStream inv(&filev);
        while (!inv.atEnd()) {
@@ -1690,7 +1724,7 @@ QStringList Installer::getDeskPkgCfg()
           }
        }     
        filev.close();
-     } // End of VM checks
+     }*/ // End of VM checks
 
      // End of desktop packages
    } 
@@ -1960,7 +1994,7 @@ void Installer::slotSaveRestoreSettings(QStringList Opts)
   textEditDiskSummary->moveCursor(QTextCursor::Start);
  
   startConfigGen();
-  installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 1);
+  installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 2);
 }
 
 void Installer::parseStatusMessage(QString stat){
@@ -2020,6 +2054,49 @@ void Installer::nextSlide(){
     qDebug() << " - Size:" << sz << label_slide_icon->sizeHint() << installStackWidget->size();
   if(sz.width() << label_slide_icon->sizeHint().width() ){  sz = installStackWidget->size(); } //for the first slide - use the window size
   loadSlide(label_slide_text, label_slide_icon, cslide, sz);
+}
+
+//Slots related to the optional packages
+void Installer::updatePkgLists(){
+  //Read the system information
+  QStringList devs = pciconf_info.keys().filter("vgapci");
+  for(int i=0; i<devs.length(); i++){
+    devs[i] = pciconf_info.value(devs[i]).toObject().value("vendor").toString() + " " +pciconf_info.value(devs[i]).toObject().value("device").toString();
+  }
+  label_graphics_device->setText( label_graphics_device->text().arg(devs.join("\n")) );
+  //Need to add logic here to detect/recommend drivers TODO
+  for(int i=0; i<tree_graphics_drivers->topLevelItemCount(); i++){
+    for(int j=0; j<tree_graphics_drivers->topLevelItem(i)->childCount(); j++){
+      QTreeWidgetItem *it = tree_graphics_drivers->topLevelItem(i)->child(j);
+      if(it->whatsThis(0).isEmpty()){ it->setDisabled(true); }
+      if(!it->isDisabled()){ it->setCheckState(0, Qt::Unchecked); }
+      if(it->text(0).contains("%1")){
+        //Read the version from the available pkg and put it here
+        QString version = "";
+        it->setText(0, it->text(0).arg(version) );
+      }
+    }
+  }
+}
+
+void Installer::pkgChanged(QTreeWidgetItem *it){
+  if(!it->whatsThis(0).contains("nvidia-driver") || it->checkState(0)!=Qt::Checked ){ return; } //nothing special to do
+  for(int i=0; i<it->parent()->childCount(); i++){
+    QTreeWidgetItem *chk = it->parent()->child(i);
+    if(it==chk || !chk->whatsThis(0).contains("nvidia-driver") || chk->checkState(0)!=Qt::Checked ){ continue; }
+    chk->setCheckState(0, Qt::Unchecked);
+  }
+}
+
+QStringList Installer::optionalPackages(){
+  QStringList sel;
+  for(int i=0; i<tree_graphics_drivers->topLevelItemCount(); i++){
+    for(int j=0; j<tree_graphics_drivers->topLevelItem(i)->childCount(); j++){
+      QTreeWidgetItem *it = tree_graphics_drivers->topLevelItem(i)->child(j);
+      if(it->checkState(0)==Qt::Checked && !it->whatsThis(0).isEmpty()){ sel << it->whatsThis(0); }
+    }
+  }
+  return sel;
 }
 
 void Installer::slotBEInstallToggled(bool inBE){
