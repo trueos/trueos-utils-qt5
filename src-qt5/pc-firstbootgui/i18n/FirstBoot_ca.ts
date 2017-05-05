@@ -38,7 +38,7 @@
     </message>
     <message>
         <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>La contrasenya de sistema o "root" us permet fer canvis al sistema operatiu i s'hauria de protegir d'usuaris que no són de confiança. </translation>
+        <translation>La contrasenya de sistema o d'arrel (root) us permet fer canvis al sistema operatiu i s'hauria de protegir d'usuaris que no són de confiança. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Specify UID</source>
-        <translation>Especifiqueu l'UID</translation>
+        <translation>Especifiqueu-ne l'UID</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
