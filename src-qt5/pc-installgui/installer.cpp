@@ -1879,7 +1879,7 @@ void Installer::slotSaveConfigUSB()
 void Installer::slotLoadConfigUSB()
 {
   int ret = QMessageBox::question(this, tr("TrueOS Installer"),
-           tr("This will load a installation configuration file your MSDOSFS/FAT32 formatted USB stick. Continue?"),
+           tr("Load an installation configuration file from a MSDOSFS/FAT32 formatted USB stick?"),
            QMessageBox::No | QMessageBox::Yes,
            QMessageBox::No);
   switch (ret) {
