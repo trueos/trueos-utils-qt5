@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -406,6 +406,12 @@ selection-background-color: rgb(160, 160, 160);</string>
         </item>
         <item row="1" column="1">
          <widget class="QLabel" name="label_3">
+          <property name="toolTip">
+           <string> Choose what kind of TrueOS installation to install to your system:</string>
+          </property>
+          <property name="statusTip">
+           <string/>
+          </property>
           <property name="text">
            <string>Choose the installation type</string>
           </property>
