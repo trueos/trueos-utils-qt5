@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -1540,11 +1540,17 @@ QFrame{ background: transparent; }
         </item>
         <item row="1" column="1">
          <widget class="QLabel" name="labelFinished">
+          <property name="toolTip">
+           <string>The installation is complete. You can save your system configuration to a MSDOSFS or FAT32/n
+ formatted USB drive by clicking &quot;Save Config to USB&quot;. Pressing &quot;Finish&quot; immediately reboots/n
+ the system. Once the monitor screen goes dark, remove the installation medium to ensure the/n
+ system boots from the freshly installed local drive.</string>
+          </property>
           <property name="styleSheet">
            <string notr="true">background: transparent;</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your system is now installed!&lt;/p&gt;&lt;p&gt;Click Finish to reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting you may need to eject the install media to boot up from the local disk rather than the install media again.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your system is now installed!&lt;/p&gt;&lt;p&gt;Click &amp;quot;Finish&amp;quot; to reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting, you may need to eject the install media to ensure the system boots from the local disk.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -1597,7 +1603,7 @@ QFrame{ background: transparent; }
              <item>
               <widget class="QPushButton" name="pushSaveConfig2">
                <property name="toolTip">
-                <string extracomment="Save configuration file to USB stick"/>
+                <string extracomment="Save configuration file to USB stick">Save your installation configuration to a MSDOSFS or FAT32 formatted USB drive?</string>
                </property>
                <property name="autoFillBackground">
                 <bool>false</bool>
