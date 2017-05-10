@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -342,7 +342,7 @@ selection-background-color: rgb(160, 160, 160);</string>
               <bool>false</bool>
              </property>
              <property name="text">
-              <string>Welcome to TrueOS! Please select your language and click next to continue.</string>
+              <string>Welcome to TrueOS! Please select your language and click &quot;Next&quot; to continue. You can also restore a saved TrueOS configuration from a MSDOSFS or FAT32 formatted USB drive with &quot;Load config from USB&quot;.</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignHCenter|Qt::AlignTop</set>
