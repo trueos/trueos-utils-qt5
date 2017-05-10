@@ -1766,10 +1766,10 @@ QFrame{ background: transparent; }
        <item>
         <widget class="QPushButton" name="pushChangeKeyLayout">
          <property name="toolTip">
-          <string/>
+          <string>Adjust the TrueOS keyboard layout</string>
          </property>
          <property name="statusTip">
-          <string>Switch between US layout and user selected layout</string>
+          <string>Adjust the TrueOS keyboard layout</string>
          </property>
          <property name="text">
           <string/>
