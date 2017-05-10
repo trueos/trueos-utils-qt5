@@ -233,7 +233,7 @@
          </font>
         </property>
         <property name="text">
-         <string>( you may type into the space below to test your selected settings. )</string>
+         <string>(Type in the white space below to test the chosen settings)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
