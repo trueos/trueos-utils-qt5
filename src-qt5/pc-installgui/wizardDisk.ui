@@ -101,7 +101,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>This wizard will walk you through the disk setup process. Please choose the setup mode you wish to use.</string>
+       <string>This wizard walks you through the disk setup process. Choose a setup mode and press &quot;Next&quot; to continue.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -212,7 +212,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>Selected Disk</string>
+         <string>Disk</string>
         </property>
        </widget>
       </item>
@@ -235,7 +235,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>Selected Partition</string>
+         <string>Partition</string>
         </property>
        </widget>
       </item>
@@ -383,7 +383,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Please select the disk or partition you wish to install onto. </string>
+       <string>Select the install disk or partition.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -503,7 +503,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>If this is a single disk ZFS install, you can continue, otherwise please select the mirror / raid mode and disks below. </string>
+       <string>Click &quot;Next&quot; if this is a single disk ZFS install. Otherwise, select the mirror/raid mode and disks here:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -816,7 +816,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>TrueOS can encrypt your disks using the GELI framework. This is full-disk encryption and will require a password at startup.</string>
+         <string>TrueOS can encrypt your disks using the GELI framework. This is full-disk encryption, requiring a password at startup.</string>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
@@ -1017,7 +1017,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Below you may adjust the file-system mount points. For most users the defaults will work best. </string>
+       <string>Here are the default file-system mount points. While these are best for most users, you can customize the points using the buttons on this screen or right-clicking an entry.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1411,7 +1411,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Please check the disk summary below and click finish to save your settings. </string>
+       <string>Review this summary and press &quot;Finish&quot; to save your settings. Press &quot;Back&quot; to change any options.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1474,7 +1474,6 @@
   </widget>
  </widget>
  <resources>
-  <include location="sysinstaller.qrc"/>
   <include location="sysinstaller.qrc"/>
  </resources>
  <connections/>

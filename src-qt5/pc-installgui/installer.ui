@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -899,7 +899,7 @@ selection-background-color: rgb(160, 160, 160);</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>Disk Selection</string>
+             <string>The disk will initialize with this configuration:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1026,7 +1026,7 @@ QFrame{ background: transparent; }
                <item>
                 <widget class="QPushButton" name="pushSaveConfig">
                  <property name="toolTip">
-                  <string extracomment="Save configuration file to USB stick"/>
+                  <string extracomment="Save configuration file to USB stick">Save the installation configuration to a MSDOSFS/FAT32 formatted USB stick?</string>
                  </property>
                  <property name="autoFillBackground">
                   <bool>false</bool>
