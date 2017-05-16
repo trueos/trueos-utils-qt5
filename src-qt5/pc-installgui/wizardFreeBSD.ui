@@ -92,7 +92,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>This wizard will walk you though the setup of your new server. Click next to begin. </string>
+       <string>This wizard guides you in configuring a new TrueOS server. Click &quot;Next&quot; to begin.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -212,7 +212,7 @@
     <item row="1" column="1">
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Please enter the root password for this server</string>
+       <string>Create a root password for this server:</string>
       </property>
      </widget>
     </item>
@@ -274,7 +274,7 @@
       <item row="1" column="1" colspan="2">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Password (Repeat)</string>
+         <string>Repeat Password</string>
         </property>
        </widget>
       </item>
@@ -374,7 +374,7 @@
     <item row="1" column="1" colspan="2">
      <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>Please create a user for this server</string>
+       <string>Create a new user:</string>
       </property>
      </widget>
     </item>
@@ -424,7 +424,7 @@
       <item row="3" column="1">
        <widget class="QLabel" name="label_10">
         <property name="text">
-         <string>Password (Repeat)</string>
+         <string>Repeat Password</string>
         </property>
        </widget>
       </item>
@@ -566,7 +566,7 @@
     <item row="1" column="1">
      <widget class="QLabel" name="label_15">
       <property name="text">
-       <string>Please enter a system hostname and remote login preference.</string>
+       <string>Enter a system hostname and enable/disable remote logins:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -730,7 +730,7 @@
     <item row="1" column="1" colspan="2">
      <widget class="QLabel" name="label_20">
       <property name="text">
-       <string>Please select a network device to configure for this system.</string>
+       <string>Configure a network device for this system:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1080,7 +1080,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Please select any optional features to install.</string>
+       <string>Choose any additional features to install:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1119,13 +1119,6 @@
       </property>
      </spacer>
     </item>
-    <item row="3" column="1">
-     <widget class="QCheckBox" name="checkPorts">
-      <property name="text">
-       <string>Install ports tree (/usr/ports)</string>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="1">
      <spacer name="verticalSpacer_20">
       <property name="orientation">
@@ -1138,6 +1131,13 @@
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="3" column="1">
+     <widget class="QCheckBox" name="checkPorts">
+      <property name="text">
+       <string>Install FreeBSD ports tree (/usr/ports)</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
