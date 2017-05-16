@@ -27,6 +27,8 @@ private slots:
     void slotSuggestUsername();
     void slotChangedNic();
 
+//    void viewPassword();
+
 private:
     bool validatePage();
     enum { Page_Intro, Page_Root, Page_User, Page_Host, Page_AppCafe, Page_Optional };

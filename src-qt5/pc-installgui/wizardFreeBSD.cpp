@@ -24,9 +24,12 @@ void wizardFreeBSD::programInit(bool trueOS)
    connect(linePW,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(linePW2,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(lineHostname,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
+//   connect(pushButton_viewpassword,SIGNAL(pressed()),this,SLOT(viewPassword()));
 
    // Load any nics
    QString tmp;
+//   pwVisible = false;
+   pushButton_viewpassword->setVisible(false);
    comboSelectNic->clear();
    comboSelectNic->addItem("AUTO-DHCP-SLAAC");
    comboSelectNic->addItem("AUTO-DHCP");
@@ -146,6 +149,13 @@ bool wizardFreeBSD::validatePage()
          button(QWizard::NextButton)->setEnabled(true);
          return true;
      case Page_Root:
+//        if(pwVisible){
+//           lineRootPW->setEchoMode(QLineEdit::Normal);
+//           lineRootPW2->setEchoMode(QLineEdit::Normal);
+//        }else{
+//          lineRootPW->setEchoMode(QLineEdit::Password);
+//          lineRootPW2->setEchoMode(QLineEdit::Password);
+//        }
          if ( lineRootPW->text().isEmpty() ) {
            button(QWizard::NextButton)->setEnabled(false);
            return true;
@@ -211,3 +221,15 @@ void wizardFreeBSD::slotCheckComplete()
    // Validate this page
    validatePage();
 }
+
+/*
+void wizardFreeBSD::viewPassword()
+{
+  if(pwVisible){
+    pwVisible = false;
+    }else{
+    pwVisible = true;
+    }
+    updateWidget();
+}
+*/
