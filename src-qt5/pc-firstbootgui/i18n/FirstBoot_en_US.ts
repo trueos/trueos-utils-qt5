@@ -6,137 +6,137 @@
     <message>
         <location filename="../firstboot.ui" line="157"/>
         <source>Change the installation language</source>
-        <translation type="unfinished"></translation>
+        <translation>更改安装语言</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="214"/>
         <location filename="../firstboot.ui" line="217"/>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">双引导时可以使用</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="220"/>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished"></translation>
+        <translation>将BIOS设置为UTC时间</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="357"/>
         <source>System Timezone</source>
-        <translation type="unfinished"></translation>
+        <translation>系统时区</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="373"/>
         <source>Set the system timezone</source>
-        <translation type="unfinished"></translation>
+        <translation>设置系统时区</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="485"/>
         <source>System Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>系统主机名</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="182"/>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>欢迎来到您的新系统！ 您可以更改上述语言，然后单击下一步开始安装过程。</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="504"/>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>域名</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="640"/>
         <source>Root Password</source>
-        <translation type="unfinished"></translation>
+        <translation>根密码</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="659"/>
         <location filename="../firstboot.ui" line="967"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>密码</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="692"/>
         <location filename="../firstboot.ui" line="987"/>
         <location filename="../firstboot.ui" line="1116"/>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>密码（再一次）</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="710"/>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation type="unfinished"></translation>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <translation>系统或“root”密码允许您对操作系统进行更改，并应保存在non-trusted用户身上。 </translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="888"/>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>用户详细信息</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="909"/>
         <source>Create a User</source>
-        <translation type="unfinished"></translation>
+        <translation>创建用户</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="937"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="950"/>
         <source>Username</source>
-        <translation type="unfinished"></translation>
+        <translation>用户名</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1010"/>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt用户对于使用它们的每个系统都需要相同的UID</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1013"/>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>指定UID</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1024"/>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">PersonaCrypt</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1042"/>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>初始化PersonaCrypt设备</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1072"/>
         <location filename="../firstboot.cpp" line="310"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>选择</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1079"/>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>可移除设备</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1096"/>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>User-portion 的磁盘加密密钥</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1099"/>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>设备密码</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1172"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>测试</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1218"/>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>默认输出:</translation>
     </message>
     <message>
         <location filename="../firstboot.ui" line="1228"/>
@@ -175,7 +175,7 @@
     </message>
     <message>
         <location filename="../firstboot.ui" line="1482"/>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
