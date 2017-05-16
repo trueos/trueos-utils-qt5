@@ -92,7 +92,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>This wizard will walk you though the setup of your new server. Click next to begin. </string>
+       <string>This wizard guides you in configuring a new TrueOS server. Click &quot;Next&quot; to begin.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -212,7 +212,7 @@
     <item row="1" column="1">
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Please enter the root password for this server</string>
+       <string>Create a root password for this server:</string>
       </property>
      </widget>
     </item>
@@ -228,6 +228,19 @@
        <size>
         <width>288</width>
         <height>17</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="1">
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>218</width>
+        <height>97</height>
        </size>
       </property>
      </spacer>
@@ -248,22 +261,6 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Minimum</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="1" column="0">
        <widget class="QLineEdit" name="lineRootPW2">
         <property name="echoMode">
@@ -271,43 +268,25 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1" colspan="2">
+      <item row="1" column="1" colspan="3">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Password (Repeat)</string>
+         <string>Repeat Password</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="3">
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_viewpassword">
+        <property name="text">
+         <string/>
         </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Minimum</enum>
+        <property name="icon">
+         <iconset resource="sysinstaller.qrc">
+          <normaloff>:/TRUEOS/images/ic_visibility_48px.svg</normaloff>:/TRUEOS/images/ic_visibility_48px.svg</iconset>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       </widget>
       </item>
      </layout>
-    </item>
-    <item row="4" column="1">
-     <spacer name="verticalSpacer_4">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>218</width>
-        <height>97</height>
-       </size>
-      </property>
-     </spacer>
     </item>
    </layout>
   </widget>
@@ -374,7 +353,7 @@
     <item row="1" column="1" colspan="2">
      <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>Please create a user for this server</string>
+       <string>Create a new user:</string>
       </property>
      </widget>
     </item>
@@ -424,7 +403,7 @@
       <item row="3" column="1">
        <widget class="QLabel" name="label_10">
         <property name="text">
-         <string>Password (Repeat)</string>
+         <string>Repeat Password</string>
         </property>
        </widget>
       </item>
@@ -566,7 +545,7 @@
     <item row="1" column="1">
      <widget class="QLabel" name="label_15">
       <property name="text">
-       <string>Please enter a system hostname and remote login preference.</string>
+       <string>Enter a system hostname and enable/disable remote logins:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -730,7 +709,7 @@
     <item row="1" column="1" colspan="2">
      <widget class="QLabel" name="label_20">
       <property name="text">
-       <string>Please select a network device to configure for this system.</string>
+       <string>Configure a network device for this system:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1080,7 +1059,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Please select any optional features to install.</string>
+       <string>Choose any additional features to install:</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -1119,13 +1098,6 @@
       </property>
      </spacer>
     </item>
-    <item row="3" column="1">
-     <widget class="QCheckBox" name="checkPorts">
-      <property name="text">
-       <string>Install ports tree (/usr/ports)</string>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="1">
      <spacer name="verticalSpacer_20">
       <property name="orientation">
@@ -1138,6 +1110,13 @@
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="3" column="1">
+     <widget class="QCheckBox" name="checkPorts">
+      <property name="text">
+       <string>Install FreeBSD ports tree (/usr/ports)</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
