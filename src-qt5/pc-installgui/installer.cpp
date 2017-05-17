@@ -370,7 +370,7 @@ QStringList Installer::getDiskSummary()
 
   // Start our summary
   summaryList << "";
-  summaryList << "<b>" + tr("The disk will be setup with the following configuration:") + "</b>";
+  summaryList << "<b>" + tr("The disk will initialize with this configuration:") + "</b>";
 
   while ( ! copyList.empty() )
   {

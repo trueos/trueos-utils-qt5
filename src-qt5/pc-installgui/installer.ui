@@ -451,8 +451,7 @@ selection-background-color: rgb(160, 160, 160);</string>
            <item row="0" column="0">
             <widget class="QRadioButton" name="radioDesktop">
              <property name="toolTip">
-              <string>&quot;TrueOS Desktop&quot; is the full graphical experience for the home or light office user.
- The Lumina Desktop Environment is installed with TrueOS, providing a full graphical experience.</string>
+              <string/>
              </property>
              <property name="statusTip">
               <string>Graphical desktop</string>
@@ -482,9 +481,7 @@ selection-background-color: rgb(160, 160, 160);</string>
            <item row="1" column="0">
             <widget class="QRadioButton" name="radioServer">
              <property name="toolTip">
-              <string>&quot;TrueOS Server&quot; installs a FreeBSD based command-line server operating system.
- There is no graphical desktop operating system with this option.
- The SysAdm client and API is included to assist with managing the server either locally or remotely.</string>
+              <string/>
              </property>
              <property name="statusTip">
               <string>Best for servers and headless systems</string>
@@ -508,10 +505,7 @@ selection-background-color: rgb(160, 160, 160);</string>
            <item row="2" column="0">
             <widget class="QRadioButton" name="radioRestore">
              <property name="toolTip">
-              <string>&quot;Restore from Life-Preserver backup&quot; is used to restore a TrueOS system from ZFS snapshots that have been
- replicated to a remote backup server. The network interface must be configured for this option to work
- properly. The installer attempts to automatically configure networking, but you can click the &quot;blue orb&quot; icon
- on the bottom of this screen to manually configure the network interface.</string>
+              <string/>
              </property>
              <property name="statusTip">
               <string>Restore from an existing backup</string>
