@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="XGUISource_zh_CN">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation>保存显示设置？</translation>
+        <translation>保留这些显示设置？</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation>尝试失败，请检查你的设置后重试。</translation>
+        <translation>之前的尝试失败，请检查你的设置后重试。</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation>显示器已配置。
-保存配置吗？</translation>
+        <translation>您的显示器已配置。
+保留这些设置？</translation>
     </message>
 </context>
 <context>
@@ -111,12 +111,12 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>警告！</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
         <translation>PC-BSD无法自动探测你的显示器。你可能需要在“高级设置”标签中指定这个显示器的水平同步率和垂直刷新率。</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>双头支持是为单显卡双显示器的系统而设计。其他的设置可以通过编辑文件/etc/X11/xorg.conf而获得。</translation>
+        <translation>Dual-Head支持设计用于具有一个视频卡和两个显示器的系统。 其他设置可以通过编辑/etc/X11/xorg.conf来实现</translation>
     </message>
 </context>
 <context>
@@ -147,22 +147,19 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source> seconds...</source>
-        <translation>秒后...</translation>
+        <translation> 秒...</translation>
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation>确定(O)
-            </translation>
+        <translation>＆好</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation>分辨率：
-            </translation>
+        <translation>解析度：</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation>驱动：
-            </translation>
+        <translation>驱动:</translation>
     </message>
 </context>
 </TS>
