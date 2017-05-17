@@ -511,7 +511,7 @@ selection-background-color: rgb(160, 160, 160);</string>
               <string>Restore from an existing backup</string>
              </property>
              <property name="text">
-              <string>Restore from Life-Preserver backup</string>
+              <string>Restore from Life Preserver backup</string>
              </property>
              <property name="icon">
               <iconset resource="sysinstaller.qrc">
