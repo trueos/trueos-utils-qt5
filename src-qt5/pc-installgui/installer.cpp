@@ -1446,6 +1446,7 @@ void Installer::slotInstallProcFinished( int exitCode, QProcess::ExitStatus stat
     connect(nextButton, SIGNAL(clicked()), this, SLOT(slotFinished()));
     backButton->setEnabled(false);
     abortButton->setEnabled(false);
+    abortButton->setVisible(false);
   }
 }
 
