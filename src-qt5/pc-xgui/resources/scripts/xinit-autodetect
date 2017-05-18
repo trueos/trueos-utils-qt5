@@ -1,5 +1,9 @@
 #!/bin/sh 
 
+if [[ ! $(xset -q) ]]; then
+  return 1 #X server could not be found
+fi
+
 # Source our functions
 . /usr/local/share/trueos/scripts/functions.sh
 

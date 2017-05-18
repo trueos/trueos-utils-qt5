@@ -15,6 +15,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QProcess>
 
 #define PREFIX QString("/usr/local")
 
@@ -42,31 +43,64 @@ void XGUI::ProgramInit()
     loadDeviceInformation();
    
     // Disable the monitor advanced group box
-    monitorChangedSlot();
+    //monitorChangedSlot();
 
     // Check for an unprobed monitor
-    checkUnprobedMonitor(); 
+    //checkUnprobedMonitor(); 
 
     // Connect our Dual-head checkbox / slot
-    connect(checkDualHead, SIGNAL( clicked() ), this, SLOT( dualChangedSlot() ) );
-    connect(checkMonitorSync, SIGNAL( clicked() ), this, SLOT( monitorChangedSlot() ) );
+    //connect(checkDualHead, SIGNAL( clicked() ), this, SLOT( dualChangedSlot() ) );
+    //connect(checkMonitorSync, SIGNAL( clicked() ), this, SLOT( monitorChangedSlot() ) );
     connect(pushApply, SIGNAL( clicked() ), this, SLOT( applySlot() ) );
     connect(pushClose, SIGNAL( clicked() ), this, SLOT( closeSlot() ) );
 
     // Check out dualChangedSlot to ensure we disable the box by default
-    dualChangedSlot();
+    //dualChangedSlot();
+  tabWidget->setTabEnabled(1,false);
 }
 
 
 void XGUI::loadDeviceInformation()
 {
+  //Load all the pci information first
+  pciconf_info = QJsonObject(); //clear it
+  QProcess proc;
+  proc.start("pciconf -lv");
+  proc.waitForFinished();
+  QStringList lines = QString(proc.readAllStandardOutput()).split("\n");
+  //qDebug() << "Raw pciconf:" << lines;
+  QJsonObject cobj; QString cid;
+  for(int i=0; i<lines.length(); i++){
+    if(!lines[i].contains(" = ") && !cid.isEmpty()){ pciconf_info.insert(cid,cobj); cid.clear(); cobj = QJsonObject(); }
+    if(lines[i].contains(" = ")){
+      QString var = lines[i].section("=",0,0).simplified();
+      QString val = lines[i].section("=",1,-1).simplified();
+      if(val.startsWith("\'") && val.endsWith("\'")){ val.chop(1); val = val.remove(0,1); }
+      qDebug() << "PCICONF LINE:" << lines[i];
+	qDebug() << "\t\t" << var << val;
+      cobj.insert(var,val);
+    }else{
+      //New device section
+      cid = lines[i].section("@",0,0);
+    }
+  }
+  if(!cid.isEmpty() && cobj.keys().isEmpty()){ pciconf_info.insert(cid,cobj); }
+  //qDebug() << "Found pciconf_info:" << pciconf_info;
+
+  //Load the information about the graphics card
+  QStringList devs = pciconf_info.keys().filter("vgapci");
+  for(int i=0; i<devs.length(); i++){
+    devs[i] = pciconf_info.value(devs[i]).toObject().value("vendor").toString()+" "+pciconf_info.value(devs[i]).toObject().value("device").toString();
+  }
+  labelVideoCard->setText(devs.join("/n"));
+
     QString tmp;
     QString scriptdir = PROGDIR + "/scripts";
 
     // Get the card name and display it
-    tmp = getLineFromCommandOutput(scriptdir + "/cardboard.sh");
-    tmp.truncate(30);
-    labelVideoCard->setText(tmp);
+    //tmp = getLineFromCommandOutput(scriptdir + "/cardboard.sh");
+    //tmp.truncate(30);
+    //labelVideoCard->setText(tmp);
 
     // Get the Monitor Name and display it 
     tmp = getLineFromCommandOutput(scriptdir + "/monmodel.sh");
@@ -145,8 +179,9 @@ void XGUI::suggestDriver(QString driver)
 
      sugDriver = "vesa";
    }
-
-   //labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b>");
+  if(!sugDriver.isEmpty()){
+    labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b>");
+  }
 }
 
 // Function which checks if we are using an unprobed monitor, warns the user
@@ -174,7 +209,8 @@ void XGUI::checkUnprobedMonitor()
 
 void XGUI::loadResolutions()
 {
-    QString line;
+  //layout_resolution->setVisible(false); //disable for now - remove it later
+    /*QString line;
     int i=0;
     
     comboResolution->clear();
@@ -194,19 +230,28 @@ void XGUI::loadResolutions()
           i++;
 	}
 	file.close();
-    }
+    }*/
 }
 
 
 void XGUI::loadDrivers()
 {
-    int i = 0;
-    QString line;
+    //int i = 0;
+    //QString line;
     
     comboDriver->clear();
-
+    //List off all the drivers currently available on the system
+    QDir dir(XDRIVERDIR);
+    QStringList drivers = dir.entryList(QStringList() << "*_drv.so", QDir::Files, QDir::Name);
+    for(int i=0; i<drivers.length(); i++){
+      QString name = drivers[i].section("_drv.so",0,0); //name of the driver
+      //Perform additional verification checks (EFI/BIOS boot, etc..) 
+      // TODO
+      comboDriver->addItem(name);
+      if(name=="vesa"){ comboDriver->setCurrentIndex(comboDriver->count()-1); }
+    }
     // Now populate the combo box
-    QFile file( PROGDIR + "/settings/drivers.txt" );
+    /*QFile file( PROGDIR + "/settings/drivers.txt" );
     if ( file.open( QIODevice::ReadOnly ) ) {
         QTextStream stream( &file );
              while ( !stream.atEnd() ) {
@@ -219,13 +264,14 @@ void XGUI::loadDrivers()
 	       i++;
 	}
 	file.close();
-    }
+    }*/
 }
 
 
 void XGUI::loadDepth()
 {
-    QString line;
+  //layout_depth->setVisible(true); //disable for now
+    /*QString line;
     int i = 0;
     
     comboDepth->clear();
@@ -243,7 +289,7 @@ void XGUI::loadDepth()
 
 	}
 	file.close();
-    }
+    }*/
 }
 
 
@@ -267,13 +313,13 @@ void XGUI::applySlot()
     	if ( file.open( QIODevice::WriteOnly ) ) {
         QTextStream stream( &file );
             stream << "#!/bin/sh\n";
-            stream << "RES=\"" + comboResolution->currentText() + "\"; export RES\n";
-            stream << "DRIVER=\"" + comboDriver->currentText() + "\"; export DRIVER\n";
+            //stream << "RES=\"" + comboResolution->currentText() + "\"; export RES\n";
+            stream << "export DRIVER=\"" + comboDriver->currentText() + "\"\n";
 
-	     	tmp = comboDepth->currentText();
-		tmp.truncate(tmp.indexOf("bit"));
-	    stream << "DEPTH=\"" + tmp + "\"; export DEPTH\n";
-   	    if ( checkMonitorSync->isChecked() )
+	     	//tmp = comboDepth->currentText();
+		//tmp.truncate(tmp.indexOf("bit"));
+	    //stream << "DEPTH=\"" + tmp + "\"; export DEPTH\n";
+   	    /*if ( checkMonitorSync->isChecked() )
     	    {
   	    	stream << "HORIZSYNC=\"" +lineHorz->text() + "\"; export HORIZSYNC\n" ;
 	    	stream << "VERTREFRESH=\"" +lineVertRefresh->text() + "\"; export VERTREFRESH\n" ;
@@ -285,7 +331,7 @@ void XGUI::applySlot()
             {
                 stream << "DUALHEAD=\"YES\" ; export DUALHEAD\n";
                 stream << "DUALRES=\"" + comboDualRes->currentText() + "\"; export DUALRES\n";
-            }
+            }*/
 	    file.close();
     	}
 

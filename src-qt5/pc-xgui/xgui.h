@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include "ui_xgui.h"
+#include <QJsonObject>
 
 class XGUI : public QMainWindow, private Ui::XGUI
 {
@@ -36,8 +37,9 @@ private:
     void loadResolutions();
     void suggestDriver(QString driver);
 
+	QJsonObject pciconf_info;
+
 signals:
 
 } ;
 #endif // XGUI_H
-

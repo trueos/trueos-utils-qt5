@@ -15,6 +15,7 @@ imstt
 mach64
 mga
 mga-3d-enable
+modesetting
 neomagic
 nouveau
 nsc

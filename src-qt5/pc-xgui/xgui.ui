@@ -207,102 +207,6 @@
            </layout>
           </item>
           <item row="2" column="0">
-           <layout class="QHBoxLayout" name="_9">
-            <item>
-             <widget class="QLabel" name="textLabel1_5">
-              <property name="text">
-               <string>Screen Resolution:</string>
-              </property>
-              <property name="wordWrap">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboResolution">
-              <item>
-               <property name="text">
-                <string>1024x768</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="pixmapLabel1_3">
-              <property name="minimumSize">
-               <size>
-                <width>32</width>
-                <height>32</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>32</width>
-                <height>32</height>
-               </size>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="XGUI.qrc">:/randr.png</pixmap>
-              </property>
-              <property name="scaledContents">
-               <bool>true</bool>
-              </property>
-              <property name="wordWrap">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="3" column="0">
-           <layout class="QHBoxLayout" name="_10">
-            <item>
-             <widget class="QLabel" name="textLabel1_6">
-              <property name="text">
-               <string>Color Depth:</string>
-              </property>
-              <property name="wordWrap">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboDepth">
-              <item>
-               <property name="text">
-                <string>24bits</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="pixmapLabel1_2_4">
-              <property name="minimumSize">
-               <size>
-                <width>32</width>
-                <height>32</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>32</width>
-                <height>32</height>
-               </size>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="XGUI.qrc">:/colors.png</pixmap>
-              </property>
-              <property name="scaledContents">
-               <bool>true</bool>
-              </property>
-              <property name="wordWrap">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="4" column="0">
            <layout class="QHBoxLayout" name="_11">
             <item>
              <widget class="QLabel" name="textLabel1_7">
@@ -344,7 +248,7 @@
             </item>
            </layout>
           </item>
-          <item row="6" column="0">
+          <item row="4" column="0">
            <spacer name="spacer2_2">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
@@ -360,7 +264,7 @@
             </property>
            </spacer>
           </item>
-          <item row="5" column="0">
+          <item row="3" column="0">
            <widget class="QLabel" name="labelRecDriver">
             <property name="text">
              <string/>
@@ -612,7 +516,16 @@
     </item>
     <item row="3" column="0" colspan="2">
      <layout class="QHBoxLayout" name="_8">
-      <property name="margin">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
        <number>0</number>
       </property>
       <item>

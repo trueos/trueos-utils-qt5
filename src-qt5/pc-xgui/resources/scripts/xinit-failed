@@ -1,5 +1,9 @@
 #!/bin/sh 
 
+if [[ ! $(xset -q) ]]; then
+  return 1 #X server could not be found
+fi
+
 # Set all our path variables
 PATH="/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/bin:/usr/local/sbin"
 export PATH

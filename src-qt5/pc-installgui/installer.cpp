@@ -2072,9 +2072,11 @@ void Installer::updatePkgLists(){
       if(it->whatsThis(0).isEmpty()){ it->setDisabled(true); }
       if(!it->isDisabled()){ it->setCheckState(0, Qt::Unchecked); }
       if(it->text(0).contains("%1")){
-        //Read the version from the available pkg and put it here
+        //Read the version from the available pkg and put it here (TODO)
         QString version = "";
-        it->setText(0, it->text(0).arg(version) );
+        QString text = it->text(0).arg(version);
+        text.replace("()",""); //just in case version information could not be detected
+        it->setText(0, text.simplified() );
       }
     }
   }

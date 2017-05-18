@@ -25,7 +25,41 @@ XGUITMP="/tmp/.xgui" ; export XGUITMP
 TERM="cons25" ; export TERM
 clear
 
+TMP_XORG_CONF="/etc/X11/xorg.conf" #Not quite ready yet - use the normal place for now
+XORG_CONF="/etc/X11/xorg.conf"
 ###############################################################################
+create_tmp_xorg_conf(){
+  _driver="$1"
+  # uses exported "cfgCardBusID" variable
+
+  cp ${PROGDIR}/cardDetect/XF86Config.default ${TMP_XORG_CONF}
+  if [ -n "${_driver}" ] && [ -n "${cfgCardBusID}" ] ; then
+    echo "
+Section \"Device\"
+        Identifier      \"Card0\"
+        Driver          \"${_driver}\"
+        BusID           \"${cfgCardBusID}\"
+EndSection
+  " >> ${TMP_XORG_CONF}
+  elif [ -n "${cfgCardBusID}" ] ; then
+    echo "
+Section \"Device\"
+        Identifier      \"Card0\"
+        BusID           \"${cfgCardBusID}\"
+EndSection
+  " >> ${TMP_XORG_CONF}
+  elif [ -n "${_driver}" ]; then
+    echo "
+Section \"Device\"
+        Identifier      \"Card0\"
+        Driver          \"${_driver}\"
+EndSection
+  " >> ${TMP_XORG_CONF}
+
+  fi
+  echo "${_driver}" > ${XGUITMP}/.lastdriver
+}
+
 # Start the script now
 
 cfg_card_busid()
@@ -90,46 +124,34 @@ cfg_card_busid()
   if [ -z "$cfgCard" ] ; then return 1; fi
 
   # Is this an Intel chipset?
-  echo "$cfgCard" | grep -q -i -e "intel"
-  if [ $? -eq 0 ] ; then
-     driver="intel"
-  fi
-  echo "$cfgCard" | grep -q -i -e "nvidia"
-  if [ $? -eq 0 ] ; then
-     driver="nvidia"
-  fi
-
+  #echo "$cfgCard" | grep -q -i -e "intel"
+  #if [ $? -eq 0 ] ; then
+  #   driver="intel"
+  #fi
+  #echo "$cfgCard" | grep -q -i -e "nvidia"
+  #if [ $? -eq 0 ] ; then
+  #   driver="nvidia"
+  #fi
+  export cfgCardBusID
   # Found a card, lets try an xorg config for it
-  cp ${PROGDIR}/cardDetect/XF86Config.default /etc/X11/xorg.conf
-  if [ -n "$driver" ] ; then
-    echo "
-Section \"Device\"
-        Identifier      \"Card0\"
-        Driver          \"$driver\"
-        BusID           \"${cfgCardBusID}\"
-EndSection
-  " >> /etc/X11/xorg.conf
-  else
-    echo "
-Section \"Device\"
-        Identifier      \"Card0\"
-        BusID           \"${cfgCardBusID}\"
-EndSection
-  " >> /etc/X11/xorg.conf
-  fi
-
+  #create_tmp_xorg_conf ${driver}
   return 0
 }
 
 # Init our tmpdir
+prevCrash=""
 if [ ! -d "${XGUITMP}" ] ; then
 	mkdir -p ${XGUITMP}
+else
+  prevCrash=`cat ${XGUITMP}/.lastdriver`
+  rm ${XGUITMP}/.*
 fi
+touch ${XGUITMP}/.lastdriver
 
-echo "`clear`" >/dev/console
+#echo "`clear`" >/dev/console
 
 # Move any existing xorg.conf file
-if [ -e "/etc/X11/xorg.conf" ] ; then
+if [ -e "/etc/X11/xorg.conf" ] && [ -n "${prevCrash}" ] ; then
    mv /etc/X11/xorg.conf /etc/X11/xorg.conf.bak
 fi
 
@@ -137,12 +159,12 @@ echo "`clear`" >/dev/console
 echo "Please wait... Start X-Configuration Utility" >/dev/console
 
 # Check if we need to save an existing .xinitrc file
-if [ -e "/root/.xinitrc" ] ; then
+if [ -e "/root/.xinitrc" ] && [ -n "${prevCrash}" ] ; then
  mv /root/.xinitrc /root/.xinitrc.xbak
 fi
 
 # Check if we need to move the .fluxbox profile
-if [ -e "/root/.fluxbox" ] ; then
+if [ -e "/root/.fluxbox" && [ -n "${prevCrash}" ] ] ; then
   rm -rf /root/.fluxbox.xbak 2>/dev/null
   mv /root/.fluxbox /root/.fluxbox.xbak 2>/dev/null
 fi
@@ -181,86 +203,33 @@ i=1
 do
 
   # Save the previous xorg.conf file for troubleshooting
-  if [ -e "/etc/X11/xorg.conf" ] ; then mv /etc/X11/xorg.conf /etc/X11/xorg.conf.previous ; fi
+  #if [ -e "/etc/X11/xorg.conf" ] ; then mv /etc/X11/xorg.conf /etc/X11/xorg.conf.previous ; fi
 
   #  Don't keep displaying the autores question
   AUTORES="NO"
 
+  echo "`clear`" >/dev/console
+  #echo "Detecting X11 Driver: Attempt #${ATTEMPT}"
+  driver=""
   if [ "${ATTEMPT}" = "0" ] ; then
-
-    # First check if we are running as a VirtualBox guest
-    pciconf -lv | grep -q "VirtualBox"
-    if [ $? -eq 0 ] ; then cp ${PROGDIR}/cardDetect/xorg.conf.virtualbox /etc/X11/xorg.conf; fi
-
-    # Check if we are supposed to run in vesa mode
-    xvesa="NO"
-    v=`kenv xvesa`
-    if [ $? -eq 0 ]; then xvesa=$v ; fi
-
-    # Check if user requested to run in vesa mode specifically and do it
-    if [ "$xvesa" = "YES" ] ; then
-      echo "`clear`" >/dev/console
-      echo "Using failsafe VESA 1024x768 mode..." >/dev/console
-      cp ${PROGDIR}/cardDetect/XF86Config.compat /etc/X11/xorg.conf
-    else
-      cfg_card_busid "1"
-      AUTORES="YES"
-    fi
+    cfg_card_busid "1"
+    driver="scfb"
   elif [ "${ATTEMPT}" = "1" ] ; then
-
-    # Try BUSID of the second card
-    cfg_card_busid "2"
-    echo "`clear`" >/dev/console
-    echo "ERROR: Failed to start X with default video card... Trying secondary..." >/dev/console
-
+    driver="vesa"
   elif [ "${ATTEMPT}" = "2" ] ; then
-
-    # Try INTEL mode
-    cp ${PROGDIR}/cardDetect/XF86Config.intel /etc/X11/xorg.conf
-    echo "`clear`" >/dev/console
-    echo "ERROR: Trying INTEL compat mode..." >/dev/console
-
+    echo "ERROR: Failed to start X with default video card... Trying secondary..." >/dev/console
+    cfg_card_busid "2"
+    driver="scfb"
   elif [ "${ATTEMPT}" = "3" ] ; then
-
-    # Check if this system has a nvidia device, and run nvidia-xconfig
-    rm /etc/X11/xorg.conf
-    kldstat | grep -q 'nvidia'
-    if [ $? -eq 0 ] ; then
-       nvidia-xconfig 2>/dev/null
-       echo "`clear`" >/dev/console
-       echo "ERROR: Trying NVIDIA automatic mode..." >/dev/console
-    else
-       echo "`clear`" >/dev/console
-       echo "ERROR: Trying XORG automatic mode..." >/dev/console
-    fi
-
-  elif [ "${ATTEMPT}" = "4" ] ; then
-
-    # Still failed, drop to VESA failsafe
-    rm /etc/X11/xorg.conf
-    cp ${PROGDIR}/cardDetect/XF86Config.compat /etc/X11/xorg.conf
-    echo "`clear`" >/dev/console
-    echo "Detected settings failed... Using failsafe VESA 1024x768 mode..." >/dev/console
-
-  elif [ "${ATTEMPT}" = "5" ] ; then
-
-    # Give the SCFB driver an attempt
-    rm /etc/X11/xorg.conf
-    cp ${PROGDIR}/cardDetect/XF86Config.scfb /etc/X11/xorg.conf
-    echo "`clear`" >/dev/console
-    echo "Trying the SCFB - UEFI Driver..." >/dev/console
-
+    driver="vesa"
   else
-
-    # Nothing we tried worked, so let the user decide on their own config
-    echo "Failed starting X with auto-detected configuration..."
-    echo "Please login on an alternative terminal (Ctrl-Alt-F2)"
-    echo "and edit /etc/X11/xorg.conf"
-    echo ""
-    echo "When you are finished please return to this console:"
-    echo "(Ctrl-Alt-F1) and press ENTER to start X again"
-    read tmp
+    echo "Could not find an X11 fallback driver which functioned properly."
+    echo "Please edit ${XORG_CONF} manually before trying to start X11 again"
+    exit 1
   fi
+  #Now start up the driver configuration utility
+  echo "Starting X with driver: ${driver}" >/dev/console
+  create_tmp_xorg_conf "${driver}"
 
   # Check if the previous attempt failed
   if [ -e "${XGUITMP}/.failed" ]
@@ -278,13 +247,13 @@ do
     cp ${PROGDIR}/scripts/xinit-displaywiz /root/.xinitrc
     chmod 755 /root/.xinitrc
   fi
-
-  echo "`clear`" >/dev/console
-  echo "Please wait... Starting X..." >/dev/console
+  echo "Please wait... " >/dev/console
   sleep 1
   # Start the X gui
   /usr/local/bin/startx 2>>${XLOG}
-
+  if [ ${?} -eq 0 ] ; then
+    touch ${XGUITMP}/.xstartupsuccess
+  fi
   # The user canceled the dialog, and chose to use the default
   if [ -e "${XGUITMP}/.canceled" ] ; then break ; fi
 
@@ -292,26 +261,30 @@ do
   if [ -e "${XGUITMP}/.xsettings.sh" ]
   then
     rm ${XGUITMP}/.selected >/dev/null 2>/dev/null
-
-    #### Create the new XF86Config file with the user settings
-    echo "`clear`" >/dev/console
-    echo "Generating new Xorg configuration file..." >/dev/console
-    ${PROGDIR}/bin/setupconf.sh >>${XLOG} 2>>${XLOG}
-
+    . ${XGUITMP}/.xsettings.sh
+    create_tmp_xorg_conf ${DRIVER}
+    echo "
+    echo "Trying user selected driver: ${DRIVER}" >/dev/console
+    DRIVER=""
     ##### Copy the xinitrc file
     cp ${PROGDIR}/scripts/xinit-check /root/.xinitrc
     chmod 755 /root/.xinitrc
 
-    echo "`clear`" >/dev/console
-    echo "Please wait... Starting X..." >/dev/console
     sleep 1
     /usr/local/bin/startx 2>>${XLOG}
+    if [ $? -ne 0 ] ; then
+      touch ${XGUITMP}/.failed
+    fi
   fi
 
   if [ -e "${XGUITMP}/.selected" ] ; then
+    #User selected a driver as good - copy it over to the real xorg.conf location
+    echo "Good Driver Selected" >/dev/console
+    #if [ -e ${XORG_CONF} ] ; then
+    #  cp ${XORG_CONF} ${XORG_CONF}.previous #save the old config file
+    #fi
+    #mv ${TMP_XORG_CONF} ${XORG_CONF} #move the testing config to the real location
     break
-  else
-    echo "failed" > ${XGUITMP}/.failed 
   fi
 
   # Check if the X startup was a success
@@ -345,4 +318,5 @@ rm ${XGUITMP}/.skipauto >/dev/null 2>/dev/null
 echo "`clear`" >/dev/console
 echo "Preparing to start the desktop..." >/dev/console
 sleep 1
+rm ${XGUITMP}/.lastdriver
 exit 0

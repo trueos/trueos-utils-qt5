@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -596,7 +596,7 @@ selection-background-color: rgb(160, 160, 160);</string>
                <normaloff>:/modules/images/display.png</normaloff>:/modules/images/display.png</iconset>
              </attribute>
              <attribute name="title">
-              <string>Graphics Drivers</string>
+              <string>Additional Graphics Drivers</string>
              </attribute>
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
@@ -633,34 +633,7 @@ selection-background-color: rgb(160, 160, 160);</string>
                 </column>
                 <item>
                  <property name="text">
-                  <string>Intel Drivers</string>
-                 </property>
-                 <item>
-                  <property name="text">
-                   <string>Modesetting (built-in to Xorg)</string>
-                  </property>
-                  <property name="checkState">
-                   <enum>Checked</enum>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable</set>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Legacy Intel</string>
-                  </property>
-                  <property name="whatsThis">
-                   <string>xf86-video-intel</string>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
-                  </property>
-                 </item>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>NVIDIA Drivers</string>
+                  <string>Official NVIDIA Drivers</string>
                  </property>
                  <item>
                   <property name="text">
@@ -695,44 +668,6 @@ selection-background-color: rgb(160, 160, 160);</string>
                    <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
                   </property>
                  </item>
-                 <item>
-                  <property name="text">
-                   <string>Opensource (nv - 2D only)</string>
-                  </property>
-                  <property name="whatsThis">
-                   <string>xf86-video-nv</string>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
-                  </property>
-                 </item>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>AMD Drivers</string>
-                 </property>
-                 <item>
-                  <property name="text">
-                   <string>ati</string>
-                  </property>
-                  <property name="whatsThis">
-                   <string>xf86-video-ati</string>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>amdgpu</string>
-                  </property>
-                  <property name="whatsThis">
-                   <string>xf86-video-amdgpu</string>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
-                  </property>
-                 </item>
                 </item>
                 <item>
                  <property name="text">
@@ -755,22 +690,6 @@ selection-background-color: rgb(160, 160, 160);</string>
                   </property>
                   <property name="whatsThis">
                    <string>virtualbox-ose-additions</string>
-                  </property>
-                  <property name="flags">
-                   <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
-                  </property>
-                 </item>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Universal Drivers</string>
-                 </property>
-                 <item>
-                  <property name="text">
-                   <string>scfb</string>
-                  </property>
-                  <property name="whatsThis">
-                   <string>xf86-video-scfb</string>
                   </property>
                   <property name="flags">
                    <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
