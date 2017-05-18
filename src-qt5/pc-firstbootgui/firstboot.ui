@@ -179,7 +179,7 @@ background: transparent;</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>Welcome to your new system! You may change your language above, and click next to begin the setup process.</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welcome to TrueOS! You can change your default language using the drop-down menu.&lt;/p&gt;&lt;p&gt;When ready, click &amp;quot;Next&amp;quot; to begin the setup process.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -356,9 +356,6 @@ background: transparent;</string>
             <property name="text">
              <string>System Timezone</string>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
            </widget>
           </item>
           <item row="1" column="0">
@@ -483,9 +480,6 @@ background: transparent;</string>
           </property>
           <property name="title">
            <string>System Hostname</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout_10">
            <item row="1" column="0">
@@ -689,7 +683,7 @@ background: transparent;</string>
                <string notr="true">background: transparent;</string>
               </property>
               <property name="text">
-               <string>Password (Repeat)</string>
+               <string>Repeat Password</string>
               </property>
              </widget>
             </item>
@@ -707,7 +701,7 @@ background: transparent;</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The administrative or &amp;quot;root&amp;quot; password allows you to make changes to your operating system. The password should be memorable and hidden from untrusted users.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
@@ -984,7 +978,7 @@ background: transparent;</string>
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="text">
-                      <string>Password (Repeat)</string>
+                      <string>Repeat Password</string>
                      </property>
                     </widget>
                    </item>
@@ -1113,7 +1107,7 @@ background: transparent;</string>
                    <item row="2" column="1">
                     <widget class="QLabel" name="label_26">
                      <property name="text">
-                      <string>Password (Repeat)</string>
+                      <string>Repeat Password</string>
                      </property>
                     </widget>
                    </item>
@@ -1309,7 +1303,7 @@ background: transparent;</string>
         <item row="4" column="1">
          <widget class="QLabel" name="label_28">
           <property name="text">
-           <string>Note: Audio settings can also be adjusted later through the audio mixer.</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Audio settings can be adjusted with the desktop audio mixer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="wordWrap">
            <bool>true</bool>
@@ -1479,7 +1473,7 @@ background: transparent;</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;These wireless networks were found. Connect to a network by clicking its name in the list. To skip this step, click &amp;quot;Next&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
@@ -1669,7 +1663,7 @@ background: transparent;</string>
            <string notr="true">background: transparent;</string>
           </property>
           <property name="text">
-           <string>Setup is now complete! Press Finish to login to your new system.</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Setup is complete! Press &amp;quot;Finish&amp;quot; to log into TrueOS.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="wordWrap">
            <bool>true</bool>
