@@ -213,14 +213,20 @@ do
   driver=""
   if [ "${ATTEMPT}" = "0" ] ; then
     cfg_card_busid "1"
-    driver="scfb"
+    if [ `sysctl -n machdep.bootmethod` = "BIOS" ] ; then
+      driver="vesa"
+    else
+      driver="scfb"
+    fi
   elif [ "${ATTEMPT}" = "1" ] ; then
-    driver="vesa"
-  elif [ "${ATTEMPT}" = "2" ] ; then
     echo "ERROR: Failed to start X with default video card... Trying secondary..." >/dev/console
     cfg_card_busid "2"
-    driver="scfb"
-  elif [ "${ATTEMPT}" = "3" ] ; then
+    if [ `sysctl -n machdep.bootmethod` = "BIOS" ] ; then
+      driver="vesa"
+    else
+      driver="scfb"
+    fi
+  elif [ "${ATTEMPT}" = "2" ] ; then
     driver="vesa"
   else
     echo "Could not find an X11 fallback driver which functioned properly."
