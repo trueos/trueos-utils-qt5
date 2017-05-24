@@ -269,7 +269,7 @@ do
     rm ${XGUITMP}/.selected >/dev/null 2>/dev/null
     . ${XGUITMP}/.xsettings.sh
     create_tmp_xorg_conf ${DRIVER}
-    echo "
+    echo ""
     echo "Trying user selected driver: ${DRIVER}" >/dev/console
     DRIVER=""
     ##### Copy the xinitrc file
