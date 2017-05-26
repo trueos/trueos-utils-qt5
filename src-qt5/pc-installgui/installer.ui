@@ -342,7 +342,7 @@ selection-background-color: rgb(160, 160, 160);</string>
               <bool>false</bool>
              </property>
              <property name="text">
-              <string>Welcome to TrueOS! Please select your language and click &quot;Next&quot; to continue. You can also restore a saved TrueOS configuration from a MSDOSFS or FAT32 formatted USB drive with &quot;Load config from USB&quot;.</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welcome to TrueOS! Please select your language and click &amp;quot;Next&amp;quot; to continue.&lt;/p&gt;&lt;p&gt;You can also restore a saved TrueOS configuration with &amp;quot;Load config from USB&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignHCenter|Qt::AlignTop</set>
