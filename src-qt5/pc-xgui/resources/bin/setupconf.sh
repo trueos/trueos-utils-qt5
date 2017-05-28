@@ -33,6 +33,15 @@ if [ "${DRIVER}" = "vboxvideo" ] ; then
    kldload vboxguest
 fi
 
+# Kldload nvidia if using nvidia
+if [ "${DRIVER}" = "nvidia" ] ; then
+   if [ -f "/boot/modules/nvidia-modeset" ] ; then
+     kldload nvidia-modeset
+   else
+   kldload nvidia
+  fi
+fi
+
 # Check if the driver has a special header to use in place of the generic one
 if [ -e "${PROGDIR}/templates/header/${DRIVER}.xorg.conf" ]
 then
