@@ -28,6 +28,11 @@ if [ "${DRIVER}" = "modesetting" ] ; then
    kldload i915kms
 fi
 
+# Kldload vboxguest if using vboxvideo
+if [ "${DRIVER}" = "vboxvideo" ] ; then
+   kldload vboxguest
+fi
+
 # Check if the driver has a special header to use in place of the generic one
 if [ -e "${PROGDIR}/templates/header/${DRIVER}.xorg.conf" ]
 then
