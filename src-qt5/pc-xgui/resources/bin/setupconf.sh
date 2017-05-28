@@ -35,7 +35,7 @@ fi
 
 # Kldload nvidia if using nvidia
 if [ "${DRIVER}" = "nvidia" ] ; then
-   if [ -f "/boot/modules/nvidia-modeset" ] ; then
+   if [ -f "/boot/modules/nvidia-modeset.ko" ] ; then
      kldload nvidia-modeset
    else
      kldload nvidia
