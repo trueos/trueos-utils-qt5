@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -404,20 +404,7 @@ selection-background-color: rgb(160, 160, 160);</string>
           </property>
          </spacer>
         </item>
-        <item row="1" column="1">
-         <widget class="QLabel" name="label_3">
-          <property name="toolTip">
-           <string> Choose what kind of TrueOS installation to install to your system:</string>
-          </property>
-          <property name="statusTip">
-           <string/>
-          </property>
-          <property name="text">
-           <string>Choose the installation type</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
+        <item row="1" column="0">
          <spacer name="horizontalSpacer_4">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -433,7 +420,39 @@ selection-background-color: rgb(160, 160, 160);</string>
           </property>
          </spacer>
         </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>115</width>
+            <height>298</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item row="2" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>248</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
          <widget class="QGroupBox" name="groupSystemSelect">
           <property name="focusPolicy">
            <enum>Qt::StrongFocus</enum>
@@ -445,7 +464,10 @@ selection-background-color: rgb(160, 160, 160);</string>
            <string notr="true">background: transparent;</string>
           </property>
           <property name="title">
-           <string>System Selection</string>
+           <string>Installation Type</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="0" column="0">
@@ -528,38 +550,6 @@ selection-background-color: rgb(160, 160, 160);</string>
           </layout>
          </widget>
         </item>
-        <item row="2" column="2">
-         <spacer name="horizontalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Preferred</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>115</width>
-            <height>298</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="3" column="1">
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Expanding</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>248</width>
-            <height>18</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="page_pkgs">
@@ -575,7 +565,7 @@ selection-background-color: rgb(160, 160, 160);</string>
              </font>
             </property>
             <property name="text">
-             <string>Optional Packages To Install</string>
+             <string>Optional Installation Packages</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -818,7 +808,7 @@ selection-background-color: rgb(160, 160, 160);</string>
              <string notr="true">background: transparent;</string>
             </property>
             <property name="text">
-             <string>The disk will initialize with this configuration:</string>
+             <string>Disk Selection</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1286,7 +1276,10 @@ QFrame{ background: transparent; }
            <string notr="true">QGroupBox#groupInstall{ background: transparent; }</string>
           </property>
           <property name="title">
-           <string>Installation</string>
+           <string>Installation Progress</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout_21">
            <item row="0" column="0">
@@ -1469,7 +1462,7 @@ QFrame{ background: transparent; }
            <string notr="true">background: transparent;</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your system is now installed!&lt;/p&gt;&lt;p&gt;Click &amp;quot;Finish&amp;quot; to reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting, you may need to eject the install media to ensure the system boots from the local disk.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TrueOS is now installed!&lt;/p&gt;&lt;p&gt;Click &amp;quot;Finish&amp;quot; to reboot the system. &lt;/p&gt;&lt;p&gt;After rebooting, you may need to eject the install media to ensure the system boots from the local disk.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
