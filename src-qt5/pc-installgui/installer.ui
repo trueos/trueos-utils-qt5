@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -611,6 +611,9 @@ selection-background-color: rgb(160, 160, 160);</string>
               </item>
               <item>
                <widget class="QTreeWidget" name="tree_graphics_drivers">
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
                 <property name="rootIsDecorated">
                  <bool>true</bool>
                 </property>
