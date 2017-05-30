@@ -23,6 +23,25 @@ else
   echo "Warning: Selected driver not found in alias.txt file..."
 fi
 
+# Kldload i915kms if using modesetting
+if [ "${DRIVER}" = "modesetting" ] ; then
+   kldload i915kms
+fi
+
+# Kldload vboxguest if using vboxvideo
+if [ "${DRIVER}" = "vboxvideo" ] ; then
+   kldload vboxguest
+fi
+
+# Kldload nvidia if using nvidia
+if [ "${DRIVER}" = "nvidia" ] ; then
+   if [ -f "/boot/modules/nvidia-modeset.ko" ] ; then
+     kldload nvidia-modeset
+   else
+     kldload nvidia
+  fi
+fi
+
 # Check if the driver has a special header to use in place of the generic one
 if [ -e "${PROGDIR}/templates/header/${DRIVER}.xorg.conf" ]
 then
@@ -272,7 +291,6 @@ then
 	mv /tmp/.device.hints /boot/device.hints
 
 fi # End of nvidia driver not selected check
-
 
 # See if this driver needs any post-setup operations to run
 if [ -e "${PROGDIR}/templates/scripts/${DRIVER}.sh" ]

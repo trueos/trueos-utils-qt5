@@ -92,7 +92,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>This wizard guides you in configuring a new TrueOS server. Click &quot;Next&quot; to begin.</string>
+       <string>This wizard guides you through configuring a new TrueOS server. Click &quot;Next&quot; to begin.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>

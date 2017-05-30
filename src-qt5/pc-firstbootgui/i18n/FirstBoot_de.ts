@@ -276,11 +276,11 @@
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerk wird neu gestartet...</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerk startet neu, bitte warten...</translation>
     </message>
     <message>
         <source>Setting default route...</source>
@@ -343,7 +343,7 @@
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sicherheitstyp:</translation>
     </message>
     <message>
         <source>TextLabel</source>
