@@ -1098,11 +1098,17 @@ void Installer::slotHelp()
 	case 1:
 		pcHelp->dialogInit(HELPTEXT1);
 		break;
-	case 2:
+         case 2:
 		pcHelp->dialogInit(HELPTEXT2);
 		break;
 	case 3:
 		pcHelp->dialogInit(HELPTEXT3);
+		break;
+	case 4:
+		pcHelp->dialogInit(HELPTEXT4);
+		break;
+	case 5:
+		pcHelp->dialogInit(HELPTEXT5);
 		break;
 	default:
 		pcHelp->dialogInit("No help text...");
