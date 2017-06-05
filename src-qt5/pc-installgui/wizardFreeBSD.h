@@ -27,7 +27,8 @@ private slots:
     void slotSuggestUsername();
     void slotChangedNic();
 
-//    void viewPassword();
+    void viewPassword();
+    void hidePassword();
 
 private:
     bool validatePage();
