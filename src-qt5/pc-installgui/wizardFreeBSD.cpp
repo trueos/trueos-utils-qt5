@@ -29,6 +29,9 @@ void wizardFreeBSD::programInit(bool trueOS)
    connect(pushButton_viewpassword_user,SIGNAL(pressed()),this,SLOT(viewPassword()));
    connect(pushButton_viewpassword_user,SIGNAL(released()),this,SLOT(hidePassword()));
 
+  nextS = new QShortcut(Qt::ALT + Qt::Key_N, this);
+  connect(nextS, SIGNAL(activated()), this, SLOT(slotNext()) );
+  this->button(QWizard::BackButton)->setShortcut(Qt::ALT + Qt::Key_B);
 
    // Load any nics
    QString tmp;
@@ -43,7 +46,7 @@ void wizardFreeBSD::programInit(bool trueOS)
      tmp = sysNics.at(i);
      tmp.truncate(35);
      comboSelectNic->addItem(tmp);
-   } 
+   }
    connect(comboSelectNic,SIGNAL(currentIndexChanged(int)), this, SLOT(slotChangedNic()));
    slotChangedNic();
 
@@ -55,7 +58,7 @@ void wizardFreeBSD::programInit(bool trueOS)
 
 void wizardFreeBSD::slotChangedNic()
 {
-  
+
   /* The labels are always disabled. */
   textIP->setEnabled(false);
   textNetmask->setEnabled(false);
@@ -100,7 +103,7 @@ void wizardFreeBSD::slotChangedNic()
     textIPv6DefaultRouter->setEnabled(true);
     textIPv6DNS->setEnabled(true);
   }
-        
+
 }
 
 void wizardFreeBSD::slotClose()
@@ -155,11 +158,11 @@ bool wizardFreeBSD::validatePage()
      case Page_Root:
         if ( lineRootPW->text().isEmpty() ) {
            button(QWizard::NextButton)->setEnabled(false);
-           return true;
+           return false;
          }
          if ( lineRootPW2->text().isEmpty() ) {
            button(QWizard::NextButton)->setEnabled(false);
-           return true;
+           return false;
          }
          if ( lineRootPW->text() != lineRootPW2->text() ) {
            button(QWizard::NextButton)->setEnabled(false);
@@ -233,4 +236,10 @@ lineRootPW->setEchoMode(QLineEdit::Password);
 lineRootPW2->setEchoMode(QLineEdit::Password);
 linePW->setEchoMode(QLineEdit::Password);
 linePW2->setEchoMode(QLineEdit::Password);
+}
+
+void wizardFreeBSD::slotNext(){
+  if(this->validatePage()){
+    this->next();
+  }
 }

@@ -24,6 +24,9 @@ void wizardRestore::programInit()
    connect(lineHostName,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(lineUserName,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(spinPort,SIGNAL(valueChanged(int)),this,SLOT(slotCheckComplete()));
+  nextS = new QShortcut(Qt::ALT + Qt::Key_N, this);
+  connect(nextS, SIGNAL(activated()), this, SLOT(slotNext()) );
+  this->button(QWizard::BackButton)->setShortcut(Qt::ALT + Qt::Key_B);
 }
 
 void wizardRestore::slotClose()
@@ -92,6 +95,12 @@ void wizardRestore::slotCheckComplete()
 {
    // Validate this page
    validatePage();
+}
+
+void wizardRestore::slotNext(){
+  if(this->validatePage()){
+    this->next();
+  }
 }
 
 int wizardRestore::nextId() const
@@ -259,4 +268,3 @@ bool wizardRestore::getSysList()
 
   return true;
 }
-

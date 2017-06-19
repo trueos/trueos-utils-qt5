@@ -22,6 +22,10 @@ void wizardDisk::programInit()
 
   populateDiskInfo();
 
+  nextS = new QShortcut(Qt::ALT + Qt::Key_N, this);
+  connect(nextS, SIGNAL(activated()), this, SLOT(slotNext()) );
+  this->button(QWizard::BackButton)->setShortcut(Qt::ALT + Qt::Key_B);
+
   //connect(pushClose, SIGNAL(clicked()), this, SLOT(slotClose()));
   connect(pushSwapSize, SIGNAL(clicked()), this, SLOT(slotSwapSize()));
   connect(pushRemoveMount, SIGNAL(clicked()), this, SLOT(slotRemoveFS()));
@@ -1013,6 +1017,10 @@ void wizardDisk::slotZSUIDOFF()
 void wizardDisk::slotZSUIDON()
 {
   toggleZFSOpt(QString("setuid=on"));
+}
+
+void wizardDisk::slotNext(){
+  if(this->validateCurrentPage()){ this->next(); }
 }
 
 // Toggle an option being on / off for ZFS

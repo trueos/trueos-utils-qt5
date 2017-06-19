@@ -7,6 +7,7 @@
 #include <qstring.h>
 #include "dialogFSSize.h"
 #include "backend.h"
+#include <QShortcut>
 
 class wizardDisk : public QWizard, private Ui::wizardDisk
 {
@@ -64,6 +65,8 @@ private slots:
     void slotZSUIDON();
     void slotZSUIDOFF();
 
+	void slotNext();
+
 private:
     void populateDiskInfo();
     void populateDiskTree();
@@ -96,6 +99,7 @@ private:
     bool restoreMode;
     bool efiMode;
     enum { Page_Intro, Page_BasicDisk, Page_ZFS, Page_ZFS2, Page_Enc, Page_Mounts, Page_Expert, Page_Confirmation };
+	QShortcut *nextS;
 
 signals:
     void saved(QList<QStringList>, QString, QString, bool, bool);

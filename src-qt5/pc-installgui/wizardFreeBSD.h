@@ -4,6 +4,7 @@
 
 #include "ui_wizardFreeBSD.h"
 #include <qstring.h>
+#include <QShortcut>
 
 class wizardFreeBSD : public QWizard, private Ui::wizardFreeBSD
 {
@@ -30,9 +31,12 @@ private slots:
     void viewPassword();
     void hidePassword();
 
+	void slotNext();
+
 private:
     bool validatePage();
     enum { Page_Intro, Page_Root, Page_User, Page_Host, Page_AppCafe, Page_Optional };
+	QShortcut *nextS;
 
 signals:
     void saved(QString, QString, QString, QString, QString, QString, bool, bool, QStringList, QStringList);

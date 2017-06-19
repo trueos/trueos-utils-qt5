@@ -4,6 +4,7 @@
 
 #include "ui_wizardRestore.h"
 #include <qstring.h>
+#include <QShortcut>
 
 class wizardRestore : public QWizard, private Ui::wizardRestore
 {
@@ -26,6 +27,8 @@ private slots:
     virtual void accept();
     void slotClose();
     void slotCheckComplete();
+	void slotNext();
+
 private:
     bool getUSBAuth();
     bool startPWAuth();
@@ -34,6 +37,7 @@ private:
     enum { Page_Intro, Page_Host, Page_Auth, Page_System, Page_Finish };
     QStringList sysList;
     QString authKey;
+	QShortcut *nextS;
 
 signals:
     void saved(QStringList);
