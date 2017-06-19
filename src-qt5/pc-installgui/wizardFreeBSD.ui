@@ -276,7 +276,7 @@
        </widget>
       </item>
       <item row="0" column="3">
-       <widget class="QPushButton" name="pushButton_viewpassword">
+       <widget class="QPushButton" name="pushButton_viewpassword_root">
         <property name="text">
          <string/>
         </property>
@@ -292,6 +292,22 @@
   </widget>
   <widget class="QWizardPage" name="Page_User">
    <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="1" colspan="2">
+     <spacer name="verticalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>326</width>
+        <height>18</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
     <item row="0" column="0" rowspan="5">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -334,8 +350,15 @@
       </item>
      </layout>
     </item>
-    <item row="0" column="1" colspan="2">
-     <spacer name="verticalSpacer_6">
+    <item row="1" column="1" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Create a new user:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <spacer name="verticalSpacer_11">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -344,18 +367,11 @@
       </property>
       <property name="sizeHint" stdset="0">
        <size>
-        <width>326</width>
-        <height>18</height>
+        <width>20</width>
+        <height>17</height>
        </size>
       </property>
      </spacer>
-    </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Create a new user:</string>
-      </property>
-     </widget>
     </item>
     <item row="3" column="1">
      <layout class="QGridLayout" name="gridLayout_4">
@@ -433,6 +449,20 @@
         </property>
        </widget>
       </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="pushButton_viewpassword_user">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>View Password</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sysinstaller.qrc">
+          <normaloff>:/TRUEOS/images/ic_visibility_48px.svg</normaloff>:/TRUEOS/images/ic_visibility_48px.svg</iconset>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item row="3" column="2">
@@ -459,22 +489,6 @@
       <property name="sizeHint" stdset="0">
        <size>
         <width>299</width>
-        <height>17</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="2" column="1">
-     <spacer name="verticalSpacer_11">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
         <height>17</height>
        </size>
       </property>
