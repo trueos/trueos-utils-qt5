@@ -656,19 +656,20 @@ void Installer::slotNext()
 
    if( installStackWidget->currentIndex() == 1){
        updatePkgLists();
-       
+
    }
    // Create the pc-sysinstall config
    if ( installStackWidget->currentIndex() == 2 ) {
     combo_install_pools->clear();
      // We have existing zpool, see if we want to upgrade within
      if ( ! existingZpools.isEmpty() && !radioRestore->isChecked() ) {
-      qDebug() << "BE install option available:" << existingZpools;
-      combo_install_pools->addItems(existingZpools);
-      radio_install_be->setChecked(true);
-       radio_install_full->setVisible(true);
+       qDebug() << "BE install option available:" << existingZpools;
+       combo_install_pools->addItems(existingZpools);
+       radio_install_be->setChecked(false);
        radio_install_be->setVisible(true);
-       slotBEInstallToggled(true);
+       radio_install_full->setVisible(true);
+       radio_install_full->setChecked(true);
+       slotBEInstallToggled(false);
      }else{
        //No pools found, or restore selected
        qDebug() << "No BE install option available:" << existingZpools;
@@ -677,7 +678,7 @@ void Installer::slotNext()
        radio_install_be->setVisible(false);
        slotBEInstallToggled(false); //update display
      }
-     
+
      // Re-gen the config / summary
      /*startConfigGen();
      textEditDiskSummary->clear();
