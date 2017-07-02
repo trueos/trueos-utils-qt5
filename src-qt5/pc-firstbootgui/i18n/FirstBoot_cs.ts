@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="cs">
 <context>
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Přepnout mezi US rozložením a uživatelem vybraným rozložením</translation>
     </message>
     <message>
         <source>&amp;Back</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Zpět</translation>
     </message>
     <message>
         <source>&amp;Next</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Další</translation>
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
@@ -25,48 +22,40 @@
     </message>
     <message>
         <source>System Timezone</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Časová zóna, ve které se systém nachází</translation>
     </message>
     <message>
         <source>Root Password</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Heslo správce systému (root)</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Heslo</translation>
     </message>
     <message>
         <source>Password (Repeat)</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Heslo (zopakování)</translation>
     </message>
     <message>
-        <source>The system or &quot;root&quot; password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
+        <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
         <translation type="unfinished">
             </translation>
     </message>
     <message>
         <source>Create a User</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Vytvořit účet uživatele</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Název</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Uživatelské jméno</translation>
     </message>
     <message>
         <source>Connect to a Wireless Network</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Připojit k bezdrátové síti</translation>
     </message>
     <message>
         <source>&amp;Rescan</source>
@@ -74,7 +63,7 @@
             </translation>
     </message>
     <message>
-        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click &quot;Next&quot; below. </source>
+        <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
         <translation type="unfinished">
             </translation>
     </message>
@@ -85,28 +74,23 @@
     </message>
     <message>
         <source>&amp;Finish</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Dokončit</translation>
     </message>
     <message>
         <source>Change the installation language</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Změnit jazyk instalace</translation>
     </message>
     <message>
         <source>Set the system timezone</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Nastavit časovou zónu systému</translation>
     </message>
     <message>
         <source>Display help for the current screen</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Zobrazit nápovědu pro tuto obrazovku</translation>
     </message>
     <message>
         <source>Launch the on-screen keyboard</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Spustit klávesnici na obrazovce</translation>
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
@@ -331,16 +315,14 @@
     <name>dialogHelp</name>
     <message>
         <source>&amp;Close</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 <context>
     <name>dialogInfoBox</name>
     <message>
         <source>&amp;Close</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 <context>
@@ -399,18 +381,15 @@
     <name>widgetKeyboard</name>
     <message>
         <source>Keyboard Settings</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Nastavení klávesnice</translation>
     </message>
     <message>
         <source>Key Layout</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Rozvržení kláves</translation>
     </message>
     <message>
         <source>Variant</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Varianta</translation>
     </message>
     <message>
         <source>Keyboard Model</source>
@@ -424,13 +403,11 @@
     </message>
     <message>
         <source>&amp;Apply</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Použít</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 </TS>
