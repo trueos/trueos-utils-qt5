@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="cs">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Ponechat tato nastavení zobrazení?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Předchozí pokus se nezdařil – zkontrolujte nastavení a zkuste to znovu.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Zobrazení je nastaveno.
+Ponechat tato nastavení?</translation>
     </message>
 </context>
 <context>
@@ -113,8 +111,8 @@ Pokud nebude zobrazení v pořádku, vyčkejte a budete navráceni zpět do tét
         <translation>Varování!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD nemohl automaticky detekovat váš monitor. Možná budete muset specifikovat horizontální a vertikální obnovovací frekvenci v záložce &apos;Rozšířené&apos;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD nemohl automaticky detekovat váš monitor. Možná budete muset specifikovat horizontální a vertikální obnovovací frekvenci v záložce 'Rozšířené'.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
@@ -153,18 +151,15 @@ Pokud nebude zobrazení v pořádku, vyčkejte a budete navráceni zpět do tét
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Ok</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Rozlišení:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Ovladač:</translation>
     </message>
 </context>
 </TS>
