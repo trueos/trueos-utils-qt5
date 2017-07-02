@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>565</width>
-    <height>431</height>
+    <width>709</width>
+    <height>677</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -133,6 +133,9 @@
              <widget class="QLabel" name="labelVideoCard">
               <property name="text">
                <string/>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
