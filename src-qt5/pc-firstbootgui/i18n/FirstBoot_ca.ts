@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>&amp;Next</source>
-        <translation>&amp;Següent</translation>
+        <translation>Següe&amp;nt</translation>
     </message>
     <message>
         <source>Welcome to your new PC-BSD system! You may change your language above, and click next to begin the setup process.</source>
@@ -87,7 +87,7 @@
     </message>
     <message>
         <source>Launch the on-screen keyboard</source>
-        <translation>Obre el teclat de pantalla</translation>
+        <translation>Obre un teclat a la pantalla</translation>
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation>Els usuaris de PersonaCrypt necessiten el mateix UID per a cada sistema.</translation>
+        <translation>Els usuaris de PersonaCrypt necessiten el mateix UID per a cada sistema en què s'usen.</translation>
     </message>
     <message>
         <source>Specify UID</source>
@@ -365,7 +365,7 @@
     </message>
     <message>
         <source>Key Layout</source>
-        <translation>Disposició de les tecles</translation>
+        <translation>Disposició del teclat</translation>
     </message>
     <message>
         <source>Variant</source>
