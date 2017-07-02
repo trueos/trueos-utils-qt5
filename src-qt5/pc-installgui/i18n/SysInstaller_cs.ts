@@ -7,42 +7,42 @@
         <location filename="../installer.ui" line="258"/>
         <location filename="../installer.ui" line="261"/>
         <source>Load installation config file from USB stick</source>
-        <translation type="unfinished"></translation>
+        <translation>Načíst nastavení instalace z USB úložiště</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="270"/>
         <source>&amp;Load config from USB</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Načíst nastavení z USB</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="305"/>
         <source>Change the installation language</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit jazyk instalace</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="325"/>
         <source>Welcome to TrueOS! Please select your language and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vítejte v TrueOS! Vyberte svůj jazyk a klikněte na Další.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="360"/>
         <source>&lt;Version&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Verze&gt;</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="390"/>
         <source>Please select the type of installation to perform</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte typ instalace, který provést</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="422"/>
         <source>System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Výběr systému</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="431"/>
         <source>Graphical desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafické uživatelské rozhraní</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="437"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../installer.ui" line="458"/>
         <source>Best for servers and headless systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejlepší pro servery a systémy bez monitoru a klávesnice</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="461"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../installer.ui" line="479"/>
         <source>Restore from an existing backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovit z existující zálohy</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="482"/>
@@ -74,12 +74,12 @@
     <message>
         <location filename="../installer.ui" line="581"/>
         <source>Disk Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Výběr úložného zařízení</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="648"/>
         <source>BSD</source>
-        <extracomment>FreeBSD&apos;s native boot-loader. Used for XEN Dom0 support</extracomment>
+        <extracomment>FreeBSD's native boot-loader. Used for XEN Dom0 support</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -91,28 +91,28 @@
     <message>
         <location filename="../installer.ui" line="661"/>
         <source>Boot-Loader:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavaděč operačního systému:</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="677"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Souhrn</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="717"/>
         <location filename="../installer.ui" line="1127"/>
         <source>&amp;Save Config to USB</source>
-        <translation type="unfinished"></translation>
+        <translation>Uložit na&amp;stavení na USB</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="806"/>
         <source>&amp;Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Přizpůsobit</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="908"/>
         <source>Installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalace</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="920"/>
@@ -128,22 +128,22 @@
     <message>
         <location filename="../installer.ui" line="1227"/>
         <source>Display hardware compatibility diagnostic</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit diagnostiku slučitelnosti s hardware</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1250"/>
         <source>Display help for the current screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit nápovědu pro tuto obrazovku</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1276"/>
         <source>Launch the on-screen keyboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit klávesnici na obrazovce</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1302"/>
         <source>Switch between US layout and user selected layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepnout mezi US rozložením a uživatelem vybraným rozložením</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1331"/>
@@ -154,24 +154,24 @@
     <message>
         <location filename="../installer.ui" line="1370"/>
         <source>Cancel the installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Zrušit instalaci</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1376"/>
         <source>Ab&amp;ort</source>
-        <translation type="unfinished"></translation>
+        <translation>Přerušit</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1395"/>
         <location filename="../installer.cpp" line="48"/>
         <source>&amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zpět</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1414"/>
         <location filename="../installer.cpp" line="49"/>
         <source>&amp;Next</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Další</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="235"/>
@@ -195,7 +195,7 @@
         <location filename="../installer.cpp" line="1890"/>
         <location filename="../installer.cpp" line="1904"/>
         <source>TrueOS Installer</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalátor TrueOS</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="236"/>
@@ -225,38 +225,38 @@
     <message>
         <location filename="../installer.cpp" line="387"/>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>Datové úložiště:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="387"/>
         <source>Mirroring:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zrcadlení:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="428"/>
         <location filename="../installer.cpp" line="470"/>
         <location filename="../installer.cpp" line="500"/>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oddíl:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="429"/>
         <location filename="../installer.cpp" line="471"/>
         <location filename="../installer.cpp" line="502"/>
         <source>FileSystem:</source>
-        <translation type="unfinished"></translation>
+        <translation>Souborový systém:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="430"/>
         <location filename="../installer.cpp" line="472"/>
         <location filename="../installer.cpp" line="504"/>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velikost:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="444"/>
         <source>ZFS Datasets:</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS datová sada:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="444"/>
@@ -266,7 +266,7 @@
     <message>
         <location filename="../installer.cpp" line="446"/>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS datová sada:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="448"/>
@@ -278,7 +278,7 @@
         <location filename="../installer.cpp" line="451"/>
         <location filename="../installer.cpp" line="508"/>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Předvolby:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="688"/>
@@ -298,7 +298,7 @@
     <message>
         <location filename="../installer.cpp" line="1273"/>
         <source>System Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovení systému</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1274"/>
@@ -308,7 +308,7 @@
     <message>
         <location filename="../installer.cpp" line="1325"/>
         <source>Failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Nezdařilo se!</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1330"/>
@@ -323,7 +323,7 @@
     <message>
         <location filename="../installer.cpp" line="602"/>
         <source>Install to existing ZFS pool?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nainstalovat na existující ZFS fond?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="602"/>
@@ -341,29 +341,29 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../installer.cpp" line="1358"/>
         <source>Exit the installation now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončit nyní instalaci?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1386"/>
         <source>&amp;Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ukončit</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1484"/>
         <location filename="../installer.cpp" line="1526"/>
         <source>Extracting system...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozbalování systému…</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1486"/>
         <location filename="../installer.cpp" line="1528"/>
         <source>Installing system... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalace systému… Může chvíli trvat…</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1505"/>
         <source>Installing packages... This may take a while...</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalace aplikací… Může chvíli trvat…</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1551"/>
@@ -373,7 +373,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../installer.cpp" line="1709"/>
         <source>Are you sure you want to abort this installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Opravdu chcete tuto instalaci přerušit?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1764"/>
@@ -428,7 +428,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../installer.cpp" line="1877"/>
         <source>Config File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubor s nastaveními:</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1880"/>
@@ -448,12 +448,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../installer.cpp" line="1905"/>
         <source>Start the install using this config file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit instalaci pomocí tohoto souboru s nastaveními?</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="1967"/>
         <source>Restoring system: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovování systému: %1</translation>
     </message>
 </context>
 <context>
@@ -476,7 +476,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../helpText.h" line="9"/>
         <source>Your system is now installing! Go grab a cup of coffee and relax, the installer will notify you when it is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Systém je nyní instalován! Dejte si šálek kávy a relaxujte – instalátor vám dá vědět, až bude hotovo.</translation>
     </message>
     <message>
         <location filename="../helpText.h" line="10"/>
@@ -489,22 +489,22 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogCheckHardware.ui" line="20"/>
         <source>Detected hardware devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Zjištěná zařízení</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.ui" line="407"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="87"/>
         <source>Video driver:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ovladač grafického čipu:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="88"/>
         <source>Video resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozlišení obrazovky:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="150"/>
@@ -524,7 +524,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="164"/>
         <source>Wifi device:</source>
-        <translation type="unfinished"></translation>
+        <translation>WiFi zařízení:</translation>
     </message>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="191"/>
@@ -534,7 +534,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogCheckHardware.cpp" line="195"/>
         <source>Sound device:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvukové zařízení:</translation>
     </message>
 </context>
 <context>
@@ -542,7 +542,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogFSSize.ui" line="42"/>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velikost:</translation>
     </message>
     <message>
         <location filename="../dialogFSSize.ui" line="75"/>
@@ -557,7 +557,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogFSSize.ui" line="106"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zrušit</translation>
     </message>
 </context>
 <context>
@@ -565,7 +565,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogHelp.ui" line="55"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 <context>
@@ -573,7 +573,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogInfoBox.ui" line="48"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 <context>
@@ -581,17 +581,17 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogKeyboard.ui" line="30"/>
         <source>Keyboard Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení klávesnice</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="55"/>
         <source>Key Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozvržení kláves</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="97"/>
         <source>Variant</source>
-        <translation type="unfinished"></translation>
+        <translation>Varianta</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="177"/>
@@ -606,12 +606,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../dialogKeyboard.ui" line="280"/>
         <source>&amp;Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Použít</translation>
     </message>
     <message>
         <location filename="../dialogKeyboard.ui" line="287"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít</translation>
     </message>
 </context>
 <context>
@@ -644,12 +644,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="238"/>
         <source>Selected Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybraný oddíl</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="255"/>
         <source>ZFS pool name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název ZFS fondu</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="304"/>
@@ -669,7 +669,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="408"/>
         <source>GPT (Best for new hardware)</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT (nejlepší pro nový hardware)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="418"/>
@@ -715,7 +715,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="703"/>
         <source>Enable cache device</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapnout zařízení mezipaměti</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="721"/>
@@ -735,12 +735,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="877"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="904"/>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo (zopakování)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1013"/>
@@ -765,12 +765,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="1118"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Přid&amp;at</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1129"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Odeb&amp;rat</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1235"/>
@@ -780,7 +780,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.ui" line="1285"/>
         <source>&amp;Launch terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit terminá&amp;l</translation>
     </message>
     <message>
         <location filename="../wizardDisk.ui" line="1407"/>
@@ -790,7 +790,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="96"/>
         <source>Use entire disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít celé datové úložiště</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="339"/>
@@ -820,7 +820,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="618"/>
         <source>ZFS Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Předvolby ZFS</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="645"/>
@@ -830,7 +830,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="733"/>
         <source>Resizing</source>
-        <translation type="unfinished"></translation>
+        <translation>Změna velikosti</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="745"/>
@@ -859,7 +859,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"/>
-        <source>Mount point should start with &apos;/&apos;</source>
+        <source>Mount point should start with '/'</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -875,7 +875,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="985"/>
         <source>Size (MB)</source>
-        <translation type="unfinished"></translation>
+        <translation>Velikost (MB)</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1183"/>
@@ -885,19 +885,19 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"/>
         <source>Disk:</source>
-        <translation type="unfinished"></translation>
+        <translation>Datové úložiště:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1202"/>
         <source>Mirroring:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zrcadlení:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1242"/>
         <location filename="../wizardDisk.cpp" line="1282"/>
         <location filename="../wizardDisk.cpp" line="1312"/>
         <source>Partition:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oddíl:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1243"/>
@@ -911,12 +911,12 @@ Click Exit to close. After rebooting you may eject the install media.</source>
         <location filename="../wizardDisk.cpp" line="1284"/>
         <location filename="../wizardDisk.cpp" line="1314"/>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velikost:</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1258"/>
         <source>ZFS Datasets:&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ZFS datová sada:&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="1260"/>
@@ -928,7 +928,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
         <location filename="../wizardDisk.cpp" line="1263"/>
         <location filename="../wizardDisk.cpp" line="1317"/>
         <source>Options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Předvolby:</translation>
     </message>
 </context>
 <context>
@@ -941,19 +941,19 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="215"/>
         <source>Please enter the root password for this server</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte heslo správce systému (root) tohoto serveru</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="247"/>
         <location filename="../wizardFreeBSD.ui" line="413"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="277"/>
         <location filename="../wizardFreeBSD.ui" line="427"/>
         <source>Password (Repeat)</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo (zopakování)</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="377"/>
@@ -963,7 +963,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="389"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="399"/>
@@ -973,7 +973,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="453"/>
         <source>Default shell</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí shell</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="569"/>
@@ -983,7 +983,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="616"/>
         <source>Hostname</source>
-        <translation type="unfinished"></translation>
+        <translation>Název stroje</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="664"/>
@@ -998,17 +998,17 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="765"/>
         <source>Network Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Síťové rozhraní</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="775"/>
         <source>IP Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IP adresa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="785"/>
         <source>Netmask</source>
-        <translation type="unfinished"></translation>
+        <translation>Síťová maska</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="795"/>
@@ -1018,17 +1018,17 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardFreeBSD.ui" line="812"/>
         <source>Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Brána</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="825"/>
         <source>IPv6 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 adresa</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="835"/>
         <source>IPv6 Gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6 brána</translation>
     </message>
     <message>
         <location filename="../wizardFreeBSD.ui" line="845"/>
@@ -1074,22 +1074,22 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="235"/>
         <source>Backup Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Zálohovací server</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="249"/>
         <source>Host Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název stroje</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="263"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatelské jméno</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="283"/>
         <source>SSH Port</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH port</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="429"/>
@@ -1099,7 +1099,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="455"/>
         <source>Server Authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Ověřování serveru</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="461"/>
@@ -1109,7 +1109,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="471"/>
         <source>Use password authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít ověřování heslem</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="530"/>
@@ -1124,7 +1124,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.ui" line="669"/>
         <source>Restore Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Souhrn obnovení</translation>
     </message>
     <message>
         <location filename="../wizardRestore.ui" line="749"/>
@@ -1134,7 +1134,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     <message>
         <location filename="../wizardRestore.cpp" line="123"/>
         <source>No keys found!</source>
-        <translation type="unfinished"></translation>
+        <translation>Nebyly nalezeny žádné klíče!</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="124"/>
@@ -1168,12 +1168,12 @@ Please check your hostname and that the backup server is reachable.</source>
     <message>
         <location filename="../wizardRestore.cpp" line="199"/>
         <source>Select the SSH key to use</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte SSH klíč který použít</translation>
     </message>
     <message>
         <location filename="../wizardRestore.cpp" line="199"/>
         <source>Key File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubor s klíčem:</translation>
     </message>
 </context>
 </TS>
