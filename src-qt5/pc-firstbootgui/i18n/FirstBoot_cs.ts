@@ -38,8 +38,7 @@
     </message>
     <message>
         <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Pomocí hesla správce systému (root) je možné dělat změny v operačním systému a nemělo by být k dispozici uživatelům, kteří nemají potřebnou důvěru. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -59,13 +58,11 @@
     </message>
     <message>
         <source>&amp;Rescan</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;Znovu prohledat</translation>
     </message>
     <message>
         <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Byly nalezeny následující bezdrátové sítě. Klikněte na tu ke které se chcete připojit. Pokud chcete tento krok přeskočit, klikněte na Další. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -104,8 +101,7 @@
     </message>
     <message>
         <source>System Hostname</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Název stroje</translation>
     </message>
     <message>
         <source>Enter a valid hostname, or leave default.</source>
@@ -114,13 +110,11 @@
     </message>
     <message>
         <source>Please enter a hostname</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Zadejte název stroje</translation>
     </message>
     <message>
         <source>Hostname may only contain letters and numbers</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Název stroje může obsahovat pouze písmena a číslice</translation>
     </message>
     <message>
         <source>Please select the timezone for your location.</source>
@@ -129,127 +123,122 @@
     </message>
     <message>
         <source>May be used when dual-booting</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Může být použito pro zavádění vícero operačních systémů</translation>
     </message>
     <message>
         <source>Set BIOS to UTC time</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Nastavit BIOS/UEFI na univerzální čas (UTC)</translation>
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vítejte v novém systému! Výše můžete změnit jazyk a kliknutím na další začít s nastavováním.</translation>
     </message>
     <message>
         <source>Domain Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název domény</translation>
     </message>
     <message>
         <source>User Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Podrobnosti o uživateli</translation>
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt uživatelé potřebují mít stejný identifikátor (UID) na všech systémech, na kterém ho používají</translation>
     </message>
     <message>
         <source>Specify UID</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte identifikátor uživatele (UID)</translation>
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicializovat PersonaCrypt zařízení</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat</translation>
     </message>
     <message>
         <source>Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyjímatelné zařízení</translation>
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatelská část klíče k šifrování úložiště</translation>
     </message>
     <message>
         <source>Device Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo k zařízení</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyzkoušet</translation>
     </message>
     <message>
         <source>Default Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí výstup:</translation>
     </message>
     <message>
         <source>Testing Volume:</source>
-        <translation type="unfinished"></translation>
+        <translation>Testovací svazek:</translation>
     </message>
     <message>
         <source>Configure Audio Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavit zvukový výstup</translation>
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozn.: Nastavení zvuku bude také možné změnit později pomocí zvukového mixeru.</translation>
     </message>
     <message>
         <source>Optional Services</source>
-        <translation type="unfinished"></translation>
+        <translation>Volitelné služby</translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení je nyní dokončeno! Klikněte na Dokončit a přihlaste se do svého nového systému.</translation>
     </message>
     <message>
         <source>Please enter a domain name</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte název domény</translation>
     </message>
     <message>
         <source>Domain name may only contain letters and numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Název domény může obsahovat pouze písmena a číslice</translation>
     </message>
     <message>
         <source>No Devices Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Nebyla nalezena žádná zařízení</translation>
     </message>
     <message>
         <source>Please connect a removable device and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Připojte vyjímatelné zařízení a zkuste to znovu</translation>
     </message>
     <message>
         <source>Select Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte vyjímatelné zařízení</translation>
     </message>
     <message>
         <source>Warning: Any existing data on the selected device will be deleted during the user creation process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování: při vytváření uživatele budou všechna existující data na zvoleném zařízení smazána!</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>This screen allows you to select the system language you wish to use.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Na této obrazovce je možné si vybrat jazyk ve kterém chcete systém používat.</translation>
     </message>
     <message>
         <source>This screen lets you pick the default timezone for your computer.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Na této obrazovce je možné zvolit výchozí časovou zónu tohoto počítače.</translation>
     </message>
     <message>
         <source>On this screen please enter the root password you wish to use. This password is used for full system access, and should be something secure.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Na této obrazovce zadejte heslo pro správce systému, které chcete použít. Toto heslo slouží k neomezenému přístupu k systému a proto by mělo být bezpečné.</translation>
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
@@ -258,57 +247,55 @@
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Na této obrazovce je možné se připojit k WiFi sítím. V případě skryté sítě ji bude možné později přidat ve Správci sítě.</translation>
     </message>
     <message>
         <source>The computer setup is now finished! Click Finish to log into your new Desktop.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Nastavení počítače je nyní dokončeno! Klikněte na Dokončit a přihlaste se do svého nového desktopu.</translation>
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na této obrazovce bude třeba vytvořit uživatele pro přihlašování se k desktopu. Další uživatele bude možné vytvořit později pomocí nástroje SysAdm.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na této obrazovce je možné vyzkoušet zvukové zařízení a nastavit ho jako výchozí pro všechen zvuk. Toto je později možné měnit dle potřeby pomocí zvukového mixeru.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Volitelné změny nastavení nebo služeb je nyní možné zapínat dle potřeby. Jednoduše zaškrtněte nebo zrušte zaškrtnutí jakékoli předvolby a pokračujte kliknutím na další.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapnout SSH</translation>
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Umožní SSH přístup k tomuto počítači na dálku</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
-        <translation type="unfinished"></translation>
+        <translation>Vypnout IPv6 (vyžaduje restart)</translation>
     </message>
     <message>
         <source>Disable the use of IPv6 connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Vypnut používání IPv6 spojení</translation>
     </message>
     <message>
         <source>Restarting network...</source>
-        <translation type="unfinished"></translation>
+        <translation>Restartování sítě…</translation>
     </message>
     <message>
         <source>Network is restarting, please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Síť se restartuje – čekejte…</translation>
     </message>
     <message>
         <source>Setting default route...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavování výchozí trasy…</translation>
     </message>
     <message>
         <source>Running DHCP...</source>
-        <translation type="unfinished"></translation>
+        <translation>Spouštění DHCP…</translation>
     </message>
 </context>
 <context>
@@ -329,52 +316,45 @@
     <name>netKey</name>
     <message>
         <source>SSID</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>SSID</translation>
     </message>
     <message>
         <source>Network Key</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Klíč k síti</translation>
     </message>
     <message>
         <source>Network Key (Repeat)</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Klíč k síti (zopakování)</translation>
     </message>
     <message>
         <source>Show network key as text</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Zobrazit klíč k síti v čitelné podobě</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Použít</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <source>Network Key Error</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Chyba klíče k síti</translation>
     </message>
     <message>
         <source>Error: The entered network keys do not match!
 </source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Chyba: zadání klíče k síti se neshodují!
+</translation>
     </message>
     <message>
         <source>Security Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ zabezpečení:</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextovýPopisek</translation>
     </message>
 </context>
 <context>
@@ -393,13 +373,11 @@
     </message>
     <message>
         <source>Keyboard Model</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Model klávesnice</translation>
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation type="unfinished">
-            </translation>
+        <translation></translation>
     </message>
     <message>
         <source>&amp;Apply</source>
