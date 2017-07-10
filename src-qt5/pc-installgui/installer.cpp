@@ -1023,6 +1023,7 @@ void Installer::startConfigGen()
         lang="en_US";
 
       // Setup the desktop
+      cfgList << "runExtCommand=cp /root/defaultpkgbranch ${FSMNT}/root/defaultpkgbranch";
       cfgList << "runCommand=sh /usr/local/share/trueos/scripts/sys-init.sh desktop " + lang;
 
       // Setup for a fresh system first boot
