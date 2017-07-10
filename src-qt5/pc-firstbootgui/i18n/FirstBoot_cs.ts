@@ -5,7 +5,7 @@
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>Přepnout mezi US rozložením a uživatelem vybraným rozložením</translation>
+        <translation>Přepnout mezi US rozvržením a uživatelem vybraným rozvržením</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -22,7 +22,7 @@
     </message>
     <message>
         <source>System Timezone</source>
-        <translation>Časová zóna, ve které se systém nachází</translation>
+        <translation>Časová zóna ve které se systém nachází</translation>
     </message>
     <message>
         <source>Root Password</source>
@@ -38,7 +38,7 @@
     </message>
     <message>
         <source>The system or "root" password allows you to make changes to your operating system, and should be kept from non-trusted users. </source>
-        <translation>Pomocí hesla správce systému (root) je možné dělat změny v operačním systému a nemělo by být k dispozici uživatelům, kteří nemají potřebnou důvěru. </translation>
+        <translation>Pomocí hesla správce systému (root) je možné dělat změny v operačním systému a nemělo by být k dispozici uživatelům, ke kterým nemáte potřebnou důvěru. </translation>
     </message>
     <message>
         <source>Create a User</source>
@@ -62,7 +62,7 @@
     </message>
     <message>
         <source>The following wireless networks were found. Click the one you wish to connect to. If you wish to skip, click "Next" below. </source>
-        <translation>Byly nalezeny následující bezdrátové sítě. Klikněte na tu ke které se chcete připojit. Pokud chcete tento krok přeskočit, klikněte na Další. </translation>
+        <translation>Byly nalezeny následující bezdrátové sítě. Klikněte na tu, ke které se chcete připojit. Pokud chcete tento krok přeskočit, klikněte na Další. </translation>
     </message>
     <message>
         <source>Setup is now complete! Press Finish to login to your new desktop.</source>
@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>Welcome to your new system! You may change your language above, and click next to begin the setup process.</source>
-        <translation>Vítejte v novém systému! Výše můžete změnit jazyk a kliknutím na další začít s nastavováním.</translation>
+        <translation>Vítejte v novém systému! Výše můžete změnit jazyk a kliknutím na Další začít s nastavováním.</translation>
     </message>
     <message>
         <source>Domain Name</source>
@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>Note: Audio settings can also be adjusted later through the audio mixer.</source>
-        <translation>Pozn.: Nastavení zvuku bude také možné změnit později pomocí zvukového mixeru.</translation>
+        <translation>Pozn.: Zvuková nastavení bude možné upravit i později, pomocí směšovače zvuku.</translation>
     </message>
     <message>
         <source>Optional Services</source>
@@ -238,7 +238,7 @@
     </message>
     <message>
         <source>On this screen please enter the root password you wish to use. This password is used for full system access, and should be something secure.</source>
-        <translation>Na této obrazovce zadejte heslo pro správce systému, které chcete použít. Toto heslo slouží k neomezenému přístupu k systému a proto by mělo být bezpečné.</translation>
+        <translation>Na této obrazovce zadejte heslo pro správce systému, které chcete použít. Toto heslo slouží k neomezenému přístupu k systému a proto by mělo být dostatečně silné.</translation>
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the Control Panel.</source>
@@ -247,23 +247,23 @@
     </message>
     <message>
         <source>On this screen you may connect to an available wifi network. If you have a hidden network, it may be added later in the Network Manager.</source>
-        <translation>Na této obrazovce je možné se připojit k WiFi sítím. V případě skryté sítě ji bude možné později přidat ve Správci sítě.</translation>
+        <translation>Na této obrazovce je možné se připojit k WiFi sítím. V případě skryté sítě ji bude možné přidat později, ve Správě sítě.</translation>
     </message>
     <message>
         <source>The computer setup is now finished! Click Finish to log into your new Desktop.</source>
-        <translation>Nastavení počítače je nyní dokončeno! Klikněte na Dokončit a přihlaste se do svého nového desktopu.</translation>
+        <translation>Nastavení počítače je nyní dokončeno! Klikněte na Dokončit a přihlaste se do svého nového prostředí.</translation>
     </message>
     <message>
         <source>On this screen you will need to create a user to log into your desktop. Additional users may be created in the SysAdm utility later.</source>
-        <translation>Na této obrazovce bude třeba vytvořit uživatele pro přihlašování se k desktopu. Další uživatele bude možné vytvořit později pomocí nástroje SysAdm.</translation>
+        <translation>Na této obrazovce bude třeba vytvořit uživatele pro přihlašování se do prostředí. Další uživatele bude možné vytvořit později, pomocí nástroje SysAdm.</translation>
     </message>
     <message>
         <source>This screen allows you to test your audio playback device, and set that device as the default for all audio. This may be changed on-demand through the audio mixer later as well.</source>
-        <translation>Na této obrazovce je možné vyzkoušet zvukové zařízení a nastavit ho jako výchozí pro všechen zvuk. Toto je později možné měnit dle potřeby pomocí zvukového mixeru.</translation>
+        <translation>Na této obrazovce je možné vyzkoušet zvukové zařízení a nastavit ho jako výchozí pro všechen zvuk. Toto je později možné měnit dle potřeby pomocí zvukového směšovače.</translation>
     </message>
     <message>
         <source>Optional configuration changes or services may now be enabled as needed. Simply check or uncheck any options and click next to continue.</source>
-        <translation>Volitelné změny nastavení nebo služeb je nyní možné zapínat dle potřeby. Jednoduše zaškrtněte nebo zrušte zaškrtnutí jakékoli předvolby a pokračujte kliknutím na další.</translation>
+        <translation>Volitelné změny nastavení nebo služeb je nyní možné zapínat dle potřeby. Jednoduše zaškrtněte nebo zrušte zaškrtnutí jakékoli předvolby a pokračujte kliknutím na Další.</translation>
     </message>
     <message>
         <source>Enable SSH</source>
@@ -271,7 +271,7 @@
     </message>
     <message>
         <source>Allows SSH access to this system from remote systems</source>
-        <translation>Umožní SSH přístup k tomuto počítači na dálku</translation>
+        <translation>Umožní k tomuto počítači na dálku, prostřednictvím SSH</translation>
     </message>
     <message>
         <source>Disable IPv6 (Requires Reboot)</source>
@@ -354,7 +354,7 @@
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextovýPopisek</translation>
+        <translation>Textový Popisek</translation>
     </message>
 </context>
 <context>
@@ -377,7 +377,7 @@
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation></translation>
+        <translation>(pro vyzkoušení zvolených nastavení můžete využít prostor níže)</translation>
     </message>
     <message>
         <source>&amp;Apply</source>
