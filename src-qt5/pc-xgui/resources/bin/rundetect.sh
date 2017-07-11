@@ -271,6 +271,26 @@ do
     create_tmp_xorg_conf ${DRIVER}
     echo ""
     echo "Trying user selected driver: ${DRIVER}" >/dev/console
+
+    # Kldload i915kms if using modesetting
+    if [ "${DRIVER}" = "modesetting" ] ; then
+       kldload i915kms
+    fi
+
+    # Kldload vboxguest if using vboxvideo
+    if [ "${DRIVER}" = "vboxvideo" ] ; then
+       kldload vboxguest
+    fi
+
+    # Kldload nvidia if using nvidia
+    if [ "${DRIVER}" = "nvidia" ] ; then
+       if [ -f "/boot/modules/nvidia-modeset.ko" ] ; then
+         kldload nvidia-modeset
+       else
+         kldload nvidia
+      fi
+    fi
+
     DRIVER=""
     ##### Copy the xinitrc file
     cp ${PROGDIR}/scripts/xinit-check /root/.xinitrc
