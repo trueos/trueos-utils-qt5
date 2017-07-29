@@ -1070,6 +1070,7 @@ void Installer::startConfigGen()
         cfgList << "runCommand=echo 'sshd_enable=\"YES\"' >>/etc/rc.conf";
 
       // Setup the TrueOS server
+      cfgList << "runExtCommand=cp /root/defaultpkgbranch ${FSMNT}/root/defaultpkgbranch";
       cfgList << "runCommand=sh /usr/local/share/trueos/scripts/sys-init.sh server";
 
     } 
