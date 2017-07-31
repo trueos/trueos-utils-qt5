@@ -45,6 +45,7 @@ TRANSLATIONS =  i18n/SysInstaller_af.ts \
 		i18n/SysInstaller_en.ts \
 		i18n/SysInstaller_en_US.ts \
 		i18n/SysInstaller_en_GB.ts \
+		i18n/SysInstaller_en_AU.ts \
 		i18n/SysInstaller_en_ZA.ts \
 		i18n/SysInstaller_et.ts \
 		i18n/SysInstaller_eu.ts \
