@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_es">
 <context>
@@ -73,7 +73,7 @@
     </message>
     <message>
         <source>Change the installation language</source>
-        <translation>Cambiar el lenguaje de instalación</translation>
+        <translation>Cambiar el idioma de la instalación</translation>
     </message>
     <message>
         <source>Set the system timezone</source>
