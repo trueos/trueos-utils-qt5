@@ -16,7 +16,6 @@ share/trueos/i18n/FirstBoot_de.qm
 share/trueos/i18n/FirstBoot_el.qm
 share/trueos/i18n/FirstBoot_en.qm
 share/trueos/i18n/FirstBoot_en_GB.qm
-share/trueos/i18n/FirstBoot_en_AU.qm
 share/trueos/i18n/FirstBoot_en_US.qm
 share/trueos/i18n/FirstBoot_en_ZA.qm
 share/trueos/i18n/FirstBoot_es.qm
@@ -206,7 +205,7 @@ share/trueos/i18n/XGUISource_vi.qm
 share/trueos/i18n/XGUISource_zh_CN.qm
 share/trueos/i18n/XGUISource_zh_HK.qm
 share/trueos/i18n/XGUISource_zh_TW.qm
-share/trueos/i18n/XGUISource_en_AU.qm
+share/trueos/i18n/XGUISource_zu.qm
 share/trueos/pc-installgui/get-zfs-restore-list.sh
 share/trueos/pc-installgui/load-usb-key.sh
 share/trueos/pc-installgui/setup-ssh-keys.sh
