@@ -7,22 +7,22 @@
         <location filename="../installer.ui" line="258"/>
         <location filename="../installer.ui" line="261"/>
         <source>Load installation config file from USB stick</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cargar el archivo de configuración de la instalación desde el stick USB.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="270"/>
         <source>&amp;Load config from USB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Cargar configuración del USB</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="305"/>
         <source>Change the installation language</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el idioma de la instalación</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="325"/>
         <source>Welcome to TrueOS! Please select your language and click next to continue.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bienvenidos a TrueOS! Por favor escoja su idioma y haga clic en "Próximo" para continuar.</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="360"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../installer.ui" line="648"/>
         <source>BSD</source>
-        <extracomment>FreeBSD&apos;s native boot-loader. Used for XEN Dom0 support</extracomment>
+        <extracomment>FreeBSD's native boot-loader. Used for XEN Dom0 support</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -859,7 +859,7 @@ Click Exit to close. After rebooting you may eject the install media.</source>
     </message>
     <message>
         <location filename="../wizardDisk.cpp" line="773"/>
-        <source>Mount point should start with &apos;/&apos;</source>
+        <source>Mount point should start with '/'</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
