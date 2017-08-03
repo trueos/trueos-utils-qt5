@@ -44,6 +44,7 @@ TRANSLATIONS =  i18n/FirstBoot_af.ts \
 		i18n/FirstBoot_en.ts \
 		i18n/FirstBoot_en_US.ts \
 		i18n/FirstBoot_en_GB.ts \
+		i18n/FirstBoot_en_AU.ts \
 		i18n/FirstBoot_en_ZA.ts \
 		i18n/FirstBoot_et.ts \
 		i18n/FirstBoot_eu.ts \
