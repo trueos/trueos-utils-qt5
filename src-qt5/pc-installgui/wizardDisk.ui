@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>888</width>
+    <height>567</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -309,6 +309,13 @@
          <widget class="QCheckBox" name="checkRefind">
           <property name="text">
            <string>Install rEFInd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="check_noswap">
+          <property name="text">
+           <string>Disable swap space</string>
           </property>
          </widget>
         </item>
