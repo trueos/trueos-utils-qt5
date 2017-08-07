@@ -118,7 +118,7 @@ QProgressBar::chunk{
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_welcome">
        <layout class="QGridLayout" name="gridLayout_3">
@@ -671,7 +671,7 @@ selection-background-color: rgb(160, 160, 160);</string>
                    <string>VMWare Guest</string>
                   </property>
                   <property name="whatsThis">
-                   <string>xf86-video-vmware</string>
+                   <string>xf86-video-vmware,open-vm-tools</string>
                   </property>
                   <property name="flags">
                    <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>

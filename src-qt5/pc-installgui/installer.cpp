@@ -2105,7 +2105,7 @@ QStringList Installer::optionalPackages(){
   for(int i=0; i<tree_graphics_drivers->topLevelItemCount(); i++){
     for(int j=0; j<tree_graphics_drivers->topLevelItem(i)->childCount(); j++){
       QTreeWidgetItem *it = tree_graphics_drivers->topLevelItem(i)->child(j);
-      if(it->checkState(0)==Qt::Checked && !it->whatsThis(0).isEmpty()){ sel << it->whatsThis(0); }
+      if(it->checkState(0)==Qt::Checked && !it->whatsThis(0).isEmpty()){ sel << it->whatsThis(0).split(","); }
     }
   }
   return sel;
