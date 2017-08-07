@@ -62,7 +62,7 @@ private slots:
     // Keyboard selector
     void slotPushKeyLayout();
 
-    // Slots related to USB config files 
+    // Slots related to USB config files
     void slotSaveConfigUSB();
     void slotLoadConfigUSB();
 
@@ -83,7 +83,7 @@ private slots:
 
     // Slot to launch emergency shell
     void slotEmergencyShell();
-    
+
     // Slot to update the install slideshow
     void nextSlide();
 
@@ -141,7 +141,7 @@ private:
     QGraphicsScene *defaultScene;
     QGraphicsScene *customScene;
     bool customPkgsSet;
-    
+
     // Encryption bits
     QString autoEncPass;
     void warnEncryption();
@@ -179,7 +179,7 @@ private:
 
     // Restore wizard
     wizardRestore *wRestore;
-    
+
     // FreeBSD options
     QString fRootPW;
     QString fName;

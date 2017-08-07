@@ -181,7 +181,7 @@ void Installer::initInstall() //QSplashScreen *splash)
     // If we found a language from geo-loication, change UI now
     if ( foundLang )
        slotChangeLanguage();
-    
+
 
     // Load any package scheme data
     //splash->showMessage("Loading packages", Qt::AlignHCenter | Qt::AlignBottom);
@@ -200,7 +200,6 @@ void Installer::initInstall() //QSplashScreen *splash)
     } else {
 	hasFreeBSDOnMedia = true;
     }
-	
     // Do check for install pkgs on boot media
     if ( QFile::exists("/tmp/no-install-pkgs") ) {
     	hasInstallOnMedia = false;
@@ -230,7 +229,7 @@ void Installer::initInstall() //QSplashScreen *splash)
     // Load the disks
     //splash->showMessage("Loading disk information", Qt::AlignHCenter | Qt::AlignBottom);
     loadDiskInfo();
-    
+
 }
 
 void Installer::loadDiskInfo()
@@ -290,7 +289,7 @@ bool Installer::autoGenPartitionLayout(QString target, bool isDisk)
     targetSlice = targetSlice.remove(0, targetSlice.size() -2);
     targetLoc = 2;
   }
-  
+
   // Lets get the size for this disk / partition
   for (int i=0; i < sysDisks.count(); ++i) {
       // Make sure to only add the slices to the listDiskSlices
@@ -331,7 +330,7 @@ bool Installer::autoGenPartitionLayout(QString target, bool isDisk)
   fileSystem << targetDisk << targetSlice << "/(compress=lz4|atime=off),/tmp(compress=lz4|setuid=off),/usr(canmount=off|mountpoint=none),/usr/home(compress=lz4),/usr/jails(compress=lz4),/usr/obj(compress=lz4),/usr/ports(compress=lz4),/usr/src(compress=lz4),/var(canmount=off|atime=on|mountpoint=none),/var/audit(compress=lz4),/var/log(compress=lz4|exec=off|setuid=off),/var/mail(compress=lz4),/var/tmp(compress=lz4|exec=off|setuid=off)" << fsType << tmp.setNum(totalSize) << "" << "";
   sysFinalDiskLayout << fileSystem;
   fileSystem.clear();
-    
+
   // Now add swap space
   fileSystem << targetDisk << targetSlice << "SWAP.eli" << "SWAP.eli" << tmp.setNum(swapsize) << "" << "";
   sysFinalDiskLayout << fileSystem;
@@ -339,7 +338,6 @@ bool Installer::autoGenPartitionLayout(QString target, bool isDisk)
 
   //qDebug() << "Auto-Gen FS:" <<  fileSystem;
   return true;
-  
 }
 
 // Function which returns the pc-sysinstall cfg data
@@ -400,7 +398,7 @@ QStringList Installer::getDiskSummary()
     // If after doing the mirror, our list is empty, break out
     if ( copyList.empty() )
       break;
-    
+
     // If there is a dedicated /boot partition, need to list that first, see what is found
     for (int i=0; i < copyList.count(); ++i) {
       QStringList mounts = copyList.at(i).at(2).split(",");
@@ -444,7 +442,7 @@ QStringList Installer::getDiskSummary()
                 zTMP.replace("(", " (");
                 zDS.replace(ds, zTMP );
               }
-            } 
+            }
             if ( radioRestore->isChecked())
                summaryList << tr("ZFS Datasets:") + " " + tr("The original ZFS layout will be restored");
             else
@@ -482,7 +480,7 @@ QStringList Installer::getDiskSummary()
       }
     }
 
- 
+
     // Now look for any other partitions
     int count = copyList.count();
     for (int i=0; i < count; ++i) {
@@ -495,7 +493,7 @@ QStringList Installer::getDiskSummary()
           XtraTmp=" (" + copyList.at(i).at(5) + ")" ;
 
 	// If we are working on the last partition, set the size to 0 to use remaining disk
-	if ( i == (count - 1) ) 
+	if ( i == (count - 1) )
 		sliceSize = "0";
 	else
 		sliceSize=copyList.at(i).at(4);
@@ -542,7 +540,7 @@ void Installer::slotDiskCustomizeClicked()
 void Installer::slotSaveDiskChanges(QList<QStringList> newSysDisks, QString partType, QString zName, bool zForce, bool refind)
 {
 
-  zpoolName = zName; 
+  zpoolName = zName;
   force4K = zForce;
   defaultInstall = false;
   useRefind=refind;
@@ -554,9 +552,9 @@ void Installer::slotSaveDiskChanges(QList<QStringList> newSysDisks, QString part
   QStringList summary = getDiskSummary();
   for ( int i=0; i < summary.count(); ++i)
     textEditDiskSummary->append(summary.at(i));
-               
+
   textEditDiskSummary->moveCursor(QTextCursor::Start);
- 
+
   // Regenerate the config
   startConfigGen();
 }
@@ -630,18 +628,18 @@ void Installer::slotNext()
    }
 
    // Start the Restore wizard
-   if ( radioRestore->isChecked() && installStackWidget->currentIndex() == 1 ) { 
+   if ( radioRestore->isChecked() && installStackWidget->currentIndex() == 1 ) {
      wRestore = new wizardRestore();
      wRestore->setWindowModality(Qt::ApplicationModal);
      wRestore->programInit();
      connect(wRestore, SIGNAL(saved(QStringList)), this, SLOT(slotSaveRestoreSettings(QStringList)));
      wRestore->show();
      wRestore->raise();
-     return ;
+     //return ;
    }
 
    // Start the TrueOS wizard
-   if ( radioServer->isChecked() && installStackWidget->currentIndex() == 1 ) { 
+   if ( radioServer->isChecked() && installStackWidget->currentIndex() == 1 ) {
      bool tOS;
      tOS = true;
 
@@ -651,7 +649,7 @@ void Installer::slotNext()
      connect(wFBSD, SIGNAL(saved(QString, QString, QString, QString, QString, QString, bool, bool, QStringList, QStringList)), this, SLOT(slotSaveFBSDSettings(QString, QString, QString, QString, QString, QString, bool, bool, QStringList, QStringList)));
      wFBSD->show();
      wFBSD->raise();
-     return ;
+     //return ;
    }
 
    if( installStackWidget->currentIndex() == 1){
@@ -980,7 +978,7 @@ QStringList Installer::getGlobalCfgSettings()
     tmp.truncate(tmp.indexOf(")"));
     tmp = tmp.remove(0, tmp.indexOf(" (") + 2 );
     tmpList << "localizeKeyVariant=" + tmp;
-  } 
+  }
   */
 
   tmpList << " ";
@@ -1000,7 +998,7 @@ void Installer::startConfigGen()
   if ( zpoolTarget.isEmpty() ) {
     cfgList+=getDiskCfgSettings();
   }
- 
+
   // We can skip these options if doing a restore
   if ( ! radioRestore->isChecked() ) {
 
@@ -1073,7 +1071,7 @@ void Installer::startConfigGen()
       cfgList << "runExtCommand=cp /root/defaultpkgbranch ${FSMNT}/root/defaultpkgbranch";
       cfgList << "runCommand=sh /usr/local/share/trueos/scripts/sys-init.sh server";
 
-    } 
+    }
 
     // Run newaliases to fix mail errors
     cfgList << "runCommand=newaliases";
@@ -1163,7 +1161,7 @@ QStringList Installer::getDiskCfgSettings()
     tmpList << "bootManager=BSD";
 
     // Set the GPT/MBR options
-    if ( sysPartType == "GPT" ) 
+    if ( sysPartType == "GPT" )
       tmpList << "partscheme=GPT";
     if ( sysPartType == "MBR" )
       tmpList << "partscheme=MBR";
@@ -1174,7 +1172,7 @@ QStringList Installer::getDiskCfgSettings()
     // If after doing the mirror, our list is empty, break out
     if ( copyList.empty() )
       break;
-    
+
     // Now print the partition section for this slice
     tmpList << "# Partition Setup for " + workingDisk + "(" + workingSlice + ")";
     tmpList << "# All sizes are expressed in MB";
@@ -1241,7 +1239,7 @@ QStringList Installer::getDiskCfgSettings()
         break;
       }
     }
- 
+
     // Now look for any other partitions
     int count = copyList.count();
     for (int i=0; i < count; ++i) {
@@ -1254,7 +1252,7 @@ QStringList Installer::getDiskCfgSettings()
           XtraTmp=" (" + copyList.at(i).at(5) + ")" ;
 
 	// If we are working on the last partition, set the size to 0 to use remaining disk
-	if ( i == (count - 1) ) 
+	if ( i == (count - 1) )
 		sliceSize = "0";
 	else
 		sliceSize=copyList.at(i).at(4);
@@ -1345,15 +1343,15 @@ void Installer::startInstall()
   // Disable the back / next buttons until we are finished
   nextButton->setEnabled(false);
   backButton->setEnabled(false);
-  progressBarInstall->setValue(0); 
+  progressBarInstall->setValue(0);
   installFoundCounter = false;
   installFoundMetaCounter = false;
   installFoundFetchOutput = false;
   inZFSSend = false;
 
   // Setup some defaults for the secondary progress bar
-  progressBarInstall2->setValue(0); 
-  progressBarInstall2->setHidden(true); 
+  progressBarInstall2->setValue(0);
+  progressBarInstall2->setHidden(true);
   labelInstallStatus2->setText("");
   labelInstallStatus2->setHidden(true);
 
@@ -1367,9 +1365,9 @@ void Installer::startInstall()
 
   // Start our process to begin the install
   QString PCSYSINSTALL;
-  if ( QFile::exists("/root/pc-sysinstall/pc-sysinstall") )  
+  if ( QFile::exists("/root/pc-sysinstall/pc-sysinstall") )
      PCSYSINSTALL = "/root/pc-sysinstall/pc-sysinstall";
-  else  
+  else
      PCSYSINSTALL = "/usr/local/sbin/pc-sysinstall";
 
   QString program = PCSYSINSTALL;
@@ -1478,13 +1476,13 @@ void Installer::slotReadInstallerOutput()
        line = tmp;
 
        if ( tmp.contains("total estimated size"))
-       {  
+       {
           repTotalK = line.section(" ",-1).simplified();
 	  double totSize = displayToDoubleK(repTotalK);
           progressBarInstall->setRange(0, totSize + 1024);
 	  inZFSSend = true;
           continue;
-       } 
+       }
        if ( tmp.contains("Moving datasets to"))
           inZFSSend=false;
 
@@ -1512,7 +1510,7 @@ void Installer::slotReadInstallerOutput()
           // Get the total range first
           line = tmp;
           tmp = tmp.remove(0, tmp.indexOf(":") + 2 );
-          tmp.truncate(tmp.indexOf(" ")); 
+          tmp.truncate(tmp.indexOf(" "));
           range = tmp.toInt(&ok);
           if ( ok )
              progressBarInstall->setRange(0, range + 1);
@@ -1524,13 +1522,13 @@ void Installer::slotReadInstallerOutput()
           range = tmp.toInt(&ok);
           if ( ok )
              progressBarInstall->setValue(range);
-           
+
 	  continue;
         } else {
           installFoundFetchOutput = false;
 	  break;
         }
-     } 
+     }
 
      // Unknown point in install
      if ( ! installFoundCounter && ! installFoundMetaCounter ) {
@@ -1542,70 +1540,70 @@ void Installer::slotReadInstallerOutput()
         }
 
         if ( tmp.indexOf("INSTALLCOUNT: ") != -1 ) {
-          tmp = tmp.remove(0, tmp.indexOf(":") + 1 ); 
+          tmp = tmp.remove(0, tmp.indexOf(":") + 1 );
           range = tmp.toInt(&ok);
           if ( ok ) {
              range = range + 50;
-             progressBarInstall->setRange(0, range + 1);  
+             progressBarInstall->setRange(0, range + 1);
              installFoundCounter = true;
 	     if ( availDesktopPackageData )
-                labelInstallStatus->setText(tr("Extracting system...")); 
+                labelInstallStatus->setText(tr("Extracting system..."));
 	     else
-                labelInstallStatus->setText(tr("Installing system... This may take a while...")); 
+                labelInstallStatus->setText(tr("Installing system... This may take a while..."));
           }
 
 	  break;
 
-        } 
+        }
 
         // Check if we are on the meta-pkg installation
         if ( tmp.indexOf("Packages to install: ") != -1 ) {
-          tmp = tmp.remove(0, tmp.indexOf(":") + 1 ); 
+          tmp = tmp.remove(0, tmp.indexOf(":") + 1 );
           range = tmp.toInt(&ok);
           if ( ok ) {
-             progressBarInstall->setRange(0, range + 1);  
-             progressBarInstall->setValue(0);  
-             progressBarInstall2->setRange(0, 0);  
+             progressBarInstall->setRange(0, range + 1);
+             progressBarInstall->setValue(0);
+             progressBarInstall2->setRange(0, 0);
              labelInstallStatus2->setHidden(false);
-             progressBarInstall2->setHidden(false);  
+             progressBarInstall2->setHidden(false);
              installFoundMetaCounter = true;
              installFoundCounter = false;
-             labelInstallStatus->setText(tr("Installing packages... This may take a while...")); 
+             labelInstallStatus->setText(tr("Installing packages... This may take a while..."));
 	     continue;
           }
 
-        } 
+        }
 	if(tmp.endsWith("\n")){ tmp.chop(1); }
         labelInstallStatus->setText(tmp);
-        continue; 
-     } 
+        continue;
+     }
 
      // Doing file-extraction still
      if ( installFoundCounter ) {
 
        // Doing dist-files, may have multiple images to extract
        if ( tmp.indexOf("INSTALLCOUNT: ") != -1 ) {
-         tmp = tmp.remove(0, tmp.indexOf(":") + 1 ); 
+         tmp = tmp.remove(0, tmp.indexOf(":") + 1 );
          range = tmp.toInt(&ok);
          if ( ok ) {
-            progressBarInstall->setRange(0, range + 1);  
+            progressBarInstall->setRange(0, range + 1);
             installFoundCounter = true;
             if ( availDesktopPackageData )
-              labelInstallStatus->setText(tr("Extracting system...")); 
+              labelInstallStatus->setText(tr("Extracting system..."));
             else
-              labelInstallStatus->setText(tr("Installing system... This may take a while...")); 
+              labelInstallStatus->setText(tr("Installing system... This may take a while..."));
          }
 	 break;
-       } 
+       }
 
 
        // Increment the progress
-       progressBarInstall->setValue(progressBarInstall->value() + 1); 
+       progressBarInstall->setValue(progressBarInstall->value() + 1);
 
        // We've reached the end of this counted section
        if ( tmp.indexOf("Extraction Finished") != -1 ) {
          installFoundCounter = false;
-         progressBarInstall->setRange(0, 0);  
+         progressBarInstall->setRange(0, 0);
        }
 
        continue;
@@ -1615,14 +1613,14 @@ void Installer::slotReadInstallerOutput()
      if ( installFoundMetaCounter ) {
 	// Check if we are on the next meta-pkg
         if ( tmp.indexOf("Installing package: ") != -1 ) {
-           progressBarInstall->setValue(progressBarInstall->value() + 1); 
-           labelInstallStatus->setText(tr("Installing meta-package: %1").arg(tmp.section(":", 1, 5))); 
+           progressBarInstall->setValue(progressBarInstall->value() + 1);
+           labelInstallStatus->setText(tr("Installing meta-package: %1").arg(tmp.section(":", 1, 5)));
 	   continue;
 	}
 
         if ( tmp.indexOf("Package installation complete!") != -1 ) {
            installFoundMetaCounter = false;
-           progressBarInstall->setRange(0, 0);  
+           progressBarInstall->setRange(0, 0);
            progressBarInstall2->setHidden(true);
            labelInstallStatus2->setHidden(true);
 	   continue;
@@ -1714,7 +1712,7 @@ QStringList Installer::getDeskPkgCfg()
             //pkgList << "x11/nvidia-xconfig";
             break;
           }
-       }     
+       }
        file.close();
      }*/ // Done with NVIDIA check
 
@@ -1732,12 +1730,12 @@ QStringList Installer::getDeskPkgCfg()
             pkgList << "emulators/open-vm-tools";
             break;
           }
-       }     
+       }
        filev.close();
      }*/ // End of VM checks
 
      // End of desktop packages
-   } 
+   }
 
    cfgList << "installPackages=" + pkgList.join(" ");
    return cfgList;
@@ -1747,7 +1745,7 @@ QStringList Installer::getDeskPkgCfg()
 QStringList Installer::getUsersCfgSettings()
 {
    QStringList userList;
-  
+
    userList << "";
    userList << "# Root Password";
    userList << "rootPass=" + fRootPW;
@@ -1762,7 +1760,7 @@ QStringList Installer::getUsersCfgSettings()
    userList << "userGroups=wheel,operator,video";
    userList << "commitUser";
    userList << "";
- 
+
    return userList;
 }
 
@@ -1801,7 +1799,7 @@ void Installer::checkSpaceWarning()
   targetType = "DRIVE";
   target = workingDisk;
   targetLoc = 1;
-  
+
   // Lets get the size for this disk / partition
   for (int i=0; i < sysDisks.count(); ++i) {
       // Make sure to only add the slices to the listDiskSlices
@@ -1827,7 +1825,7 @@ void Installer::checkSpaceWarning()
       QString(tr("Warning: The selected disk / partition is less than recommended %1GB.")).arg(tGB),
       QMessageBox::Ok,
       QMessageBox::Ok);
-      haveWarnedSpace = true;      
+      haveWarnedSpace = true;
   }
 
   return;
@@ -1856,7 +1854,7 @@ void Installer::slotSaveConfigUSB()
   // While USB is settling, this is a good time to ask for the config nickname
   bool ok;
   QString cfgName = QInputDialog::getText(this, tr("TrueOS Installer"),
-                 tr("Please enter the nickname you want to save this configuration as."), 
+                 tr("Please enter the nickname you want to save this configuration as."),
                  QLineEdit::Normal,
                  QString("default"), &ok);
   if (!ok || cfgName.isEmpty())
@@ -1883,7 +1881,7 @@ void Installer::slotSaveConfigUSB()
           QMessageBox::Ok,
           QMessageBox::Ok);
   }
-  
+
 }
 
 void Installer::slotLoadConfigUSB()
@@ -1929,7 +1927,7 @@ void Installer::slotLoadConfigUSB()
           QMessageBox::Ok);
   }
 
-  
+
   // Yay! Now lets prompt the user as to which config to use
   QDir cDir;
   cDir.setPath("/tmp/pc-sys");
@@ -1963,7 +1961,7 @@ void Installer::slotLoadConfigUSB()
 
   // Display the file in an OK information box so the user can inspect it
   QMessageBox::information(this, tr("TrueOS Installer Config Script"), fileContents.join("\n"), QMessageBox::Ok, QMessageBox::Ok);
-  
+
   ret = QMessageBox::question(this, tr("TrueOS Installer"),
            tr("Start the install using this config file?") + "\n" + cfgFile,
            QMessageBox::No | QMessageBox::Yes,
@@ -2000,9 +1998,9 @@ void Installer::slotSaveRestoreSettings(QStringList Opts)
   QStringList summary = getDiskSummary();
   for ( int i=0; i < summary.count(); ++i)
     textEditDiskSummary->append(summary.at(i));
-               
+
   textEditDiskSummary->moveCursor(QTextCursor::Start);
- 
+
   startConfigGen();
   installStackWidget->setCurrentIndex(installStackWidget->currentIndex() + 2);
 }
@@ -2126,7 +2124,7 @@ void Installer::slotBEInstallToggled(bool inBE){
   textEditDiskSummary->clear();
   QStringList summary = getDiskSummary();
   for ( int i=0; i < summary.count(); ++i){
-    textEditDiskSummary->append(summary.at(i)); 
+    textEditDiskSummary->append(summary.at(i));
   }
   textEditDiskSummary->moveCursor(QTextCursor::Start);
 }
