@@ -1668,7 +1668,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "mail/thunderbird" << "mail/trojita";
 
      // Multimedia player
-     pkgList << "multimedia/vlc" << "multimedia/openh264";
+     pkgList << "multimedia/vlc" << "multimedia/openh264" << "multimedia/pianobar";
 
      // VirtualBox
      //pkgList << "misc/trueos-meta-virtualbox";
@@ -1684,7 +1684,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "graphics/xsane" << "print/qpdfview";
 
      // Printer packages
-     pkgList << "print/cups-pdf" << "print/gutenprint-cups";
+     pkgList << "print/cups-pdf" << "print/cups-filters" << "print/gutenprint";
 
      // Include i18n stuff?
      if ( comboLanguage->currentIndex() != 0 )
