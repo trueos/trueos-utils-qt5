@@ -171,7 +171,7 @@ void XGUI::suggestDriver(QString driver)
   }
 
   if(!sugDriver.isEmpty()){
-    labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b><br>"+tr("Current Driver:")+" <b>"+driver+"</b>" );
+    labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b>" );
     int index = comboDriver->findText(sugDriver);
     if(index>=0){ comboDriver->setCurrentIndex(index); }
   }

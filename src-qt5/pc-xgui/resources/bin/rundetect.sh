@@ -25,7 +25,7 @@ XGUITMP="/tmp/.xgui" ; export XGUITMP
 TERM="cons25" ; export TERM
 clear
 
-TMP_XORG_CONF="/etc/X11/xorg.conf" #Not quite ready yet - use the normal place for now
+TMP_XORG_CONF="/etc/X11/test.xorg.conf"
 XORG_CONF="/etc/X11/xorg.conf"
 ###############################################################################
 create_tmp_xorg_conf(){
@@ -256,7 +256,7 @@ do
   echo "Please wait... " >/dev/console
   sleep 1
   # Start the X gui
-  /usr/local/bin/startx 2>>${XLOG}
+  /usr/local/bin/xinit --  -config ${TMP_XORG_CONF} 2>>${XLOG}
   if [ ${?} -eq 0 ] ; then
     touch ${XGUITMP}/.xstartupsuccess
   fi
@@ -297,7 +297,7 @@ do
     chmod 755 /root/.xinitrc
 
     sleep 1
-    /usr/local/bin/startx 2>>${XLOG}
+    /usr/local/bin/xinit -- -config ${TMP_XORG_CONF} 2>>${XLOG}
     if [ $? -ne 0 ] ; then
       touch ${XGUITMP}/.failed
     fi
@@ -306,10 +306,10 @@ do
   if [ -e "${XGUITMP}/.selected" ] ; then
     #User selected a driver as good - copy it over to the real xorg.conf location
     echo "Good Driver Selected" >/dev/console
-    #if [ -e ${XORG_CONF} ] ; then
-    #  cp ${XORG_CONF} ${XORG_CONF}.previous #save the old config file
-    #fi
-    #mv ${TMP_XORG_CONF} ${XORG_CONF} #move the testing config to the real location
+    if [ -e ${XORG_CONF} ] ; then
+      cp ${XORG_CONF} ${XORG_CONF}.previous #save the old config file
+    fi
+    mv ${TMP_XORG_CONF} ${XORG_CONF} #move the testing config to the real location
     break
   fi
 
