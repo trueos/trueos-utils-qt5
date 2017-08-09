@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="da">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Behold disse skærmindstillinger?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Det forrige forsøg mislykkedes, tjek venligst dine indstillinger og prøv igen.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Din skærm er blevet konfigureret.
+Behold disse indstillinger?</translation>
     </message>
 </context>
 <context>
@@ -52,7 +50,7 @@ Keep these settings?</source>
     </message>
     <message>
         <source>24bits</source>
-        <translation>24bits</translation>
+        <translation>24 bit</translation>
     </message>
     <message>
         <source>Video Driver</source>
@@ -112,8 +110,8 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>Advarsel!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD kunne ikke finde din skærm. Du kan være nødt til at angive denne skærms vandrette og lodrette opdateringsfrekvenser under &apos;Avanceret&apos;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD kunne ikke finde din skærm. Du kan være nødt til at angive denne skærms vandrette og lodrette opdateringsfrekvenser under 'Avanceret'.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
@@ -144,26 +142,23 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Auto-close in </source>
-        <translation>Selvnedlukning om</translation>
+        <translation>Selvnedlukning om </translation>
     </message>
     <message>
         <source> seconds...</source>
-        <translation>sekunder...</translation>
+        <translation> sekunder...</translation>
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;OK</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Opløsning:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Driver:</translation>
     </message>
 </context>
 </TS>

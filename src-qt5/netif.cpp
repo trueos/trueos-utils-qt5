@@ -369,28 +369,28 @@ QString NetworkInterface::getWifiSecurity( QString SSID, QString deviceName ){
 
 QString NetworkInterface::parseWifiSecurity( QString caps, QString etc ){
   // INPUT: caps and etc are the last two fields output from "ifconfig (device) list scan"
-  
+
   QStringList secure = etc.split(" "); //put each security type in a different list element
-    
+
   //Examine the CAPS and Security data to determine the wifi encryption type
   bool isDisabled = !caps.contains("P") && caps.contains("ES"); //CAPS = "ES" only -> no wifi encryption
   bool isWEP = caps.contains("EP"); //CAPS = "EP" or "EPS" only (could also be RADIUS security type)
-  bool isWPA = secure.contains("WPA"); //both WPA personal and enterprise
-  bool isWPA2 = secure.contains("RSN"); //both WPA2 personal and enterprise
-  
+  bool isWPA = etc.contains("WPA"); //both WPA personal and enterprise
+  bool isWPA2 = etc.contains("RSN"); //both WPA2 personal and enterprise
+
   //qDebug() << "caps: "+caps+"\netc: "+etc;
 
   //Output the security type
   QString securityType;
-  if(isDisabled){ 
+  if(isDisabled){
     securityType = "None";
-  }else if(isWPA2){ 
+  }else if(isWPA2){
     securityType = "WPA2";
-  }else if(isWPA){ 
+  }else if(isWPA){
     securityType = "WPA";
-  }else if(isWEP){ 
+  }else if(isWEP){
     securityType = "WEP";
-  }else{ 
+  }else{
     securityType = "ERROR";
   }
   return securityType;

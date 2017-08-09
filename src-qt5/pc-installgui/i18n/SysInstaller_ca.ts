@@ -571,7 +571,7 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../dialogHelp.ui" line="55"/>
         <source>&amp;Close</source>
-        <translation>&amp;Tanca</translation>
+        <translation>Tan&amp;ca</translation>
     </message>
 </context>
 <context>
@@ -579,7 +579,7 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../dialogInfoBox.ui" line="48"/>
         <source>&amp;Close</source>
-        <translation>&amp;Tanca</translation>
+        <translation>Tan&amp;ca</translation>
     </message>
 </context>
 <context>
@@ -617,7 +617,7 @@ Cliqueu a "Surt" per tancar. Després de reiniciar podreu expulsar el mitjà d'i
     <message>
         <location filename="../dialogKeyboard.ui" line="287"/>
         <source>&amp;Close</source>
-        <translation>&amp;Tanca</translation>
+        <translation>Tan&amp;ca</translation>
     </message>
 </context>
 <context>

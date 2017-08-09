@@ -24,12 +24,19 @@ void wizardFreeBSD::programInit(bool trueOS)
    connect(linePW,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(linePW2,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
    connect(lineHostname,SIGNAL(textChanged(const QString)),this,SLOT(slotCheckComplete()));
-//   connect(pushButton_viewpassword,SIGNAL(pressed()),this,SLOT(viewPassword()));
+   connect(pushButton_viewpassword_root,SIGNAL(pressed()),this,SLOT(viewPassword()));
+   connect(pushButton_viewpassword_root,SIGNAL(released()),this,SLOT(hidePassword()));
+   connect(pushButton_viewpassword_user,SIGNAL(pressed()),this,SLOT(viewPassword()));
+   connect(pushButton_viewpassword_user,SIGNAL(released()),this,SLOT(hidePassword()));
+
+  nextS = new QShortcut(Qt::ALT + Qt::Key_N, this);
+  connect(nextS, SIGNAL(activated()), this, SLOT(slotNext()) );
+  this->button(QWizard::BackButton)->setShortcut(Qt::ALT + Qt::Key_B);
 
    // Load any nics
    QString tmp;
-//   pwVisible = false;
-   pushButton_viewpassword->setVisible(false);
+   pushButton_viewpassword_root->setVisible(true);
+   pushButton_viewpassword_user->setVisible(true);
    comboSelectNic->clear();
    comboSelectNic->addItem("AUTO-DHCP-SLAAC");
    comboSelectNic->addItem("AUTO-DHCP");
@@ -39,7 +46,7 @@ void wizardFreeBSD::programInit(bool trueOS)
      tmp = sysNics.at(i);
      tmp.truncate(35);
      comboSelectNic->addItem(tmp);
-   } 
+   }
    connect(comboSelectNic,SIGNAL(currentIndexChanged(int)), this, SLOT(slotChangedNic()));
    slotChangedNic();
 
@@ -51,7 +58,7 @@ void wizardFreeBSD::programInit(bool trueOS)
 
 void wizardFreeBSD::slotChangedNic()
 {
-  
+
   /* The labels are always disabled. */
   textIP->setEnabled(false);
   textNetmask->setEnabled(false);
@@ -96,7 +103,7 @@ void wizardFreeBSD::slotChangedNic()
     textIPv6DefaultRouter->setEnabled(true);
     textIPv6DNS->setEnabled(true);
   }
-        
+
 }
 
 void wizardFreeBSD::slotClose()
@@ -149,20 +156,13 @@ bool wizardFreeBSD::validatePage()
          button(QWizard::NextButton)->setEnabled(true);
          return true;
      case Page_Root:
-//        if(pwVisible){
-//           lineRootPW->setEchoMode(QLineEdit::Normal);
-//           lineRootPW2->setEchoMode(QLineEdit::Normal);
-//        }else{
-//          lineRootPW->setEchoMode(QLineEdit::Password);
-//          lineRootPW2->setEchoMode(QLineEdit::Password);
-//        }
-         if ( lineRootPW->text().isEmpty() ) {
+        if ( lineRootPW->text().isEmpty() ) {
            button(QWizard::NextButton)->setEnabled(false);
-           return true;
+           return false;
          }
          if ( lineRootPW2->text().isEmpty() ) {
            button(QWizard::NextButton)->setEnabled(false);
-           return true;
+           return false;
          }
          if ( lineRootPW->text() != lineRootPW2->text() ) {
            button(QWizard::NextButton)->setEnabled(false);
@@ -222,14 +222,24 @@ void wizardFreeBSD::slotCheckComplete()
    validatePage();
 }
 
-/*
 void wizardFreeBSD::viewPassword()
 {
-  if(pwVisible){
-    pwVisible = false;
-    }else{
-    pwVisible = true;
-    }
-    updateWidget();
+lineRootPW->setEchoMode(QLineEdit::Normal);
+lineRootPW2->setEchoMode(QLineEdit::Normal);
+linePW->setEchoMode(QLineEdit::Normal);
+linePW2->setEchoMode(QLineEdit::Normal);
 }
-*/
+
+void wizardFreeBSD::hidePassword()
+{
+lineRootPW->setEchoMode(QLineEdit::Password);
+lineRootPW2->setEchoMode(QLineEdit::Password);
+linePW->setEchoMode(QLineEdit::Password);
+linePW2->setEchoMode(QLineEdit::Password);
+}
+
+void wizardFreeBSD::slotNext(){
+  if(this->validatePage()){
+    this->next();
+  }
+}

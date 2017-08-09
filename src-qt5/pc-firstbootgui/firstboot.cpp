@@ -124,7 +124,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     combo_audiodevice->clear();
     QStringList devs = Utils::runShellCommand("cat /dev/sndstat");
     //qDebug() << "Sound Devices:" <<devs;
-    int def = -1; 
+    int def = -1;
     for(int i=0; i<devs.length(); i++){
       if(!devs[i].startsWith("pcm")){ devs.removeAt(i); i--; continue; }
       combo_audiodevice->addItem(devs[i], devs[i].section(":",0,0)); //<full text>, <pcmID>
@@ -140,7 +140,7 @@ Installer::Installer(QWidget *parent) : QMainWindow(parent, Qt::Window | Qt::Fra
     }
     slider_volume->setValue(100);
     slotAudioVolumeChanged(); //update the volume % label
-    
+
     // If we have wireless, UP it so we can scan
     if ( system("ifconfig wlan0") == 0 ) {
        system("ifconfig wlan0 up");
@@ -542,13 +542,13 @@ void Installer::slotAddNewWifi()
 void Installer::addNetworkProfile(QString ssid)
 {
   //get the full SSID string
-  QString dat = Utils::runShellCommandSearch("ifconfig -v wlan0 list scan",ssid);
+  QString dat = Utils::runShellCommandSearch("ifconfig -v wlan0 up list scan",ssid);
   QStringList wdat = NetworkInterface::parseWifiScanLine(dat,true);
   QString SSID = wdat[0];
- 
+
   //Get the Security Type
   QString sectype = wdat[6];
- 
+
   if(sectype == "None"){
     //run the Quick-Connect slot without a key
     slotQuickConnect("",SSID);

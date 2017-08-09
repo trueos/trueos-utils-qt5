@@ -26,10 +26,9 @@ const QString XDRIVERDIR( PREFIX + "/lib/xorg/modules/drivers" );
 
 void XGUI::ProgramInit()
 {
-    
     //gridLayout_4->setMargin(0);
     //gridLayout_4->setSpacing(0);
-    
+
     // Load the screen resolutions
     loadResolutions();
 
@@ -41,12 +40,12 @@ void XGUI::ProgramInit()
 
     // Load the Device Information
     loadDeviceInformation();
-   
+
     // Disable the monitor advanced group box
     //monitorChangedSlot();
 
     // Check for an unprobed monitor
-    //checkUnprobedMonitor(); 
+    //checkUnprobedMonitor();
 
     // Connect our Dual-head checkbox / slot
     //connect(checkDualHead, SIGNAL( clicked() ), this, SLOT( dualChangedSlot() ) );
@@ -102,7 +101,7 @@ void XGUI::loadDeviceInformation()
     //tmp.truncate(30);
     //labelVideoCard->setText(tmp);
 
-    // Get the Monitor Name and display it 
+    // Get the Monitor Name and display it
     tmp = getLineFromCommandOutput(scriptdir + "/monmodel.sh");
     if ( tmp == "Monitor Model" )
     {
@@ -123,64 +122,58 @@ void XGUI::loadDeviceInformation()
 // Function which takes a supplied driver name, and makes suggestion for user
 void XGUI::suggestDriver(QString driver)
 {
-   QString sugDriver, tmp;
-   int z;
-   QString nvdir = PROGDIR + "/nvidia-detect";
+   QString sugDriver;
+   QString devinfo = labelVideoCard->text();
+  //Get the current boot method (BIOS/EFI)
+  QProcess proc;
+    proc.start("sysctl -n machdep.bootmethod");
+    proc.waitForFinished();
+  bool efiboot = ( QString(proc.readAllStandardOutput()).simplified() != "BIOS" );
 
-   // If we are using the "nv" driver, check which version of the nvidia-drivers are for this card
-   if ( driver == "nv" )
-   {
-     tmp = getLineFromCommandOutput(nvdir + "/detect-nvidia.sh");
-     // If we didn't get an unknown hit, set to the correct nvidia driver
-     if ( tmp != "UNKNOWN" )
-       driver = tmp;
-     qDebug() << driver;
-     qDebug() << tmp;
-   }
+   //Check the device information for key words/phrases
+  QStringList preferred;
+  if(devinfo.contains("nvidia",Qt::CaseInsensitive)){
+    //NVIDIA GPU
+    preferred << "nvidia" << "nv" << "nouveau"; //binary NVIDIA, Open source, older open source
 
-   // Loop through the drivers, and mark the suggested one
-   z = comboDriver->count();
-   for ( int i = 0; i < z; i++)
-   {
-      tmp = comboDriver->itemText(i);
+  }else if(devinfo.contains("intel", Qt::CaseInsensitive)){
+    if(efiboot){ preferred << "modesetting" << "intel"; } //modesetting works best with EFI bootup
+    else{ preferred << "intel" << "modesetting"; }
 
-      // Set the x-suggested driver to the default first
-      if ( driver == tmp ) {
-        comboDriver->setCurrentIndex(i);
-        sugDriver = tmp;
-      }
+  }else if(devinfo.contains("amd", Qt::CaseInsensitive)){
+    if(efiboot){ preferred << "amdgpu"; }
+    preferred << "radeon";
 
-      // Check if we are using an nvidia driver
-      if ( driver == "nv" && tmp.indexOf("nvidia") != -1 ) {
-        comboDriver->setCurrentIndex(i);
-        sugDriver = tmp;
-        break;
-      } 
- 
-      // Check if we are using a driver that has a -3d-enable equivilant
-      if (tmp.indexOf(driver + "-3d-enable") != -1 ) {
-        comboDriver->setCurrentIndex(i);
-        sugDriver = tmp;
-        break;
-      } 
-   }  
+  }else if(devinfo.contains("ati", Qt::CaseInsensitive)){
+    if(efiboot){ preferred << "amdgpu"; }
+    preferred << "radeon" << "ati"; //ati driver is *very* old - radeon seems to have much better support (even for older cards)
 
-   // We didn't find the suggested driver, lets default to vesa in that case
-   if ( sugDriver.isEmpty() )
-   {
-     for ( int i = 0; i < z; i++)
-     {
-        if ( comboDriver->itemText(i) == "vesa" )
-        {
-          comboDriver->setCurrentIndex(i);
-        }
-         
+  }else if(devinfo.contains("virtualbox", Qt::CaseInsensitive)){
+    preferred << "vboxvideo";
+
+  }else if(devinfo.contains("vmware", Qt::CaseInsensitive)){
+    preferred << "vmware";
+  }
+  //Now go through the preferred drivers and find the first one which is currently available
+  for(int i=0; i<preferred.length() && sugDriver.isEmpty(); i++){
+    if(comboDriver->findText(preferred[i])>=0){ sugDriver = preferred[i]; }
+  }
+
+  if(sugDriver.isEmpty()){
+    //Last-ditch attempt - VESA or SCFB depending on boot method
+    sugDriver = efiboot ? "scfb" : "vesa";
+
+  }else{
+     // Check if we are using a driver that has a "-3d-enable" version
+     if (comboDriver->findText(sugDriver + "-3d-enable") >= 0 ) {
+       sugDriver = sugDriver+"-3d-enable";
      }
+  }
 
-     sugDriver = "vesa";
-   }
   if(!sugDriver.isEmpty()){
-    labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b>");
+    labelRecDriver->setText(tr("Suggested Driver:") + " <b>" + sugDriver + "</b>" );
+    int index = comboDriver->findText(sugDriver);
+    if(index>=0){ comboDriver->setCurrentIndex(index); }
   }
 }
 

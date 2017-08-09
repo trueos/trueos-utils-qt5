@@ -22,6 +22,10 @@ void wizardDisk::programInit()
 
   populateDiskInfo();
 
+  nextS = new QShortcut(Qt::ALT + Qt::Key_N, this);
+  connect(nextS, SIGNAL(activated()), this, SLOT(slotNext()) );
+  this->button(QWizard::BackButton)->setShortcut(Qt::ALT + Qt::Key_B);
+
   //connect(pushClose, SIGNAL(clicked()), this, SLOT(slotClose()));
   connect(pushSwapSize, SIGNAL(clicked()), this, SLOT(slotSwapSize()));
   connect(pushRemoveMount, SIGNAL(clicked()), this, SLOT(slotRemoveFS()));
@@ -97,7 +101,7 @@ void wizardDisk::slotChangedDisk()
 
   comboPartition->clear();
   comboPartition->addItem(tr("Use entire disk"));
-       
+
   QString disk = comboDisk->currentText();
   disk.truncate(disk.indexOf(" -"));
   for (int i=0; i < sysDisks.count(); ++i) {
@@ -239,7 +243,7 @@ bool wizardDisk::validatePage()
   if ( prevID == Page_Enc && currentId() == Page_Mounts) {
     generateDiskLayout();
     populateDiskTree();
-  } 
+  }
 
   // Show the other disks available
   if ( prevID == Page_BasicDisk && currentId() == Page_ZFS)
@@ -265,8 +269,7 @@ bool wizardDisk::validatePage()
   if ( prevID == Page_Expert && currentId() == Page_Confirmation) {
     generateConfirmationText();
   }
-  
-  
+
   // Reset the prevID
   prevID = currentId();
 
@@ -287,7 +290,7 @@ bool wizardDisk::validatePage()
              groupScheme->setVisible(false);
            }
            checkForce4K->setVisible(true);
-         } 
+         }
 
          // Doing a Advanced install
          if ( radioAdvanced->isChecked() && groupZFSPool->isChecked() )
@@ -304,7 +307,7 @@ bool wizardDisk::validatePage()
               button(QWizard::NextButton)->setEnabled(false);
               return false;
             }
-            QRegExp *re = new QRegExp("^[-'a-zA-Z][a-zA-Z0-9]*$"); 
+            QRegExp *re = new QRegExp("^[-'a-zA-Z][a-zA-Z0-9]*$");
             if (! re->exactMatch(lineZpoolName->text()) ) {
               button(QWizard::NextButton)->setEnabled(false);
               return false;
@@ -317,7 +320,7 @@ bool wizardDisk::validatePage()
            button(QWizard::NextButton)->setEnabled(false);
            return false;
          }
-        
+
          // if we get this far, all the fields are filled in
          button(QWizard::NextButton)->setEnabled(true);
          return true;
@@ -557,15 +560,18 @@ void wizardDisk::generateDiskLayout()
   totalSize = getDiskSliceSize();
 
   // Setup some swap space
-  if ( totalSize > 50000 ) {
+  bool noswap = check_noswap->isChecked();
+  if ( !noswap && totalSize > 50000 ) {
     // 4GB if over 50GB of disk space
     swapsize = 4096;
-  } else if ( totalSize > 30000 ) {
+  } else if ( !noswap && totalSize > 30000 ) {
     // 2GB if over 30GB of disk space
     swapsize = 2048;
-  } else {
+  } else if (!noswap){
     // Minimum 512MB
     swapsize = 512;
+  }else{
+    swapsize = 0;
   }
   totalSize = totalSize - swapsize;
 
@@ -1013,6 +1019,10 @@ void wizardDisk::slotZSUIDOFF()
 void wizardDisk::slotZSUIDON()
 {
   toggleZFSOpt(QString("setuid=on"));
+}
+
+void wizardDisk::slotNext(){
+  if(this->validateCurrentPage()){ this->next(); }
 }
 
 // Toggle an option being on / off for ZFS

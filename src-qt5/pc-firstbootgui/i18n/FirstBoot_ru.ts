@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_ru">
 <context>
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>Переключение между раскладкой US клавиатуры и пользовательской раскладкой</translation>
+        <translation>Переключение между раскладками US и пользовательской</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -73,7 +73,7 @@
     </message>
     <message>
         <source>Change the installation language</source>
-        <translation>Изменить язык программы установки</translation>
+        <translation>Изменить язык установки</translation>
     </message>
     <message>
         <source>Set the system timezone</source>
@@ -85,7 +85,7 @@
     </message>
     <message>
         <source>Launch the on-screen keyboard</source>
-        <translation>Запустить экранную клавиатуру</translation>
+        <translation>Запуск экранной клавиатуры</translation>
     </message>
     <message>
         <source>Will encrypt users home-directory</source>
@@ -370,7 +370,7 @@
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation>( Вы можете набрать текст в поле ниже, чтобы проверить выбранные настройки. )</translation>
+        <translation>( для проверки выбранных настроек Вы можете ввести символы в пустом поле. )</translation>
     </message>
     <message>
         <source>&amp;Apply</source>

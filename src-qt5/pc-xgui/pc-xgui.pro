@@ -24,6 +24,7 @@ TRANSLATIONS =  i18n/XGUISource_af.ts \
 		i18n/XGUISource_de.ts \
 		i18n/XGUISource_el.ts \
 		i18n/XGUISource_en_GB.ts \
+		i18n/XGUISource_en_AU.ts \
 		i18n/XGUISource_en_ZA.ts \
 		i18n/XGUISource_es.ts \
 		i18n/XGUISource_et.ts \
