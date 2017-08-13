@@ -17,7 +17,6 @@ public:
         }
     void programInit();
     virtual void initializePage(int);
-    virtual int nextId() const;
 
 public slots:
 

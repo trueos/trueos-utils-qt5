@@ -97,23 +97,6 @@ void wizardRestore::slotNext(){
   }
 }
 
-int wizardRestore::nextId() const
-{
-  switch (currentId()) {
-     case Page_Host:
-       if (tabRestore->currentIndex() == 0) {
-         return Page_Finish;
-       }
-       break;
-     case Page_Finish:
-       return -1;
-       break;
-     default:
-       return currentId() + 1;
-  }
-  return currentId() + 1;
-}
-
 void wizardRestore::initializePage(int page)
 {
   switch (page) {
