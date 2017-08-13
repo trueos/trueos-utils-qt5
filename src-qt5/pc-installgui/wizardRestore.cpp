@@ -56,20 +56,14 @@ bool wizardRestore::validatePage()
      case Page_Intro:
          button(QWizard::NextButton)->setEnabled(true);
          return true;
-     case Page_Host:
-         // Check if on the SSH restore tab
-         if ( lineHostName->text().isEmpty() ) {
-           button(QWizard::NextButton)->setEnabled(false);
-           return false;
-         }
-         if ( lineUserName->text().isEmpty() ) {
-           button(QWizard::NextButton)->setEnabled(false);
-           return false;
-         }
-
-         // if we get this far, all the fields are filled in
-         button(QWizard::NextButton)->setEnabled(true);
-         return true;
+     case Page_Host: {
+         // Check if on the SSH restore tab has something in it's edit fields.
+         // If it does continue.
+         const bool itemsNotCompleted = lineHostName->text().isEmpty()
+					|| lineUserName->text().isEmpty();
+	  button(QWizard::NextButton)->setDisabled(itemsNotCompleted);
+	  return !itemsNotCompleted;
+     }
      case Page_Auth:
          button(QWizard::NextButton)->setEnabled(true);
          return true;
