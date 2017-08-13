@@ -1,0 +1,7 @@
+*.o
+*.*~
+qrc_*.cpp
+moc_*.cpp
+ui_*.h
+Makefile
+.qmake.stash
