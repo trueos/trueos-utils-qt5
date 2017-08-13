@@ -5,3 +5,7 @@ moc_*.cpp
 ui_*.h
 Makefile
 .qmake.stash
+src-qt5/pc-firstbootgui/pc-firstboot
+src-qt5/pc-installgui/pc-sysinstaller
+src-qt5/pc-sysconfig/pc-sysconfig
+src-qt5/pc-xgui/pc-xgui
