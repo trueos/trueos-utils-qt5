@@ -1669,7 +1669,7 @@ QStringList Installer::getDeskPkgCfg()
      pkgList << "mail/thunderbird" << "mail/trojita";
 
      // Multimedia player
-     pkgList << "multimedia/vlc" << "multimedia/openh264" << "multimedia/libdvdcss" << "multimedia/pianobar";
+     pkgList << "multimedia/vlc" << "multimedia/openh264" << "multimedia/libdvdcss" << "audio/pianobar";
 
      // VirtualBox
      //pkgList << "misc/trueos-meta-virtualbox";
