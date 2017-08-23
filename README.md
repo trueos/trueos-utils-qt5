@@ -1,5 +1,7 @@
 # trueos-utils-qt5
-TrueOS Qt GUI utilities
+TrueOS Qt GUI utilities. Included in this repo are the *install-gui*, *firstboot-gui*, the largely deprecated *pc-sysconfig*, and the *pc-xgui* startup routines. These are contained in the **src-qt5** directory.
+
+Port files and [Jenkins](https://jenkins.io/) integrations are housed in the **port-files** directory.
 
 **Project Information: Table of Contents**
 
