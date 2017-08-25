@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="XGUISource_ja">
 <context>
@@ -112,7 +112,7 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>デュアルヘッドを有効にすると一つのビデオカードで二つのモニターを利用するように設定されます。それ以外の設定を行うには /etc/X11/xorg.conf を編集する必要があります。</translation>
+        <translation>デュアルヘッドを有効にすると一つのビデオカードで二つのモニターを利用するように設定されます。それ以外の設定を行うには /etc/X11/xorg.conf を編集する必要があります</translation>
     </message>
     <message>
         <source>Enable Dual-Head support</source>
