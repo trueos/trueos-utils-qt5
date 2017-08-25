@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_HK">
 <context>
     <name>QObject</name>
     <message>
@@ -111,12 +111,12 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>警告！</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
         <translation>PC-BSD 無法自動判別您的螢幕。您可能需要在「進階」選項指定這個螢幕的水平以及垂直更新率。</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>雙螢幕可讓您在裝有一個顯示卡的系統上同時使用兩個螢幕。您可能需要在 /etc/X11/xorg.conf 編輯一些其他的設定。</translation>
+        <translation>雙螢幕可讓您在裝有一個顯示卡的系統上同時使用兩個螢幕。您可能需要在 /etc/X11/xorg.conf 編輯一些其他的設定</translation>
     </message>
 </context>
 <context>
