@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="nl">
 <context>
     <name>QObject</name>
     <message>
@@ -111,12 +111,12 @@ Als er niets gebeurt, wacht dan a.u.b. even en u komt vanzelf weer in dit scherm
         <translation>Waarschuwing!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD kon uw beeldscherm niet automatisch herkennen. Mogelijk dient u zelf de horizontale en verticale verversingsfrequenties van dit scherm op te geven in het tabblad &apos;Geavanceerd&apos;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD kon uw beeldscherm niet automatisch herkennen. Mogelijk dient u zelf de horizontale en verticale verversingsfrequenties van dit scherm op te geven in het tabblad 'Geavanceerd'.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation>Tweekoppige ondersteuning is bedoeld voor systemen met één grafische kaart en twee schermen. Andere configuraties kunt u instellen door /etc/X11/xorg.conf te bewerken.</translation>
+        <translation>Tweekoppige ondersteuning is bedoeld voor systemen met één grafische kaart en twee schermen. Andere configuraties kunt u instellen door /etc/X11/xorg.conf te bewerken</translation>
     </message>
 </context>
 <context>
