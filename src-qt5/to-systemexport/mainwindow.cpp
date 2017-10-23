@@ -19,6 +19,7 @@ MainWindow::~MainWindow(){
 void MainWindow::on_exportButton_clicked(){
   //create new tar file in location of choice
   exportFile = QFileDialog::getSaveFileName(this, tr("Where do you want to export?"), QDir::homePath());
+  // Now add the files chosen
   if(ui->checkBox_rcconf->isChecked()){ files = files + "/etc/rc.conf "; }
   if(ui->checkBox_loaderconf->isChecked()){ files = files + "/boot/loader.conf "; }
   if(ui->checkBox_ipfwcustom->isChecked()){ files = files + "/etc/ipfw.custom "; }
@@ -34,10 +35,10 @@ void MainWindow::on_exportButton_clicked(){
     files = files + "/tmp/confd.tgz ";
   }
   if(ui->checkBox_installedpkglist->isChecked()){ files = files + "/usr/local/log/pc-updatemanager/install-pkg-list "; }
-  qDebug() << "files" << files;
+  //qDebug() << "files" << files;
   launchString = "lumina-archiver --aa " + exportFile + " " + files;
   ExternalProcess::launch(launchString);
-  qDebug() << "exportFile" << exportFile;
+  //qDebug() << "exportFile" << exportFile;
   // wait until archiver closes
   //finishedMessage();
   if(ui->checkBox_homedir->isChecked()){ exportHomeDir(); }
@@ -52,11 +53,12 @@ void MainWindow::finishedMessage(){
 }
 
 void MainWindow::exportHomeDir(){
+  // to do :  Check size of home dir; set size in message; refuse to export if location does not have enough space;
   homePathString = QDir::homePath() + "*";
   homeDirArchive = QFileDialog::getSaveFileName(this, tr("Where do you want to export your home directory?"), QDir::homePath());
   homeExport = "lumina-archiver --aa " + homeDirArchive + " " + homePathString;
   ExternalProcess::launch(homeExport) ;
-  qDebug() << "homeExport" << homeExport;
+  //qDebug() << "homeExport" << homeExport;
   // wait until archiver closes
   // finishedMessage();
 }

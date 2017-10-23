@@ -1,8 +1,9 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2017-10-23T17:15:10
-#
-#-------------------------------------------------
+#===========================================
+#  Copyright (c) 2017, q5sys (JT)
+#  Available under the MIT license
+#  See the LICENSE file for full details
+#===========================================
+
 
 QT       += core gui
 
