@@ -29,7 +29,8 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+        ExternalProcess.h
 
 FORMS += \
         mainwindow.ui
