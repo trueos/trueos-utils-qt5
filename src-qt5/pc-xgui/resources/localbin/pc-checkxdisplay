@@ -1,0 +1,80 @@
+#!/bin/sh
+# Author: Kris Moore
+# License: BSD
+# Comment: Script to check for starting the display wizard and first-boot GUI
+########################################################
+#NOTE: This function should only be called when X has still not been started yet
+
+# Check for broken xorg.conf with VirtualBox
+# This is a really crappy work-around, but vboxvideo driver wont
+# work with xorg auto-detection right now..
+# KPM - 12/16/2014
+use_vbox_conf()
+{
+  # Has this already run once?
+  if [ -e "/etc/X11/.autoVBOXdone" ] ; then return 0 ; fi
+
+  # Check that we are in virtualbox and have the vboxvideo driver
+  pciconf -lv | grep -q "VirtualBox Graphics"
+  if [ $? -ne 0 ] ; then return 0 ; fi
+  if [ ! -e "/usr/local/lib/xorg/modules/drivers/vboxvideo_drv.so" ] ; then return 0; fi
+
+  # Copy over the corrected xorg.conf file
+  cp /usr/local/share/trueos/xorg-gui/cardDetect/xorg.conf.virtualbox /etc/X11/xorg.conf
+  touch /etc/X11/.autoVBOXdone
+}
+
+#Functions to start each of the appropriate utilities
+setup_xorg() {
+	/usr/local/share/trueos/xorg-gui/bin/rundetect.sh
+	if [ -e "/var/.runxsetup" ] ; then
+        rm -f /var/.runxsetup
+      fi
+}
+
+setup_firstboot() {
+	/usr/local/bin/pc-firstgui
+        rm /var/.trueos-firstgui
+}
+
+setup_xvesa() {
+	echo "Using failsafe VESA 1024x768 mode..." >/dev/console
+	mv /etc/X11/xorg.conf /etc/X11/xorg.conf.preVesa.backup
+	cp /usr/local/share/trueos/xorg-gui/cardDetect/XF86Config.compat /etc/X11/xorg.conf
+}
+
+#echo "Checking for X display setup flags"
+
+# Check if we are going to re-run the display setup wizard
+y=`kenv runwiz 2>/dev/null`
+if [ $? -eq 0 ]; then
+   if [ "$y" = "YES" ] ; then
+     touch /var/.runxsetup
+   fi
+   kenv -u runwiz
+fi
+
+xvesa="NO"
+v=`kenv xvesa 2>/dev/null`
+if [ $? -eq 0 ]; then
+   xvesa=$v
+fi
+
+# If the user wants to switch to failsafe X
+if [ ${xvesa} = "YES" ]; then
+    setup_xvesa
+fi
+
+# Check if we need to do a first boot setup
+if [ -e "/var/.trueos-firstgui" ]; then
+    setup_xorg
+    setup_firstboot
+
+# If the user wants to switch to run the xorg setup again
+elif [ -e "/var/.runxsetup" ] || [ ! -e "/etc/X11/xorg.conf" ] || [ -e "/tmp/.xgui//.lastdriver" ] ; then
+    setup_xorg
+fi
+
+
+# KPM 12/16/2014 - Remove this once vboxvideo driver is fixed
+use_vbox_conf
