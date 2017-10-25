@@ -10,6 +10,8 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow){
     ui->setupUi(this);
+    QString title = tr("System Exporter");
+    this->setWindowTitle(title);
 }
 
 MainWindow::~MainWindow(){
@@ -35,7 +37,11 @@ void MainWindow::on_exportButton_clicked(){
     files = files + "/tmp/confd.tgz ";
   }
   if(ui->echeckBox_installedpkglist->isChecked()){ files = files + "/usr/local/log/pc-updatemanager/install-pkg-list "; }
-  //qDebug() << "files" << files;
+  qDebug() << "files" << files;
+  //maybe insert wait time for External Processes to settle
+  //QTimer *pause = new QTimer;
+  //pause->setSingleShot(true);
+  //pause->start(2000);
   launchString = "lumina-archiver --aa " + exportFile + " " + files;
   ExternalProcess::launch(launchString);
   //qDebug() << "exportFile" << exportFile;
