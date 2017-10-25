@@ -87,8 +87,8 @@ target.path = /usr/local/bin/
 bin.path = /usr/local/share/trueos/xorg-gui/bin/
 bin.extra = cp resources/bin/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/bin/
 
-localbin.path = $(INSTALL_ROOT)/usr/local/bin
-localbin.files = resources/localbin/*
+localbin.path = /usr/local/bin
+localbin.extra = cp resources/localbin/* $(INSTALL_ROOT)/usr/local/bin/.
 
 scripts.path = /usr/local/share/trueos/xorg-gui/scripts/
 scripts.extra = cp resources/scripts/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/scripts/
@@ -117,8 +117,8 @@ temdriver.extra = cp resources/templates/driver/* $(INSTALL_ROOT)/usr/local/shar
 nvdetect.path = /usr/local/share/trueos/xorg-gui/nvidia-detect
 nvdetect.extra = cp resources/nvidia-detect/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/nvidia-detect/
 
-service.files = resources/init.d/*
-service.path = $(INSTALL_ROOT)/usr/local/etc/init.d
+service.path = /usr/local/etc/init.d
+service.extra = cp resources/init.d/* $(INSTALL_ROOT)/usr/local/etc/init.d/.
 
 isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
 
