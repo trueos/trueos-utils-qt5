@@ -15,15 +15,20 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     QString exportFile, homeExport, homePathString, homeDirArchive, files, launchString;
+    QString importPath, importFile, importhomefile, homeImport;
 
 
 private slots:
     void on_exportButton_clicked();
     void exportHomeDir();
 
+    void on_importButton_clicked();
+    void importHomeDir();
+
 private:
     Ui::MainWindow *ui;
-    void finishedMessage();
+    void efinishedMessage();
+    void ifinishedMessage();
 
 };
 
