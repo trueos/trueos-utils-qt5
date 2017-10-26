@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="FirstBoot_ja">
 <context>
     <name>Installer</name>
     <message>
         <source>Switch between US layout and user selected layout</source>
-        <translation>US キーボードレイアウトとユーザーが選択したレイアウトを切り替える</translation>
+        <translation>キーの配置を US 配列からユーザーが選択した配列に切り替える</translation>
     </message>
     <message>
         <source>&amp;Back</source>
@@ -370,7 +370,7 @@
     </message>
     <message>
         <source>( you may type into the space below to test your selected settings. )</source>
-        <translation>(以下の入力欄に文字を入力して設定内容を確認できます。)</translation>
+        <translation>(以下の入力欄に文字を入力して設定内容を確認できます)</translation>
     </message>
     <message>
         <source>&amp;Apply</source>
