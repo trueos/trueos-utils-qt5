@@ -1,0 +1,35 @@
+#!/sbin/openrc-run
+# Copyright (c) 2017 Ken Moore
+# Available under the 2-Clause BSD License
+
+command=pc-checkxdisplay
+extra_commands="forcerestart"
+
+depend()
+{
+	provide xorgsetup
+	before pcdm trueosinit
+	after modules
+}
+
+forcerestart()
+{
+  touch /var/.runxsetup
+  /sbin/service checkxdisplay restart
+}
+
+start_pre()
+{
+	# Make sure system dbus service is not in runlevel first
+	if [ -L /etc/runlevels/default/dbus ] ; then
+	  einfo "Skipping machine-id generation while dbus is present in default runlevel"
+	else
+	# QT needs dbus machine-id generated once
+	# This allows us to skip starting dbus system service
+	# Which fixes gvfs crashiness with many GTK applications
+	  if [ ! -e "/var/lib/dbus/machine-id" ] ; then
+	  einfo "Creating machine-id for QT applications.."
+          /usr/local/bin/dbus-uuidgen --ensure
+	  fi
+      fi
+}

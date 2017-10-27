@@ -15,7 +15,7 @@ QSplashScreen *splash;
 int main(int argc, char *argv[])
 {
     QString changeLang;
-    
+
     QApplication a(argc, argv);
 
     // Check what directory our app is in
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     QLocale mylocale;
     QString langCode = mylocale.name();
 
-    if ( ! changeLang.isEmpty() )       
+    if ( ! changeLang.isEmpty() )
        langCode = changeLang;
 
     if ( QFile::exists(appDir + "/i18n/SysInstaller_" + langCode + ".qm" ) ) {
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
       langCode = "";
     }*/
     QTextCodec::setCodecForLocale( QTextCodec::codecForName("UTF-8") ); //Force Utf-8 compliance
-    
+
     if ( argc == 2)
     {
       QString flag = argv[1];
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 
     w.show();
     splash.close();
-    
+
     int ret = a.exec();
     if(compositor.state()==QProcess::Running){ compositor.terminate(); }
     return ret;

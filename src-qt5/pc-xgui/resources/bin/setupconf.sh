@@ -24,8 +24,8 @@ else
 fi
 
 # Kldload i915kms if using modesetting
-if [ "${DRIVER}" = "modesetting" ] ; then
-   kldload i915kms
+if [ "${DRIVER}" = "modesetting" -o "$DRIVER" = "intel" ] ; then
+   kldload /boot/modules/i915kms.ko
 fi
 
 # Kldload vboxguest if using vboxvideo

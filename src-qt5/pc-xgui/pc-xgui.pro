@@ -86,28 +86,43 @@ target.path = /usr/local/bin/
 
 bin.path = /usr/local/share/trueos/xorg-gui/bin/
 bin.extra = cp resources/bin/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/bin/
+
+localbin.path = /usr/local/bin
+localbin.extra = cp resources/localbin/* $(INSTALL_ROOT)/usr/local/bin/.
+
 scripts.path = /usr/local/share/trueos/xorg-gui/scripts/
 scripts.extra = cp resources/scripts/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/scripts/
+
 conf.path = /usr/local/share/trueos/xorg-gui/conf/
 conf.extra = cp resources/conf/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/conf/
+
 fluxbox.path = /usr/local/share/trueos/xorg-gui/conf/.fluxbox
 fluxbox.extra = cp resources/conf/.fluxbox/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/conf/.fluxbox
+
 carddetect.path = /usr/local/share/trueos/xorg-gui/cardDetect
 carddetect.extra = cp resources/cardDetect/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/cardDetect/
+
 settings.path = /usr/local/share/trueos/xorg-gui/settings
 settings.extra = cp resources/settings/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/settings/
+
 temscripts.path = /usr/local/share/trueos/xorg-gui/templates/scripts/
 temscripts.extra = cp resources/templates/scripts/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/templates/scripts/
+
 temheader.path = /usr/local/share/trueos/xorg-gui/templates/header/
 temheader.extra = cp resources/templates/header/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/templates/header/
+
 temdriver.path = /usr/local/share/trueos/xorg-gui/templates/driver/
 temdriver.extra = cp resources/templates/driver/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/templates/driver/
+
 nvdetect.path = /usr/local/share/trueos/xorg-gui/nvidia-detect
 nvdetect.extra = cp resources/nvidia-detect/* $(INSTALL_ROOT)/usr/local/share/trueos/xorg-gui/nvidia-detect/
+
+service.path = /usr/local/etc/init.d
+service.extra = cp resources/init.d/* $(INSTALL_ROOT)/usr/local/etc/init.d/.
 
 isEmpty(LRELEASE){ LRELEASE = $$[QT_INSTALL_BINS]/lrelease }
 
 dotrans.path=/usr/local/share/trueos/i18n/
 dotrans.extra=cd i18n && $${LRELEASE} -nounfinished *.ts && cp *.qm $(INSTALL_ROOT)/usr/local/share/trueos/i18n/
 
-INSTALLS += target bin scripts conf fluxbox carddetect settings temscripts temheader temdriver nvdetect dotrans
+INSTALLS += target bin scripts conf fluxbox carddetect settings temscripts temheader temdriver nvdetect service localbin dotrans

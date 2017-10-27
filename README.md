@@ -1,5 +1,7 @@
 # trueos-utils-qt5
-TrueOS Qt GUI utilities
+TrueOS Qt GUI utilities. Included in this repo are the *install-gui*, *firstboot-gui*, the largely deprecated *pc-sysconfig*, and the *pc-xgui* startup routines. These are contained in the **src-qt5** directory.
+
+Port files and [Jenkins](https://jenkins.io/) integrations are housed in the **port-files** directory.
 
 **Project Information: Table of Contents**
 
@@ -59,7 +61,7 @@ Due to the number of repositories under the TrueOS "umbrella", the TrueOS Projec
 
 * [trueos-core](https://github.com/trueos/trueos-core) : Used for general TrueOS issues, Pico issues, and feature  requests.
 * [lumina](https://github.com/trueos/lumina) : Issues related to using the Lumina Desktop Environment.
-* (Coming Soon) [sysadm](https://github.com/trueos/sysadm) : Issues with using the SysAdm client or server.
+* [sysadm](https://github.com/trueos/sysadm) : Issues with using the SysAdm client or server.
 * [trueos-docs](https://github.com/trueos/trueos-docs) : Issues related to the TrueOS Handbook.
 * [lumina-docs](https://github.com/trueos/lumina-docs) : Issues related to the Lumina Handbook.
 * [sysadm-docs](https://github.com/trueos/sysadm-docs) : Issues related to the SysAdm API Guide, Client, and Server Handbooks.
