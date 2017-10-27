@@ -72,6 +72,8 @@ void wizardDisk::programInit()
     radioGPT->setChecked(true);
     checkRefind->setHidden(true);
   }
+  groupEncrypt->setEnabled(!efiMode);
+  if(!efiMode){ groupEncrypt->setToolTip( tr("GELI encryption is not currently supported when booting with UEFI") ); }
 }
 
 void wizardDisk::populateDiskInfo()
@@ -198,7 +200,7 @@ int wizardDisk::nextId() const
          return Page_Mounts;
        } else {
          if ( radioGPT->isChecked() )
-           groupEncrypt->setEnabled(true);
+           groupEncrypt->setEnabled(!efiMode);
          else
            groupEncrypt->setEnabled(false);
          groupZFSOpts->setEnabled(true);
