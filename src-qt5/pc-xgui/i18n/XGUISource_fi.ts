@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="fi">
 <context>
     <name>QObject</name>
     <message>
         <source>Keep these display settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Pidetäänkö nämä näyttöasetukset?</translation>
     </message>
     <message>
         <source>The previous attempt failed, please check your settings and try again.</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Aiempi yritys epäonnistui: tarkista asetuksesi ja yritä uudelleen.</translation>
     </message>
     <message>
         <source>Your display has been configured.
 Keep these settings?</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Näytön määritys on tehty.
+Säilytetäänkö asetukset?</translation>
     </message>
 </context>
 <context>
@@ -98,7 +96,7 @@ Jos näyttöön ei ilmesty kuvaa, odota hetki. Ohjelma palaa tähän näyttöön
     </message>
     <message>
         <source>Enable Dual-Head support</source>
-        <translation type="unfinished">Kytke kaksoisnäyttötuki (Dual-Head) päälle</translation>
+        <translation>Käytä kaksoisnäyttötukea (Dual-Head)</translation>
     </message>
     <message>
         <source>Monitor Resolution:</source>
@@ -113,12 +111,12 @@ Jos näyttöön ei ilmesty kuvaa, odota hetki. Ohjelma palaa tähän näyttöön
         <translation>Varoitus!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation type="unfinished">PC-BSD ei kyennyt määrittämään näyttöä automaattisesti. Sinun ehkä täytyy asettaa näytön pysty- ja vaakatahdistukset &apos;Tarkemmat asetukset&apos; välilehdeltä.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD ei kyennyt määrittämään näyttöä automaattisesti. Sinun on ehkä asetettava näytön pysty- ja vaakatahdistus "Tarkemmat asetukset" -välilehdeltä.</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
-        <translation type="unfinished">Kaksoisnäyttötuki (Dual-Head) on suunniteltu järjestelmille, joissa on yksi näytönohjain ja kaksi näyttöä. Muut asetelmat ovat mahdollisia muokkaamalla /etc/X11/xorg.conf tiedostoa.</translation>
+        <translation>Kaksoisnäyttötuki (Dual-Head) on tarkoitettu yhden näytönohjaimen ja kahden näytön järjestelmille; muut asetelmat ovat mahdollisia /etc/X11/xorg.conf-tiedostoa muokkaamalla</translation>
     </message>
 </context>
 <context>
@@ -149,22 +147,19 @@ Jos näyttöön ei ilmesty kuvaa, odota hetki. Ohjelma palaa tähän näyttöön
     </message>
     <message>
         <source> seconds...</source>
-        <translation>sekunnissa...</translation>
+        <translation> sekunnissa...</translation>
     </message>
     <message>
         <source>&amp;Ok</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>&amp;OK</translation>
     </message>
     <message>
         <source>Resolution:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Tarkkuus:</translation>
     </message>
     <message>
         <source>Driver:</source>
-        <translation type="unfinished">
-            </translation>
+        <translation>Ajuri:</translation>
     </message>
 </context>
 </TS>
