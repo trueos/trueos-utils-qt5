@@ -14,9 +14,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QString exportFile, homeExport, homePathString, homeDirArchive, files, launchString;
+    QString exportFile, homeExport, homePathString, homeDirArchive, launchString;
     QString importPath, importFile, importhomefile, homeImport;
 
+	QStringList files;
 
 private slots:
     void on_exportButton_clicked();

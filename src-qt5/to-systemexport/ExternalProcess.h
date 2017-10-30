@@ -62,11 +62,12 @@ public:
 	  }*/
 	}
 
-	static void launch(QString program, QStringList args = QStringList(), bool manageCursors = false){
+	static ExternalProcess* launch(QString program, QStringList args = QStringList(), bool manageCursors = false){
 	  //Quick launch of a process with logging disabled and automatic cleanup
 	  ExternalProcess *tmp = new ExternalProcess("", manageCursors);
 	  if(args.isEmpty()){ tmp->start(program); }
 	  else{ tmp->start(program, args); }
+	  return tmp;
 	}
 };
 #endif

@@ -20,30 +20,38 @@ MainWindow::~MainWindow(){
 
 void MainWindow::on_exportButton_clicked(){
   //create new tar file in location of choice
+  QList<ExternalProcess*> procs;
   exportFile = QFileDialog::getSaveFileName(this, tr("Where do you want to export?"), QDir::homePath());
   // Now add the files chosen
-  if(ui->echeckBox_rcconf->isChecked()){ files = files + "/etc/rc.conf "; }
-  if(ui->echeckBox_loaderconf->isChecked()){ files = files + "/boot/loader.conf "; }
-  if(ui->echeckBox_ipfwcustom->isChecked()){ files = files + "/etc/ipfw.custom "; }
-  if(ui->echeckBox_sysctlconf->isChecked()){ files = files + "/etc/sysctl.conf "; }
-  if(ui->echeckBox_syslogconf->isChecked()){ files = files + "/etc/syslog.conf "; }
-  if(ui->echeckBox_wpasupplicantconf->isChecked()){ files = files + "/etc/wpa_supplicant.conf "; }
+  if(ui->echeckBox_rcconf->isChecked()){ files  << "/etc/rc.conf "; }
+  if(ui->echeckBox_loaderconf->isChecked()){ files  << "/boot/loader.conf "; }
+  if(ui->echeckBox_ipfwcustom->isChecked()){ files  << "/etc/ipfw.custom "; }
+  if(ui->echeckBox_sysctlconf->isChecked()){ files  << "/etc/sysctl.conf "; }
+  if(ui->echeckBox_syslogconf->isChecked()){ files  << "/etc/syslog.conf "; }
+  if(ui->echeckBox_wpasupplicantconf->isChecked()){ files  << "/etc/wpa_supplicant.conf "; }
   if(ui->echeckBox_cupsconfs->isChecked()){
-    ExternalProcess::launch("lumina-archiver --aa /tmp/cups.tgz /usr/local/etc/cups/*");
-    files = files + "/tmp/cups.tgz ";
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/cups.tgz /usr/local/etc/cups/*");
+    files << "/tmp/cups.tgz ";
   }
   if(ui->echeckBox_confd->isChecked()){
-    ExternalProcess::launch("lumina-archiver --aa /tmp/confd.tgz /etc/conf.d/*") ;
-    files = files + "/tmp/confd.tgz ";
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/confd.tgz /etc/conf.d/*") ;
+    files << "/tmp/confd.tgz ";
   }
-  if(ui->echeckBox_installedpkglist->isChecked()){ files = files + "/usr/local/log/pc-updatemanager/install-pkg-list "; }
+  if(ui->echeckBox_installedpkglist->isChecked()){ files << "/usr/local/log/pc-updatemanager/install-pkg-list "; }
   qDebug() << "files" << files;
   //maybe insert wait time for External Processes to settle
   //QTimer *pause = new QTimer;
   //pause->setSingleShot(true);
   //pause->start(2000);
-  launchString = "lumina-archiver --aa " + exportFile + " " + files;
-  ExternalProcess::launch(launchString);
+  bool wait = true;
+  while(wait){
+    wait = false;
+    for(int i=0; i<procs.length() && !wait; i++){ wait = procs[i]->state()!=QProcess::NotRunning; }
+    if(wait){ QApplication::processEvents(); }
+  }
+  ExternalProcess::launch("lumina-archiver", QStringList() << "--aa" << exportFile << files);
+  //launchString = "lumina-archiver --aa " + exportFile + " " + files;
+  //ExternalProcess::launch(launchString);
   //qDebug() << "exportFile" << exportFile;
   // wait until archiver closes
   //efinishedMessage();
