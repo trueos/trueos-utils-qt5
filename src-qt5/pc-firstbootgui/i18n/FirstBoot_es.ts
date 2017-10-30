@@ -137,7 +137,7 @@
     </message>
     <message>
         <source>PersonaCrypt users need the same UID for every system on which they are used</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuarios de PersonaCrypt necesitan el mismo UID para cada sistema que usar</translation>
     </message>
     <message>
         <source>Specify UID</source>
@@ -145,11 +145,11 @@
     </message>
     <message>
         <source>PersonaCrypt</source>
-        <translation type="unfinished"></translation>
+        <translation>PersonaCrypt</translation>
     </message>
     <message>
         <source>Initialize PersonaCrypt Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar Dispositivo PersonaCrypt</translation>
     </message>
     <message>
         <source>Select</source>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>User-portion of the disk encryption key</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Parte del usuario del clave de cifrado del disco.</translation>
     </message>
     <message>
         <source>Device Password</source>

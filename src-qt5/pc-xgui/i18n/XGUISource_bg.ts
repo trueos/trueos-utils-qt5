@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="bg">
 <context>
     <name>QObject</name>
     <message>
@@ -111,8 +111,8 @@ If your screen does not appear, please wait and you will be returned to this scr
         <translation>Внимание!</translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
-        <translation>PC-BSD не можа да открие автоматично вашият монитор. Ще трябва да уточните хоризонталното и вертикално опресняване в &quot;Разширени&quot;.</translation>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
+        <translation>PC-BSD не можа да открие автоматично вашият монитор. Ще трябва да уточните хоризонталното и вертикално опресняване в "Разширени".</translation>
     </message>
     <message>
         <source>Dual-Head support is designed for systems with one video card and two monitors. Other setups may be achieved by editing /etc/X11/xorg.conf</source>
@@ -159,8 +159,7 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Driver:</source>
-        <translation>Драйвър:
-            </translation>
+        <translation>Драйвър:</translation>
     </message>
 </context>
 </TS>

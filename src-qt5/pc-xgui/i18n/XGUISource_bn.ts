@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="bn">
 <context>
     <name>QObject</name>
     <message>
@@ -118,7 +118,7 @@ If your screen does not appear, please wait and you will be returned to this scr
             </translation>
     </message>
     <message>
-        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor&apos;s Horizontal and Vertical refresh rates in the &apos;Advanced&apos; tab.</source>
+        <source>PC-BSD was unable to autodetect your monitor. You may need to specify this monitor's Horizontal and Vertical refresh rates in the 'Advanced' tab.</source>
         <translation type="unfinished">
             </translation>
     </message>
@@ -152,11 +152,11 @@ If your screen does not appear, please wait and you will be returned to this scr
     </message>
     <message>
         <source>Auto-close in </source>
-        <translation>স্বয়ংক্রিয়ভাবে বন্ধ হবে</translation>
+        <translation>স্বয়ংক্রিয়ভাবে বন্ধ হবে </translation>
     </message>
     <message>
         <source> seconds...</source>
-        <translation>সেকেন্ডে...</translation>
+        <translation> সেকেন্ডে...</translation>
     </message>
     <message>
         <source>&amp;Ok</source>

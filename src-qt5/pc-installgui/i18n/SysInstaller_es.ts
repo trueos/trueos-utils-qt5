@@ -27,17 +27,17 @@
     <message>
         <location filename="../installer.ui" line="360"/>
         <source>&lt;Version&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Versión&gt;</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="390"/>
         <source>Please select the type of installation to perform</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor escoja el tipo de la instalación para realizar</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="422"/>
         <source>System Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Selección del Sistema</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="431"/>
@@ -48,23 +48,25 @@
         <location filename="../installer.ui" line="437"/>
         <source>TrueOS Desktop 
  (graphical interface)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TrueOS Escritorio
+ (interfaz gráfica)</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="458"/>
         <source>Best for servers and headless systems</source>
-        <translation type="unfinished"></translation>
+        <translation>Mejor para servidores y sistemas headless</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="461"/>
         <source>TrueOS Server 
  (console interface only)</source>
-        <translation type="unfinished"></translation>
+        <translation>TrueOS Server
+ (interfaz en línea de comando solamente)</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="479"/>
         <source>Restore from an existing backup</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Restaurar de un backup existente</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="482"/>
@@ -143,7 +145,7 @@
     <message>
         <location filename="../installer.ui" line="1302"/>
         <source>Switch between US layout and user selected layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar entre la disposición de EE.UU. y la seleccionada por el usuario</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1331"/>
@@ -165,13 +167,13 @@
         <location filename="../installer.ui" line="1395"/>
         <location filename="../installer.cpp" line="48"/>
         <source>&amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Atrás</translation>
     </message>
     <message>
         <location filename="../installer.ui" line="1414"/>
         <location filename="../installer.cpp" line="49"/>
         <source>&amp;Next</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Siguiente</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="235"/>
@@ -195,7 +197,7 @@
         <location filename="../installer.cpp" line="1890"/>
         <location filename="../installer.cpp" line="1904"/>
         <source>TrueOS Installer</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalador de TrueOS</translation>
     </message>
     <message>
         <location filename="../installer.cpp" line="236"/>
