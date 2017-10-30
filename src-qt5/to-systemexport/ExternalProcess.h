@@ -40,7 +40,7 @@ private slots:
 	    cursorRestored = true;
 	  }
 	  //Clean up this object
-          this->deleteLater();
+          //this->deleteLater();
 	}
 
 public:
