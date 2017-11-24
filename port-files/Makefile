@@ -1,11 +1,10 @@
-# Created by: Joe Maloney <jmaloney@ixsystems.com>
 # $FreeBSD$
 
 PORTNAME=	trueos-utils-qt5
 PORTVERSION=	%%CHGVERSION%%
 CATEGORIES=	sysutils
 
-MAINTAINER=	jmaloney@ixsystems.com
+MAINTAINER=	jt@ixsystems.com
 COMMENT=	TrueOS QT5 Utilities
 
 LICENSE=	BSD2CLAUSE
