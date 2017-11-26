@@ -98,18 +98,18 @@ void MainWindow::on_importButton_clicked(){
   ExternalProcess::launch(homeImport);
 
   // Now add the files chosen
-  if(ui->echeckBox_rcconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/rc.conf /etc/rc.conf"); }
-  if(ui->echeckBox_loaderconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/loader.conf /etc/loader.conf"); }
-  if(ui->echeckBox_ipfwcustom->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/ipfw.custom /etc/ipfw.custom"); }
-  if(ui->echeckBox_sysctlconf->isChecked()){  ExternalProcess::launch("cp /tmp/importdir/sysctl.conf /etc/sysctl.conf"); }
-  if(ui->echeckBox_syslogconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/syslog.conf /etc/syslog.conf"); }
-  if(ui->echeckBox_wpasupplicantconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/wpa_supplicant.conf /etc/wpa_supplicant.conf"); }
-  if(ui->echeckBox_xorgconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/xorg.conf /etc/X11/xorg.conf"); }
-  if(ui->echeckBox_cupsconfs->isChecked()){
+  if(ui->icheckBox_rcconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/rc.conf /etc/rc.conf"); }
+  if(ui->icheckBox_loaderconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/loader.conf /etc/loader.conf"); }
+  if(ui->icheckBox_ipfwcustom->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/ipfw.custom /etc/ipfw.custom"); }
+  if(ui->icheckBox_sysctlconf->isChecked()){  ExternalProcess::launch("cp /tmp/importdir/sysctl.conf /etc/sysctl.conf"); }
+  if(ui->icheckBox_syslogconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/syslog.conf /etc/syslog.conf"); }
+  if(ui->icheckBox_wpasupplicantconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/wpa_supplicant.conf /etc/wpa_supplicant.conf"); }
+  if(ui->icheckBox_xorgconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/xorg.conf /etc/X11/xorg.conf"); }
+  if(ui->icheckBox_cupsconfs->isChecked()){
     ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/cups.tgz /usr/local/etc/cups/" ); }
-  if(ui->echeckBox_confd->isChecked()){
+  if(ui->icheckBox_confd->isChecked()){
     ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/confd.tgz /etc/conf.d/"); }
-  if(ui->echeckBox_installedpkglist->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/pc-updatemanager/install-pkg-list " + QDir::homePath() ); }
+  if(ui->icheckBox_installedpkglist->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/pc-updatemanager/install-pkg-list " + QDir::homePath() ); }
   // in future add option to install previous packages
   QMessageBox *pkglistMessageBox = new QMessageBox;
   pkglistMessageBox->setText(tr("Your previously installed package list can be found in your home directory"));
@@ -119,7 +119,7 @@ void MainWindow::on_importButton_clicked(){
   //qDebug() << "exportFile" << exportFile;
   // wait until archiver closes
   //ifinishedMessage();
-  if(ui->echeckBox_homedir->isChecked()){ importHomeDir(); }
+  if(ui->icheckBox_homedir->isChecked()){ importHomeDir(); }
 }
 
 void MainWindow::importHomeDir(){
