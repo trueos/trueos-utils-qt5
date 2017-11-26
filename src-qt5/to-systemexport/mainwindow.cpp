@@ -31,6 +31,7 @@ void MainWindow::on_exportButton_clicked(){
   if(ui->echeckBox_sysctlconf->isChecked()){ files  << "/etc/sysctl.conf"; }
   if(ui->echeckBox_syslogconf->isChecked()){ files  << "/etc/syslog.conf"; }
   if(ui->echeckBox_wpasupplicantconf->isChecked()){ files  << "/etc/wpa_supplicant.conf"; }
+  if(ui->echeckBox_xorgconf->isChecked()){ files  << "/etc/X11/xorg.conf"; }
   if(ui->echeckBox_installedpkglist->isChecked()){ files << "/usr/local/log/pc-updatemanager/install-pkg-list"; }
   if(ui->echeckBox_cupsconfs->isChecked()){
     procs << ExternalProcess::launch("lumina-archiver --aa /tmp/cups.tgz /usr/local/etc/cups/*");
@@ -103,6 +104,7 @@ void MainWindow::on_importButton_clicked(){
   if(ui->echeckBox_sysctlconf->isChecked()){  ExternalProcess::launch("cp /tmp/importdir/sysctl.conf /etc/sysctl.conf"); }
   if(ui->echeckBox_syslogconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/syslog.conf /etc/syslog.conf"); }
   if(ui->echeckBox_wpasupplicantconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/wpa_supplicant.conf /etc/wpa_supplicant.conf"); }
+  if(ui->echeckBox_xorgconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/xorg.conf /etc/X11/xorg.conf"); }
   if(ui->echeckBox_cupsconfs->isChecked()){
     ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/cups.tgz /usr/local/etc/cups/" ); }
   if(ui->echeckBox_confd->isChecked()){
