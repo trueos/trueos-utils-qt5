@@ -68,7 +68,7 @@ void MainWindow::on_exportButton_clicked(){
     files << "/tmp/usrlocaletc.tgz";
   }
   if(ui->checkBox_openvpn_dir->isChecked()){
-    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/openvpn.tgz /usr/local/openvpn/*") ;
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/openvpn.tgz /usr/local/etc/openvpn/*") ;
     files << "/tmp/openvpn.tgz";
   }
   if(ui->checkBox_lumina_dir->isChecked()){
@@ -132,19 +132,45 @@ void MainWindow::on_importButton_clicked(){
   homeImport = "lumina-archiver --sx " + importFile + " /tmp/importdir/";
   ExternalProcess::launch(homeImport);
 
-  // Now add the files chosen
-  if(ui->icheckBox_rcconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/rc.conf /etc/rc.conf"); }
-  if(ui->icheckBox_loaderconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/loader.conf /etc/loader.conf"); }
-  if(ui->icheckBox_ipfwcustom->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/ipfw.custom /etc/ipfw.custom"); }
-  if(ui->icheckBox_sysctlconf->isChecked()){  ExternalProcess::launch("cp /tmp/importdir/sysctl.conf /etc/sysctl.conf"); }
-  if(ui->icheckBox_syslogconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/syslog.conf /etc/syslog.conf"); }
-  if(ui->icheckBox_wpasupplicantconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/wpa_supplicant.conf /etc/wpa_supplicant.conf"); }
-  if(ui->icheckBox_xorgconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/xorg.conf /etc/X11/xorg.conf"); }
-  if(ui->icheckBox_cupsconfs->isChecked()){
+  // Now add selections
+  // files
+  if(ui->checkBox_fstab->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/fstab /etc/fstab"; }
+  if(ui->checkBox_group->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/group /etc/group"; }
+  if(ui->checkBox_hostname->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/hostname /etc/hostname"; }
+  if(ui->checkBox_hostsdeniedssh->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/hosts.deniedssh /etc/hosts.deniedssh"; }
+  if(ui->checkBox_hostid->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/hostid /etc/hostid"; }
+  if(ui->checkBox_inetd.conf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/inetd.conf /etc/inetd.conf"; }
+  if(ui->checkBox_loginconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/login.conf /etc/login.conf"; }
+  if(ui->checkBox_masterpassword->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/master.password /etc/master.password"; }
+  if(ui->checkBox_pcdmconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/pdcm.conf /usr/local/etc/pcdm.conf"; }
+  if(ui->checkBox_passwd->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/passwd /etc/passwd"; }
+  if(ui->checkBox_resolvconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/resolv.conf /etc/resolv.conf"; }
+  if(ui->checkBox_shells->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/shells /etc/shells"; }
+  if(ui->checkBox_rcconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/rc.conf /etc/rc.conf"); }
+  if(ui->checkBox_loaderconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/loader.conf /etc/loader.conf"); }
+  if(ui->checkBox_ipfwcustom->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/ipfw.custom /etc/ipfw.custom"); }
+  if(ui->checkBox_sysctlconf->isChecked()){  ExternalProcess::launch("cp /tmp/importdir/sysctl.conf /etc/sysctl.conf"); }
+  if(ui->checkBox_syslogconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/syslog.conf /etc/syslog.conf"); }
+  if(ui->checkBox_wpasupplicantconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/wpa_supplicant.conf /etc/wpa_supplicant.conf"); }
+  if(ui->checkBox_xorgconf->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/xorg.conf /etc/X11/xorg.conf"); }
+  // directories
+  if(ui->checkBox_cupsconfs->isChecked()){
     ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/cups.tgz /usr/local/etc/cups/" ); }
-  if(ui->icheckBox_confd->isChecked()){
+  if(ui->checkBox_confd->isChecked()){
     ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/confd.tgz /etc/conf.d/"); }
-  if(ui->icheckBox_installedpkglist->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/pc-updatemanager/install-pkg-list " + QDir::homePath() ); }
+  if(ui->checkBox_installedpkglist->isChecked()){ ExternalProcess::launch("cp /tmp/importdir/pc-updatemanager/install-pkg-list " + QDir::homePath() ); }
+  if(ui->checkBox_etc_dir->isChecked()){
+    ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/etcdir.tgz /etc/" ); }
+  if(ui->checkBox_etcssh_dir->isChecked()){
+    ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/etcssh.tgz /etc/ssh/" ); }
+  if(ui->checkBox_usrlocaletc->isChecked()){
+    ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/usrlocaletc.tgz /usr/local/etc/" ); }
+  if(ui->checkBox_openvpn_dir->isChecked()){
+    ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/openvpn.tgz /usr/local/etc/openvpn/" ); }
+  if(ui->checkBox_luimina_dir->isChecked()){
+    luminaPathString = QDir::homePath() + ".config/lumina-desktop/*";
+    ExternalProcess::launch("lumina-archiver --sx /tmp/importdir/lumina.tgz" + " " + luminaPathString); }
+  // packagelist
   // in future add option to install previous packages
   QMessageBox *pkglistMessageBox = new QMessageBox;
   pkglistMessageBox->setText(tr("Your previously installed package list can be found in your home directory"));
@@ -154,7 +180,7 @@ void MainWindow::on_importButton_clicked(){
   //qDebug() << "exportFile" << exportFile;
   // wait until archiver closes
   //ifinishedMessage();
-  if(ui->icheckBox_homedir->isChecked()){ importHomeDir(); }
+  if(ui->checkBox_homedir->isChecked()){ importHomeDir(); }
 }
 
 void MainWindow::importHomeDir(){
