@@ -25,21 +25,56 @@ void MainWindow::on_exportButton_clicked(){
   files.clear();
   exportFile = QFileDialog::getSaveFileName(this, tr("Where do you want to export?"), QDir::homePath());
   // Now add the files chosen
-  if(ui->echeckBox_rcconf->isChecked()){ files  << "/etc/rc.conf"; }
-  if(ui->echeckBox_loaderconf->isChecked()){ files  << "/boot/loader.conf"; }
-  if(ui->echeckBox_ipfwcustom->isChecked()){ files  << "/etc/ipfw.custom"; }
-  if(ui->echeckBox_sysctlconf->isChecked()){ files  << "/etc/sysctl.conf"; }
-  if(ui->echeckBox_syslogconf->isChecked()){ files  << "/etc/syslog.conf"; }
-  if(ui->echeckBox_wpasupplicantconf->isChecked()){ files  << "/etc/wpa_supplicant.conf"; }
-  if(ui->echeckBox_xorgconf->isChecked()){ files  << "/etc/X11/xorg.conf"; }
-  if(ui->echeckBox_installedpkglist->isChecked()){ files << "/usr/local/log/pc-updatemanager/install-pkg-list"; }
-  if(ui->echeckBox_cupsconfs->isChecked()){
+  // files
+  if(ui->checkBox_fstab->isChecked()){ files  << "/etc/fstab"; }
+  if(ui->checkBox_group->isChecked()){ files  << "/etc/group"; }
+  if(ui->checkBox_hostname->isChecked()){ files  << "/etc/hostname"; }
+  if(ui->checkBox_hostsdeniedssh->isChecked()){ files  << "/etc/hosts.deniedssh"; }
+  if(ui->checkBox_hostid->isChecked()){ files  << "/etc/hostid"; }
+  if(ui->checkBox_inetd.conf->isChecked()){ files  << "/etc/inetd.conf"; }
+  if(ui->checkBox_loginconf->isChecked()){ files  << "/etc/login.conf"; }
+  if(ui->checkBox_masterpassword->isChecked()){ files  << "/etc/master.password"; }
+  if(ui->checkBox_pcdmconf->isChecked()){ files  << "/usr/local/etc/pcdm.conf"; }
+  if(ui->checkBox_passwd->isChecked()){ files  << "/etc/passwd"; }
+  if(ui->checkBox_resolvconf->isChecked()){ files  << "/etc/resolv.conf"; }
+  if(ui->checkBox_shells->isChecked()){ files  << "/etc/shells"; }
+  if(ui->checkBox_rcconf->isChecked()){ files  << "/etc/rc.conf"; }
+  if(ui->checkBox_loaderconf->isChecked()){ files  << "/boot/loader.conf"; }
+  if(ui->checkBox_ipfwcustom->isChecked()){ files  << "/etc/ipfw.custom"; }
+  if(ui->checkBox_sysctlconf->isChecked()){ files  << "/etc/sysctl.conf"; }
+  if(ui->checkBox_syslogconf->isChecked()){ files  << "/etc/syslog.conf"; }
+  if(ui->checkBox_wpasupplicantconf->isChecked()){ files  << "/etc/wpa_supplicant.conf"; }
+  if(ui->checkBox_xorgconf->isChecked()){ files  << "/etc/X11/xorg.conf"; }
+  if(ui->checkBox_installedpkglist->isChecked()){ files << "/usr/local/log/pc-updatemanager/install-pkg-list"; }
+  // directories
+  if(ui->checkBox_cups_dir->isChecked()){
     procs << ExternalProcess::launch("lumina-archiver --aa /tmp/cups.tgz /usr/local/etc/cups/*");
     files << "/tmp/cups.tgz";
   }
-  if(ui->echeckBox_confd->isChecked()){
+  if(ui->checkBox_confd_dir->isChecked()){
     procs << ExternalProcess::launch("lumina-archiver --aa /tmp/confd.tgz /etc/conf.d/*") ;
     files << "/tmp/confd.tgz";
+  }
+  if(ui->checkBox_etc_dir->isChecked()){
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/etc.tgz /etc/*") ;
+    files << "/tmp/etc.tgz";
+  }
+  if(ui->checkBox_etcssh_dir->isChecked()){
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/etcssh.tgz /etc/ssh/*") ;
+    files << "/tmp/etcssh.tgz";
+  }
+  if(ui->checkBox_usrlocaletc_dir->isChecked()){
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/usrlocaletc.tgz /usr/local/etc/*") ;
+    files << "/tmp/usrlocaletc.tgz";
+  }
+  if(ui->checkBox_openvpn_dir->isChecked()){
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/openvpn.tgz /usr/local/openvpn/*") ;
+    files << "/tmp/openvpn.tgz";
+  }
+  if(ui->checkBox_lumina_dir->isChecked()){
+    luminaPathString = QDir::homePath() + ".config/lumina-desktop/*";
+    procs << ExternalProcess::launch("lumina-archiver --aa /tmp/lumina.tgz" + " " + luminaPathString;) ;
+    files << "/tmp/lumina.tgz";
   }
   for(int i=0; i<files.length(); i++){
     if(!QFile::exists(files[i])){ qDebug() << "File Not Found:" << files[i]; files.removeAt(i); i--; }
