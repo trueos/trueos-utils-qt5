@@ -125,6 +125,17 @@ void MainWindow::exportHomeDir(){
 
 void MainWindow::on_importButton_clicked(){
   //create new tar file in location of choice
+    QMessageBox *warningMessageBox = new QMessageBox;
+    warningMessageBox->setText(tr("Importing entire directories has the potental to break your system. /n Are you sure you want to continue?"));
+    QPushButton *pushButtonOk = warningMessageBox->addButton(tr("Ok"), QMessageBox::YesRole);
+    QPushButton *pushButtonCancel = warningMessageBox->addButton(tr"Cancel"), QMessageBox::Cancel);
+    warningMessageBox->QDialog::setWindowTitle(tr("Import Warning"));
+    warningMessageBox->show();
+    if (warningMessageBox->exec==QMessageBox::Cancel){ return;}
+    if (warningMessageBox->exec==QMessageBox::YesRole){ doImport();}
+}
+
+void MainWindow::doImport(){
   QString importfile = QFileDialog::getOpenFileName(this, tr("Open Exported Archive"), QDir::homePath());
 
   //export to tmp dir

@@ -25,12 +25,12 @@ private slots:
 
     void on_importButton_clicked();
     void importHomeDir();
+    void doImport();
 
 private:
     Ui::MainWindow *ui;
     void efinishedMessage();
     void ifinishedMessage();
-
 };
 
 #endif // MAINWINDOW_H
