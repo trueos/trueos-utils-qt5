@@ -125,6 +125,7 @@ void MainWindow::exportHomeDir(){
 
 
 void MainWindow::on_importButton_clicked(){
+/*
     importFile = QFileDialog::getOpenFileName(this, tr("Open Exported Archive"), QDir::homePath());
     //create new tar file in location of choice
     QMessageBox *warningMessageBox = new QMessageBox;
@@ -135,6 +136,7 @@ void MainWindow::on_importButton_clicked(){
     warningMessageBox->show();
     if(warningMessageBox->exec() == QMessageBox::Cancel){ return; }
     else{ doImport();}
+*/
 }
 
 void MainWindow::doImport(){
