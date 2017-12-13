@@ -104,7 +104,7 @@ void MainWindow::on_exportButton_clicked(){
   for(int i=0; i<procs.length(); i++){ procs[i]->deleteLater(); }
 }
 
-void MainWindow::efinishedMessage(){
+void MainWindow::finishedMessage(){
   QMessageBox *finishedMessageBox = new QMessageBox;
   finishedMessageBox->setText(tr("The Export has finished."));
   QPushButton *pushButtonOk = finishedMessageBox->addButton(tr("Ok"), QMessageBox::YesRole);
@@ -205,10 +205,3 @@ void MainWindow::importHomeDir(){
   // efinishedMessage();
 }
 
-void MainWindow::ifinishedMessage(){
-  QMessageBox *finishedMessageBox = new QMessageBox;
-  finishedMessageBox->setText(tr("The Export has finished."));
-  QPushButton *pushButtonOk = finishedMessageBox->addButton(tr("Ok"), QMessageBox::YesRole);
-  finishedMessageBox->QDialog::setWindowTitle(tr("Finished"));
-  finishedMessageBox->show();
-}

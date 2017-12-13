@@ -29,8 +29,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    void efinishedMessage();
-    void ifinishedMessage();
+    void finishedMessage();
 };
 
 #endif // MAINWINDOW_H
