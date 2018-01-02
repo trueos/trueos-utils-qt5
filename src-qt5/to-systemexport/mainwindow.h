@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -14,10 +15,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QString exportFile, homeExport, homePathString, homeDirArchive, launchString, luminaPathString;
-    QString importPath, importFile, importhomefile, homeImport, luminaExport, luminaImport;
+    QString command, exportFile, homeExport, homePathString, homeDirArchive, launchString, luminaPathString;
+    QString importPath, importFile, importhomefile, homeImport, luminaExport, luminaImport, fileList, overallExportCommand;
+    QStringList files, itList;
+    QMessageBox finishedMessageBox;
 
-	QStringList files;
 
 private slots:
     void on_exportButton_clicked();
