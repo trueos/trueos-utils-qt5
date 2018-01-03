@@ -18,7 +18,7 @@ public:
     QString command, exportFile, homeExport, homePathString, homeDirArchive, launchString, luminaPathString;
     QString importPath, importFile, importhomefile, homeImport, luminaExport, luminaImport, fileList, overallExportCommand;
     QStringList files, itList;
-    QMessageBox finishedMessageBox;
+    QMessageBox efinishedMessageBox, ifinishedMessageBox, pkglistMessageBox;
 
 
 private slots:
@@ -31,7 +31,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    void finishedMessage();
+    void efinishedMessage();
+    void ifinishedMessage();
 };
 
 #endif // MAINWINDOW_H
