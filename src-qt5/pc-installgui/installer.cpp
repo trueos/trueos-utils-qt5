@@ -1660,10 +1660,10 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina";
-     pkgList << "sysutils/fusefs-ntfs";
+     pkgList << "sysutils/fusefs-ntfs" << "graphics/drm-next-kmod";	
 
      // The default web-browser and plugins
-     pkgList <<  "www/firefox" << "www/qupzilla-qt5";
+     pkgList <<  "www/firefox" << "www/qupzilla-qt5" << "www/falkon";
 
      // The default mail client
      pkgList << "mail/thunderbird" << "mail/trojita";
