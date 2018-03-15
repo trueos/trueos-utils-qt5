@@ -112,3 +112,10 @@ INSTALLS += target dotrans scripts
 FORMS += installer.ui dialogCheckHardware.ui dialogFSSize.ui dialogHelp.ui wizardFreeBSD.ui dialogKeyboard.ui wizardDisk.ui dialogInfoBox.ui wizardRestore.ui
 
 RESOURCES += sysinstaller.qrc
+
+#Some conf to redirect intermediate stuff in separate dirs
+  UI_DIR=./.build/ui/
+  MOC_DIR=./.build/moc/
+  OBJECTS_DIR=./.build/obj
+  RCC_DIR=./.build/rcc
+  QMAKE_DISTCLEAN += -r ./.build

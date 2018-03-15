@@ -162,7 +162,7 @@ void Installer::initInstall() //QSplashScreen *splash)
     languages = Scripts::Backend::languages();
 
     //splash->showMessage("Loading localizations", Qt::AlignHCenter | Qt::AlignBottom);
-    QString curLang = Scripts::Backend::detectCountryCode(); 
+    QString curLang = Scripts::Backend::detectCountryCode();
     for (int i=0; i < languages.count(); ++i) {
         QString languageStr = languages.at(i);
         QString language = languageStr.split("-").at(0);
@@ -748,13 +748,13 @@ void Installer::slotChangeLanguage()
 
     // Figure out the language code
     QString langCode = "en_US";
-    if(comboLanguage->currentIndex() != -1){ 
+    if(comboLanguage->currentIndex() != -1){
       langCode = languages.at(comboLanguage->currentIndex());
     }
-    
+
     // Grab the language code
     langCode.truncate(langCode.lastIndexOf(")"));
-    langCode.remove(0, langCode.lastIndexOf("(") + 1); 
+    langCode.remove(0, langCode.lastIndexOf("(") + 1);
 
     // Check what directory our app is in
     QString appDir;
@@ -774,7 +774,7 @@ void Installer::slotChangeLanguage()
       QCoreApplication::installTranslator(translator);
     }
     this->retranslateUi(this); //For en_US - there is no translation file
-    
+
     // Change the default keyboard layout
     if ( langCode == "en" ) {
        curKeyModel="pc104";
@@ -789,7 +789,7 @@ void Installer::slotChangeLanguage()
        curKeyVariant="";
        Scripts::Backend::changeKbMap("pc105", langCode, "" );
     }
-    
+
     // Need to re-set the version string
     setVersion();
 }
@@ -831,7 +831,7 @@ QStringList Installer::getGlobalCfgSettings()
       tmp.replace(".lp-props-", "");
       tmp.replace("#", "/");
       tmpList << "zfsRemoteDataset=" + tmp;
-    } 
+    }
 
     // Using a custom zpool name?
     if ( ! zpoolName.isEmpty() )
@@ -865,7 +865,7 @@ QStringList Installer::getGlobalCfgSettings()
     // Doing a fresh install
     tmpList << "installMode=fresh";
   }
-  
+
   QString distFiles;
   distFiles="base doc kernel";
   if ( Arch == "amd64" )
@@ -898,7 +898,7 @@ QStringList Installer::getGlobalCfgSettings()
   // Are we force enabling ZFS 4K block sizes?
   if ( force4K )
     tmpList << "zfsForce4k=YES";
-  
+
   // Networking setup
   if ( radioDesktop->isChecked() ) {
     // TrueOS network setup
@@ -921,14 +921,14 @@ QStringList Installer::getGlobalCfgSettings()
       tmpList << "netSaveIPv6=" + fNetSettings.at(5);
       tmpList << "netSaveIPv6NameServer=" + fNetSettings.at(6);
       tmpList << "netSaveIPv6DefaultRouter=" + fNetSettings.at(7);
-    }  
+    }
     else
     {
       tmp = fNetSettings.at(0);
       if ( tmp.indexOf(":") > 0 )
         tmp.truncate(tmp.indexOf(":"));
       tmpList << "netSaveDev=" + tmp;
-      tmpList << "netSaveIP_" + tmp + "=" + fNetSettings.at(1); 
+      tmpList << "netSaveIP_" + tmp + "=" + fNetSettings.at(1);
       tmpList << "netSaveMask_" + tmp + "=" + fNetSettings.at(2);
       tmpList << "netSaveNameServer=" + fNetSettings.at(3);
       tmpList << "netSaveDefaultRouter=" + fNetSettings.at(4);
@@ -939,14 +939,14 @@ QStringList Installer::getGlobalCfgSettings()
   }
 
 
-  if ( QFile::exists("/trueos-media-network") )  
+  if ( QFile::exists("/trueos-media-network") )
   {
     // Doing install from network media
-    tmpList << "installMedium=ftp"; 
+    tmpList << "installMedium=ftp";
     tmpList << "ftpPath=http://download.trueos.org/iso/%VERSION%/%ARCH%/dist";
   } else {
     // Doing install from /dist directory
-    tmpList << "installMedium=local"; 
+    tmpList << "installMedium=local";
     tmpList << "localPath=/dist";
   }
 
@@ -1660,7 +1660,7 @@ QStringList Installer::getDeskPkgCfg()
      // Our default list of packages that makeup a desktop
      // This is always able to be changed by user post-install
      pkgList << "misc/trueos-desktop" << "x11/lumina";
-     pkgList << "sysutils/fusefs-ntfs" << "graphics/drm-next-kmod";	
+     pkgList << "sysutils/fusefs-ntfs" << "graphics/drm-next-kmod";
 
      // The default web-browser and plugins
      pkgList <<  "www/firefox" << "www/qupzilla-qt5" << "www/falkon";

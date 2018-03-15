@@ -16,7 +16,10 @@ int main(int argc, char *argv[])
 {
     QString changeLang;
 
+    QCoreApplication::setAttribute(Qt::AA_DisableHighDpiScaling);
     QApplication a(argc, argv);
+    a.setAttribute(Qt::AA_UseHighDpiPixmaps);
+    a.setAttribute(Qt::AA_UseStyleSheetPropagationInWidgetStyles);
 
     // Check what directory our app is in
     QString appDir;
