@@ -22,7 +22,7 @@ perms.path=/usr/local/bin
 perms.extra="chmod 4555 $(INSTALL_ROOT)/usr/local/bin/pc-sysconfig";
 
 #Also install the man page
-MANPAGES.extra="gzip -c pc-sysconfig.8 > pc-sysconfig.8.gz ; mv -f pc-sysconfig.8.gz $${INSTALL_ROOT}/usr/local/man/man8/pc-sysconfig.8.gz"
+MANPAGES.extra="gzip -c pc-sysconfig.8 > $(INSTALL_ROOT)/usr/local/man/man8/pc-sysconfig.8.gz"
 MANPAGES.path=/usr/local/man/man8
 
 INSTALLS += target perms MANPAGES
